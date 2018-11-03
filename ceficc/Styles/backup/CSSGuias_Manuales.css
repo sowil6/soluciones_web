@@ -1,0 +1,47 @@
+﻿body {
+}
+
+
+
+.listaManuales {
+    width:40%;
+    float:left;
+    /*background-color:red;*/
+    display:inline-block;
+}
+#tablaManuales {
+   /*font: 80% sans-serif;*/
+    margin-left:10px;
+  /*list-style-type:none;*/
+   margin-right:5px;
+   text-align:left;
+   color:gray;
+   height:30px;
+   margin-top:5px;
+}
+.ContenedorPDF {
+    background-color:yellow;
+    width:60%;
+    height:300px;
+    float:right;
+}
+
+ #ImageManuales {
+width:100%;
+height:500px;
+display:inline-block;
+}
+#MasterColumCentro {
+ width:82%;
+float:right;
+ height:auto;
+ display:inline-block;
+ box-sizing:border-box;
+ 
+}
+#MasterColumDerecha {
+    display:none;
+    float:right;
+    width: 24%;
+    
+}

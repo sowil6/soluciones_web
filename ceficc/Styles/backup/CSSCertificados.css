@@ -1,0 +1,97 @@
+﻿body {
+     /*margin:0px;*/
+   /*padding:0px;*/
+    /*margin:0 auto;*//*centra el contenedor principal*/
+}
+#cuerpoprincipal {
+/*height:auto;*/
+}
+.divContenedorMainCertificado {
+    /*position:absolute;*/
+    width:100%;
+    height:620px;  
+   /*background-color:blue;*/
+}
+.divIzqueirdaCertificado {
+    width:25%;
+    float:left;
+    display:inline-block;
+}
+.divEntraDocumentoCertificado {
+   display:block;
+    margin-top:10px;
+    margin-left:10px;
+    padding:10px 10px 10px 10px;
+    vertical-align:central;
+    width:100%;
+    box-shadow: 0px 0px 10px #000 inset;
+    border-radius: 0px 10px 0px 10px;
+  
+}
+.TablaMenuConsultar {
+width:100%;
+z-index:3;
+}
+.divMuestraDatosCertificado {
+   margin-left:10px;
+   display:block;
+   top:0;
+   width:100%;
+   float:left;
+   /*background-color:red;*/
+   z-index:2;
+   }
+
+.divVistaCertificado {  
+    
+    /*display:inline-block;*/
+  margin-top:5px;
+  background-color: #ffffff;
+    background-color: #666699;
+  filter: alpha(opacity=50);
+	/*opacity: 0.7;*/
+    width:72%;
+    height:100%;
+    float:right;
+ 
+
+ 
+ }
+
+.CSSReportViewCertificado {
+         transform: scale(0.7); /* Igual que: scaleX(0.7) scaleY(0.7) */
+   margin-top:-90px;
+  margin-left:-10%;
+ 
+    /*display:compact;*/
+}
+
+
+.tablaConsultaCertificado{
+    text-align:left;
+     width:100%;
+     height:auto;
+}
+
+.CSSGridViewDatosCertificados {
+    width:100%;
+    
+}
+
+/*.tablaConsultaCertificado td:first-child {
+    text-align:left;
+}*/
+/*.tablaConsultaCertificado td:nth-child(2){
+    text-align:left;
+        
+}*/
+
+
+
+@media screen and (max-width:1000px) {
+.CSSReportViewCertificado {
+  float:left;
+
+}
+
+}

@@ -1,0 +1,301 @@
+﻿body {
+}
+
+/*SLIDE SUPERIOR*/
+
+.divSeccionSuperior {
+  width:100%;
+  height:400px;
+ 
+  
+      /*margin:0 auto;*/ /*centra el contenedor principal*/
+}
+.masterimagenoVideo {
+ width:100%;
+ height:400px; 
+ /*-webkit-animation-name: example; 
+    -webkit-animation-duration: 20s;
+    animation-name: example;
+    animation-duration: 20s;*/
+  }
+.divSeccionIconos {
+width:80%;
+}
+ .textoTituloSlide {
+	position:absolute;
+	 color:white;
+	   font-size:2rem;
+ /* padding: 0px 0 10px 0px;sup 0 abajo izq*/
+  word-wrap:break-word;
+   animation-duration: 2s;
+   -webkit-animation-name: sliTitulo; /* Safari 4.0 - 8.0 */
+  animation-name: sliTitulo;
+  left: 1%;
+  width:17%;
+ 
+   }
+   /* Safari 4.0 - 8.0 */
+@-webkit-keyframes sliTitulo {
+   from {left: 80%;        } 
+    to {
+       left: 1%;
+     
+    }
+}
+   @keyframes sliTitulo {
+    from {
+        left: 80%;
+      
+    }
+ 
+    to {
+       left: 1%;
+     
+    }
+}
+.TextoIntroSlide {
+	position:absolute;
+	 word-wrap:break-word;
+	color:#EFECEC;
+      font-size:3rem;
+    padding: 8px 0 0 0px;/*sup 0 abajo izq*/
+    text-align:left;
+    line-height:1.2;/*interlineado separacion entre lineas de texto*/
+	 animation-duration: 2s;
+   -webkit-animation-name: sliIntro; /* Safari 4.0 - 8.0 */
+  animation-name: sliIntro;
+  left: 1%;
+bottom:0;
+  width:30%;
+}
+@-webkit-keyframes sliIntro {
+     from {bottom:-100px;        } 
+    to { bottom: 0;    }
+}
+   @keyframes sliIntro {
+     from {bottom:-100px;        } 
+    to { bottom: 0;    }
+}
+  .divSlide {
+   position:absolute;
+   left:40%;
+   top:40%;   
+   width:auto;
+  height:auto;
+  
+   }
+
+/*tomado de archivo slideshow*
+ * Author:      Matt Hinchliffe <www.maketea.co.uk>
+ * Modified:    13/06/2014
+ * Description: Simple jQuery slideshow
+ * Example:
+ * <div class="slideshow">
+ *     <ul class="carousel">
+ *         <li class="slide"><a href="#">Option 1</a></li>
+ *         <li class="slide"><a href="#">Option 2</a></li>
+ *     </ul>
+ * </div>
+ */
+
+/* slides */
+.slideshow { 
+	position:relative;
+	margin:0 0 1em;
+	direction:ltr;
+	
+    
+}
+.slideshow a {
+	font-size:.75em;
+	line-height:2em;
+	text-decoration:none;
+	color:#fff;
+	background:#666;
+}
+.slideshow a:hover,
+.slideshow .selected a {
+	background-color:#333;
+}
+.carousel {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.slide {
+	z-index:100;
+}
+.slide .masterimagenoVideo {
+   
+/* -webkit-animation-name: example;  /*Safari 4.0 - 8.0 */
+ /*  -webkit-animation-duration: 5s; /*Safari 4.0 - 8.0 */
+ /*  animation-name: example;*/
+/*    animation-duration: 14s;
+	animation-delay:500;*/
+	
+}
+@-webkit-keyframes example {
+ /*  from {opacity:1;}
+    to {opacity:0.1;}*/
+}
+
+
+/* pagination */
+.slides-pagination {
+	position:absolute;
+	bottom:3em;/*posicion de los numero de paginacion*/
+	left:50%;/*centra los numeros de paginacion*/
+	margin:0;
+	padding:0;
+	list-style:none;
+	z-index:110;
+}
+.slides-pagination li {
+	display:inline;
+}
+.slides-pagination a {
+	display:block;
+	float:left;
+	width:2em;
+	margin-right:5px;
+}
+
+/* skip */
+.slides-next,
+.slides-prev {
+	position:absolute;
+	top:50%;
+	margin-top:-1em;
+	padding:0 .5em;
+	z-index:120;
+   
+}
+.slides-next {
+	right:0;
+}
+.slides-prev {
+	left:0;
+}
+.slides-next.disabled,
+.slides-prev.disabled {
+	
+	cursor:auto;
+}
+
+svg { 
+	position:absolute;
+	overflow:hidden;
+opacity:0.2;
+ -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 2s;
+  
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from { margin-left:-420px;}
+    to {margin-left:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+   from { margin-left:-420px;}
+    to {margin-left:0px;}
+}
+
+/*div contenido medio*/
+.divSeccionMediaSlide{
+	width:90%;
+	/*height:600px;*/
+	margin:0 auto;
+background-color:#000000;
+margin-top:5px;
+
+	}
+	
+/*Estilos de la galeria*/
+
+.galeria {
+	width: 100%;
+	margin: auto;
+	list-style: none;
+	padding: 5px;
+	box-sizing: border-box;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.galeria li {
+	margin: 2px;
+}
+
+.galeria img {
+	width: 260px;
+	height: 150px;
+}
+
+/*Estilos del modal*/
+
+.modal {
+	display: none;
+}
+
+.modal:target {
+	
+	display: block;
+	position: fixed;
+	background: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.modal h3 {
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	margin: 15px 0;
+}
+.imagen {
+	width: 100%;
+	height: 50%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.imagen a {
+	color: #fff;
+	font-size: 40px;
+	text-decoration: none;
+	margin: 0 10px;
+}
+.imagen a:nth-child(2) {
+	margin: 0;
+	height: 100%;
+	flex-shrink: 2;
+}
+.imagen img {
+	width: 500px;
+	height: 100%;
+	max-width: 100%;
+	border: 7px solid #fff;
+	box-sizing: border-box;
+}
+.cerrar {
+	display: block;
+	background: #fff;
+	width: 25px;
+	height: 25px;
+	margin: 15px auto;
+	text-align: center;
+	text-decoration: none;
+	font-size: 25px;
+	color: #000;
+	padding: 5px;
+	border-radius: 50%;
+	line-height: 25px;
+}

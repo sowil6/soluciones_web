@@ -1,1 +1,3 @@
-<?php header("Location: vista/pageslide.php");?>
+
+<?php 
+ header("Location: ./vista/index.php");?>
