@@ -1,16 +1,17 @@
 <!doctype html>
-<html><!-- InstanceBegin template="/cefic/PlantillaUnaColumna.dwt.php" codeOutsideHTMLIsLocked="false" --><head>
+<html><head>
 <meta charset="utf-8">
-<!-- InstanceBeginEditable name="doctitle" -->
-<title> <?php include("titulo.php");?></title>
-<!-- InstanceEndEditable -->
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Corporación Educativa de Formación Integral del Caribe - CEFIC </title>
+<!-- TemplateEndEditable 
+-->
 <!--<link href="../Styles/bootstrapCSS/bootstrap.css" rel="stylesheet" type="text/css">
 <script src="../Scripts/jquery-css-transform.js" type="text/javascript"></script>-->
  
 
 
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
 
 </head>
 
@@ -22,13 +23,13 @@
   <?php include("cabecera.php")?>
    </header>
 
-  <!-- InstanceBeginEditable name="EditRegionUnaColumna" -->
+  <!-- TemplateBeginEditable name="EditRegionUnaColumna" -->
   <article class="contentUnaColumna">
       
-<?php include("includeslide.php")?>
+
   
   </article>
-  <!-- InstanceEndEditable --><!-- end .content -->
+  <!-- TemplateEndEditable --><!-- end .content -->
 
   <footer>
      <?php include("footer.php")?>
@@ -36,4 +37,4 @@
  </div> <!-- end .container -->
  
 </body>
-<!-- InstanceEnd --></html>
+</html>
