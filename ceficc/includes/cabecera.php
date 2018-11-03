@@ -145,7 +145,7 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
   <div class="divContenedorMenu">
            <nav class="navMenu">
                                        <ul id="invitado" class="ulNav" >
-                                         <li class="current_page_item"><a href="../vista/index.php"><img src="" />INICIO</a></li>
+                                         <li class="current_page_item"><a href="../index.php"><img src="" />INICIO</a></li>
                                          <!--                 <li><a href="/Public/Presentacion.aspx"><img src="/Img/imgMenu/home.png" />Presentacion</a></li>-->
                                          <li><a href="../vista/pageslide.php"><img src="" />INSTITUCIONAL</a>
                                            <div class="subs">
