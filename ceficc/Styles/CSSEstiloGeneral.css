@@ -1,0 +1,1182 @@
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	/*background-color: #CCD0E9;*/
+	margin: 0;
+	padding: 0;
+	color: #000;
+	width:100%;
+	
+}
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+
+#header {
+	width: 940px;
+	height: 90px;
+	margin: 0 auto;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+/* ~~ This fixed width container surrounds all other blocks ~~ */
+.containerCeficc {
+	width: 100%;
+	background-color: #E5E6EC;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+.MasterColumIzq {
+	background-color: aqua;
+	box-sizing: border-box;
+	float: left;
+	width: 20%;
+	padding-bottom: 10px;
+	margin-top: 10px;
+}
+.contentCentro {
+	/*background-color: #FFFFFF;*/
+	width: 58%;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+.Mastercentro{
+	/*background-color: #F8FBFA;*/
+	width: 98%;
+	margin:0 auto;
+	}
+.sideColDer{
+	float: left;
+	width: 20%;
+	background-color: #FFFFFF;
+	padding-top: 0px;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 10px;
+	margin-top: 10px;
+}
+
+/*MASTER UNA COLUMNA*/
+.contentUnaColumna{
+	width:100%;
+	height:auto;
+	background-color:#8DABAF;
+	/*padding:5px 5px 15px 5px;*/
+	}
+/*COLUMNA menu izquierdo*/
+
+	 /*COLUMNA NOVEDADES*/
+.TituloColumnas {
+   background-color:red;
+    text-align:center;
+ }
+ .TituloColumnas p{
+color:#FFFFFF;
+ }
+
+/*controla columna izqueirda master*/
+.masterimagenoVideo{
+		 width:91%;
+    display:block;/*estas dos lineas centran la imagen*/
+margin:auto;
+		}
+
+#tablaRepeaterDerecha {
+    width:95%;
+    /*margin-left:5px;*/
+      border: 1px solid #D3D3D3; /*LightGray */
+  /*background-color:white;*/
+  padding:2px;
+}
+/* ~~ The footer ~~ */
+footer {
+	padding: 10px 0;
+/*	background-color: #CCC49F;*/
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+}
+
+
+/*NOTA: problema con BOOTRASp cambiar el nombre de clase nav, col, porque crean conflicto y no funciona bien donde utilice estos nombres de class*/
+/*menu boton imagen login*/
+.contenedorHeader{
+	/*width:100%;*/
+	}
+.contenedorAntesMenu{
+	height:65px;
+	
+	}
+
+
+/*INFORMACION PBX EMAIL*/
+.contenedorHeader .info {
+	
+float:right ;
+top:10%;
+
+}
+.info-Email {
+ display:inline-block;
+   vertical-align:middle;
+}
+ul.InfoUL {
+    list-style:none;
+    margin:0;
+   display:inline-block;
+     
+    
+}
+ul.InfoUL li {
+    display:block;
+    float:left;
+    white-space:nowrap;
+     padding:0 13px 3px;
+}
+/*ul.InfoUL img {
+    display:inline-block;
+    border:none;
+    margin-right:8px;
+    vertical-align:middle;
+    
+}*/
+ul.InfoUL a {
+  /*  border-style:none;
+    border-width:0;*/
+    color:#272727;/*color de texto*/
+    cursor:pointer;
+    display:block;
+    font-size:0.6rem;
+    font-weight:bold;
+    /*padding:8px 10px;*//*separacion superior y separacion entre botones*/
+    text-align:left;
+    text-decoration:none;
+    /*text-shadow:#fff 0 1px 1px;*/
+   
+		
+}
+.feature-box-icon{
+	color: #38B7E3;
+	border-color: #383f48;
+	
+	}
+	
+.feature-box.feature-box-style-3 .feature-box-icon {
+	border-color: #0088cc;
+		}
+	
+/*LOGO*/
+.menuLogo {
+width:300px;/*con el valor que esta en las function de la pagina Site.Master controlar el ancho contenedor de la imagen*/
+    height:68px;/*altura del contenedor de la imagen*/
+    
+   /* position:relative;*/
+   left:1%;
+      /*float:right;*/
+       float:left;
+     background-repeat:no-repeat;
+	 top:10%;
+	/*background-color:blue;
+	    z-index:2;*/
+}
+.menuLogo i{
+	width:50px;
+	
+	
+	}
+.menuLogo-fixed {
+	  position:fixed;
+	  width:150px;
+	  eight:10px;
+   top: 0; 
+     z-index:2;
+	}
+
+/*RESOLUCION SECRETARIA DE BOLIVAR*/
+.resolucion {
+	position:absolute;
+	width:100%;/*con el valor que esta en las function de la pagina Site.Master controlar el ancho contenedor de la imagen*/
+   top:1px;
+ 
+  
+     	 display:flex;/*display:flex y justify-content: center ayudan a centrar el menu*/
+  justify-content: center;/*display:flex y justify-content: center ayudan a centrar el menu*/
+  font-size:0.6rem;
+  text-align:center;
+}
+
+/*BARRA DE MENU*/
+ .divContenedorMenu {  
+	position:relative;
+	width:100%;
+  background-color:#a70000 !important;
+height:42px;
+   z-index:1;
+ }
+.divContenedorMenu-fixed {
+   position:fixed;
+   top: 0; 
+   height:7%;
+	 /* z-index:3;*/
+}
+/* Menu */
+.navMenu {
+	width:100%;
+	height:100%;
+	padding: 0;
+	/*background-color:#519E28 ;*//*color del contenedor de los botones*/
+	 display:flex;/*display:flex y justify-content: center ayudan a centrar el menu*/
+  justify-content: center;/*display:flex y justify-content: center ayudan a centrar el menu*/
+}
+.navMenu  li {
+   /* background-color:blue;color de los botones
+    height:100%; */
+}
+.navMenu ulNav a {
+	font-size:2rem;
+	
+	}
+.navMenu a {
+	display: block;
+/*	width: auto; *//*al omitirlo parece que no afecta el ancho del fondo de los botones*/
+	height: 100%;/*altura del color de fondo cuando pasa el mouse sobre el control*/
+	background: #000000;
+	padding-top: 8px;
+	border-right: 1px solid #FFFFFF;
+	text-decoration: none;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	border: none;
+	
+}
+ul.ulNav li a {
+	font-size:0.75rem;/*tamaño de la fuente del menu principal*/
+	
+	}
+.navMenu a:hover{
+
+	background: #F8F3F3;/*fondo de color del mouse over*/
+	text-decoration: none;
+	
+	color: #000000;/*color de fuente durante mouse over*/
+	
+	
+}
+ul.ulNav {
+display:inline-block;
+     font-family: Arial;
+    font-size:0;
+   height:100%;
+   }
+ul.ulNav,ul#ulNav ul {
+    list-style:none;
+    margin:0;
+}
+ul.ulNav .subs {
+    background-color:#fff;
+	border:1px solid #CFC8C9;
+    display:none;
+    float:left;
+    left:0;
+    padding:0 6px 6px;
+    position:absolute;
+    top:100%;
+    width:auto;/*ancho del contenedor de los submenu*/
+    border-radius:7px;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+}
+ul.ulNav li:hover>* {
+    display:block;
+}
+ul.ulNav li:hover {
+    position:relative;
+	padding:1px;
+}
+ul.ulNav ul .subs {
+    left:100%;
+    position:absolute;
+    top:0;
+	
+}
+ul.ulNav ul {
+    padding:0 5px 5px;
+   
+}
+ul.ulNav .divCol {
+    float:left;
+    width:100%;/*ancho del color de fondo de los botones del submenu*/
+}
+ul.ulNav li {
+    display:block;
+    float:left; 
+     font-size:0;
+    white-space:nowrap;
+}
+ul.ulNav>li,ul#ulNav li {
+    margin:0 0 0 5px;
+}
+ul.ulNav ul>li {
+    margin:5px 0 0;
+}
+ul.ulNav a:active,ul#ulNav a:focus {
+    outline-style:none;
+}
+ul.ulNav a {
+    border-style:none;
+    border-width:0;
+    color:#fff;
+    cursor:pointer;
+    display:block;
+    font-size:13px;
+    font-weight:bold;
+    padding:8px 10px;/*separacion superior y separacion entre botones*/
+    text-align:left;
+    text-decoration:none;
+    /*text-shadow:#fff 0 1px 1px;*/
+    vertical-align:middle;
+}
+ul.ulNav ul li {
+    float:none;
+    margin:6px 0 0;
+}
+ul.ulNav ul a {
+    background-color:#fff;
+    border-color:#efefef;
+    border-style:solid;
+    border-width:0 0 1px;
+    color:#000;
+    font-size:11px;
+    padding:4px;
+    text-align:left;
+    text-decoration:none;
+    text-shadow:#fff 0 0 0;
+
+    border-radius:0;
+    -moz-border-radius:0;
+    -webkit-border-radius:0;
+}
+ul.ulNav li:hover>a {
+    border-style:none;
+    color:#000000;/*cambia el texto a color negro cuando se pasa el mouse sobre el boton*/
+    font-size:13px;
+    font-weight:bold;
+    text-decoration:none;
+	width:auto;/*ancho del color de fondo del boton seleccionado*/
+ /*   text-shadow:#181818 0 1px 1px;*/
+
+}
+ul.ulNav img {
+    border:none;
+    margin-right:8px;
+    vertical-align:middle;
+}
+ul.ulNav span {
+    background-position:right center;
+    background-repeat:no-repeat;
+    display:block;
+    overflow:visible;
+    padding-right:0;
+}
+ul.ulNav ul span {
+/*    background-image:url("/Img/imgMenu/arrow.png");*/
+    padding-right:20px;
+}
+ul.ulNav ul li:hover>a {
+    border-color:#444;
+    border-style:solid;
+    color:#444;
+    font-size:11px;
+    text-decoration:none;
+    text-shadow:#fff 0 0 0;
+
+}
+ul.ulNav > li >a {
+    background-color:transparent;
+   /* height:25px;*/
+    line-height:25px;/*baja o sube los elementos del menu*/
+
+}
+/*fin codigo menu viejo*/
+
+/* ~~ Miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty block element as the final element following the last floated block (within the .container) if the footer is removed or taken out of the .container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+/*HTML 5 support - Sets new HTML 5 tags to display:block so browsers know how to render the tags properly. */
+header, section, footer, aside, article, figure {
+	display: block;
+}
+
+/*footer*/
+.social-icons-facebook img{
+	height:50px;
+		width:50px;
+	}
+.social-icons-linkedin img{
+		height:50px;
+		width:50px;
+
+
+	}
+.social-icons-twitter img{
+		height:50px;
+		width:50px;
+
+
+	}
+
+
+/*PAGINA EDITAR NOTICIA*/	
+.formimagen{
+	width:100%;
+	
+	}
+.DivContenedorNoticia {
+width:99%;
+right:0;
+left:0;
+height:auto;
+background-color:red;
+}
+#divIzqEditorNoticia {
+background-color:#b5abab;
+width:50%;
+min-height:600px;
+float:left;
+/*overflow:scroll;*/  
+font: 12px sans-serif;
+border: solid 1px;
+
+}
+ #divDerEditorNoticia {
+background-color:red;
+/*background-color:#ffffff;*/
+width:49%;
+height:570px;
+float:right;
+border: solid 1px;
+overflow:scroll;
+/*display:none;*/
+}
+#img3{
+	width:100px;
+	height:70px;}
+#divImagenPrevia {
+  width: 200px;
+  height: 150px;
+  box-shadow: 0px 0px 10px #000 inset;
+  border-radius: 10px 10px 10px 10px;
+  border: solid 1px;
+  background-color:burlywood;
+  vertical-align:central;
+  padding:10px;
+}
+#crs_imgPrevia{
+	width:100%;
+	height:100%
+	}
+.textEditorTitulo {
+    width:97%;
+   min-height: 100px;
+}
+.textEditorIntroduccion {
+    width:98%;
+}
+.TablaCitaInputUp {
+   /*background-color:#C0B9B9;*/
+   width:100%;
+}
+.TablaCitaInputUp td:first-child {
+    width:20%;
+     /*background-color:blueviolet;*/
+}
+.TablaCitaInputUp td:nth-child(2) {
+    width:80%;
+   /*background-color:aquamarine;*/
+}
+/*.TablaCitaInputUp td:nth-child(3) {
+    width:30%;
+   /*background-color:aquamarine;*/
+}
+.TablaCitaInputUp td:nth-child(4) {
+    width:20%;
+   /*background-color:aquamarine;*/
+}*/
+.anchoControl {
+
+width:100%;
+}
+.DropDownListNoticias{
+	width:200px;
+
+	}
+.divBotones{
+	margin:0 auto;
+	background-color:aquamarine;
+		 display:flex;/*display:flex y justify-content: center ayudan a centrar el menu*/
+  justify-content: center;/*display:flex y justify-content: center ayudan a centrar el menu*/
+  transition: all 0.2s;
+	box-sizing: border-box;
+	border-radius:1em;
+	border: solid 1px;
+	}
+.btn{
+	width:auto;
+	/*height:23px;*/
+	margin:0.3em 0.3em 0.3em 0;/*quita espacio de botoners bootrasp*/
+	text-align:center;
+	display: inline-block;
+	padding:0.35em 1.2em;
+	font-weight:100;
+	transition: all 0.2s;
+	box-sizing: border-box;
+	border-radius:0.12em;
+	}
+@media all and (max-width:30em){
+a.button1{
+display:block;
+margin:0.4em auto;
+}
+} 
+/* 
+    Created on : 29/01/2015, 12:27:45 AM
+    Author     : RD
+*/
+.container_pagin{
+    border: 1px solid #ccc;
+    position: relative;
+    margin-top: -21px;
+}
+.container_pagin ul{
+    margin: 0px;
+}
+.container_pagin .pagin_inline{
+    width: 50%;
+    height: 45px;
+    padding: 5px;
+}
+.container_pagin .pagin_info{
+    padding: 12px;
+}
+.container_pagin .pagin_info select{
+    margin-left: 7px;
+}
+
+/*PAGINA CATALOGO*/
+/*Estilos de la galeria*/
+.contenedorCatalogo{
+	padding-top:10px;
+	width:100%;
+	background-color:#353131;
+		
+	}
+.ulCatalogo {
+	width: 100%;
+	margin: auto;
+	list-style: none;
+	padding: 5px;
+	box-sizing: border-box;
+	display: flex;/*ubica los objetos en forma horizontal y bajando en linea*/
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.ulCatalogo li {
+	width:30%;
+	margin: 5px;/*separacion entre imagenes*/
+	border: 1px solid #D3D3D3; /*LightGray */
+padding:5px /*ayuda a separar los marcos*/
+}
+.ulCatalogo img {
+	width: 90%;
+	height: 150px;
+	border: 1px solid #D3D3D3; /*LightGray */
+padding:10px;/*Pone marco a la imagen*/
+}
+.ulCatalogo a {
+	color:white;
+}
+.catalogoimagenoVideo{
+	}
+	
+	/*DETALLE CATALOGO*/
+.contenedorDetalleCatalogo{
+		/*background-color:#8DABAF;*/
+	background-color:green;
+		width:100%;
+		}
+.contenedorDetalleCatalogoIZQ{
+	width:20%;
+	background-color:green;
+	float:left;
+	
+		}
+.ulDetalleCatalogoIZQ {
+	width: 100%;
+	margin: auto;
+	list-style: none;
+	padding: 2px;
+	box-sizing: border-box;
+	/*display: flex;ubica los objetos en forma horizontal y bajando en linea
+	flex-wrap: wrap;*/
+	justify-content: space-around;
+}	
+.ulDetalleCatalogoIZQ li {
+	width:89%;
+	margin: 5px;/*separacion entre imagenes*/
+	border: 1px solid #D3D3D3; /*LightGray */
+padding:2px /*ayuda a separar los marcos*/
+}
+.ulDetalleCatalogoIZQ img {
+	width: 85%;
+	height: 50px;
+	border: 1px solid #D3D3D3; /*LightGray */
+padding:10px;/*Pone marco a la imagen*/
+}
+.ulDetalleCatalogoIZQ a {
+	color:white;
+	font-size:0.7rem;
+}
+.contenedorDetalleCatalogoDER{
+	float:right;	
+	width:77%;
+background-color:#D7DCE1;
+	}
+.ulDetalleCatalogoDER {
+	width: 100%;
+	margin: auto;
+	list-style: none;
+
+	box-sizing: border-box;
+	/*display: flex;ubica los objetos en forma horizontal y bajando en linea
+	flex-wrap: wrap;
+	justify-content: space-around;*/
+}	
+.ulDetalleCatalogoDER li {
+	width:94%;
+	margin: 5px;/*separacion entre imagenes*/
+	border: 1px solid #D3D3D3; /*LightGray */
+	padding:10px; /*ayuda a separar los marcos*/
+   	justify-content: center;/*display:flex y justify-content: center ayudan a centrar el menu*/
+}
+.ulDetalleCatalogoDER img {
+	width: 100%;
+	/*height: 250px;
+	border: 1px solid #D3D3D3; LightGray */
+/*padding:10px;Pone marco a la imagen*/
+}
+
+/*PAGINA SLIDE*/
+.slide_proyectos{
+	background-color:#050505;	
+	margin-top:1px;
+	min-width:45%;
+	font-size:1.5rem;
+	/*font-style:#F5F2F2;*/
+	color:#AAA5A5;
+	border-color:#000000;
+	box-shadow: 0px 0px 10px #000 inset;
+	border-radius: 10px 10px 10px 10px;
+	border: solid 1px;
+	justify-content: center; display:flex;/* y justify-content: center ayudan a centrar el menu*/
+	}
+	
+.catalogoslideimagenoVideo{
+		width: 260px;
+	height: 150px;
+	
+	border: 1px solid #D3D3D3; /*LightGray */
+padding:10px;/*Pone marco a la imagen*/
+	}
+/*Estilos de la galeria*/
+
+.galeria {
+	width: 100%;
+	margin: auto;
+	list-style: none;
+	padding: 5px;
+	box-sizing: border-box;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	/*background-color:#EDE1E2;*/
+}
+.galeria li {
+	margin: 2px;
+	word-wrap: break-word;
+}
+.galeria p {
+color:#F3E8E8;
+width:260px;
+	word-wrap: break-word;
+}
+.galeria img {
+	width: 260px;
+	height: 150px;
+}
+	
+
+	/*PAGINA PROYECTOS*/
+.contenedorProyecto{
+	/*background-color:#050505;	*/
+		width:100%;
+		height:auto;
+		}
+.contenedorProyectoIZQ{
+margin-top:2px;
+margin-left:3px;
+	width:20%;
+	background-color:green;
+	float:left;
+	
+		}
+.ulProyectoIZQ {
+	width: 100%;
+	margin: auto;
+	list-style: none;
+	padding: 2px;
+	box-sizing: border-box;
+	/*display: flex;ubica los objetos en forma horizontal y bajando en linea
+	flex-wrap: wrap;*/
+	justify-content: space-around;
+}	
+.ulProyectoIZQ li {
+	width:89%;
+	margin: 5px;/*separacion entre imagenes*/
+	border: 1px solid #D3D3D3; /*LightGray */
+padding:2px /*ayuda a separar los marcos*/
+}
+.ulProyectoIZQ img {
+	width: 85%;
+	height: 100px;
+	border: 1px solid #D3D3D3; /*LightGray */
+padding:10px;/*Pone marco a la imagen*/
+}
+.ProyectoIZQimagenoVideo{
+	width: 85%;
+	height: 100px;
+	border: 1px solid #D3D3D3; /*LightGray */
+padding:10px;/*Pone marco a la imagen*/
+	}
+.ulProyectoIZQ a {
+	color:white;
+	font-size:0.7rem;
+}
+
+.contenedorProyectoDER{
+	float:right;	
+	width:78%;
+background-color:#D7DCE1;
+	}
+.ulProyectoDER {
+	width: 100%;
+	list-style: none;
+	/*box-sizing: border-box;*/
+	display: flex;/*ubica los objetos en forma horizontal y bajando en linea*/
+	flex-wrap: wrap;
+	justify-content: space-around;
+}	
+.ulProyectoDER li {
+	width:94%;
+	margin: 5px;/*separacion entre imagenes*/
+	border: 1px solid #D3D3D3; /*LightGray */
+	padding:10px; /*ayuda a separar los marcos*/
+   	justify-content: center;/*display:flex y justify-content: center ayudan a centrar el menu*/
+}
+.ulProyectoDER img {
+	width: 100%;
+	max-height:600px;
+	/*height: 250px;
+	border: 1px solid #D3D3D3; LightGray */
+/*padding:10px;Pone marco a la imagen*/
+}
+.ProyectoDERimagenoVideo{
+	margin-top:-24px;
+	width: 100%;
+	min-height:550px;
+	
+	max-height:600px;}
+
+.titulo_proyecto{
+	margin-top:-20px;
+	min-width:45%;
+position:relative;
+	font-size:1.5rem;
+	font-style:#F5F2F2;
+	color:#AAA5A5;
+	border-color:#000000;
+	/*box-shadow: 0px 0px 10px #000 inset;
+	border-radius: 10px 10px 10px 10px;
+	border: solid 1px;*/
+	justify-content: center; 
+	display:flex;/* y justify-content: center ayudan a centrar el menu*/
+	}
+
+/*PAGINA CATALOGO CERTIFICACIONES*/
+.contenedorCerti{
+	width:100%;
+	}
+.divCertificaciones{
+	overflow:scroll;
+	width:100%;
+	height:700px;}
+.ulcertiCatalogo {
+	width: 100%;
+	margin: auto;
+	list-style: none;
+
+	box-sizing: border-box;
+	/*display: flex;ubica los objetos en forma horizontal y bajando en linea
+	flex-wrap: wrap;
+	justify-content: space-around;*/
+}	
+.ulcertiCatalogo li {
+	width:100%;
+
+	margin: 5px;/*separacion entre imagenes*/
+	border: 1px solid #D3D3D3; /*LightGray */
+	padding:10px; /*ayuda a separar los marcos*/
+   	justify-content: center;/*display:flex y justify-content: center ayudan a centrar el menu*/
+}
+.ulcertiCatalogo img {
+	width: 100%;
+	/*height: 500px;*/
+	border: 1px solid #D3D3D3; 
+/*padding:10px;Pone marco a la imagen*/
+}
+
+
+
+/*INSTITUCIONAL*/
+.contenedorInstitucional{
+	width:100%;
+	
+	}
+.ulInstitucional {
+	width: 98%;
+	margin: auto;
+	list-style: none;
+	box-sizing: border-box;
+	display: flex;/*ubica los objetos en forma horizontal y bajando en linea*/
+	flex-wrap: wrap;
+	justify-content: space-around;
+}	
+.ulInstitucional li {
+	width:96%;
+	background-color:#F4F1F1;
+	/*margin: 5px;separacion entre imagenes*/
+	/*border: 1px solid #D3D3D3; pone borde cuadricula a los parrafos*/
+	padding:0 0 0 20px; /*ayuda a separar los marcos*/
+	   /*	justify-content: center;display:flex y justify-content: center ayudan a centrar el menu*/
+	
+}
+.ulInstitucional img {
+
+	width: 98%;
+	margin-top:1px;	
+	height: 400px;
+}
+
+.frase_titulo{
+	margin-top:1px;
+	min-width:45%;
+	position:absolute;
+	font-size:2rem;
+	font-style:#F5F2F2;
+	color:#AAA5A5;
+	border-color:#000000;
+	box-shadow: 0px 0px 10px #000 inset;
+	border-radius: 10px 10px 10px 10px;
+	border: solid 1px;
+	justify-content: center; display:flex;/* y justify-content: center ayudan a centrar el menu*/
+	}
+	
+	/*Estilos Oferta Academica*/
+.contenedorOferta{
+	padding-top:10px;
+	width:100%;
+	background-color:#353131;
+		
+	}
+.TituloOferta {
+   background-color:red;
+    text-align:center;
+ }
+.TituloOferta p{
+color:#FFFFFF;
+ }
+	
+	
+.ulOferta {
+	width: 100%;
+	margin: auto;
+	list-style: none;
+	padding: 5px;
+	box-sizing: border-box;
+	display: flex;/*ubica los objetos en forma horizontal y bajando en linea*/
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.ulOferta li {
+	width:30%;
+	margin: 5px;/*separacion entre imagenes*/
+	border: 1px solid #D3D3D3; /*LightGray */
+padding:5px /*ayuda a separar los marcos*/
+}
+.ulOferta img {
+	width: 90%;
+	height: 150px;
+	border: 1px solid #D3D3D3; /*LightGray */
+padding:10px;/*Pone marco a la imagen*/
+}
+.ulOferta a {
+	color:white;
+}
+.ofertaimagenoVideo{
+	width: 90px;
+	height: 150px;
+	border: 1px solid #D3D3D3; /*LightGray */
+padding:10px;/*Pone marco a la imagen*/
+}
+
+
+/*Estilos IncludeOferta Academica*/
+.contenedorCatalogo{
+	padding-top:10px;
+	width:100%;
+	background-color:#353131;
+		
+	}
+.ulIncludeOferta {
+	width: 100%;
+	margin: auto;
+	list-style: none;
+	padding: 5px;
+	box-sizing: border-box;
+	/*display: flex;ubica los objetos en forma horizontal y bajando en linea*/
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.ulIncludeOferta li {
+	width:92%;
+	margin: 5px;/*separacion entre imagenes*/
+	border: 1px solid #D3D3D3; /*LightGray */
+padding:5px /*ayuda a separar los marcos*/
+}
+.ulIncludeOferta embed {
+	width: 90%;
+	height: 150px;
+	border: 1px solid #D3D3D3; /*LightGray */
+padding:10px;/*Pone marco a la imagen*/
+}
+
+.includeOfertaimagenoVideo {
+	width: 90%;
+	height: 150px;
+	border: 1px solid #D3D3D3; /*LightGray */
+padding:10px;/*Pone marco a la imagen*/
+}
+.ulIncludeOferta a {
+	color:white;
+}
+/*INICIO SCREEN MAX WIDE 1000*/
+@media screen and (min-width: 1000px) {
+	  header {
+    /* background-color:yellow;*/
+}
+	
+	}
+	
+/*INICIO SCREEN ENTRE 800 Y 999*/
+@media screen and (min-width:801px) and (max-width: 999px)  {
+ body {
+	
+ font-size:11px;
+	}
+ header {
+    background-color:blue;
+}
+.info{
+		display:none;
+						
+		}
+		.resolucion {
+top:10px;
+  font-size:0.5rem;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 5px;
+	padding-left: 5px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+
+}
+.MasterColumIzq {
+	padding-bottom: 5px;
+	margin-top: 5px;
+}
+.contentCentro {
+	padding: 5px 0;
+	width: 59%;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+.Mastercentro{
+	
+	}
+.sideColDer{
+	width: 19%;
+	padding-bottom: 5px;
+	margin-top: 5px;
+}
+.TituloColumnas {
+   background-color:blue;
+}
+.TituloColumnas p{
+	font-size: 11px;
+ }
+ .tablaRepeaterDerecha{
+	 
+	 font-size:11px;
+	 }
+	}
+
+/*INICIO SCREEN ENTRE 400 Y 779*/	
+@media screen and (min-width:501px) and (max-width: 800px) {
+ body {
+	
+ font-size:10px;
+	}
+ header {
+     background-color:green;
+}
+.info{
+		display:none;
+				
+		}
+.resolucion {
+
+ display:none;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 5px;
+	padding-left: 5px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+
+}
+.MasterColumIzq {
+	padding-bottom: 5px;
+	margin-top: 5px;
+}
+.contentCentro {
+	padding: 5px 0;
+	width: 59%;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+.Mastercentro{
+	
+	}
+.sideColDer{
+	width: 19%;
+	padding-bottom: 5px;
+	margin-top: 5px;
+}
+.TituloColumnas {
+   background-color:blue;
+}
+.TituloColumnas p{
+	font-size: 10px;
+ }
+ .tablaRepeaterDerecha{
+	 
+	 font-size:10px;
+	 }
+	}
+
+/*INICIO SCREEN MOVIL 300 a 500*/
+	@media screen  and (min-width: 300px) and (max-width: 500px) {
+	 body {
+	
+ font-size:8px;
+	
+}
+header {
+	background-color: #AEB1AD;
+}
+.divContenedorMenu {
+	display:none;
+ }
+.info{
+		display:none;
+}
+.resolucion {
+ display:none;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 5px;
+	padding-left: 5px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+
+}
+.MasterColumIzq {
+	padding-bottom: 5px;
+	margin-top: 5px;
+}
+.contentCentro {
+	padding: 5px 0;
+	width: 57%;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+.Mastercentro{
+	
+	}
+.sideColDer{
+	width: 19%;
+	padding-bottom: 3px;
+	margin-top: 3px;
+	font-size:8px;
+}
+.TituloColumnas {
+   background-color:blue;
+}
+.TituloColumnas p{
+	font-size: 7px;
+ }
+ .tablaRepeaterDerecha{
+	 
+	 font-size:8px;
+	 }
+	}

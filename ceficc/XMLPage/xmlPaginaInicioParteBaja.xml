@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Noticias>
+  <Noticia>
+    <Codigo>2107</Codigo>
+    <DetalleCodigo>0</DetalleCodigo>
+    <Titulo>TÉCNICO LABORAL BILINGÜE CON ÉNFASIS EN TURISMO &lt;br&gt;</Titulo>
+    <introduccionNoticia>INGLÉS COMO SEGUNDA LENGUA MARCO COMÚN EUROPEO DE REFERENCIA &lt;br&gt;</introduccionNoticia>
+    <mensajeNoticia>&lt;p&gt;&lt;span style="color:rgb(19,79,92);"&gt;ENGLISH FAST TRACK PROJECT.&lt;/span&gt; De acuerdo a la norma en la Escala Internacional MARCO COMUN EUROPEO DE REFERENCIA.&lt;br&gt;Ofrecemos las siguientes tutorías para las pruebas internacionales.&lt;br&gt;•    MICHIGAN TEST&lt;br&gt;•    TOEFL&lt;br&gt;•    CABRIDGE&lt;br&gt;•    APTIS&lt;br&gt;•    ITELS&lt;br&gt;Ofrecemos los niveles de inglés como se describen en los formatos.&lt;br&gt;Hemos consolidado el inglés como segunda Lengua, aplicando las 4 habilidades comunicativas.&lt;br&gt;•    SPEAKING&lt;br&gt;•    WRITING&lt;br&gt;•    READING&lt;br&gt;•    LISTENING&lt;br&gt;&lt;br&gt;Plataformas libres virtuales que se describen a continuación.&lt;br&gt;•    INGLES MANSION&lt;br&gt;•    DUOLINGUO&lt;br&gt;•    WORD BIT&lt;br&gt;•    PEARSON&lt;br&gt; &lt;br&gt;&lt;/p&gt;</mensajeNoticia>
+    <urlFile>../vista/proyectos_vista.php</urlFile>
+    <foto>../img/Manual_TRABAJO_EN_ALTURAS.pdf</foto>
+    <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
+    <autor>5</autor>
+  </Noticia>
+  <Noticia>
+    <Codigo>2110</Codigo>
+    <DetalleCodigo>0</DetalleCodigo>
+    <Titulo>&lt;p&gt;hola &lt;br&gt;&lt;/p&gt;</Titulo>
+    <introduccionNoticia>hola a hola &lt;br&gt;</introduccionNoticia>
+    <mensajeNoticia>&lt;p&gt;&lt;p&gt;hola hola&lt;/p&gt;&lt;p&gt;hola&lt;/p&gt;&lt;p&gt;hola&lt;br&gt;&lt;/p&gt;&lt;/p&gt;</mensajeNoticia>
+    <urlFile>../vista/proyectos_vista.php</urlFile>
+    <foto>../img/sanley3.jpg</foto>
+    <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
+    <autor>5</autor>
+  </Noticia>
+  <Noticia>
+    <Codigo>2111</Codigo>
+    <DetalleCodigo>0</DetalleCodigo>
+    <Titulo>hola</Titulo>
+    <introduccionNoticia>hola intro</introduccionNoticia>
+    <mensajeNoticia>&lt;p&gt;hola Contenido&lt;/p&gt;</mensajeNoticia>
+    <urlFile>../vista/proyectos_vista.php</urlFile>
+    <foto>../img/sanley2.jpg</foto>
+    <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
+    <autor>5</autor>
+  </Noticia>
+</Noticias>

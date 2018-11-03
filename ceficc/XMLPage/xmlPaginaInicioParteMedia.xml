@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<Acto>
+  <Codigo name="1045">
+    <DetalleCodigo>null</DetalleCodigo>
+    <Titulo>pagina inicio superior</Titulo>
+    <introduccionNoticia>pagina inicio superior</introduccionNoticia>
+    <mensajeNoticia>pagina inicio superior</mensajeNoticia>
+    <url>/Public/DetalleCatalogo.aspx</url>
+    <xml>/XMLPage/xmlPaginaInicioParteMedia.xml</xml>
+    <foto>slider3.jpg</foto>
+    <fecha>18/05/2018 11:36:18</fecha>
+    <autor>William Lozano Posso</autor>
+  </Codigo>
+  <Codigo name="1046">
+    <DetalleCodigo>null</DetalleCodigo>
+    <Titulo>segundo item pagina inicio superior</Titulo>
+    <introduccionNoticia>segundo item pagina inicio superior</introduccionNoticia>
+    <mensajeNoticia>segundo item pagina inicio superior</mensajeNoticia>
+    <url>/Public/DetalleCatalogo.aspx</url>
+    <xml>/XMLPage/xmlPaginaInicioParteMedia.xml</xml>
+    <foto>curso altura.jpg</foto>
+    <fecha>18/05/2018 11:36:40</fecha>
+    <autor>William Lozano Posso</autor>
+  </Codigo>
+  <Codigo name="1047">
+    <DetalleCodigo>null</DetalleCodigo>
+    <Titulo>segundo item pagina inicio superior</Titulo>
+    <introduccionNoticia>segundo item pagina inicio superior</introduccionNoticia>
+    <mensajeNoticia>segundo item pagina inicio superior</mensajeNoticia>
+    <url>/Public/DetalleCatalogo.aspx</url>
+    <xml>/XMLPage/xmlPaginaInicioParteMedia.xml</xml>
+    <foto>WhatsApp Image 2018-07-06 at 6.57.58 PM.jpeg</foto>
+    <fecha>18/05/2018 11:36:59</fecha>
+    <autor>William Lozano Posso</autor>
+  </Codigo>
+  <Codigo name="1048">
+    <DetalleCodigo>null</DetalleCodigo>
+    <Titulo>item menu r¡res</Titulo>
+    <introduccionNoticia>segundo item pagina inicio superior</introduccionNoticia>
+    <mensajeNoticia>segundo item pagina inicio superior</mensajeNoticia>
+    <url>/Public/DetalleCatalogo.aspx</url>
+    <xml>/XMLPage/xmlPaginaInicioParteMedia.xml</xml>
+    <foto>WhatsApp Image 2018-07-06 at 6.57.58 PM.jpeg</foto>
+    <fecha>18/05/2018 11:37:15</fecha>
+    <autor>William Lozano Posso</autor>
+  </Codigo>
+</Acto>
