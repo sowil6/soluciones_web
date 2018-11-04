@@ -624,12 +624,20 @@ padding:10px;/*Pone marco a la imagen*/
 .ulCatalogo a {
 	color:white;
 }
+<<<<<<< HEAD
 .UlCatalogoimagenoVideo{
+=======
+.ulcatalogoimagenoVideo{
+>>>>>>> 73ec8946a4d6891320a0ef010e05110e70a578fe
 	width: 90%;
 	height: 150px;
 	border: 1px solid #D3D3D3; /*LightGray */
 padding:10px;/*Pone marco a la imagen*/
+<<<<<<< HEAD
 	}
+=======
+}
+>>>>>>> 73ec8946a4d6891320a0ef010e05110e70a578fe
 	
 	/*DETALLE CATALOGO*/
 .contenedorDetalleCatalogo{

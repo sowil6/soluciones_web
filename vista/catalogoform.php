@@ -31,7 +31,7 @@
     <div class="contenedorCatalogo">
     <?php
        
-$master="catalogo";
+$master="ulcatalogo";
 $canciones = simplexml_load_file("../XMLPage/xmlCatalogo.xml");
 echo'	<ul class="ulCatalogo">';
 foreach($canciones as $cancion)
