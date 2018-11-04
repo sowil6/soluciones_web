@@ -1,30 +1,3 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Documento sin título</title>
-<link href="../Styles/CSSPaginaInicio.css" rel="stylesheet" type="text/css">
-<!--El orden de los css y js afectan el funcionamiento del slide-->
-  <script src="../Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
-<!--  <link href="Styles/slideshow.css" rel="stylesheet" type="text/css" />-->
-    <script src="../Scripts/slideshow.js" type="text/javascript"></script>
-<!--    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
-     <script type="text/javascript" >
-        $(document).ready(function () {
-
-            // Create slideshow instances
-            var $s = $('.slideshow').slides();
-        });
-
-    </script>
-    <style>
-
-    
-    </style>
-</head>
-
-<body>
- <div class="divSeccionSuperior">
 <div class="container">
  <div class="slideshow" data-transition="crossfade" data-loop="true" data-skip="false">
         <ul class="carousel">
@@ -35,30 +8,23 @@ $master="master";
 $canciones = simplexml_load_file("../XMLPage/xmlPaginaInicioParteSuperior.xml");
 foreach($canciones as $cancion)
 {
-	$info = new SplFileInfo($cancion->foto);//obtenemos la extension del archivo
-	$ext= $info->getExtension();
+  $info = new SplFileInfo($cancion->foto);//obtenemos la extension del archivo
+  $ext= $info->getExtension();
 $estado=ValidaExtension($ext);//con la extension evaluamos si es tipo imagen o video
 if($estado==1){
-	//si es imagen se embebe en el control html imagen
-
-$HTMLfoto_OVideo= "<img class='" .$master. "imagenoVideo '   src = '../Img/" . $cancion->foto. "' />";
+  //si es imagen se embebe en el control html imagen
+$HTMLfoto_OVideo= "<img class='" .$master. "imagenoVideo '   src = '../img/" . $cancion->foto. "' />";
 }else{
-	//si es video se embebe en el control html video
-$HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = '../Img/" . $cancion->foto. "' type = 'video/mp4' > <source src = '../img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
-
-$HTMLfoto_OVideo= "<img class='" .$master. "imagenoVideo '   src = '".$cancion->foto. "' />";
-}else{
-	//si es video se embebe en el control html video
-$HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = '".$cancion->foto. "' type = 'video/mp4' > <source src = '../img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
-
-		}
+  //si es video se embebe en el control html video
+$HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = '../img/" . $cancion->foto. "' type = 'video/mp4' > <source src = '../img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
+    }
 echo' <li class="slide">';
 echo'  <svg height="400" width="800">';
 echo'   <polygon points="0,0 0,400 500,400 200,0"  />';
 echo'   <div class="textoTituloSlide">'. $cancion->Titulo.'iaintroduccionNoticia </div>' ;
 echo'   <div class="TextoIntroSlide">'. $cancion->introduccionNoticia.'aintroduccionNoticia </div>' ;
 echo' </svg>';
-echo	$HTMLfoto_OVideo;
+echo  $HTMLfoto_OVideo;
 echo'  </li>';
 
 }
@@ -78,22 +44,22 @@ echo'  </li>';
                 case "GIF":
                 case "BMP":
                $resul=TRUE;
-					//echo "nombre imagen----".$sExtension."..///// ".$resul." estado";
+          //echo "nombre imagen----".$sExtension."..///// ".$resul." estado";
                 break;
 
                 default:
                 case "mp4":
                 case "avi":
                 case "wmv":
-				$resul=FALSE;
-//									echo "nombre imagen----".$sExtension."..///// ".$resul." estado";
+        $resul=FALSE;
+//                  echo "nombre imagen----".$sExtension."..///// ".$resul." estado";
 
                     break;
             }
 return $resul;
           
-			
-          			
+      
+                
         }
 */
 ?>
@@ -108,30 +74,30 @@ return $resul;
 
 
 <p class="slide_proyectos">Portafolio de Servicios y Emprendimiento</p>
-	
+  
     <?php
        
 $master="catalogoslide";
 $canciones = simplexml_load_file("../XMLPage/xmlPaginaInicioParteBaja.xml");
-echo'	<ul class="galeria">';
+echo' <ul class="galeria">';
 foreach($canciones as $cancion)
 {
-	$info = new SplFileInfo($cancion->foto);//obtenemos la extension del archivo
-	$ext= $info->getExtension();
+  $info = new SplFileInfo($cancion->foto);//obtenemos la extension del archivo
+  $ext= $info->getExtension();
 $estado=ValidaExtension($ext);//con la extension evaluamos si es tipo imagen o video
 if($estado==1){
-	//si es imagen se embebe en el control html imagen
+  //si es imagen se embebe en el control html imagen
 $HTMLfoto_OVideo= "<embed class='" .$master. "imagenoVideo'   src = '../Img/" . $cancion->foto. "' />";
 }else{
-	//si es video se embebe en el control html video
+  //si es video se embebe en el control html video
 $HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = '../Img/" . $cancion->foto. "' type = 'video/mp4' > <source src = '../img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
-		}
+    }
 
-echo'		<li><a href="'.$cancion->urlFile.'?Accion='.$cancion->Codigo.'"target="_blank">'.$HTMLfoto_OVideo.' </br><p>'. $cancion->Titulo.'</p></a></li>';
+echo'   <li><a href="'.$cancion->urlFile.'?Accion='.$cancion->Codigo.'"target="_blank">'.$HTMLfoto_OVideo.' </br><p>'. $cancion->Titulo.'</p></a></li>';
 
 
 }
-   echo'	</ul>';	  
+   echo'  </ul>';   
 
 ?>
             
