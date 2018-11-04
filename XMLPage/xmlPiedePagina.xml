@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Acto>
+  <Codigo name="2053">
+    <DetalleCodigo>null</DetalleCodigo>
+    <Titulo>Sede Principal&lt;br&gt;</Titulo>
+    <introduccionNoticia>Urbanización Simón Bolívar 1ª Entrada Mz 11 Lote 7&lt;br&gt;</introduccionNoticia>
+    <mensajeNoticia>&lt;p&gt;Via Ternera, frente a San Jose de Los Campanos Telefonos: 035 6812539 - Movil 301 2807094 Email: secretaria.general@ceficc.edu.co&lt;br&gt;&lt;/p&gt;</mensajeNoticia>
+    <url>#</url>
+    <xml>/XMLPage/xmlPiedePagina.xml</xml>
+    <foto>slide1.jpeg</foto>
+    <fecha>17/07/2018 19:49:26</fecha>
+    <autor>William Lozano Posso</autor>
+  </Codigo>
+</Acto>

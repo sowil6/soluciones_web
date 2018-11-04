@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Noticias>
+  <Noticia>
+    <Codigo>1038</Codigo>
+    <DetalleCodigo>0</DetalleCodigo>
+    <Titulo>0</Titulo>
+    <introduccionNoticia>Ingles Sistema Europeosads</introduccionNoticia>
+    <mensajeNoticia>&lt;p&gt;dasd&lt;/p&gt;</mensajeNoticia>
+    <urlFile>../vista/catalogoform.php</urlFile>
+    <foto>sanley3.jpg</foto>
+    <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
+    <autor>2</autor>
+  </Noticia>
+  <Noticia>
+    <Codigo>2094</Codigo>
+    <DetalleCodigo>0</DetalleCodigo>
+    <Titulo>0</Titulo>
+    <introduccionNoticia>hola intro dsds&lt;br&gt;</introduccionNoticia>
+    <mensajeNoticia>&lt;p&gt;hola Contenido dsds&lt;br&gt;&lt;/p&gt;</mensajeNoticia>
+    <urlFile>../vista/catalogoform.php</urlFile>
+    <foto>erlingas.gif</foto>
+    <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
+    <autor>2</autor>
+  </Noticia>
+  <Noticia>
+    <Codigo>2115</Codigo>
+    <DetalleCodigo>1038</DetalleCodigo>
+    <Titulo>DSSDS</Titulo>
+    <introduccionNoticia>DSDSD</introduccionNoticia>
+    <mensajeNoticia>&lt;p&gt;DSDS&lt;/p&gt;</mensajeNoticia>
+    <urlFile>../vista/catalogoform.php</urlFile>
+    <foto>Manual_TRABAJO_EN_ALTURAS.pdf</foto>
+    <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
+    <autor>2</autor>
+  </Noticia>
+</Noticias>

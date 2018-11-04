@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Acto>
+ <Noticia>
+    <Codigo>1038</Codigo>
+    <DetalleCodigo>
+    </DetalleCodigo>
+    <Titulo>Programa de Ingles</Titulo>
+    <introduccionNoticia>Ingles Sistema Europeo</introduccionNoticia>
+    <mensajeNoticia>
+    </mensajeNoticia>
+    <url>../vista/catalogocertificaciones.php</url>
+   
+    <foto>curso altura.jpg</foto>
+    <fecha>11/07/2018 13:58:04</fecha>
+    <autor>William Lozano Posso</autor>
+   </Noticia>
+  <Noticia>
+    <Codigo>2050</Codigo>
+    <DetalleCodigo>null</DetalleCodigo>
+    <Titulo>sasasassasas</Titulo>
+    <introduccionNoticia>sssss</introduccionNoticia>
+    <mensajeNoticia>m,nm,m,m,</mensajeNoticia>
+    <url>../vista/catalogoform.php</url>
+    <xml>/XMLPage/xmlMenuCatalogo.xml</xml>
+    <foto>ceficc.jpg</foto>
+    <fecha>11/07/2018 13:57:54</fecha>
+    <autor>William Lozano Posso</autor>
+   </Noticia>
+</Acto>
