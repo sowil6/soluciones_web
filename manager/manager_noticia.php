@@ -205,7 +205,7 @@ $contenido = $xml->createElement('Noticias');
 	$xmlFile = $xml->createElement('xmlFile',$noti->getUrlHojaXML());
     $xmlFile = $tema->appendChild($xmlFile);*/
 	
-	$foto = $xml->createElement('foto',"../img/".$noticia->getFotoNoticia());
+	$foto = $xml->createElement('foto',$noticia->getFotoNoticia());
     $foto = $tema->appendChild($foto);
 	
 	$fecha = $xml->createElement('fecha','Maxico D.F. - Editorial Grijalbo');
