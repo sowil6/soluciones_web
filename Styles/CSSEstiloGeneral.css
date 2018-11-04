@@ -624,7 +624,11 @@ padding:10px;/*Pone marco a la imagen*/
 .ulCatalogo a {
 	color:white;
 }
-.catalogoimagenoVideo{
+.UlCatalogoimagenoVideo{
+	width: 90%;
+	height: 150px;
+	border: 1px solid #D3D3D3; /*LightGray */
+padding:10px;/*Pone marco a la imagen*/
 	}
 	
 	/*DETALLE CATALOGO*/
