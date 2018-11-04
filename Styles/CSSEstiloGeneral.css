@@ -665,6 +665,14 @@ padding:2px /*ayuda a separar los marcos*/
 	border: 1px solid #D3D3D3; /*LightGray */
 padding:10px;/*Pone marco a la imagen*/
 }
+.detallecatalogoIZQimagenoVideo{
+width: 85%;
+	height: 50px;
+	border: 1px solid #D3D3D3; /*LightGray */
+padding:10px;/*Pone marco a la imagen*/
+
+}
+
 .ulDetalleCatalogoIZQ a {
 	color:white;
 	font-size:0.7rem;
@@ -698,6 +706,12 @@ background-color:#D7DCE1;
 /*padding:10px;Pone marco a la imagen*/
 }
 
+.detallecatalogoDERimagenoVideo{
+width: 100%;
+	/*height: 250px;
+	border: 1px solid #D3D3D3; LightGray */
+/*padding:10px;Pone marco a la imagen*/	
+}
 /*PAGINA SLIDE*/
 .slide_proyectos{
 	background-color:#050505;	
