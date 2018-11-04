@@ -7,7 +7,7 @@
     <introduccionNoticia>Ingles Sistema Europeosads</introduccionNoticia>
     <mensajeNoticia>&lt;p&gt;dasd&lt;/p&gt;</mensajeNoticia>
     <urlFile>../vista/catalogoform.php</urlFile>
-    <foto>../img/sanley3.jpg</foto>
+    <foto>sanley3.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
     <autor>2</autor>
   </Noticia>
@@ -18,7 +18,7 @@
     <introduccionNoticia>hola intro dsds&lt;br&gt;</introduccionNoticia>
     <mensajeNoticia>&lt;p&gt;hola Contenido dsds&lt;br&gt;&lt;/p&gt;</mensajeNoticia>
     <urlFile>../vista/catalogoform.php</urlFile>
-    <foto>../img/erlingas.gif</foto>
+    <foto>erlingas.gif</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
     <autor>2</autor>
   </Noticia>
@@ -29,7 +29,7 @@
     <introduccionNoticia>DSDSD</introduccionNoticia>
     <mensajeNoticia>&lt;p&gt;DSDS&lt;/p&gt;</mensajeNoticia>
     <urlFile>../vista/catalogoform.php</urlFile>
-    <foto>../img/Manual_TRABAJO_EN_ALTURAS.pdf</foto>
+    <foto>Manual_TRABAJO_EN_ALTURAS.pdf</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
     <autor>2</autor>
   </Noticia>

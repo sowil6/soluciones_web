@@ -40,17 +40,17 @@ foreach($canciones as $cancion)
 $estado=ValidaExtension($ext);//con la extension evaluamos si es tipo imagen o video
 if($estado==1){
 	//si es imagen se embebe en el control html imagen
-<<<<<<< HEAD
+
 $HTMLfoto_OVideo= "<img class='" .$master. "imagenoVideo '   src = '../Img/" . $cancion->foto. "' />";
 }else{
 	//si es video se embebe en el control html video
 $HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = '../Img/" . $cancion->foto. "' type = 'video/mp4' > <source src = '../img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
-=======
+
 $HTMLfoto_OVideo= "<img class='" .$master. "imagenoVideo '   src = '".$cancion->foto. "' />";
 }else{
 	//si es video se embebe en el control html video
 $HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = '".$cancion->foto. "' type = 'video/mp4' > <source src = '../img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
->>>>>>> 01dae701d385eed0cf14e3a0ea1b8688b7961d40
+
 		}
 echo' <li class="slide">';
 echo'  <svg height="400" width="800">';

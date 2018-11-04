@@ -7,7 +7,7 @@
     <introduccionNoticia>img3.jpg</introduccionNoticia>
     <mensajeNoticia/>
     <urlFile/>
-    <foto>../img/erlingas.gif</foto>
+    <foto>erlingas.gif</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
     <autor>4</autor>
   </Noticia>
@@ -18,7 +18,7 @@
     <introduccionNoticia>img2.jpg</introduccionNoticia>
     <mensajeNoticia/>
     <urlFile>/Public/Presentacion.aspx</urlFile>
-    <foto>../img/WhatsApp Image 2018-07-06 at 6.57.58 PM.jpeg</foto>
+    <foto>WhatsApp Image 2018-07-06 at 6.57.58 PM.jpeg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
     <autor>4</autor>
   </Noticia>
@@ -29,7 +29,7 @@
     <introduccionNoticia>Intro Slide tres&lt;br&gt;</introduccionNoticia>
     <mensajeNoticia/>
     <urlFile>/Public/CatalogoForm.aspx</urlFile>
-    <foto>../img/curso altura.jpg</foto>
+    <foto>curso altura.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
     <autor>William Lozano Posso</autor>
   </Noticia>
