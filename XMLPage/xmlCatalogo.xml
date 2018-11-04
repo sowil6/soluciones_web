@@ -4,8 +4,8 @@
     <Codigo>2048</Codigo>
     <DetalleCodigo>1038</DetalleCodigo>
     <Titulo/>
-    <introduccionNoticia/>
-    <mensajeNoticia>&lt;p&gt;&lt;/p&gt;</mensajeNoticia>
+    <introduccionNoticia>hola intro dsdsdsd ds &lt;br&gt;</introduccionNoticia>
+    <mensajeNoticia>mensaje</mensajeNoticia>
     <urlFile>../vista/detallecatalogo.php</urlFile>
     <foto>Manual_TRABAJO_EN_ALTURAS.pdf</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
