@@ -42,10 +42,14 @@ $estado=ValidaExtension($ext);//con la extension evaluamos si es tipo imagen o v
 if($estado==1){
 	//si es imagen se embebe en el control html imagen
 <<<<<<< HEAD
+<<<<<<< HEAD
 $HTMLfoto_OVideo= "<embed class='" .$master. "imagenoVideo '   src = '../Img/".$cancion->foto. "' />";
 =======
 $HTMLfoto_OVideo= "<img class='" .$master. "imagenoVideo '   src = '../Img/".$cancion->foto. "' />";
 >>>>>>> cb533a5019f33e79715ee77d7c997cf433900f53
+=======
+$HTMLfoto_OVideo= "<embed class='" .$master. "imagenoVideo '   src = '../Img/".$cancion->foto. "' />";
+>>>>>>> 63251ab5f91949d5e5880399300dbd4e02920ccf
 }else{
 	//si es video se embebe en el control html video
 $HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = '../Img/".$cancion->foto. "' type = 'video/mp4' > <source src = '../img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
