@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Noticias>
+<Noticias >
   <Noticia>
     <Codigo>2048</Codigo>
     <DetalleCodigo>1038</DetalleCodigo>
     <Titulo/>
-    <introduccionNoticia>hola intro dsdsdsd ds &lt;br&gt;</introduccionNoticia>
-    <mensajeNoticia>mensaje</mensajeNoticia>
+    <introduccionNoticia/>
+    <mensajeNoticia>&lt;p&gt;&lt;/p&gt;</mensajeNoticia>
     <urlFile>../vista/detallecatalogo.php</urlFile>
     <foto>Manual_TRABAJO_EN_ALTURAS.pdf</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
@@ -63,6 +63,17 @@
     <mensajeNoticia>&lt;p&gt;dasd&lt;/p&gt;</mensajeNoticia>
     <urlFile>../vista/detallecatalogo.php</urlFile>
     <foto>sanley3.jpg</foto>
+    <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
+    <autor>2</autor>
+  </Noticia>
+  <Noticia>
+    <Codigo>2117</Codigo>
+    <DetalleCodigo>2115</DetalleCodigo>
+    <Titulo>Instalaciones</Titulo>
+    <introduccionNoticia>Nuestras instalaciones&lt;br&gt;</introduccionNoticia>
+    <mensajeNoticia>&lt;p&gt;Comodas instalaciones&lt;br&gt;&lt;/p&gt;</mensajeNoticia>
+    <urlFile>../vista/detallecatalogo.php</urlFile>
+    <foto>3.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
     <autor>2</autor>
   </Noticia>
