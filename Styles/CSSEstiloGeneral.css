@@ -624,20 +624,15 @@ padding:10px;/*Pone marco a la imagen*/
 .ulCatalogo a {
 	color:white;
 }
-<<<<<<< HEAD
-.UlCatalogoimagenoVideo{
-=======
+
 .ulcatalogoimagenoVideo{
->>>>>>> 73ec8946a4d6891320a0ef010e05110e70a578fe
 	width: 90%;
 	height: 150px;
 	border: 1px solid #D3D3D3; /*LightGray */
 padding:10px;/*Pone marco a la imagen*/
-<<<<<<< HEAD
+
 	}
-=======
-}
->>>>>>> 73ec8946a4d6891320a0ef010e05110e70a578fe
+
 	
 	/*DETALLE CATALOGO*/
 .contenedorDetalleCatalogo{
@@ -738,10 +733,10 @@ width: 100%;
 .catalogoslideimagenoVideo{
 		width: 260px;
 	height: 150px;
-	
-	border: 1px solid #D3D3D3; /*LightGray */
+		border: 1px solid #D3D3D3; /*LightGray */
 padding:10px;/*Pone marco a la imagen*/
 	}
+
 /*Estilos de la galeria*/
 
 .galeria {
@@ -981,14 +976,15 @@ padding:5px /*ayuda a separar los marcos*/
 .ulOferta img {
 	width: 90%;
 	height: 150px;
-	border: 1px solid #D3D3D3; /*LightGray */
-padding:10px;/*Pone marco a la imagen*/
+	padding:10px;
+	border: 1px solid #D3D3D3;  
 }
 .ulOferta a {
+
 	color:white;
 }
 .ofertaimagenoVideo{
-	width: 90px;
+	width: 98%;
 	height: 150px;
 	border: 1px solid #D3D3D3; /*LightGray */
 padding:10px;/*Pone marco a la imagen*/
