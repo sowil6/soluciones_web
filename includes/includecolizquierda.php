@@ -7,8 +7,10 @@
 </head>
 
 <body>
+<div class="divMenuIzquierdo">
    <div class="TituloColumnas">
       <p> OFERTA ACADEMICA:</p>
+</div>
          <?php
        
 $master="includeOferta";

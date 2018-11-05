@@ -859,7 +859,8 @@ position:relative;
 
 .TituloColumnas {
 	width: 92%;
-   background-color:red;
+  /* background-color:red;*/
+   background-color:#a70000 !important;
     text-align:center;
  }
  .TituloColumnas p{
@@ -1036,8 +1037,14 @@ padding:10px;/*Pone marco a la imagen*/
 .contenedorCatalogo{
 	padding-top:10px;
 	width:100%;
-	background-color:#353131;
+/*	background-color:#353131;*/
 		
+	}
+	.divMenuIzquierdo{
+padding-top:10px;
+	width:100%;
+background-color:#353131;
+ background-color:#a70000 !important;
 	}
 .ulIncludeOferta {
 	width: 100%;
