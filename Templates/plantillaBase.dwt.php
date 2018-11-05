@@ -33,48 +33,36 @@ aqui el contenido
   <div class="sideColDer">
     <aside>
      <div class="TituloColumnas">
-     
-     <p>
+          <p>
     NUESTRAS CERTIFICACIONES</p>
      </div>
     <div class="divCertificaciones">
+   
     <?php
        
 $master="master";
 $canciones = simplexml_load_file("../XMLPage/xmlCargaCertificaciones.xml");
+echo' <ul class="ulCertificaciones">';
 foreach($canciones as $cancion)
 {
-	
-	$info = new SplFileInfo($cancion->foto);//obtenemos la extension del archivo
-	$ext= $info->getExtension();
-
+  $info = new SplFileInfo($cancion->foto);//obtenemos la extension del archivo
+  $ext= $info->getExtension();
 $estado=ValidaExtension($ext);//con la extension evaluamos si es tipo imagen o video
 if($estado==1){
-	//si es imagen se embebe en el control html imagen
-$HTMLfoto_OVideo= "<img  class='" .$master. "imagenoVideo' src = '../Img/".$cancion->foto. "' />";
+  //si es imagen se embebe en el control html imagen
+$HTMLfoto_OVideo= "<embed class='" .$master. "imagenoVideo '   src = '../Img/".$cancion->foto. "' />";
 }else{
-	//si es video se embebe en el control html video
+  //si es video se embebe en el control html video
 $HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = '../Img/".$cancion->foto. "' type = 'video/mp4' > <source src = '../img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
-		}
-
-    if($cancion->Codigo=="2049"){}
-
- echo '<table id="tablaRepeaterDerecha">' ;
- echo '<tr>' ;
- echo '<td>';
-/* echo '<a href="<'.$cancion->url.'?Accion='. $cancion->Codigo.'&x01='.$cancion->xml.'>"' ;
-*/ echo'<li><a href="'.$cancion->urlFile.'?Accion='.$cancion->Codigo.'">'.$HTMLfoto_OVideo. $cancion->Titulo.'</br> '. $cancion->introduccionNoticia.'</a>';
-
-/* echo '<h3>'. $HTMLfoto_OVideo.' </h3>';*/
- echo  $cancion->Codigo; 
-echo  '</a>';
-echo  '</td>';
-echo  '</tr>';
-echo   '</table>';
+    }
+echo'<li><a href="'.$cancion->urlFile.'?Accion='.$cancion->Codigo.'&dcod='.$cancion->DetalleCodigo.'">'.$HTMLfoto_OVideo. $cancion->Titulo.'</br> '. $cancion->introduccionNoticia.'</a>';
+echo '</li>';
 }
-      
+echo'</ul>';    
 
 ?>
+    </div>
+  
      </div>
    </aside>
   </div><!-- end .sidebar1 -->

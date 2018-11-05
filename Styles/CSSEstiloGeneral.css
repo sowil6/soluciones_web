@@ -39,8 +39,8 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 }
 
 .MasterColumIzq {
-	background-color: aqua;
-	box-sizing: border-box;
+/*	background-color: aqua;
+*/	box-sizing: border-box;
 	float: left;
 	width: 20%;
 	padding-bottom: 10px;
@@ -62,7 +62,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 .sideColDer{
 	float: left;
 	width: 20%;
-	background-color: #FFFFFF;
+	background-color: #E5E6EC;
 	padding-top: 0px;
 	padding-right: 0;
 	padding-left: 0;
@@ -79,14 +79,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	}
 /*COLUMNA menu izquierdo*/
 
-	 /*COLUMNA NOVEDADES*/
-.TituloColumnas {
-   background-color:red;
-    text-align:center;
- }
- .TituloColumnas p{
-color:#FFFFFF;
- }
+
 
 /*controla columna izqueirda master*/
 .masterimagenoVideo{
@@ -123,11 +116,9 @@ footer {
 
 
 /*INFORMACION PBX EMAIL*/
-.contenedorHeader .info {
-	
+.contenedorHeader .info{
 float:right ;
 top:10%;
-
 }
 .info-Email {
  display:inline-block;
@@ -525,11 +516,11 @@ overflow:scroll;
 }
 /*.TablaCitaInputUp td:nth-child(3) {
     width:30%;
-   /*background-color:aquamarine;*/
+  
 }
 .TablaCitaInputUp td:nth-child(4) {
     width:20%;
-   /*background-color:aquamarine;*/
+  
 }*/
 .anchoControl {
 
@@ -636,7 +627,8 @@ padding:10px;/*Pone marco a la imagen*/
 	
 	/*DETALLE CATALOGO*/
 .contenedorDetalleCatalogo{
-		/*background-color:#8DABAF;*/
+
+
 	background-color:green;
 		width:100%;
 		}
@@ -669,7 +661,7 @@ padding:2px /*ayuda a separar los marcos*/
 padding:10px;/*Pone marco a la imagen*/
 }
 .detallecatalogoIZQimagenoVideo{
-width: 85%;
+width: 98%;
 	height: 100px;
 	border: 1px solid #D3D3D3; /*LightGray */
 padding:10px;/*Pone marco a la imagen*/
@@ -712,7 +704,7 @@ background-color:#D7DCE1;
 .detallecatalogoDERimagenoVideo{
 width: 100%;
 	height: 550px;
-	border: 1px solid #D3D3D3; LightGray */
+	border: 1px solid #D3D3D3; 
 /*padding:10px;Pone marco a la imagen*/	
 }
 /*PAGINA SLIDE*/
@@ -862,26 +854,72 @@ position:relative;
 	display:flex;/* y justify-content: center ayudan a centrar el menu*/
 	}
 
-/*PAGINA CATALOGO CERTIFICACIONES*/
-.contenedorCerti{
-	width:100%;
-	}
-.divCertificaciones{
-	overflow:scroll;
-	width:100%;
-	height:700px;}
-.ulcertiCatalogo {
-	width: 100%;
+
+	 /*COLUMNA NOVEDADES*/
+
+.TituloColumnas {
+	width: 92%;
+   background-color:red;
+    text-align:center;
+ }
+ .TituloColumnas p{
+color:#FFFFFF;
+ }
+ .ulCertificaciones {
+		width: 100%;
 	margin: auto;
 	list-style: none;
 
 	box-sizing: border-box;
-	/*display: flex;ubica los objetos en forma horizontal y bajando en linea
-	flex-wrap: wrap;
-	justify-content: space-around;*/
+}	
+.ulCertificaciones li {
+width:100%;
+
+	margin: 5px;/*separacion entre imagenes*/
+	border: 1px solid #D3D3D3; /*LightGray */
+	padding:10px; /*ayuda a separar los marcos*/
+   	justify-content: center;/*display:flex y justify-content: center ayudan a centrar el menu*/
+}
+.ulCertificaciones img {
+	width: 100%;
+	/*height: 500px;*/
+/*	border: 1px solid #D3D3D3; 
+padding:10px;Pone marco a la imagen*/
+}
+.masterimagenoVideo{
+	width: 100%;
+	/*height: 500px;*/
+	border: 1px solid #D3D3D3; 
+	
+}
+ 
+
+/*PAGINA CATALOGO CERTIFICACIONES*/
+.contenedorCerti{
+	width:100%;
+	background-color:#8DABAF;background-color:#FFFFFF;
+	}
+.divCertificaciones{
+	margin-top: -14px;
+	overflow:scroll;
+	width:99%;
+	height:700px;
+
+}
+.tablaCertificaciones{
+background-color:red;
+	width: 98%;
+}
+
+.ulcertiCatalogo {
+		width: 100%;
+	margin: auto;
+	list-style: none;
+
+	box-sizing: border-box;
 }	
 .ulcertiCatalogo li {
-	width:100%;
+width:100%;
 
 	margin: 5px;/*separacion entre imagenes*/
 	border: 1px solid #D3D3D3; /*LightGray */
@@ -891,11 +929,15 @@ position:relative;
 .ulcertiCatalogo img {
 	width: 100%;
 	/*height: 500px;*/
-	border: 1px solid #D3D3D3; 
-/*padding:10px;Pone marco a la imagen*/
+/*	border: 1px solid #D3D3D3; 
+padding:10px;Pone marco a la imagen*/
 }
-
-
+.detallecataloCertiimagenoVideo{
+	width: 100%;
+	/*height: 500px;*/
+	border: 1px solid #D3D3D3; 
+	
+}
 
 /*INSTITUCIONAL*/
 .contenedorInstitucional{
@@ -917,8 +959,7 @@ position:relative;
 	/*margin: 5px;separacion entre imagenes*/
 	/*border: 1px solid #D3D3D3; pone borde cuadricula a los parrafos*/
 	padding:0 0 0 20px; /*ayuda a separar los marcos*/
-	   /*	justify-content: center;display:flex y justify-content: center ayudan a centrar el menu*/
-	
+	   /*	justify-content: center;display:flex y justify-content: center ayudan a centrar el menu*/	
 }
 .ulInstitucional img {
 
