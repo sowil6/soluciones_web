@@ -151,11 +151,19 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
                                            <div class="subs">
                                              <div class="divCol">
                                                <ul>
+
                                                  <li><a href="../vista/institucional.php?refpage=mision"><img src="../ImgSistema/imgMenu/bub.png" />Misión</a></li>
                                                  <li><a href="../vista/institucional.php?refpage=vision"><img src="../ImgSistema/imgMenu/bub.png" />Vision</a></li>
                                                  <li><a href="../vista/institucional.php?refpage=principios"><img src="../ImgSistema/imgMenu/bub.png" />Principios Institucionales</a></li>
                                                  <li><a href="../vista/institucional.php?refpage=valores"><img src="../ImgSistema/imgMenu/bub.png" />Valores Éticos Institucionales</a></li>
                                                  <li><a href="../vista/institucional.php?refpage=calidad"><img src="../ImgSistema/imgMenu/bub.png" />Sistema de Calidad</a></li>
+
+                                                 <li><a href="../vista/institucional.php?refpage=mision"><img src="/imgSistema/imgMenu/bub.png" />Misión</a></li>
+                                                 <li><a href="../vista/institucional.php?refpage=vision"><img src="../imgSistema/imgMenu/bub.png" />Vision</a></li>
+                                                 <li><a href="../vista/institucional.php?refpage=principios"><img src="../imgSistema/imgMenu/bub.png" />Principios Institucionales</a></li>
+                                                 <li><a href="../vista/institucional.php?refpage=valores"><img src="../imgSistema/imgMenu/bub.png" />Valores Éticos Institucionales</a></li>
+                                                 <li><a href="../vista/institucional.php?refpage=calidad"><img src="../imgSistema/imgMenu/bub.png" />Sistema de Calidad</a></li>
+
                                                                                                                                                                          
                                                  <!--                              <li><a href="#"><span><img src="/Styles/Menu/imagenMenu/top3.png" /> Sublinks</span></a>
                                    <div class="subs">
