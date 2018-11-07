@@ -39,15 +39,13 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 }
 
 .MasterColumIzq {
-/*	background-color: aqua;
-*/	box-sizing: border-box;
+	box-sizing: border-box;
 	float: left;
 	width: 20%;
 	padding-bottom: 10px;
 	margin-top: 10px;
 }
 .contentCentro {
-	/*background-color: #FFFFFF;*/
 	width: 58%;
 	float: left;
 	margin-left: 10px;
@@ -55,8 +53,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	margin-top: 10px;
 }
 .Mastercentro{
-	/*background-color: #F8FBFA;*/
-	width: 98%;
+		width: 98%;
 	margin:0 auto;
 	}
 .sideColDer{
@@ -1078,11 +1075,7 @@ padding:10px;/*Pone marco a la imagen*/
 .ulIncludeOferta a {
 	color:white;
 }
-/*INICIO SCREEN MAX WIDE 1000*/
-@media screen and (min-width: 1000px) {
-	  header {
-    /* background-color:yellow;*/
-}
+
 	
 	}
 	
@@ -1140,7 +1133,7 @@ h1, h2, h3, h4, h5, h6, p {
 	 }
 	}
 
-/*INICIO SCREEN ENTRE 400 Y 779*/	
+/*SCREEN ENTRE 400 Y 779*/	
 @media screen and (min-width:501px) and (max-width: 800px) {
  body {
 	
@@ -1194,7 +1187,7 @@ h1, h2, h3, h4, h5, h6, p {
 	 }
 	}
 
-/*INICIO SCREEN MOVIL 300 a 500*/
+/*SCREEN MOVIL 300 a 500*/
 	@media screen  and (min-width: 300px) and (max-width: 500px) {
 	 body {
 	
@@ -1202,10 +1195,10 @@ h1, h2, h3, h4, h5, h6, p {
 	
 }
 header {
-	background-color: #AEB1AD;
+	background-color: yellow;
 }
 .divContenedorMenu {
-	display:none;
+	/*display:none;*/
  }
 .info{
 		display:none;
@@ -1230,9 +1223,7 @@ h1, h2, h3, h4, h5, h6, p {
 	margin-right: 5px;
 	margin-top: 5px;
 }
-.Mastercentro{
-	
-	}
+
 .sideColDer{
 	width: 19%;
 	padding-bottom: 3px;

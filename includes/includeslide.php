@@ -24,14 +24,14 @@
 </head>
 
 <body>
- <div class="divSeccionSuperior">
-<div class="container">
+ <div class="divsliderSeccionSuperior">
+<div class="containerslider">
  <div class="slideshow" data-transition="crossfade" data-loop="true" data-skip="false">
         <ul class="carousel">
 
   <?php
        
-$master="master";
+$master="slider";
 $canciones = simplexml_load_file("../XMLPage/xmlPaginaInicioParteSuperior.xml");
 foreach($canciones as $cancion)
 {

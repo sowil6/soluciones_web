@@ -3,14 +3,14 @@
 
 /*SLIDE SUPERIOR*/
 
-.divSeccionSuperior {
+.divsliderSeccionSuperior {
   width:100%;
   height:400px;
  
   
       /*margin:0 auto;*/ /*centra el contenedor principal*/
 }
-.masterimagenoVideo {
+.sliderimagenoVideo {
  width:100%;
  height:400px; 
  /*-webkit-animation-name: example; 
@@ -125,7 +125,7 @@ bottom:0;
 .slide {
 	z-index:100;
 }
-.slide .masterimagenoVideo {
+.slide .sliderimagenoVideo {
    
 /* -webkit-animation-name: example;  /*Safari 4.0 - 8.0 */
  /*  -webkit-animation-duration: 5s; /*Safari 4.0 - 8.0 */
