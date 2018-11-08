@@ -31,8 +31,7 @@ aqui el contenido
   </article>
   <!-- TemplateEndEditable --><!-- end .content -->
   <div class="sideColDer">
-    <aside>
-     <div class="TituloColumnas">
+      <div class="TituloColumnas">
           <p>
     NUESTRAS CERTIFICACIONES</p>
      </div>
@@ -62,9 +61,8 @@ echo'</ul>';
 
 ?>
     </div>
-  
-     </div>
-   </aside>
+       </div>
+
   </div><!-- end .sidebar1 -->
   <footer>
      <?php include("../includes/footer.php")?>

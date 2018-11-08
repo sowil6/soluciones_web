@@ -25,11 +25,13 @@
   </div>
  <!-- InstanceBeginEditable name="EditRegionCentro" -->
   <article class="contentCentro">
+  <link rel="stylesheet" type="text/css" href="/soluciones-web/Styles/cssOfertaAcademica.css">
     <div class="Mastercentro">
     <div class="contenedorOferta">
        
    <div class="TituloOferta">
       <p> OFERTA ACADEMICA:</p>
+      </div>
         <?php
        
 $master="oferta";
@@ -55,14 +57,13 @@ echo '</li>';
 echo'</ul>';	  
 
 ?>
-    </div>
+    
     </div>
     </div>
   </article>
   <!-- InstanceEndEditable --><!-- end .content -->
   <div class="sideColDer">
-    <aside>
-     <div class="TituloColumnas">
+      <div class="TituloColumnas">
           <p>
     NUESTRAS CERTIFICACIONES</p>
      </div>
@@ -92,9 +93,8 @@ echo'</ul>';
 
 ?>
     </div>
-  
-     </div>
-   </aside>
+       </div>
+
   </div><!-- end .sidebar1 -->
   <footer>
      <?php include("../includes/footer.php")?>
