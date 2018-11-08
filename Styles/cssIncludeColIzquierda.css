@@ -1,0 +1,67 @@
+
+/*Estilos IncludeOferta Academica*/
+
+.divMenuIzquierdo{
+	background-color:#D3D3D3;
+	padding-top:1px;
+	
+	}
+.divTituloOfertaAcademica {
+	width: 100%;
+  /* background-color:red;*/
+   background-color:#a70000 !important;
+    text-align:center;
+
+ /*   justify-content: center;
+    align-content: center;
+    flex-direction: column;
+position: relative;*/
+
+ }
+.divTituloOfertaAcademica p{
+color:#FFFFFF;
+
+margin-top:-5px;
+margin-bottom:0;
+
+/*position: relative;
+*/	
+	
+ }
+.ulIncludeOferta {
+position: relative;
+   background-color:blue;
+	width: 100%;
+	
+	list-style: none;
+	padding: 1px;
+	margin: auto;
+	/*	box-sizing: border-box;
+*/	flex-wrap: wrap;
+	justify-content: center; 
+	display:flex;/* y justify-content: center ayudan a centrar el menu*/
+}
+.ulIncludeOferta li {
+	   background-color:#a70000 !important;
+	width:95%;
+	/*margin: 2px;separacion entre imagenes*/
+	border: 1px solid #D3D3D3; /*LightGray */
+padding:5px; /*ayuda a separar los marcos*/
+
+}
+.ulIncludeOferta embed {
+	width: 90%;
+	height: 150px;
+	border: 1px solid #D3D3D3; /*LightGray */
+padding:10px;/*Pone marco a la imagen*/
+}
+
+.includeOfertaimagenoVideo {
+	width: 90%;
+	height: 150px;
+	border: 1px solid #D3D3D3; /*LightGray */
+padding:10px;/*Pone marco a la imagen*/
+}
+.ulIncludeOferta a {
+	color:white;
+}

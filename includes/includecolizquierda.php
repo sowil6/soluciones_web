@@ -3,13 +3,17 @@
 <head>
 <meta charset="utf-8">
 <title>Documento sin título</title>
-<link href="../Styles/CSSEstiloGeneral.css" rel="stylesheet" type="text/css">
+<!--<link href="../Styles/cssIncludeColIzquierda.css" rel="stylesheet" type="text/css">-->
+<link rel="stylesheet" type="text/css" href="../Styles/cssIncludeColIzquierda.css">
 </head>
 
 <body>
 <div class="divMenuIzquierdo">
-   <div class="TituloColumnas">
-      <p> OFERTA ACADEMICA:</p>
+  <div class="divTituloOfertaAcademica">
+<p>OFERTA ACADEMICA</p> 
+ 
+
+
 </div>
          <?php
        

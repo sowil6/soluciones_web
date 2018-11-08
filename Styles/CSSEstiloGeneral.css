@@ -43,14 +43,14 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	float: left;
 	width: 20%;
 	padding-bottom: 10px;
-	margin-top: 10px;
+	margin-top: 1px;
 }
 .contentCentro {
 	width: 58%;
 	float: left;
 	margin-left: 10px;
 	margin-right: 10px;
-	margin-top: 10px;
+	margin-top: 1px;
 }
 .Mastercentro{
 		width: 98%;
@@ -64,7 +64,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	padding-right: 0;
 	padding-left: 0;
 	padding-bottom: 10px;
-	margin-top: 10px;
+	margin-top: 1px;
 }
 
 /*MASTER UNA COLUMNA*/
@@ -1065,14 +1065,14 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .MasterColumIzq {
 	padding-bottom: 5px;
-	margin-top: 5px;
+	margin-top: 1px;
 }
 .contentCentro {
-	padding: 5px 0;
+	padding: 1px 0;
 	width: 59%;
 	margin-left: 5px;
 	margin-right: 5px;
-	margin-top: 5px;
+	margin-top: 1px;
 }
 .Mastercentro{
 	
@@ -1080,7 +1080,7 @@ h1, h2, h3, h4, h5, h6, p {
 .sideColDer{
 	width: 19%;
 	padding-bottom: 5px;
-	margin-top: 5px;
+	margin-top: 1px;
 }
 .TituloColumnas {
    background-color:blue;
