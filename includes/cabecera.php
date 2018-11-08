@@ -193,7 +193,7 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
                         </div>-->
                                            </div>
                                          </li>
-                                         <li ><a href="/Public/informativo.aspx"><span><img src="" />ESTUDIANTE</span></a>
+                                         <li ><a href="#"><span><img src="" />ESTUDIANTE</span></a>
                                            <div class="subs">
                                              <div class="divCol">
                                                <ul>
@@ -237,7 +237,7 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
                         </div>-->
                                            </div>
                                          </li>
-                                         <li><a href="../vista/ofertaacademica.php"><span><img src="" />OFERTA ACADEMICA</span></a>
+                                         <li><a href="#"><span><img src="" />OFERTA ACADEMICA</span></a>
                                            <div class="subs">
                                              <div class="divCol">
                                                <ul>
@@ -266,7 +266,7 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
                                          <!--                    <li><a href="#"><img src="/Img/imgMenu/top4.png" />Reportes</a></li>-->
                                        </ul>
                                        <ul class="ulNav" id="menuAdmin" >
-                                         <li><a href="../public/AdminPage/Registro.aspx"><img src="" />ADMINISTRATIVO</a>
+                                         <li><a href=".#"><img src="" />ADMINISTRATIVO</a>
                                            <div class="subs">
                                              <div class="divCol">
                                                <ul>
