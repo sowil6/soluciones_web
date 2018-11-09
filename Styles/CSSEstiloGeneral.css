@@ -20,6 +20,7 @@ h1, h2, h3, h4, h5, h6, p {
 	width: 940px;
 	height: 90px;
 	margin: 0 auto;
+	background-color: #FBFBFB;
 }
 /* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
 a:link {
@@ -33,15 +34,16 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 /* ~~ This fixed width container surrounds all other blocks ~~ */
 .containerCeficc {
 	width: 100%;
-	background-color: #E5E6EC;
+
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
-.contenedor{
-		
+.contenedor{	background-color: #C4D8E7;
+	/**/	width: 100%;
 	 display: table;margin-top: 1px;
 	 	 	
 	}
 #contenidos {
+	/*width: 100px;*/
   display: table-row;
   justify-content: center; 
 	display:flex;/* y justify-content: center ayudan a centrar el menu*/
@@ -50,37 +52,33 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
   display: table-cell;
 }
 .contentIzquierda {
+	display:inline-block;
 	float: left;
 	width: 20%;
-	background-color: #C9C1C1;
-	/*padding-top: 0px;
+		margin-top: 1px;
+	/*background-color: #C9C1C1;
+	padding-top: 0px;
 	padding-right: 0;
 	padding-left: 0;
 	padding-bottom: 10px;
-	margin-top: 1px;*/
-	margin-left: 2px;
+	margin-top: 1px;
+	margin-left: 2px;*/
+	background-color:#F7F7F7;
 }
 .contentCentro {
-	background-color:#FEFDFD;
-	background-color: #F5EAEA;
-	width: 58%;
+	width: 55%;
 	float: left;
-	margin-left: 4px;
-	/*margin-left: 10px;
-	margin-right: 10px;
-	margin-top: 1px;*/
-
+display:inline-block;
+margin-rigth: 1%;
 }
 .contentDerecha{
-		float:left;
 	width: 19%;
-	margin-left: 4px;
-	/*padding-top: 0px;
-	padding-right: 0;
-	padding-left: 0;
-	padding-bottom: 10px;
-	margin-top: 1px;*/
-	background-color: #C9C1C1;
+	background-color:#F7F7F7;
+	float:left;
+	display:inline-block;
+	
+		margin-left: 1%;
+		margin-top: 1px;
 		}
 
 /*MASTER UNA COLUMNA*/

@@ -8,7 +8,7 @@
 
 <div class="divColumnaDerecha">
   <div class="divTituloColumnaDerecha">
-<p>OFERTA ACADEMICA</p> 
+<p>CERTIFICACIONES</p> 
  </div>
          <?php
        
@@ -29,8 +29,10 @@ $HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source s
 		}
 	
 /*if($cancion->Codigo==$v2){}*/
-echo'<li><a href="'.$cancion->urlFile.'?Accion='.$cancion->Codigo.'">'.$HTMLfoto_OVideo.' </br>'. $cancion->Titulo.'</br> '. $cancion->introduccionNoticia.'</a>';
+echo '<li><span class="ColumnaDerecha_titulo">'. $cancion->Titulo.'</span>';
+echo'<a href="'.$cancion->urlFile.'?Accion='.$cancion->Codigo.'"><div class="ColumnaDerecha_Imagen">'.$HTMLfoto_OVideo.'</div> <div class="ColumnaDerecha_Intro" ><p>'. $cancion->introduccionNoticia.'</p></div></a>';
 echo '</li>';
+
 }
 echo'</ul>';	
   

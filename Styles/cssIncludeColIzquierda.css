@@ -2,69 +2,108 @@
 /*Estilos IncludeOferta Academica*/
 
 .divMenuIzquierdo{
-	background-color:#D3D3D3;
+/*	background-color:#D3D3D3;*/
+border-top: 3px solid #919494;
 	width: 100%;
 	float:left;
 	padding-top: 0px;
 	padding-right: 0;
 	padding-left: 0;
 /*	padding-bottom: 10px;
-*/	margin-top: 1px;
-	
+*/	
+	background-color:#F7F7F7;
 	}
 
 .ulMenuIzquierdo {
 	width: 100%;
-	height:100%;
+	/*height:100%;*/
 	list-style: none;
 	padding: 1px;
 	margin: auto;
-	/*	box-sizing: border-box;*/
-	flex-wrap: wrap;
-
+	
 }
+
 .ulMenuIzquierdo li {
+	width:100%;
+	flex-wrap: wrap;
+	border-bottom: 1px solid #919494;
+/*	border-top: 1px solid #D7E0E1;*/
+	
+	display:inline-block; /*y justify-content: center ayudan a centrar el menu*/
+justify-content: center; 
+
+}
+
+
+.ulMenuIzquierdo .titulo {
+	display:inline-block;
+	text-align:center;
+	width:98%;
+	color:#777374;
+  	border-radius: 15px 15px 15px 15px;
+  	border: 1px solid #D3D3D3;
+  	background-color:#DFE8F7;
+	margin-bottom:5px;
+  	margin-top:5px;
+	}
+	
+.contenedorImagen{
+	padding:1px;
+		}
+.contenedorImagen embed{
+	float:left;
+   width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	background: #4678ED;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+  margin:0px auto;
+  padding:1.5%;
+  margin-bottom:5px;
+}
+
+.MenuIzquierdo_Intro{
 	width:auto;
-	background-color: #C9C1C1;
-	margin: 2px;/*separacion entre imagenes*/
-	border: 1px solid #F8F3F3; /*LightGray */
-padding:2px; /*ayuda a separar los marcos*/
-	justify-content: center; 
-	display:flex;/* y justify-content: center ayudan a centrar el menu*/
+	float:left;
+	vertical-align:central;
+	
+	}
+	
+.MenuIzquierdo_Intro p{
+	display:inline-block;
+	flex-wrap: wrap;
+	width:99%;
+ border-radius: 15px 15px 15px 15px;;
+border: 1px solid #D3D3D3;
+background-color:#DFE8F7;
+margin-bottom:5px;
+  	margin-top:5px;
+font-size:0.8rem;
+}
 
-}
-.ulMenuIzquierdo embed {
-	width: 98%;
-/*	height: 150px;
-*/	border: 1px solid #D3D3D3; /*LightGray */
-padding:1px;/*Pone marco a la imagen*/
-max-height:150px;
-}
 
-.MenuIzquierdoimagenoVideo {
-/*	width: auto;
-	height: 150px;*/
-	/*border: 1px solid #D3D3D3; LightGray */
-/*padding:2px;Pone marco a la imagen*/
-}
 .ulIncludeOfertaIZQ a {
 	color:white;
 }
 .divTituloMenuIzquierdo {
+	 background-color:#a70000 !important;
 	width: 100%;
-  /* background-color:red;*/
-/*   background-color:#a70000 !important;
-*/    text-align:center;
+	border-bottom: 1px solid #919494;
+	border-top: 1px solid #D7E0E1;
+   text-align:center;
   line-height:25px;/*baja o sube los elementos del menu*/
 
  }
 .divTituloMenuIzquierdo p{
-color:#FFFFFF;
+color:#B5BDF7;
+/*text-align:left;*/
+padding:5px;
 
 margin-top:-5px;
 margin-bottom:0;
   align-content:flex-start;
-/*position: relative;
-*/	
 	
  }
