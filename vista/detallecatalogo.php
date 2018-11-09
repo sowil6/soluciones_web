@@ -93,7 +93,7 @@ echo'</ul>';
   <!-- InstanceEndEditable --><!-- end .content -->
  
 <div class="contentDerecha">
-   <?php include("../includes/includeCertificacionesColumnaDerecha.php")?>
+   <?php include("../includes/includeColumnaDerecha.php")?>
 </div>
 </div><!-- end .contenidos -->
 </div><!-- end .contenedor -->

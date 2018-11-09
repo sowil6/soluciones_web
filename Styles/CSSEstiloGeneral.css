@@ -38,10 +38,14 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
 .contenedor{
-	 display: table;
+		
+	 display: table;margin-top: 1px;
+	 	 	
 	}
 #contenidos {
   display: table-row;
+  justify-content: center; 
+	display:flex;/* y justify-content: center ayudan a centrar el menu*/
 }
 .contentIzquierda, .contentCentro, .contentDerecha {
   display: table-cell;
@@ -49,38 +53,34 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 .contentIzquierda {
 	float: left;
 	width: 20%;
-/*	max-height:600px;
-*/	background-color: yellow;
-	padding-top: 0px;
+	background-color: yellow;
+	/*padding-top: 0px;
 	padding-right: 0;
 	padding-left: 0;
 	padding-bottom: 10px;
-	margin-top: 1px;
-/*	overflow-x:hidden;
-overflow-y:scroll;*/
+	margin-top: 1px;*/
+	margin-left: 2px;
 }
 .contentCentro {
 	background-color: blue;
 	width: 58%;
 	float: left;
-/*	min-height:400px;
-*/	margin-left: 10px;
+	margin-left: 2px;
+	/*margin-left: 10px;
 	margin-right: 10px;
-	margin-top: 1px;
-/*	overflow-x:hidden;
-overflow-y:scroll;*/
+	margin-top: 1px;*/
+
 }
 .contentDerecha{
-		float:right;
+		float:left;
 	width: 19%;
-/*	min-height:600px;
-*//*	background-color: #E5E6EC;
-*/	padding-top: 0px;
+	margin-left: 2px;
+	/*padding-top: 0px;
 	padding-right: 0;
 	padding-left: 0;
 	padding-bottom: 10px;
-	margin-top: 1px;
-	background-color: red;
+	margin-top: 1px;*/
+	background-color: green;
 		}
 
 /*MASTER UNA COLUMNA*/
