@@ -1,38 +1,47 @@
 	/*Estilos Oferta Academica*/
 .contenedorOferta{
-	padding-top:10px;
+	padding-top:1px;
 	width:100%;
 	background-color:#353131;
 		}
 		
 .TituloOferta {
-   background-color:#FEFDFD;
-    text-align:center;
+/*   background-color:#FEFDFD;
+*/    text-align:center;
  }
 .TituloOferta p{
-color:#FFFFFF;
-color:green;
+	margin-top:2px;
+	margin-bottom:2px;
+color:#E2E8E2;
  }
  .ulOferta {
 	width: 100%;
 	margin: auto;
 	list-style: none;
-	padding: 5px;
+	padding: 1px;
 	box-sizing: border-box;
 	display: flex;/*ubica los objetos en forma horizontal y bajando en linea*/
 	flex-wrap: wrap;
-	justify-content: space-around;
+justify-content: space-around; /*	item omitido buscando que los li inicien en la izqueirda */
 }
 .ulOferta li {
 	width:30%;
-	margin: 5px;/*separacion entre imagenes*/
-	border: 1px solid #D3D3D3; /*LightGray */
-padding:5px /*ayuda a separar los marcos*/
+	height:250px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:2px;
+	margin-bottom:2px;
+	/*	margin-auto;separacion entre imagenes*/
+	border: 1px  solid #D3D3D3; /*LightGray */
+padding:5px; /*ayuda a separar los marcos*/
+justify-content: center; 
+	display:flex;/* y justify-content: center ayudan a centrar el li*/
+	
 }
-.ulOferta img {
-	width: 90%;
+.ulOferta embed {
+	width: 97%;
 	height: 150px;
-	padding:10px;
+	padding:2px;
 	border: 1px solid #D3D3D3;  
 }
 .ulOferta a {
@@ -46,51 +55,4 @@ padding:5px /*ayuda a separar los marcos*/
 padding:10px;/*Pone marco a la imagen*/
 }
 
-/*Estilos IncludeOferta Academica*/
-.contenedorCatalogo{
-	padding-top:10px;
-	width:100%;
-/*	background-color:#353131;*/
-		
-	}
-	.divMenuIzquierdo{
-padding-top:10px;
-	width:100%;
-background-color:#353131;
- background-color:#a70000 !important;
-	}
-.ulIncludeOferta {
-	width: 100%;
-	margin: auto;
-	list-style: none;
-	padding: 5px;
-	box-sizing: border-box;
-	/*display: flex;ubica los objetos en forma horizontal y bajando en linea*/
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
-.ulIncludeOferta li {
-	width:92%;
-	margin: 5px;/*separacion entre imagenes*/
-	border: 1px solid #D3D3D3; /*LightGray */
-padding:5px /*ayuda a separar los marcos*/
-}
-.ulIncludeOferta embed {
-	width: 90%;
-	height: 150px;
-	border: 1px solid #D3D3D3; /*LightGray */
-padding:10px;/*Pone marco a la imagen*/
-}
 
-.includeOfertaimagenoVideo {
-	width: 90%;
-	height: 150px;
-	border: 1px solid #D3D3D3; /*LightGray */
-padding:10px;/*Pone marco a la imagen*/
-}
-.ulIncludeOferta a {
-	color:white;
-}
-
-	
-	}

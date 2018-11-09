@@ -9,17 +9,14 @@
 
 <body>
 <div class="divMenuIzquierdo">
-  <div class="divTituloOfertaAcademica">
+  <div class="divTituloMenuIzquierdo">
 <p>OFERTA ACADEMICA</p> 
- 
-
-
-</div>
+ </div>
          <?php
        
-$master="includeOferta";
+$master="MenuIzquierdo";
 $canciones = simplexml_load_file("../XMLPage/xmlMenuCatalogo.xml");
-echo'	<ul class="ulIncludeOferta">';
+echo'	<ul class="ulMenuIzquierdo">';
 foreach($canciones as $cancion)
 {
 	$info = new SplFileInfo($cancion->foto);//obtenemos la extension del archivo
@@ -37,7 +34,8 @@ $HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source s
 echo'<li><a href="'.$cancion->urlFile.'?Accion='.$cancion->Codigo.'">'.$HTMLfoto_OVideo.' </br>'. $cancion->Titulo.'</br> '. $cancion->introduccionNoticia.'</a>';
 echo '</li>';
 }
-echo'</ul>';	  
+echo'</ul>';	
+  
   /*function ValidaExtension($sExtension) {
 
             $resul;

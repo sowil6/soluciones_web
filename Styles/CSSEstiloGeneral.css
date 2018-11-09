@@ -1,20 +1,20 @@
 body {
 	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
-	/*background-color: #CCD0E9;*/
+	/**/background-color: #CCD0E9;
 	margin: 0;
 	padding: 0;
-	color: #000;
+	
 	width:100%;
 	
 }
 ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
-	padding: 0;
-	margin: 0;
+	/*padding: 0;
+	margin: 0;*/
 }
 h1, h2, h3, h4, h5, h6, p {
-	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
-	padding-right: 15px;
-	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	/* margin-top: 0;	 removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	/*padding-right: 15px;
+	padding-left: 15px;  adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
 }
 
 #header {
@@ -37,42 +37,59 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	background-color: #E5E6EC;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
-
-.MasterColumIzq {
-	box-sizing: border-box;
-	float: left;
-	width: 20%;
-	padding-bottom: 10px;
-	margin-top: 1px;
-}
-.contentCentro {
-	width: 58%;
-	float: left;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-top: 1px;
-}
-.Mastercentro{
-		width: 98%;
-	margin:0 auto;
+.contenedor{
+	 display: table;
 	}
-.sideColDer{
+#contenidos {
+  display: table-row;
+}
+.contentIzquierda, .contentCentro, .contentDerecha {
+  display: table-cell;
+}
+.contentIzquierda {
 	float: left;
 	width: 20%;
-	background-color: #E5E6EC;
+/*	max-height:600px;
+*/	background-color: yellow;
 	padding-top: 0px;
 	padding-right: 0;
 	padding-left: 0;
 	padding-bottom: 10px;
 	margin-top: 1px;
+/*	overflow-x:hidden;
+overflow-y:scroll;*/
 }
+.contentCentro {
+	background-color: blue;
+	width: 58%;
+	float: left;
+/*	min-height:400px;
+*/	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 1px;
+/*	overflow-x:hidden;
+overflow-y:scroll;*/
+}
+.contentDerecha{
+		float:right;
+	width: 20%;
+/*	min-height:600px;
+*//*	background-color: #E5E6EC;
+*/	padding-top: 0px;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 10px;
+	margin-top: 1px;
+	background-color: red;
+		}
 
 /*MASTER UNA COLUMNA*/
 .contentUnaColumna{
 	width:100%;
-	height:auto;
+	/*height:auto;
 	background-color:#8DABAF;
-	/*padding:5px 5px 15px 5px;*/
+	padding:5px 5px 15px 5px;*/
+	
 	}
 /*COLUMNA menu izquierdo*/
 
@@ -80,9 +97,9 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 
 /*controla columna izqueirda master*/
 .masterimagenoVideo{
-		 width:91%;
-    display:block;/*estas dos lineas centran la imagen*/
-margin:auto;
+		/* width:91%;
+    display:block;estas dos lineas centran la imagen
+margin:auto;*/
 		}
 
 #tablaRepeaterDerecha {
@@ -852,45 +869,7 @@ position:relative;
 	}
 
 
-	 /*COLUMNA NOVEDADES*/
-
-.TituloColumnas {
-	width: 92%;
-  /* background-color:red;*/
-   background-color:#a70000 !important;
-    text-align:center;
- }
- .TituloColumnas p{
-color:#FFFFFF;
- }
- .ulCertificaciones {
-		width: 100%;
-	margin: auto;
-	list-style: none;
-
-	box-sizing: border-box;
-}	
-.ulCertificaciones li {
-width:100%;
-
-	margin: 5px;/*separacion entre imagenes*/
-	border: 1px solid #D3D3D3; /*LightGray */
-	padding:10px; /*ayuda a separar los marcos*/
-   	justify-content: center;/*display:flex y justify-content: center ayudan a centrar el menu*/
-}
-.ulCertificaciones img {
-	width: 100%;
-	/*height: 500px;*/
-/*	border: 1px solid #D3D3D3; 
-padding:10px;Pone marco a la imagen*/
-}
-.masterimagenoVideo{
-	width: 100%;
-	/*height: 500px;*/
-	border: 1px solid #D3D3D3; 
 	
-}
- 
 
 /*PAGINA CATALOGO CERTIFICACIONES*/
 .contenedorCerti{
@@ -1004,9 +983,9 @@ top:10px;
   font-size:0.5rem;
 }
 h1, h2, h3, h4, h5, h6, p {
-	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
-	padding-right: 5px;
-	padding-left: 5px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+/*	margin-top: 0;	  removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+/*	padding-right: 5px;
+	padding-left: 5px;  adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
 
 }
 .MasterColumIzq {
@@ -1057,12 +1036,12 @@ h1, h2, h3, h4, h5, h6, p {
 
  display:none;
 }
-h1, h2, h3, h4, h5, h6, p {
-	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+/*h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	
 	padding-right: 5px;
-	padding-left: 5px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	padding-left: 5px; 
 
-}
+}*/
 .MasterColumIzq {
 	padding-bottom: 5px;
 	margin-top: 1px;
@@ -1114,9 +1093,9 @@ header {
  display:none;
 }
 h1, h2, h3, h4, h5, h6, p {
-	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
-	padding-right: 5px;
-	padding-left: 5px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+/* 	margin-top: 0;	 removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+ /*	padding-right: 5px;
+	padding-left: 5px; adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
 
 }
 .MasterColumIzq {

@@ -7,7 +7,6 @@
 
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
-<link  href="../Styles/bootstrapCSS/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
@@ -19,51 +18,28 @@
     
     
   </header>
- 
-  <div class="MasterColumIzq">
+ <div class="contenedor">
+ <div id="contenidos">
+  <div class="contentIzquierda">
  <?php include("../includes/includecolizquierda.php")?>
   </div>
+ 
  <!-- TemplateBeginEditable name="EditRegionCentro" -->
-  <article class="contentCentro">
-    <div class="Mastercentro">
+   <div class="contentCentro">
+  
 aqui el contenido    
-    </div>
-  </article>
+  
+
+   </div>
   <!-- TemplateEndEditable --><!-- end .content -->
-  <div class="sideColDer">
-      <div class="TituloColumnas">
-          <p>
-    NUESTRAS CERTIFICACIONES</p>
-     </div>
-    <div class="divCertificaciones">
-   
-    <?php
-       
-$master="master";
-$canciones = simplexml_load_file("../XMLPage/xmlCargaCertificaciones.xml");
-echo' <ul class="ulCertificaciones">';
-foreach($canciones as $cancion)
-{
-  $info = new SplFileInfo($cancion->foto);//obtenemos la extension del archivo
-  $ext= $info->getExtension();
-$estado=ValidaExtension($ext);//con la extension evaluamos si es tipo imagen o video
-if($estado==1){
-  //si es imagen se embebe en el control html imagen
-$HTMLfoto_OVideo= "<embed class='" .$master. "imagenoVideo '   src = '../Img/".$cancion->foto. "' />";
-}else{
-  //si es video se embebe en el control html video
-$HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = '../Img/".$cancion->foto. "' type = 'video/mp4' > <source src = '../img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
-    }
-echo'<li><a href="'.$cancion->urlFile.'?Accion='.$cancion->Codigo.'&dcod='.$cancion->DetalleCodigo.'">'.$HTMLfoto_OVideo. $cancion->Titulo.'</br> '. $cancion->introduccionNoticia.'</a>';
-echo '</li>';
-}
-echo'</ul>';    
-
-?>
-    </div>
-       </div>
-
+ 
+<div class="contentDerecha">
+   <?php include("../includes/includeCertificacionesColumnaDerecha.php")?>
+</div>
+</div><!-- end .contenidos -->
+</div><!-- end .contenedor -->
   </div><!-- end .sidebar1 -->
+
   <footer>
      <?php include("../includes/footer.php")?>
      </footer>
