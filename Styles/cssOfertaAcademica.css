@@ -2,8 +2,8 @@
 .contenedorOferta{
 	padding-top:1px;
 	width:100%;
-	background-color:#353131;
-		}
+/*	background-color:#353131;
+*/		}
 		
 .TituloOferta {
 /*   background-color:#FEFDFD;
@@ -26,13 +26,14 @@ justify-content: space-around; /*	item omitido buscando que los li inicien en la
 }
 .ulOferta li {
 	width:30%;
+	background-color: #060505;
 	height:250px;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:2px;
 	margin-bottom:2px;
 	/*	margin-auto;separacion entre imagenes*/
-	border: 1px  solid #D3D3D3; /*LightGray */
+	border: 1px  solid #F8F8F8; /*LightGray */
 padding:5px; /*ayuda a separar los marcos*/
 justify-content: center; 
 	display:flex;/* y justify-content: center ayudan a centrar el li*/

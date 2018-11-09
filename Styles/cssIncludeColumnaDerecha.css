@@ -20,9 +20,11 @@
 }	
 .ulColumnaDerecha li { 
 width:auto;
-  background-color:#F9F4F4;
-	margin: 2px;/*separacion entre imagenes*/
-	border: 1px solid #D3D3D3; /*LightGray */
+background-color: #C9C1C1;
+/*  background-color:#F9F4F4;
+*/	margin: 2px;/*separacion entre imagenes*/
+	border: 1px solid #F8F3F3
+	; /*LightGray */
 padding:2px; /*ayuda a separar los marcos*/
 	justify-content: center; 
 	display:flex;/* y justify-content: center ayudan a centrar el menu*/

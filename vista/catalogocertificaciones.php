@@ -25,15 +25,16 @@
   </div>
  
  <!-- InstanceBeginEditable name="EditRegionCentro" -->
-  <article class="contentCentro">
-    <link href="../Styles/CSSEstiloGeneral.css" rel="stylesheet" type="text/css">
+   <link rel="stylesheet" type="text/css" href="../Styles/cssCatalogoCertificaciones.css">
+ <article class="contentCentro">
+   
     <div class="Mastercentro">
-    <div class="contenedorCerti">
+    <div class="contenedorDetalleCerti">
            <?php
        
-$master="detallecataloCerti";
+$master="detalleCertifi";
 $canciones = simplexml_load_file("../XMLPage/xmlCargaCertificaciones.xml");
-echo'	<ul class="ulcertiCatalogo">';
+echo'	<ul class="uldetalleCerti">';
 foreach($canciones as $cancion)
 {
 	$info = new SplFileInfo($cancion->foto);//obtenemos la extension del archivo
@@ -41,7 +42,7 @@ foreach($canciones as $cancion)
 $estado=ValidaExtension($ext);//con la extension evaluamos si es tipo imagen o video
 if($estado==1){
 	//si es imagen se embebe en el control html imagen
-$HTMLfoto_OVideo= "<img class='" .$master. "imagenoVideo '   src = '../Img/".$cancion->foto. "' />";
+$HTMLfoto_OVideo= "<embed class='" .$master. "imagenoVideo '   src = '../Img/".$cancion->foto. "' />";
 }else{
 	//si es video se embebe en el control html video
 $HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = '../Img/".$cancion->foto. "' type = 'video/mp4' > <source src = '../img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";

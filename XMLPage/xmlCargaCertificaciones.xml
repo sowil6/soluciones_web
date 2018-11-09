@@ -3,7 +3,7 @@
   <Noticia>
     <Codigo>11</Codigo>
     <DetalleCodigo>0</DetalleCodigo>
-    <Titulo>uno</Titulo>
+    <Titulo>0</Titulo>
     <introduccionNoticia/>
     <mensajeNoticia>&lt;p&gt;Ayer se realizó el proceso de posesión de 216 actos administrativos de aquellos docentes que fueron seleccionados por el Banco de la Excelencia del Ministerio de Educación Nacional.&lt;/p&gt;</mensajeNoticia>
     <urlFile>../vista/catalogocertificaciones.php</urlFile>
@@ -14,12 +14,12 @@
   <Noticia>
     <Codigo>14</Codigo>
     <DetalleCodigo/>
-    <Titulo>dos</Titulo>
+    <Titulo>hola</Titulo>
     <introduccionNoticia/>
     <mensajeNoticia>&lt;p&gt;adasdsadsad&lt;/p&gt;</mensajeNoticia>
-    <urlFile/>
-    <foto>curso altura.jpg</foto>
+    <urlFile>../vista/catalogocertificaciones.php</urlFile>
+    <foto>lineas.gif</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
-    <autor/>
+    <autor>1</autor>
   </Noticia>
 </Noticias>
