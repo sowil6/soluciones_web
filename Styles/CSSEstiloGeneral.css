@@ -69,7 +69,9 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	width: 55%;
 	float: left;
 display:inline-block;
-margin-rigth: 1%;
+margin-rigth: 4px;
+margin-left: 4px;
+background-color:#F7F7F7;
 }
 .contentDerecha{
 	width: 19%;
@@ -77,8 +79,8 @@ margin-rigth: 1%;
 	float:left;
 	display:inline-block;
 	
-		margin-left: 1%;
-		margin-top: 1px;
+		margin-left: 4px;
+		
 		}
 
 /*MASTER UNA COLUMNA*/

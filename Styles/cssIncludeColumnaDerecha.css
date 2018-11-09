@@ -45,10 +45,12 @@ border-bottom: 1px solid #919494;
   	margin-top:5px;
 	}
 .ColumnaDerecha_Imagen{}
-.ColumnaDerecha_Intro{
+.ColumnaDerecha_Intro p{
+	margin-top:1px;
 	width:auto;
 	float:left;
 	vertical-align:central;
+	top:1px;
 	}
  
 .divTituloColumnaDerecha {
