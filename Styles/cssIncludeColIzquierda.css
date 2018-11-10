@@ -15,6 +15,7 @@ border-top: 3px solid #919494;
 	}
 
 .ulMenuIzquierdo {
+	font-size:0.8rem;
 	width: 100%;
 	/*height:100%;*/
 	list-style: none;
@@ -34,7 +35,6 @@ justify-content: center;
 
 }
 
-
 .ulMenuIzquierdo .titulo {
 	display:inline-block;
 	text-align:center;
@@ -49,6 +49,7 @@ justify-content: center;
 	
 .contenedorImagen{
 	padding:1px;
+	width:20%;
 		}
 .contenedorImagen embed{
 	float:left;
@@ -66,7 +67,8 @@ justify-content: center;
 }
 
 .MenuIzquierdo_Intro{
-	width:auto;
+	margin-left:5px;
+	width:74%;
 	float:left;
 	vertical-align:central;
 	
@@ -99,11 +101,33 @@ font-size:0.8rem;
  }
 .divTituloMenuIzquierdo p{
 color:#B5BDF7;
-/*text-align:left;*/
 padding:5px;
-
 margin-top:-5px;
 margin-bottom:0;
   align-content:flex-start;
 	
  }
+ 
+ /*INICIO SCREEN ENTRE 800 Y 999*/
+@media screen and (min-width:801px) and (max-width: 999px)  {
+
+
+.contenedorImagen embed{
+   width: 2rem;
+	height: 2rem;
+}
+
+.MenuIzquierdo_Intro p{
+	font-size:0.7rem;
+}
+}
+/*SCREEN ENTRE 400 Y 779*/	
+@media screen and (min-width:501px) and (max-width: 800px) {
+
+
+}
+/*SCREEN MOVIL 300 a 500*/
+	@media screen  and (min-width: 300px) and (max-width: 500px) {
+
+
+}

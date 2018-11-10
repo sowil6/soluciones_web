@@ -2,32 +2,18 @@ body {
 	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
-	
 	width:100%;
-	
 }
-ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
-	/*padding: 0;
-	margin: 0;*/
-}
-h1, h2, h3, h4, h5, h6, p {
-	/* margin-top: 0;	 removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
-	/*padding-right: 15px;
-	padding-left: 15px;  adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
-}
-
 #header {
 	width: 940px;
 	height: 90px;
 	margin: 0 auto;
 	background-color: #FBFBFB;
 }
-/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
 a:link {
 	color: #42413C;
 	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
 }
-
 a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
 	text-decoration: none;
 }
@@ -93,15 +79,12 @@ background-color:#F7F7F7;
 	}
 /*COLUMNA menu izquierdo*/
 
-
-
 /*controla columna izqueirda master*/
 .masterimagenoVideo{
 		/* width:91%;
     display:block;estas dos lineas centran la imagen
 margin:auto;*/
 		}
-
 #tablaRepeaterDerecha {
     width:95%;
     /*margin-left:5px;*/
@@ -117,7 +100,6 @@ footer {
 	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
 }
 
-
 /*NOTA: problema con BOOTRASp cambiar el nombre de clase nav, col, porque crean conflicto y no funciona bien donde utilice estos nombres de class*/
 /*menu boton imagen login*/
 .contenedorHeader{
@@ -128,12 +110,12 @@ footer {
 	
 	}
 
-
 /*INFORMACION PBX EMAIL*/
 .contenedorHeader .info{
 float:right ;
-top:10%;
-}
+margin-top:15px;	
+/*top:10%;
+*/}
 .info-Email {
  display:inline-block;
    vertical-align:middle;
@@ -149,7 +131,7 @@ ul.InfoUL li {
     display:block;
     float:left;
     white-space:nowrap;
-     padding:0 13px 3px;
+     padding:0 8px 1px;
 }
 /*ul.InfoUL img {
     display:inline-block;
@@ -186,26 +168,24 @@ ul.InfoUL a {
 /*LOGO*/
 .menuLogo {
 width:300px;/*con el valor que esta en las function de la pagina Site.Master controlar el ancho contenedor de la imagen*/
-    height:68px;/*altura del contenedor de la imagen*/
-    
-   /* position:relative;*/
-   left:1%;
-      /*float:right;*/
+    height:90%;/*altura del contenedor de la imagen*/
+/*	background-color:blue;
+*/   margin-left:4px;
        float:left;
      background-repeat:no-repeat;
-	 top:10%;
-	/*background-color:blue;
-	    z-index:2;*/
+	 margin-top:4px;
+	 vertical-align:middle;
+
 }
-.menuLogo i{
-	width:50px;
-	
+.menuLogo img{
+	width:100%;
+	height:100%;
 	
 	}
 .menuLogo-fixed {
 	  position:fixed;
-	  width:150px;
-	  eight:10px;
+	  width:210px;
+	  height:40px;
    top: 0; 
      z-index:2;
 	}
@@ -629,7 +609,6 @@ padding:10px;/*Pone marco a la imagen*/
 .ulCatalogo a {
 	color:white;
 }
-
 .ulcatalogoimagenoVideo{
 	width: 90%;
 	height: 150px;
@@ -681,7 +660,6 @@ width: 98%;
 padding:10px;/*Pone marco a la imagen*/
 
 }
-
 .ulDetalleCatalogoIZQ a {
 	color:white;
 	font-size:0.7rem;
@@ -735,7 +713,6 @@ width: 100%;
 	border: solid 1px;
 	justify-content: center; display:flex;/* y justify-content: center ayudan a centrar el menu*/
 	}
-	
 .catalogoslideimagenoVideo{
 		width: 260px;
 	height: 150px;
@@ -744,7 +721,6 @@ padding:10px;/*Pone marco a la imagen*/
 	}
 
 /*Estilos de la galeria*/
-
 .galeria {
 	width: 100%;
 	margin: auto;
@@ -770,7 +746,6 @@ width:260px;
 	width: 260px;
 	height: 150px;
 }
-	
 
 	/*PAGINA PROYECTOS*/
 .contenedorProyecto{
@@ -852,7 +827,6 @@ background-color:#D7DCE1;
 	min-height:550px;
 	
 	max-height:600px;}
-
 .titulo_proyecto{
 	margin-top:-20px;
 	min-width:45%;
@@ -867,9 +841,6 @@ position:relative;
 	justify-content: center; 
 	display:flex;/* y justify-content: center ayudan a centrar el menu*/
 	}
-
-
-	
 
 /*PAGINA CATALOGO CERTIFICACIONES*/
 .contenedorCerti{
@@ -944,7 +915,6 @@ padding:10px;Pone marco a la imagen*/
 	margin-top:1px;	
 	height: 400px;
 }
-
 .frase_titulo{
 	margin-top:1px;
 	min-width:45%;
@@ -959,130 +929,104 @@ padding:10px;Pone marco a la imagen*/
 	justify-content: center; display:flex;/* y justify-content: center ayudan a centrar el menu*/
 	}
 	
-
-	
-	
-
-
-	
-/*INICIO SCREEN ENTRE 800 Y 999*/
+/*INICIO SCREEN ENTRE 800 Y 999 AZUL*/
 @media screen and (min-width:801px) and (max-width: 999px)  {
+ .linePista{
+
+	width:100%;
+	height:2px;
+	background-color:blue;
+	}
+ 
  body {
 	
  font-size:11px;
 	}
- header {
-    background-color:blue;
-}
-.info{
-		display:none;
-						
+.contenedorHeader .info{
+		/*display:none;
+		margin-top:1%;	*/		
 		}
-		.resolucion {
+.resolucion {
 top:10px;
   font-size:0.5rem;
+  display:none;
 }
-h1, h2, h3, h4, h5, h6, p {
-/*	margin-top: 0;	  removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
-/*	padding-right: 5px;
-	padding-left: 5px;  adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+/*LOGO*/
+.menuLogo {
+/*width:300px;con el valor que esta en las function de la pagina Site.Master controlar el ancho contenedor de la imagen*/
+    height:90%;/*altura del contenedor de la imagen*/
+/*	background-color:blue;
+  left:1px;*/ 
+}
+.menuLogo-fixed {
+	  width:210px;
+	  height:35px;
+  	}
 
-}
-.MasterColumIzq {
-	padding-bottom: 5px;
-	margin-top: 5px;
-}
-.contentCentro {
-	padding: 5px 0;
-	width: 59%;
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-top: 5px;
-}
-.Mastercentro{
-	
-	}
-.sideColDer{
-	width: 19%;
-	padding-bottom: 5px;
-	margin-top: 5px;
-}
-.TituloColumnas {
-   background-color:blue;
-}
-.TituloColumnas p{
-	font-size: 11px;
- }
- .tablaRepeaterDerecha{
-	 
-	 font-size:11px;
-	 }
+
+
 	}
 
-/*SCREEN ENTRE 400 Y 779*/	
-@media screen and (min-width:501px) and (max-width: 800px) {
+/*SCREEN ENTRE 400 Y 779 VERDE*/	
+@media screen and (min-width:601px) and (max-width: 800px) {
+ .linePista{
+	width:100%;
+	height:2px;
+	background-color:green;
+	}
  body {
 	
  font-size:10px;
 	}
- header {
-     background-color:green;
-}
-.info{
-		display:none;
-				
+
+.contenedorHeader .info{
+		/*display:none;*/
+		margin-top:15px;			
 		}
+
 .resolucion {
 
  display:none;
 }
-/*h1, h2, h3, h4, h5, h6, p {
-	margin-top: 0;	
-	padding-right: 5px;
-	padding-left: 5px; 
 
-}*/
 .MasterColumIzq {
 	padding-bottom: 5px;
 	margin-top: 1px;
 }
-.contentCentro {
-	padding: 1px 0;
-	width: 59%;
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-top: 1px;
+.resolucion {
+top:10px;
+  font-size:0.5rem;
+  display:none;
 }
-.Mastercentro{
-	
-	}
-.sideColDer{
-	width: 19%;
-	padding-bottom: 5px;
-	margin-top: 1px;
+/*LOGO*/
+.menuLogo {
+width:150px;/*con el valor que esta en las function de la pagina Site.Master controlar el ancho contenedor de la imagen*/
+  /*  height:90%;altura del contenedor de la imagen*/
+/*	background-color:blue;
+  left:1px;*/ 
 }
-.TituloColumnas {
-   background-color:blue;
-}
-.TituloColumnas p{
-	font-size: 10px;
- }
- .tablaRepeaterDerecha{
-	 
-	 font-size:10px;
-	 }
+.menuLogo-fixed {
+	  width:210px;
+	  height:35px;
+  	}
 	}
 
-/*SCREEN MOVIL 300 a 500*/
-	@media screen  and (min-width: 300px) and (max-width: 500px) {
+/*SCREEN MOVIL 300 a 500 AMARILLO*/
+	@media screen  and (min-width: 300px) and (max-width: 600px) {
+ .linePista{
+	width:100%;
+	height:2px;
+	background-color:yellow;
+	}
+	
 	 body {
 	
  font-size:8px;
 	
 }
 header {
-	background-color: yellow;
-}
+/*	background-color: yellow;
+*/}
 .divContenedorMenu {
 	/*display:none;*/
  }
@@ -1092,38 +1036,17 @@ header {
 .resolucion {
  display:none;
 }
-h1, h2, h3, h4, h5, h6, p {
-/* 	margin-top: 0;	 removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
- /*	padding-right: 5px;
-	padding-left: 5px; adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
-
+.resolucion {
+top:10px;
+  font-size:0.5rem;
+  display:none;
 }
-.MasterColumIzq {
-	padding-bottom: 5px;
-	margin-top: 5px;
+/*LOGO*/
+.menuLogo {
+width:250px;/*con el valor que esta en las function de la pagina Site.Master controlar el ancho contenedor de la imagen*/
 }
-.contentCentro {
-	padding: 5px 0;
-	width: 57%;
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-top: 5px;
-}
-
-.sideColDer{
-	width: 19%;
-	padding-bottom: 3px;
-	margin-top: 3px;
-	font-size:8px;
-}
-.TituloColumnas {
-   background-color:blue;
-}
-.TituloColumnas p{
-	font-size: 7px;
- }
- .tablaRepeaterDerecha{
-	 
-	 font-size:8px;
-	 }
+.menuLogo-fixed {
+	  width:210px;
+	  height:35px;
+  	}
 	}

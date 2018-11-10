@@ -11,6 +11,7 @@
 	
 }
  .ulColumnaDerecha {
+	 font-size:0.8rem;
 	width: 100%;
 	list-style: none;
 	margin: auto;
@@ -65,9 +66,21 @@ border-bottom: 1px solid #919494;
  }
  .divTituloColumnaDerecha p{
 color:#B5BDF7;
-/*text-align:left;*/
 padding:5px;
 margin-top:-5px;
 margin-bottom:0;
   align-content:flex-start;
  }
+ 
+  /*INICIO SCREEN ENTRE 800 Y 999*/
+@media screen and (min-width:801px) and (max-width: 999px)  {
+
+}
+/*SCREEN ENTRE 400 Y 779*/	
+@media screen and (min-width:501px) and (max-width: 800px) {
+
+}
+/*SCREEN MOVIL 300 a 500*/
+	@media screen  and (min-width: 300px) and (max-width: 500px) {
+
+}
