@@ -227,16 +227,15 @@ height:42px;
   justify-content: center;/*display:flex y justify-content: center ayudan a centrar el menu*/
 }
 .navMenu  li {
-   /* background-color:blue;color de los botones
+  /*  background-color:blue;color de los botones
     height:100%; */
 }
 .navMenu ulNav a {
-	font-size:2rem;
-	
+	font-size:1.8rem;
 	}
 .navMenu a {
 	display: block;
-/*	width: auto; *//*al omitirlo parece que no afecta el ancho del fondo de los botones*/
+	width: auto; /**//*al omitirlo parece que no afecta el ancho del fondo de los botones*/
 	height: 100%;/*altura del color de fondo cuando pasa el mouse sobre el control*/
 	background: #000000;
 	padding-top: 8px;
@@ -244,14 +243,14 @@ height:42px;
 	text-decoration: none;
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
+	font-size: 11px;
 	font-weight: bold;
 	color: #FFFFFF;
 	border: none;
 	
 }
 ul.ulNav li a {
-	font-size:0.75rem;/*tamaño de la fuente del menu principal*/
+	font-size:0.72rem;/*tamaño de la fuente del menu principal*/
 	
 	}
 .navMenu a:hover{
@@ -272,6 +271,7 @@ display:inline-block;
 ul.ulNav,ul#ulNav ul {
     list-style:none;
     margin:0;
+	padding:0 0 0;/*ayudo a cerrar el espacio en los submenus*/
 }
 ul.ulNav .subs {
     background-color:#fff;
@@ -315,7 +315,9 @@ ul.ulNav li {
     white-space:nowrap;
 }
 ul.ulNav>li,ul#ulNav li {
-    margin:0 0 0 5px;
+ /*   margin:0 0 0 2px;afecta la separacion de */
+
+    margin:0 5px 0 0px;/*superior - derecha - abajo- izquierda  afecta la separacion de */
 }
 ul.ulNav ul>li {
     margin:5px 0 0;
@@ -331,7 +333,7 @@ ul.ulNav a {
     display:block;
     font-size:13px;
     font-weight:bold;
-    padding:8px 10px;/*separacion superior y separacion entre botones*/
+	padding:8px 0px 8px 0px;/* superior - derecha - abajo- izquierda separacion superior y separacion entre botones*/
     text-align:left;
     text-decoration:none;
     /*text-shadow:#fff 0 1px 1px;*/
@@ -962,7 +964,9 @@ top:10px;
 	  width:210px;
 	  height:35px;
   	}
-
+.contenedorAntesMenu {
+	height: 50px;
+}
 
 
 	}
@@ -978,7 +982,9 @@ top:10px;
 	
  font-size:10px;
 	}
-
+.contenedorAntesMenu {
+	height: 45px;
+}
 .contenedorHeader .info{
 		/*display:none;*/
 		margin-top:15px;			
@@ -1006,9 +1012,14 @@ width:150px;/*con el valor que esta en las function de la pagina Site.Master con
   left:1px;*/ 
 }
 .menuLogo-fixed {
-	  width:210px;
+	  width:110px;
 	  height:35px;
   	}
+	
+	ul.ulNav li a {
+	font-size:0.6rem;/*tamaño de la fuente del menu principal*/
+	
+	}
 	}
 
 /*SCREEN MOVIL 300 a 500 AMARILLO*/
@@ -1049,4 +1060,7 @@ width:250px;/*con el valor que esta en las function de la pagina Site.Master con
 	  width:210px;
 	  height:35px;
   	}
+	.contenedorAntesMenu {
+	height: 40px;
+}
 	}

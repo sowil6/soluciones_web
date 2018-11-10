@@ -144,7 +144,7 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
   
   <div class="divContenedorMenu">
            <nav class="navMenu">
-                                       <ul id="invitado" class="ulNav" >
+    <ul class="ulNav" id="invitado"  >
                                          <li class="current_page_item"><a href="../vista/index.php"><img src="" />INICIO</a></li>
                                          <!--                 <li><a href="/Public/Presentacion.aspx"><img src="/Img/imgMenu/home.png" />Presentacion</a></li>-->
                                          <li><a href="#"><img src="" />INSTITUCIONAL</a>
@@ -244,11 +244,10 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
                                                  <li><a href="../vista/ofertaacademica.php"><img src="../ImgSistema/imgMenu/bub.png" /> OFERTA ACADEMICA</a></li>
                                                </ul>
                                              </div>
-                                             r
-                                           </div>
+                                                                                 </div>
                                          </li>
                                        </ul>
-                                       <ul class="ulNav" id="menuDigitador" >
+    <ul class="ulNav" id="menuDigitador" >
                                          <li><a href="#"><img src="" />APP-CORPORATIVA</a>
                                            <div class="subs">
                                              <div class="divCol">
@@ -261,11 +260,7 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
                                            </div>
                                          </li>
                                        </ul>
-                                       <ul class="ulNav" id="menuComite">
-                                         <!--                    <li><a href="/Comite/ConfiguraNoticia.aspx"><img src="/Img/imgMenu/top3.png" />...</a></li>-->
-                                         <!--                    <li><a href="#"><img src="/Img/imgMenu/top4.png" />Reportes</a></li>-->
-                                       </ul>
-                                       <ul class="ulNav" id="menuAdmin" >
+    <ul class="ulNav" id="menuAdmin" >
                                          <li><a href=".#"><img src="" />ADMINISTRATIVO</a>
                                            <div class="subs">
                                              <div class="divCol">
