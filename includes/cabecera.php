@@ -32,7 +32,10 @@ return $resul;
            			
         }
 ?>	
+
+
 <link href="../Styles/CSSEstiloGeneral.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../Styles/menu.css">
  <link rel="stylesheet" href="../Styles/footer-distributed-with-address-and-phones.css">
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/regular.css" integrity="sha384-zkhEzh7td0PG30vxQk1D9liRKeizzot4eqkJ8gB3/I+mZ1rjgQk+BSt2F6rT2c+I" crossorigin="anonymous">
@@ -143,142 +146,61 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
          
   
   <div class="divContenedorMenu">
-           <nav class="navMenu">
-    <ul class="ulNav" id="invitado"  >
-                                         <li class="current_page_item"><a href="../vista/index.php"><img src="" />INICIO</a></li>
-                                         <!--                 <li><a href="/Public/Presentacion.aspx"><img src="/Img/imgMenu/home.png" />Presentacion</a></li>-->
-                                         <li><a href="#"><img src="" />INSTITUCIONAL</a>
-                                           <div class="subs">
-                                             <div class="divCol">
-                                               <ul>
+       <input type="checkbox" id="btn-menu">
+<label for="btn-menu"> <i class="fa fa-bars fa-3x"></i></label>   
+<nav class="menu">
+    <ul>
+        <li> <a href="../vista/index.php">INICIO</a></li>
+        <li class="publico"> <a href="">INSTITUCIONAL</a>
+            <ul class="ulNav">
+               <li><a href="../vista/institucional.php?refpage=mision"><img src="../imgSistema/imgMenu/bub.png" />Misión</a>
+<ul class="ulNav">
+        <li><a href="../vista/ofertaacademica.php"><img src="../imgSistema/imgMenu/bub.png" /> OFERTA ACADEMICA</a></li>
+    </ul>
 
-                                                 <li><a href="../vista/institucional.php?refpage=mision"><img src="../ImgSistema/imgMenu/bub.png" />Misión</a></li>
-                                                 <li><a href="../vista/institucional.php?refpage=vision"><img src="../ImgSistema/imgMenu/bub.png" />Vision</a></li>
-                                                 <li><a href="../vista/institucional.php?refpage=principios"><img src="../ImgSistema/imgMenu/bub.png" />Principios Institucionales</a></li>
-                                                 <li><a href="../vista/institucional.php?refpage=valores"><img src="../ImgSistema/imgMenu/bub.png" />Valores Éticos Institucionales</a></li>
-                                                 <li><a href="../vista/institucional.php?refpage=calidad"><img src="../ImgSistema/imgMenu/bub.png" />Sistema de Calidad</a></li>
+               </li>
+               <li><a href="../vista/institucional.php?refpage=vision"><img src="../imgSistema/imgMenu/bub.png" />Vision</a></li>
+               <li><a href="../vista/institucional.php?refpage=principios"><img src="../imgSistema/imgMenu/bub.png" />Principios Institucionales</a></li>
+               <li><a href="../vista/institucional.php?refpage=valores"><img src="../imgSistema/imgMenu/bub.png" />Valores Éticos Institucionales</a></li>
+               <li><a href="../vista/institucional.php?refpage=calidad"><img src="../imgSistema/imgMenu/bub.png" />Sistema de Calidad</a></li>
+           </ul>
+       </li>
 
-                                                                                                                                                                                                                       
-                                                 <!--                              <li><a href="#"><span><img src="/Styles/Menu/imagenMenu/top3.png" /> Sublinks</span></a>
-                                   <div class="subs">
-                                        <div class="divCol">
-                                            <ul>
-                                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 41</a></li>
-                                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 42</a></li>
-                                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 43</a></li>
-                                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 44</a></li>
-                                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 45</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="divCol">
-                                            <ul>
-                                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 46</a></li>
-                                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 47</a></li>
-                                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 48</a></li>
-                                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 49</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>-->
-                                               </ul>
-                                             </div>
-                                             <!--                        <div class="divCol">
-                            <ul>
-                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 6</a></li>
-                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 7</a></li>
-                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 8</a></li>
-                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 9</a></li>
-                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 10</a></li>
-                            </ul>
-                        </div>-->
-                                           </div>
-                                         </li>
-                                         <li ><a href="#"><span><img src="" />ESTUDIANTE</span></a>
-                                           <div class="subs">
-                                             <div class="divCol">
-                                               <ul>
-                                                 <li><a href="/Academico/certificados.aspx"><img src="../ImgSistema/imgMenu/bub.png" />Certificados</a></li>
-                                                 <li><a href="/Academico/inscripcion.aspx"><img src="../ImgSistema/imgMenu/bub.png" />Inscripciones</a></li>
-                                                 <li><a href="../manager/Personas_controlador.php"><img src="../ImgSistema/imgMenu/bub.png" />Lista de Alumnos</a></li>
-                                                 <li><a href="http://www.mansioningles.com"target="_blank"><img src="../ImgSistema/imgMenu/bub.png" />La Mansión del Ingles</a></li>
-                                                 <li><a href="https://es.duolingo.com"target="_blank"><img src="../ImgSistema/imgMenu/bub.png" />duolingo</a></li>
-                                                 <li><a href="/Academico/Guias_Manuales.aspx"><img src="../ImgSistema/imgMenu/bub.png" />Descarga de Manuales Guias</a></li>
-                                                 <!--                              <li><a href="#"><span><img src="/Styles/Menu/imagenMenu/top3.png" /> Sublinks</span></a>
-                                   <div class="subs">
-                                        <div class="divCol">
-                                            <ul>
-                                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 41</a></li>
-                                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 42</a></li>
-                                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 43</a></li>
-                                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 44</a></li>
-                                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 45</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="divCol">
-                                            <ul>
-                                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 46</a></li>
-                                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 47</a></li>
-                                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 48</a></li>
-                                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 49</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>-->
-                                               </ul>
-                                             </div>
-                                             <!--                        <div class="divCol">
-                            <ul>
-                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 6</a></li>
-                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 7</a></li>
-                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 8</a></li>
-                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 9</a></li>
-                                <li><a href="#"><img src="/Img/imgMenu/bub.png" /> Link 10</a></li>
-                            </ul>
-                        </div>-->
-                                           </div>
-                                         </li>
-                                         <li><a href="#"><span><img src="" />OFERTA ACADEMICA</span></a>
-                                           <div class="subs">
-                                             <div class="divCol">
-                                               <ul>
-                                                 <li><a href="../vista/ofertaacademica.php"><img src="../ImgSistema/imgMenu/bub.png" /> OFERTA ACADEMICA</a></li>
-                                               </ul>
-                                             </div>
-                                                                                 </div>
-                                         </li>
-                                       </ul>
-    <ul class="ulNav" id="menuDigitador" >
-                                         <li><a href="#"><img src="" />APP-CORPORATIVA</a>
-                                           <div class="subs">
-                                             <div class="divCol">
-                                               <ul>
-                                                 <li><a href="../vista/loadimagen_vista.php"><img src="../ImgSistema/imgMenu/bub.png" /> Pagina Pruebas</a></li>
-                                                 <li><a href="/Academico/inscripcion.aspx"><img src="../ImgSistema/imgMenu/bub.png" />Gestión de Estudiantes</a></li>
-                                                 <li><a href="../vista/noticia_vista.php"><img src="../ImgSistema/imgMenu/bub.png" />Editar Contenidos de la Pagina Web</a></li>
-                                               </ul>
-                                             </div>
-                                           </div>
-                                         </li>
-                                       </ul>
-    <ul class="ulNav" id="menuAdmin" >
-                                         <li><a href=".#"><img src="" />ADMINISTRATIVO</a>
-                                           <div class="subs">
-                                             <div class="divCol">
-                                               <ul>
-                                                 <li><a href="/AdminPage/Registro.aspx"><img src="" /> Registrar Funcionarios</a></li>
-                                                 <li><a href="/Reportes/ReportePersonas.aspx"><img src="../ImgSistema/imgMenu/bub.png" />Reportes</a></li>
-                                               </ul>
-                                             </div>
-                                             <div class="divCol">
-                                               <ul>
-                                                 <li><a href="#"><img src="../ImgSistema/imgMenu/bub.png" />Crar Usuarios</a></li>
-                                               </ul>
-                                             </div>
-                                           </div>
-                                         </li>
-                                       </ul>
-               </nav>
-           </div>
+       <li> <a href="">ESTUDIANTE</a>
+
+        <ul class="ulNav">
+            <li><a href="/Academico/certificados.aspx"><img src="../imgSistema/imgMenu/bub.png" />Certificados</a></li>
+            <li><a href="/Academico/inscripcion.aspx"><img src="../imgSistema/imgMenu/bub.png" />Inscripciones</a></li>
+            <li><a href="../manager/Personas_controlador.php"><img src="../imgSistema/imgMenu/bub.png" />Lista de Alumnos</a></li>
+            <li><a href="http://www.mansioningles.com" target="_blank"><img src="../imgSistema/imgMenu/bub.png" />La Mansión del Ingles</a></li>
+            <li><a href="https://es.duolingo.com" target="_blank"><img src="../imgSistema/imgMenu/bub.png" />duolingo</a></li>
+            <li><a href="/Academico/Guias_Manuales.aspx"><img src="../imgSistema/imgMenu/bub.png" />Descarga de Manuales Guias</a></li>
+        </ul>
+
+    </li>
+
+    <li> <a href="">OFERTA ACADEMICA</a>
+       <ul class="ulNav">
+        <li><a href="../vista/ofertaacademica.php"><img src="../imgSistema/imgMenu/bub.png" /> OFERTA ACADEMICA</a></li>
+    </ul>
+
+</li>
+
+<li> <a href="">APP CORPORATIVA</a>
+ <ul class="ulNav">
+    <li><a href="../vista/loadimagen_vista.php"><img src="../imgSistema/imgMenu/bub.png" /> Pagina Pruebas</a></li>
+    <li><a href="/Academico/inscripcion.aspx"><img src="../imgSistema/imgMenu/bub.png" />Gestión de Estudiantes</a></li>
+    <li><a href="../vista/noticia_vista.php"><img src="../imgSistema/imgMenu/bub.png" />Editar Contenidos de la Pagina Web</a></li>
+</ul>
+
+</li>
+
+</ul>
+
+
+</nav>
+
+ </div>
 
                          
 </div>
