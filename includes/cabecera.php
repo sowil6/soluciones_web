@@ -153,44 +153,44 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
         <li> <a href="../vista/index.php">INICIO</a></li>
         <li class="publico"> <a href="">INSTITUCIONAL</a>
             <ul class="ulNav">
-               <li><a href="../vista/institucional.php?refpage=mision"><img src="../imgSistema/imgMenu/bub.png" />Misión</a>
+               <li><a href="../vista/institucional.php?refpage=mision"><img src="../ImgSistema/imgMenu/bub.png" />Misión</a>
 <ul class="ulNav">
-        <li><a href="../vista/ofertaacademica.php"><img src="../imgSistema/imgMenu/bub.png" /> OFERTA ACADEMICA</a></li>
+        <li><a href="../vista/ofertaacademica.php"><img src="../ImgSistema/imgMenu/bub.png" /> OFERTA ACADEMICA</a></li>
     </ul>
 
                </li>
-               <li><a href="../vista/institucional.php?refpage=vision"><img src="../imgSistema/imgMenu/bub.png" />Vision</a></li>
-               <li><a href="../vista/institucional.php?refpage=principios"><img src="../imgSistema/imgMenu/bub.png" />Principios Institucionales</a></li>
-               <li><a href="../vista/institucional.php?refpage=valores"><img src="../imgSistema/imgMenu/bub.png" />Valores Éticos Institucionales</a></li>
-               <li><a href="../vista/institucional.php?refpage=calidad"><img src="../imgSistema/imgMenu/bub.png" />Sistema de Calidad</a></li>
+               <li><a href="../vista/institucional.php?refpage=vision"><img src="../ImgSistema/imgMenu/bub.png" />Vision</a></li>
+               <li><a href="../vista/institucional.php?refpage=principios"><img src="../ImgSistema/imgMenu/bub.png" />Principios Institucionales</a></li>
+               <li><a href="../vista/institucional.php?refpage=valores"><img src="../ImgSistema/imgMenu/bub.png" />Valores Éticos Institucionales</a></li>
+               <li><a href="../vista/institucional.php?refpage=calidad"><img src="../ImgSistema/imgMenu/bub.png" />Sistema de Calidad</a></li>
            </ul>
        </li>
 
        <li> <a href="">ESTUDIANTE</a>
 
         <ul class="ulNav">
-            <li><a href="/Academico/certificados.aspx"><img src="../imgSistema/imgMenu/bub.png" />Certificados</a></li>
-            <li><a href="/Academico/inscripcion.aspx"><img src="../imgSistema/imgMenu/bub.png" />Inscripciones</a></li>
-            <li><a href="../manager/Personas_controlador.php"><img src="../imgSistema/imgMenu/bub.png" />Lista de Alumnos</a></li>
-            <li><a href="http://www.mansioningles.com" target="_blank"><img src="../imgSistema/imgMenu/bub.png" />La Mansión del Ingles</a></li>
-            <li><a href="https://es.duolingo.com" target="_blank"><img src="../imgSistema/imgMenu/bub.png" />duolingo</a></li>
-            <li><a href="/Academico/Guias_Manuales.aspx"><img src="../imgSistema/imgMenu/bub.png" />Descarga de Manuales Guias</a></li>
+            <li><a href="/Academico/certificados.aspx"><img src="../ImgSistema/imgMenu/bub.png" />Certificados</a></li>
+            <li><a href="/Academico/inscripcion.aspx"><img src="../ImgSistema/imgMenu/bub.png" />Inscripciones</a></li>
+            <li><a href="../manager/Personas_controlador.php"><img src="../ImgSistema/imgMenu/bub.png" />Lista de Alumnos</a></li>
+            <li><a href="http://www.mansioningles.com" target="_blank"><img src="../ImgSistema/imgMenu/bub.png" />La Mansión del Ingles</a></li>
+            <li><a href="https://es.duolingo.com" target="_blank"><img src="../ImgSistema/imgMenu/bub.png" />duolingo</a></li>
+            <li><a href="/Academico/Guias_Manuales.aspx"><img src="../ImgSistema/imgMenu/bub.png" />Descarga de Manuales Guias</a></li>
         </ul>
 
     </li>
 
     <li> <a href="">OFERTA ACADEMICA</a>
        <ul class="ulNav">
-        <li><a href="../vista/ofertaacademica.php"><img src="../imgSistema/imgMenu/bub.png" /> OFERTA ACADEMICA</a></li>
+        <li><a href="../vista/ofertaacademica.php"><img src="../ImgSistema/imgMenu/bub.png" /> OFERTA ACADEMICA</a></li>
     </ul>
 
 </li>
 
 <li> <a href="">APP CORPORATIVA</a>
  <ul class="ulNav">
-    <li><a href="../vista/loadimagen_vista.php"><img src="../imgSistema/imgMenu/bub.png" /> Pagina Pruebas</a></li>
-    <li><a href="/Academico/inscripcion.aspx"><img src="../imgSistema/imgMenu/bub.png" />Gestión de Estudiantes</a></li>
-    <li><a href="../vista/noticia_vista.php"><img src="../imgSistema/imgMenu/bub.png" />Editar Contenidos de la Pagina Web</a></li>
+    <li><a href="../vista/loadimagen_vista.php"><img src="../ImgSistema/imgMenu/bub.png" /> Pagina Pruebas</a></li>
+    <li><a href="/Academico/inscripcion.aspx"><img src="../ImgSistema/imgMenu/bub.png" />Gestión de Estudiantes</a></li>
+    <li><a href="../vista/noticia_vista.php"><img src="../ImgSistema/imgMenu/bub.png" />Editar Contenidos de la Pagina Web</a></li>
 </ul>
 
 </li>
