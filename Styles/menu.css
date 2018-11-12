@@ -28,7 +28,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
  .divContenedorMenu {  
 	position:relative;
 	width:100%;
-  background-color:#a70000 !important;
+  background-color:#a70000;
 height:45px;
    z-index:1;
  }
@@ -184,7 +184,7 @@ top:0;
 		}
 
 }*/
-
+/*SCREEN MOVIL 300 a 500 AMARILLO*/
 @media screen  and (min-width: 300px) and (max-width: 600px) {
 
 
@@ -193,6 +193,15 @@ top:0;
 header label{
 		display:block;}
 	
+	.divContenedorMenu {  
+	position:fixed;
+	top:0;
+	width:100%;
+  background-color:#fff;
+height:45px;
+   z-index:1;
+   border:1px solid #a70000;
+ }
 .menu{
 
 position:absolute;

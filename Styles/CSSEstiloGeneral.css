@@ -858,12 +858,19 @@ top:10px;
 }
 /*LOGO*/
 .menuLogo {
-width:250px;/*con el valor que esta en las function de la pagina Site.Master controlar el ancho contenedor de la imagen*/
+	position:fixed;
+	 width:210px;
+	  height:35px;
+	  z-index:2;
+	  margin-left:12%
+	 
+	
+/*width:250px;con el valor que esta en las function de la pagina Site.Master controlar el ancho contenedor de la imagen*/
 }
-.menuLogo-fixed {
+/*.menuLogo-fixed {
 	  width:210px;
 	  height:35px;
-  	}
+  	}*/
 	.contenedorAntesMenu {
 	height: 40px;
 }
