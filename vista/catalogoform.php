@@ -25,7 +25,7 @@
   </div>
  
  <!-- InstanceBeginEditable name="EditRegionCentro" -->
-<link rel="stylesheet" type="text/css" href="/soluciones-web/Styles/css_Catalogo_Form.css">
+<link rel="stylesheet" type="text/css" href="../Styles/css_Catalogo_Form.css">
   <article class="contentCentro">
    
 <!--<link href="../Styles/CSSEstiloGeneral.css" rel="stylesheet" type="text/css">
