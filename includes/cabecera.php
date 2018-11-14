@@ -136,7 +136,7 @@ return $resul;
           
             </div>
             
-            <div id="resolucion" class="resolucion">
+            <div  class="resolucion_">
      Resolución 01-235  Secretaria de Educación de Bolívar</br> 
 Resolución 4679 Secretaria de Educación Distrital de Cartagena de Indias</br> 
 Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartagena – Colombia

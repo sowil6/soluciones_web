@@ -15,7 +15,7 @@
 </head>
 
 <body>
-
+<link rel="stylesheet" type="text/css" href="../Styles/cssPagina_Proyectos.css">
 <div class="containerCeficc">
   <header>
   
@@ -23,13 +23,18 @@
    </header>
 
   <!-- InstanceBeginEditable name="EditRegionUnaColumna" -->
-  <article class="contentUnaColumna">
-  
-    <div class="contenedorProyecto"> 
-  <div class="slide_proyectos">Portafolio de Servicios y Emprendimiento</div>
 
-    <div class="contenedorProyectoIZQ">
-    <?php
+  <article class="contentUnaColumna">
+  <div class="contenedorProyecto"> 
+  
+  
+ <div class="contenedorProyectoIZQ">
+  <div class="divTituloulProyectoIZQ">
+<p>CERTIFICACIONES</p> 
+ </div>
+ 
+ 
+         <?php
        
 $master="ProyectoIZQ";
 $canciones = simplexml_load_file("../XMLPage/xmlPaginaInicioParteBaja.xml");
@@ -41,21 +46,59 @@ foreach($canciones as $cancion)
 $estado=ValidaExtension($ext);//con la extension evaluamos si es tipo imagen o video
 if($estado==1){
 	//si es imagen se embebe en el control html imagen
-$HTMLfoto_OVideo= "<embed class='" .$master. "imagenoVideo'   src = '../Img/".$cancion->foto. "' />";
+$HTMLfoto_OVideo= "<embed class='" .$master. "imagenoVideo '   src = '../Img/".$cancion->foto. "' />";
 }else{
 	//si es video se embebe en el control html video
-$HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = '../Img/".$cancion->foto. "' type = 'video/mp4' > <source src = '../Img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
+$HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = '../Img/".$cancion->foto. "' type = 'video/mp4' > <source src = '../img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
 		}
-
-echo'<li><a href="'.$cancion->urlFile.'?Accion='.$cancion->Codigo.'">'.$HTMLfoto_OVideo. $cancion->Titulo.'</a>';
+	
+/*if($cancion->Codigo==$v2){}*/
+echo '<li><a href='.$cancion->urlFile."?Accion=".$cancion->Codigo.'> <span class="titulo">'. $cancion->Titulo.'</span>';		
+echo $HTMLfoto_OVideo.'<p class="Intro">'. $cancion->introduccionNoticia.'</p></a>';
 echo '</li>';
 }
-echo'</ul>';	  
+echo'</ul>';	
+  
+  /*function ValidaExtension($sExtension) {
 
+            $resul;
+            switch ($sExtension)
+            {
+                case "jpg":
+                case "jpeg":
+                case "png":
+                case "gif":
+                case "bmp":
+                case "JPG":
+                case "JPEG":
+                case "PNG":
+                case "GIF":
+                case "BMP":
+               $resul=TRUE;
+				
+                break;
+
+                default:
+                case "mp4":
+                case "avi":
+                case "wmv":
+				$resul=FALSE;
+                    break;
+            }
+return $resul;
+          
+			
+          			
+        }*/
 ?>
-    </div>
+	
+    </div> 
+  
+      
+
        <div class="contenedorProyectoDER">
-           <?php
+           <div class="slide_proyectos">Portafolio de Servicios y Emprendimiento</div>
+  <?php
        
 $master="ProyectoDER";
 $canciones = simplexml_load_file("../XMLPage/xmlPaginaInicioParteBaja.xml");
@@ -74,8 +117,9 @@ $HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source s
 		}
 		$cod = $_GET['Accion'];
 if($cancion->Codigo==$cod){
-echo'<li><p class="titulo_proyecto">'.$cancion->Titulo. '</p>' .$HTMLfoto_OVideo. '</br> '. $cancion->introduccionNoticia.'</br> '. $cancion->mensajeNoticia;
-
+echo '<li>  <p class="titulo">'. $cancion->Titulo.'</p>';    
+echo $HTMLfoto_OVideo.'<p class="Intro">'. $cancion->introduccionNoticia.'</p> ';
+echo '<div class="Mensaje">'.$cancion->mensajeNoticia.'</div> ';
 echo '</li>';
 }}
 echo'</ul>';	  

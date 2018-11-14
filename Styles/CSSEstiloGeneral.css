@@ -5,7 +5,7 @@ body {
 	width:100%;
 }
 #header {
-	width: 940px;
+	/*width: 940px;*/
 	height: 90px;
 	margin: 0 auto;
 	background-color: #FBFBFB;
@@ -19,13 +19,16 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 }
 /* ~~ This fixed width container surrounds all other blocks ~~ */
 .containerCeficc {
+	z-index:1;
 	width: 100%;
 
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
-.contenedor{	background-color: #C4D8E7;
+.contenedor{	
+background-color: #C4D8E7;
 	/**/	width: 100%;
-	 display: table;margin-top: 1px;
+	 display: table;
+	 margin-top: 1px;
 	 	 	
 	}
 #contenidos {
@@ -41,8 +44,8 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	display:inline-block;
 	float: left;
 	width: 20%;
-		margin-top: 1px;
-	/*background-color: #C9C1C1;
+	/*	margin-top: 1px;
+	background-color: #C9C1C1;
 	padding-top: 0px;
 	padding-right: 0;
 	padding-left: 0;
@@ -70,11 +73,11 @@ background-color:#F7F7F7;
 		}
 
 /*MASTER UNA COLUMNA*/
-.contentUnaColumna{
+.contentUnaColumna{background-color: #C4D8E7;
+z-index:2;
 	width:100%;
-	/*height:auto;
-	background-color:#8DABAF;
-	padding:5px 5px 15px 5px;*/
+	/*justify-content: center; 
+	display:flex; y justify-content: center ayudan a centrar el menu*/
 	
 	}
 /*COLUMNA menu izquierdo*/
@@ -193,12 +196,11 @@ width:300px;/*con el valor que esta en las function de la pagina Site.Master con
 	}
 
 /*RESOLUCION SECRETARIA DE BOLIVAR*/
-.resolucion {
+.resolucion_ {
 	position:absolute;
 	width:100%;/*con el valor que esta en las function de la pagina Site.Master controlar el ancho contenedor de la imagen*/
    top:1px;
- 
-  
+ color: blue;  
      	 display:flex;/*display:flex y justify-content: center ayudan a centrar el menu*/
   justify-content: center;/*display:flex y justify-content: center ayudan a centrar el menu*/
   font-size:0.6rem;
@@ -555,105 +557,13 @@ width:260px;
 	height: 150px;
 }
 
-	/*PAGINA PROYECTOS*/
-.contenedorProyecto{
-	/*background-color:#050505;	*/
-		width:100%;
-		height:auto;
-		}
-.contenedorProyectoIZQ{
-margin-top:2px;
-margin-left:3px;
-	width:20%;
-	background-color:green;
-	float:left;
 	
-		}
-.ulProyectoIZQ {
-	width: 100%;
-	margin: auto;
-	list-style: none;
-	padding: 2px;
-	box-sizing: border-box;
-	/*display: flex;ubica los objetos en forma horizontal y bajando en linea
-	flex-wrap: wrap;*/
-	justify-content: space-around;
-}	
-.ulProyectoIZQ li {
-	width:89%;
-	margin: 5px;/*separacion entre imagenes*/
-	border: 1px solid #D3D3D3; /*LightGray */
-padding:2px /*ayuda a separar los marcos*/
-}
-.ulProyectoIZQ img {
-	width: 85%;
-	height: 100px;
-	border: 1px solid #D3D3D3; /*LightGray */
-padding:10px;/*Pone marco a la imagen*/
-}
-.ProyectoIZQimagenoVideo{
-	width: 85%;
-	height: 100px;
-	border: 1px solid #D3D3D3; /*LightGray */
-padding:10px;/*Pone marco a la imagen*/
-	}
-.ulProyectoIZQ a {
-	color:white;
-	font-size:0.7rem;
-}
-
-.contenedorProyectoDER{
-	float:right;	
-	width:78%;
-background-color:#D7DCE1;
-	}
-.ulProyectoDER {
-	width: 100%;
-	list-style: none;
-	/*box-sizing: border-box;*/
-	display: flex;/*ubica los objetos en forma horizontal y bajando en linea*/
-	flex-wrap: wrap;
-	justify-content: space-around;
-}	
-.ulProyectoDER li {
-	width:94%;
-	margin: 5px;/*separacion entre imagenes*/
-	border: 1px solid #D3D3D3; /*LightGray */
-	padding:10px; /*ayuda a separar los marcos*/
-   	justify-content: center;/*display:flex y justify-content: center ayudan a centrar el menu*/
-}
-.ulProyectoDER img {
-	width: 100%;
-	max-height:600px;
-	/*height: 250px;
-	border: 1px solid #D3D3D3; LightGray */
-/*padding:10px;Pone marco a la imagen*/
-}
-.ProyectoDERimagenoVideo{
-	margin-top:-24px;
-	width: 100%;
-	min-height:550px;
-	
-	max-height:600px;}
-.titulo_proyecto{
-	margin-top:-20px;
-	min-width:45%;
-position:relative;
-	font-size:1.5rem;
-	font-style:#F5F2F2;
-	color:#AAA5A5;
-	border-color:#000000;
-	/*box-shadow: 0px 0px 10px #000 inset;
-	border-radius: 10px 10px 10px 10px;
-	border: solid 1px;*/
-	justify-content: center; 
-	display:flex;/* y justify-content: center ayudan a centrar el menu*/
-	}
 
 /*PAGINA CATALOGO CERTIFICACIONES*/
 .contenedorCerti{
 	width:100%;
-	background-color:#8DABAF;background-color:#FFFFFF;
+	/*background-color:#8DABAF;
+	background-color:#FFFFFF;*/
 	}
 .divCertificaciones{
 	margin-top: -14px;
@@ -754,10 +664,14 @@ padding:10px;Pone marco a la imagen*/
 		/*display:none;
 		margin-top:1%;	*/		
 		}
-.resolucion {
-top:10px;
+		
+.resolucion_ {
+	
+top:10px; 
+color:#0D56D7;
   font-size:0.5rem;
   display:none;
+ background-color:red;
 }
 /*LOGO*/
 .menuLogo {
