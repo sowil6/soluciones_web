@@ -387,46 +387,7 @@ margin:0.4em auto;
     margin-left: 7px;
 }
 
-/*PAGINA CATALOGO*/
-/*Estilos de la galeria*/
-.contenedorCatalogo{
-	padding-top:10px;
-	width:100%;
-	background-color:#353131;
-		
-	}
-.ulCatalogo {
-	width: 100%;
-	margin: auto;
-	list-style: none;
-	padding: 5px;
-	box-sizing: border-box;
-	display: flex;/*ubica los objetos en forma horizontal y bajando en linea*/
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
-.ulCatalogo li {
-	width:30%;
-	margin: 5px;/*separacion entre imagenes*/
-	border: 1px solid #D3D3D3; /*LightGray */
-padding:5px /*ayuda a separar los marcos*/
-}
-.ulCatalogo img {
-	width: 90%;
-	height: 150px;
-	border: 1px solid #D3D3D3; /*LightGray */
-padding:10px;/*Pone marco a la imagen*/
-}
-.ulCatalogo a {
-	color:white;
-}
-.ulcatalogoimagenoVideo{
-	width: 90%;
-	height: 150px;
-	border: 1px solid #D3D3D3; /*LightGray */
-padding:10px;/*Pone marco a la imagen*/
 
-	}
 
 	
 	/*DETALLE CATALOGO

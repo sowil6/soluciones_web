@@ -23,7 +23,6 @@ border-top: 3px solid #919494;
 	margin: auto;
 	
 }
-
 .ulMenuIzquierdo li {
 	width:100%;
 	flex-wrap: wrap;
@@ -34,7 +33,6 @@ border-top: 3px solid #919494;
 justify-content: center; 
 
 }
-
 .ulMenuIzquierdo .titulo {
 	display:inline-block;
 	text-align:center;
@@ -46,7 +44,6 @@ justify-content: center;
 	margin-bottom:5px;
   	margin-top:5px;
 	}
-	
 .contenedorImagen{
 	padding:1px;
 	width:20%;
@@ -65,7 +62,6 @@ justify-content: center;
   padding:1.5%;
   margin-bottom:5px;
 }
-
 .MenuIzquierdo_Intro{
 	margin-left:5px;
 	width:74%;
@@ -73,7 +69,6 @@ justify-content: center;
 	vertical-align:central;
 	
 	}
-	
 .MenuIzquierdo_Intro p{
 	display:inline-block;
 	flex-wrap: wrap;

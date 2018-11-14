@@ -18,11 +18,7 @@ background-color: #C4D8E7;
 }
 .contenedorDetalleCatalogoIZQ, .contenedorDetalleCatalogoDER {
   display: table-cell;
-}
-
-
-
-
+  }
 .contenedorDetalleCatalogo{
 	
 		width:100%;
