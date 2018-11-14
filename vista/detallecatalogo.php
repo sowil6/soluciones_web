@@ -25,12 +25,14 @@
   </div>
  
  <!-- InstanceBeginEditable name="EditRegionCentro" -->
-<link href="../Styles/CSSEstiloGeneral.css" rel="stylesheet" type="text/css"> 
-<!--  <link rel="stylesheet" type="text/css" href="../Styles/cssOfertaAcademica.css">-->
+<!-- <link href="../Styles/CSSEstiloGeneral.css" rel="stylesheet" type="text/css"> 
+ <link rel="stylesheet" type="text/css" href="../Styles/cssOfertaAcademica.css">-->
+<link rel="stylesheet" type="text/css" href="../Styles/css_Detalle_Catalogo.css">
 <article class="contentCentro">
- 
+ <div class="contenedor_Cat">
+ <div id="contenidos_Cat">
    <div class="contenedorDetalleCatalogo"> 
-   
+   <p class="DetalleCatalogo_TituloPagina">OFERTA ACADEMICA DETALLADA</p> 
     <div class="contenedorDetalleCatalogoIZQ">
     <?php
        
@@ -52,7 +54,8 @@ $HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source s
 	$v2 = $_GET['Accion'];
 	$detalleCod = $_GET['dcod'];
 if($cancion->DetalleCodigo==$detalleCod){
-echo'<li><a href="'.$cancion->urlFile.'?Accion='.$cancion->Codigo.'&dcod='.$cancion->DetalleCodigo.'">'.$HTMLfoto_OVideo. $cancion->Titulo.'</br> '. $cancion->introduccionNoticia.'</a>';
+echo'<li><a href="'.$cancion->urlFile.'?Accion='.$cancion->Codigo.'&dcod='.$cancion->DetalleCodigo.'"><li>  <p class="titulo">'. $cancion->Titulo.'</p>';
+echo $HTMLfoto_OVideo.'<p class="Intro">'. $cancion->introduccionNoticia.'</p> </a>';
 echo '</li>';
 }}
 echo'</ul>';	  
@@ -79,7 +82,8 @@ $HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source s
 		}
 	
 if($cancion->Codigo==$v2&&$cancion->DetalleCodigo==$detalleCod){
-echo'<li>'.$HTMLfoto_OVideo. $cancion->Titulo.'</br> '. $cancion->introduccionNoticia;
+echo'<li><p class="titulo">'. $cancion->Titulo.'</p> ';
+echo $HTMLfoto_OVideo.'<p class="Intro">'. $cancion->introduccionNoticia.'</p>';
 
 echo '</li>';
 }}
@@ -88,7 +92,8 @@ echo'</ul>';
 ?>
        </div>
     </div>
-
+</div>
+</div>
   </article>
   <!-- InstanceEndEditable --><!-- end .content -->
  
