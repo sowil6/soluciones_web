@@ -53,7 +53,7 @@ $HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source s
 		}
 	
 /*if($cancion->Codigo==$v2){}*/
-echo'<li><a href="'.$cancion->urlFile.'?Accion='.$cancion->Codigo.'">'.$HTMLfoto_OVideo.' </br>'. $cancion->Titulo.'</br> '. $cancion->introduccionNoticia.'</a>';
+echo'<li><a href="'.$cancion->urlFile.'?Accion='.$cancion->Codigo.'">'. $cancion->Titulo.$HTMLfoto_OVideo.'</br> '. $cancion->introduccionNoticia.'</a>';
 echo '</li>';
 }
 echo'</ul>';	  

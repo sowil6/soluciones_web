@@ -56,7 +56,7 @@ $HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source s
 	$c2 = $_GET['Accion'];
 if($cancion->Codigo==$c2){
 echo '<li><span class="titulo">'. $cancion->Titulo.'</span>';
-echo'<div class="ulOpcion_MenuImagen">'.$HTMLfoto_OVideo.'</div> <div class="MenuIzquierdo_Intro" ><p>'. $cancion->introduccionNoticia.'</p></div>';
+echo'<div class="ulOpcion_MenuImagen">'.$HTMLfoto_OVideo.'</div> <div class="Intro" ><p>'. $cancion->introduccionNoticia.'</p></div>';
 echo '</li>';
 }
 

@@ -32,8 +32,6 @@ return $resul;
            			
         }
 ?>	
-
-
 <link href="../Styles/CSSEstiloGeneral.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="../Styles/menu.css">
  <link rel="stylesheet" href="../Styles/footer-distributed-with-address-and-phones.css">

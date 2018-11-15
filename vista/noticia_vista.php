@@ -25,7 +25,7 @@
   <!-- InstanceBeginEditable name="EditRegionUnaColumna" -->
  
 	
-<!-- -->	
+	
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
@@ -33,7 +33,7 @@
  <link href="../Styles/jquery-te-1.4.0.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="../Scripts/jquery.min.js" charset="utf-8"></script>
 <script src="../Scripts/jquery-te-1.4.0.min.js" type="text/javascript" charset="utf-8"></script>
-<link rel="stylesheet" type="text/css" href="../Styles/bootstrap-4.1.3-dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../Styles/bootstrap.min.css"><!-- -->
 
   <script>
 $(document).ready(function(){

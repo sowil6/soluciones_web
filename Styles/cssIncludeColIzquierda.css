@@ -37,7 +37,7 @@ justify-content: center;
 	display:inline-block;
 	text-align:center;
 	width:98%;
-	color:#777374;
+	color:#0817C8;
   	border-radius: 15px 15px 15px 15px;
   	border: 1px solid #D3D3D3;
   	background-color:#DFE8F7;
@@ -50,9 +50,9 @@ justify-content: center;
 		}
 .contenedorImagen embed{
 	float:left;
-   width: 3rem;
-	height: 3rem;
-	border-radius: 50%;
+   width: 12rem;
+	height: 6rem;
+	border-radius: 45%;
 	background: #4678ED;
 	display: flex;
 	justify-content: center;
@@ -64,12 +64,13 @@ justify-content: center;
 }
 .MenuIzquierdo_Intro{
 	margin-left:5px;
-	width:74%;
+	width:98%;
 	float:left;
-	vertical-align:central;
+	
 	
 	}
 .MenuIzquierdo_Intro p{
+	text-align: center;
 	display:inline-block;
 	flex-wrap: wrap;
 	width:99%;
@@ -79,6 +80,7 @@ background-color:#DFE8F7;
 margin-bottom:5px;
   	margin-top:5px;
 font-size:0.8rem;
+color:#0817C8;
 }
 
 

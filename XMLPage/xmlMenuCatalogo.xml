@@ -3,55 +3,44 @@
   <Noticia>
     <Codigo>1038</Codigo>
     <DetalleCodigo>0</DetalleCodigo>
-    <Titulo>0</Titulo>
-    <introduccionNoticia>Ingles Sistema Europeosads</introduccionNoticia>
+    <Titulo>INGLES</Titulo>
+    <introduccionNoticia>Programa de Ingles Sistema Europeo</introduccionNoticia>
     <mensajeNoticia>&lt;p&gt;dasd&lt;/p&gt;</mensajeNoticia>
     <urlFile>../vista/catalogoform.php</urlFile>
-    <foto>sanley3.jpg</foto>
+    <foto>programa_Ingles.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
     <autor>2</autor>
   </Noticia>
   <Noticia>
     <Codigo>2094</Codigo>
     <DetalleCodigo>0</DetalleCodigo>
-    <Titulo>0</Titulo>
-    <introduccionNoticia>hola intro dsds&lt;br&gt;</introduccionNoticia>
+    <Titulo>ELECTRICIDAD&lt;br&gt;</Titulo>
+    <introduccionNoticia>ELECTRICIDAD INDUSTRIAL &lt;br&gt;</introduccionNoticia>
     <mensajeNoticia>&lt;p&gt;hola Contenido dsds&lt;br&gt;&lt;/p&gt;</mensajeNoticia>
     <urlFile>../vista/catalogoform.php</urlFile>
-    <foto>erlingas.gif</foto>
+    <foto>ELECTRICIDAD.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
     <autor>2</autor>
   </Noticia>
   <Noticia>
     <Codigo>2115</Codigo>
     <DetalleCodigo>1038</DetalleCodigo>
-    <Titulo>DSSDS</Titulo>
-    <introduccionNoticia>DSDSD</introduccionNoticia>
+    <Titulo>SEGURIDAD</Titulo>
+    <introduccionNoticia>SEGURIDAD OCUPACIONAL&lt;br&gt;</introduccionNoticia>
     <mensajeNoticia>&lt;p&gt;DSDS&lt;/p&gt;</mensajeNoticia>
     <urlFile>../vista/catalogoform.php</urlFile>
-    <foto>WhatsApp Image 2018-07-06 at 6.57.58 PM.jpeg</foto>
+    <foto>seguridad_ocupacional.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
     <autor>2</autor>
   </Noticia>
   <Noticia>
     <Codigo>2118</Codigo>
     <DetalleCodigo>0</DetalleCodigo>
-    <Titulo>preuba cuarto&lt;br&gt;</Titulo>
-    <introduccionNoticia>cuato item&lt;br&gt;</introduccionNoticia>
+    <Titulo>ENERGIA&lt;br&gt;</Titulo>
+    <introduccionNoticia>ENERGIA FOTOVOLTAICA&lt;br&gt;</introduccionNoticia>
     <mensajeNoticia>&lt;p&gt;&lt;/p&gt;</mensajeNoticia>
     <urlFile>../vista/catalogoform.php</urlFile>
-    <foto>2.jpg</foto>
-    <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
-    <autor>2</autor>
-  </Noticia>
-  <Noticia>
-    <Codigo>2119</Codigo>
-    <DetalleCodigo>0</DetalleCodigo>
-    <Titulo>fwfw</Titulo>
-    <introduccionNoticia>fdwfdwf &lt;br&gt;</introduccionNoticia>
-    <mensajeNoticia>&lt;p&gt;dwfwdf&lt;/p&gt;</mensajeNoticia>
-    <urlFile>../vista/catalogoform.php</urlFile>
-    <foto>4.jpg</foto>
+    <foto>energia_fotovoltaica.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
     <autor>2</autor>
   </Noticia>

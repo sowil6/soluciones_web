@@ -2,8 +2,12 @@
 .contenedorOferta{
 	padding-top:1px;
 	width:100%;
+	text-decoration:none;
 /*	background-color:#353131;
 */		}
+.contenedorOferta a{
+	text-decoration:none;
+		}
 		
 .TituloOferta {
 /*   background-color:#FEFDFD;
