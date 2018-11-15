@@ -3,11 +3,11 @@
   <Noticia>
     <Codigo>1022</Codigo>
     <DetalleCodigo>0</DetalleCodigo>
-    <Titulo>0</Titulo>
-    <introduccionNoticia>img3.jpg</introduccionNoticia>
+    <Titulo>PROGRAMAS TECNICOS LABORALES&lt;br&gt;</Titulo>
+    <introduccionNoticia>AVALADOS POR EL MINISTERIO DE EDUCACION NACIONAL&lt;br&gt;</introduccionNoticia>
     <mensajeNoticia>&lt;p&gt;&lt;/p&gt;</mensajeNoticia>
     <urlFile/>
-    <foto>erlingas.gif</foto>
+    <foto>slide-corporate-1.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
     <autor>4</autor>
   </Noticia>
@@ -25,22 +25,11 @@
   <Noticia>
     <Codigo>2052</Codigo>
     <DetalleCodigo>0</DetalleCodigo>
-    <Titulo>0</Titulo>
-    <introduccionNoticia>Intro Slide tres&lt;br&gt;</introduccionNoticia>
-    <mensajeNoticia>&lt;p&gt;&lt;/p&gt;</mensajeNoticia>
-    <urlFile>/Public/CatalogoForm.aspx</urlFile>
-    <foto>curso altura.jpg</foto>
-    <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
-    <autor>William Lozano Posso</autor>
-  </Noticia>
-  <Noticia>
-    <Codigo>2113</Codigo>
-    <DetalleCodigo>0</DetalleCodigo>
-    <Titulo>dsds dsds&lt;br&gt;</Titulo>
-    <introduccionNoticia>img3.jpg</introduccionNoticia>
+    <Titulo>Institución para el Trabajo y el Desarrollo Humano&lt;br&gt;</Titulo>
+    <introduccionNoticia>Damos una respuesta abierta a las expectativas laborales de nuestro entorno social y contamos con un conjunto de recursos gestionados con tecnicas de calidad total.&lt;br&gt;</introduccionNoticia>
     <mensajeNoticia>&lt;p&gt;&lt;/p&gt;</mensajeNoticia>
     <urlFile/>
-    <foto>erlingas.gif</foto>
+    <foto>slider3.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
     <autor>4</autor>
   </Noticia>
