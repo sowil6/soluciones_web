@@ -11,7 +11,7 @@ border-top: 3px solid #919494;
 	padding-left: 0;
 /*	padding-bottom: 10px;
 */	
-	background-color:#F7F7F7;
+	
 	}
 
 .ulMenuIzquierdo {
@@ -24,7 +24,7 @@ border-top: 3px solid #919494;
 	
 }
 .ulMenuIzquierdo li {
-	width:100%;
+	width:98%;
 	flex-wrap: wrap;
 	border-bottom: 1px solid #919494;
 /*	border-top: 1px solid #D7E0E1;*/
@@ -32,7 +32,7 @@ border-top: 3px solid #919494;
 	border-radius: 15px 15px 15px 15px;
 	display:inline-block; /*y justify-content: center ayudan a centrar el menu*/
 justify-content: center; 
-
+background-color:#F7F7F7;/**/
 }
 .ulMenuIzquierdo .titulo {
 	display:inline-block;
