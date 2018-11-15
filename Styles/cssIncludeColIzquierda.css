@@ -28,7 +28,8 @@ border-top: 3px solid #919494;
 	flex-wrap: wrap;
 	border-bottom: 1px solid #919494;
 /*	border-top: 1px solid #D7E0E1;*/
-	
+	border: 2px solid #4A4848;
+	border-radius: 15px 15px 15px 15px;
 	display:inline-block; /*y justify-content: center ayudan a centrar el menu*/
 justify-content: center; 
 
