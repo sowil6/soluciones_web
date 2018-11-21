@@ -6,13 +6,12 @@
 .divsliderSeccionSuperior {
   width:100%;
   height:400px;
- 
-  
       /*margin:0 auto;*/ /*centra el contenedor principal*/
 }
+
 .sliderimagenoVideo {
  width:100%;
- height:400px; 
+height:400px;
  /*-webkit-animation-name: example; 
     -webkit-animation-duration: 20s;
     animation-name: example;
@@ -22,62 +21,98 @@
 width:80%;
 }
  .textoTituloSlide {
+	/* background-color:yellow;*/
+	/* top:10%;*/
+	 bottom:75%;
 	position:absolute;
-	 color:#fff;
+	 color:#ffffff;
 	 font-weight:bold;
-	   font-size:2rem;
+	   font-size:1.5rem;
+	     line-height:1;/*interlineado separacion entre lineas de texto*/
  /* padding: 0px 0 10px 0px;sup 0 abajo izq*/
   word-wrap:break-word;
    animation-duration: 2s;
    -webkit-animation-name: sliTitulo; /* Safari 4.0 - 8.0 */
   animation-name: sliTitulo;
-  left: 1%;
+  left: 5%;
   width:60%;
+  float:left;
  
    }
    /* Safari 4.0 - 8.0 */
 @-webkit-keyframes sliTitulo {
    from {left: 80%;        } 
     to {
-       left: 1%;
+       left: 5%;
      
     }
 }
    @keyframes sliTitulo {
-    from {
-        left: 80%;
-      
-    }
- 
+    from {   left: 80%;   }
     to {
-       left: 1%;
+       left: 5%;
      
     }
 }
+
 .TextoIntroSlide {
+	/*	 background-color:green;*/
+/*	bottom:50%;*/
+	 top:25%;
 	position:absolute;
-	 word-wrap:break-word;
-	color:#fff;
-		
-      font-size:1rem;
-    padding: 48px 0 0 0px;/*sup 0 abajo izq*/
-    text-align:left;
-    line-height:1.2;/*interlineado separacion entre lineas de texto*/
-	 animation-duration: 2s;
+	 color:#ffffff;
+	 font-weight:bold;
+	   font-size:2rem;
+	     line-height:1;/*interlineado separacion entre lineas de texto*/
+ /* padding: 0px 0 10px 0px;sup 0 abajo izq*/
+  word-wrap:break-word;
+   animation-duration: 2s;
    -webkit-animation-name: sliIntro; /* Safari 4.0 - 8.0 */
-  animation-name: sliIntro;
-  left: 1%;
-bottom:0;
-  width:60%;
-}
+ animation-name: sliIntro;
+  left: 5%;
+  max-width:70%;
+  max-height:2em;
+ float:left;
+   }
+   /* Safari 4.0 - 8.0 */
 @-webkit-keyframes sliIntro {
-     from {bottom:-100px;        } 
-    to { bottom: 0;    }
+   from {left: -50%;        } 
+    to {left: 5%;    }
 }
    @keyframes sliIntro {
-     from {bottom:-100px;        } 
-    to { bottom: 0;    }
+    from { left: -50%;    } 
+    to {  left: 5%;   }
 }
+
+
+.TextoMensajeSlide {
+	/* background-color:orange;*/
+	position:absolute;
+	 word-wrap:break-word;
+	color:#ffffff;
+		
+      font-size:1rem;
+   /* padding: 48px 0 0 0px;sup 0 abajo izq*/
+    text-align:left;
+    line-height:1;/*interlineado separacion entre lineas de texto*/
+	 animation-duration: 2s;
+   -webkit-animation-name: sliMensaje; /* Safari 4.0 - 8.0 */
+   animation-name: sliMensaje;
+  left: 5%;
+bottom:25%;/**/
+  width:60%;
+
+}
+@-webkit-keyframes sliMensaje {
+     from {bottom:70%;        } 
+    to { bottom: 25%;    }
+}
+   @keyframes sliMensaje {
+     from {bottom:70%;        } 
+    to { bottom: 25%;    }
+}
+
+
   .divSlide {
    position:absolute;
    left:40%;
@@ -145,7 +180,7 @@ bottom:0;
 /* pagination */
 .slides-pagination {
 	position:absolute;
-	bottom:3em;/*posicion de los numero de paginacion*/
+	bottom:0.5em;/*posicion de los numero de paginacion*/
 	left:50%;/*centra los numeros de paginacion*/
 	margin:0;
 	padding:0;
@@ -160,6 +195,7 @@ bottom:0;
 	float:left;
 	width:2em;
 	margin-right:5px;
+	text-align:center;
 }
 
 /* skip */
@@ -302,14 +338,85 @@ margin-top:5px;
 	line-height: 25px;
 }
 
-@media screen  and (min-width: 300px) and (max-width: 500px) {
+
+ /*INICIO SCREEN ENTRE 800 Y 999 AZUL*/
+@media screen and (min-width:801px) and (max-width: 999px)  {
+.divsliderSeccionSuperior {
+  height:300px;
+}
+
+.sliderimagenoVideo {
+height:300px;
+  }
+
  .textoTituloSlide {
-	   font-size:1rem;
- width:80%;
+top: 10%;
+ font-size:1.3em;
    }
-   .TextoIntroSlide {
-      font-size:1.5rem;
- width:98%;
+
+.TextoIntroSlide {
+ top:20%;
+ font-size:1.8rem;
+   }
+
+.TextoMensajeSlide {
+font-size:1rem;
+bottom:25%;
+}
+
+
+}
+	
+/*SCREEN ENTRE 601 Y 800 VERDE*/	
+@media screen and (min-width:601px) and (max-width: 800px ){
+.divsliderSeccionSuperior {
+  height:200px;
+}
+
+.sliderimagenoVideo {
+height:200px;
+  }
+
+ .textoTituloSlide {
+top: 10%;
+ font-size:1.1em;
+ background-color:red;
+   }
+
+.TextoIntroSlide {
+ top:20%;
+ font-size:1.2rem;
+   }
+
+.TextoMensajeSlide {
+font-size:0.8rem;
+bottom:23%;
+}
+
+}
+/*SCREEN MOVIL 300 a 600 AMARILLO*/
+@media screen  and (min-width: 300px) and (max-width: 600px) {
+.divsliderSeccionSuperior {
+  height:150px;
+}
+
+.sliderimagenoVideo {
+height:150px;
+  }
+
+ .textoTituloSlide {
+top: 10%;
+ font-size:0.7rem;
+   }
+
+.TextoIntroSlide {
+ top:25%;
+ font-size:0.8rem;
+   }
+
+.TextoMensajeSlide {
+font-size:0.5rem;
+bottom:23%;
 }
 
 }

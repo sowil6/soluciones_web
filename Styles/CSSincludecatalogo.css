@@ -81,3 +81,18 @@ padding:10px;/*Pone marco a la imagen*/
 	box-sizing: border-box;
 }
 
+ /*INICIO SCREEN ENTRE 800 Y 999*/
+@media screen and (min-width:801px) and (max-width: 999px)  {
+
+
+}
+/*SCREEN ENTRE 400 Y 779*/	
+@media screen and (min-width:501px) and (max-width: 800px) {
+
+
+}
+/*SCREEN MOVIL 300 a 500*/
+	@media screen  and (min-width: 300px) and (max-width: 500px) {
+
+
+}

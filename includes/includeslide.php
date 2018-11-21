@@ -48,8 +48,9 @@ $HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source s
 echo' <li class="slide">';
 echo'  <svg height="400" width="800">';
 echo'   <polygon points="0,0 0,400 500,400 200,0"  />';
-echo'   <div class="textoTituloSlide">'. $cancion->Titulo.' </div>' ;
-echo'   <div class="TextoIntroSlide">'. $cancion->introduccionNoticia.' </div>' ;
+echo'   <p class="textoTituloSlide">'. $cancion->Titulo.' </p>' ;
+echo'   <p class="TextoIntroSlide">'. $cancion->introduccionNoticia.'</p>' ;
+echo'   <span class="TextoMensajeSlide">'. $cancion->mensajeNoticia.'</span>' ;
 echo' </svg>';
 echo	$HTMLfoto_OVideo;
 echo'  </li>';

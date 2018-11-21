@@ -3,9 +3,9 @@
   <Noticia>
     <Codigo>1022</Codigo>
     <DetalleCodigo>0</DetalleCodigo>
-    <Titulo>PROGRAMAS TECNICOS LABORALES&lt;br&gt;</Titulo>
-    <introduccionNoticia>AVALADOS POR EL MINISTERIO DE EDUCACION NACIONAL&lt;br&gt;</introduccionNoticia>
-    <mensajeNoticia>&lt;p&gt;&lt;/p&gt;</mensajeNoticia>
+    <Titulo>titulo PROGRAMAS TECNICOS LABORALES&lt;br&gt;</Titulo>
+    <introduccionNoticia>intro AVALADOS POR EL MINISTERIO DE EDUCACION NACIONAL&lt;br&gt;</introduccionNoticia>
+    <mensajeNoticia>&lt;p&gt;Mensaje slide 1&lt;br&gt;&lt;/p&gt;</mensajeNoticia>
     <urlFile/>
     <foto>slide-corporate-1.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
@@ -14,10 +14,10 @@
   <Noticia>
     <Codigo>1023</Codigo>
     <DetalleCodigo>0</DetalleCodigo>
-    <Titulo>0</Titulo>
-    <introduccionNoticia>img2.jpg</introduccionNoticia>
-    <mensajeNoticia>&lt;p&gt;&lt;/p&gt;</mensajeNoticia>
-    <urlFile>/Public/Presentacion.aspx</urlFile>
+    <Titulo>titulo interlineado &lt;br&gt;</Titulo>
+    <introduccionNoticia>intro webkit-animation-name: sliMensaje</introduccionNoticia>
+    <mensajeNoticia>&lt;p&gt; Mensaje nimation-name: sliMensaje&lt;/p&gt;</mensajeNoticia>
+    <urlFile/>
     <foto>WhatsApp Image 2018-07-06 at 6.57.58 PM.jpeg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
     <autor>4</autor>
@@ -25,9 +25,9 @@
   <Noticia>
     <Codigo>2052</Codigo>
     <DetalleCodigo>0</DetalleCodigo>
-    <Titulo>Institución para el Trabajo y el Desarrollo Humano&lt;br&gt;</Titulo>
-    <introduccionNoticia>Damos una respuesta abierta a las expectativas laborales de nuestro entorno social y contamos con un conjunto de recursos gestionados con tecnicas de calidad total.&lt;br&gt;</introduccionNoticia>
-    <mensajeNoticia>&lt;p&gt;&lt;/p&gt;</mensajeNoticia>
+    <Titulo>titulo Institución para el Trabajo y el Desarrollo Humano&lt;br&gt;</Titulo>
+    <introduccionNoticia>Intro Damos una respuesta abierta a las expectativas laborales de nuestro entorno social y &lt;br&gt;</introduccionNoticia>
+    <mensajeNoticia>&lt;p&gt;mensaje contamos con un conjunto de recursos gestionados con tecnicas de calidad total.&lt;/p&gt;</mensajeNoticia>
     <urlFile/>
     <foto>slider3.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
