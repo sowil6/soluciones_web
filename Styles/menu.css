@@ -199,7 +199,7 @@ header label{
 	width:100%;
   background-color:#fff;
 height:45px;
-   z-index:1;
+   z-index:2;/*dos para que la numeracion de los slider no quede encima de las opciones del menu*/
    border:1px solid #a70000;
  }
 .menu{
@@ -207,7 +207,7 @@ height:45px;
 position:absolute;
 top:40px;
 left: 0;
-width:30%;
+width:auto;/*lopuse auto, porque en 30% quedaban letras del menu fuera del contenedor*/
 transform: translate(-100%);
 transition: all 0.5s;
 	}

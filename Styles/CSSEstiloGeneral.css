@@ -607,7 +607,7 @@ color:#0D56D7;
 
 	}
 
-/*SCREEN ENTRE 400 Y 779 VERDE*/	
+/*SCREEN ENTRE 601 Y 800 VERDE*/	
 @media screen and (min-width:601px) and (max-width: 800px) {
  .linePista{
 	width:100%;
@@ -658,8 +658,8 @@ width:150px;/*con el valor que esta en las function de la pagina Site.Master con
 	}
 	}
 
-/*SCREEN MOVIL 300 a 500 AMARILLO*/
-	@media screen  and (min-width: 300px) and (max-width: 600px) {
+/*SCREEN MOVIL 300 a 600 AMARILLO*/
+@media screen  and (min-width: 300px) and (max-width: 600px) {
  .linePista{
 	width:100%;
 	height:2px;
