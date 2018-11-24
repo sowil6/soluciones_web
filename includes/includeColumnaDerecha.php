@@ -8,7 +8,7 @@
 
 <div class="divColumnaDerecha">
   <div class="divTituloColumnaDerecha">
-<p>CERTIFICACIONES</p> 
+<p>INFORMATIVO</p> 
  </div>
          <?php
        

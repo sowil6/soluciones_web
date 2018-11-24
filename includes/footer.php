@@ -18,17 +18,17 @@ Sede Principal: Urbanizacion 11 de Noviembre manzana 11 lote 7 Telefono: (035)68
 				<div>
                 <a href="https://www.google.es/maps/place/10%C2%B022'46.2%22N+75%C2%B027'53.4%22W/@10.37951,-75.4670277,683m/data=!3m2!1e3!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d10.3795096!4d-75.4648394" target="_blank"><i class="fa fa-map-marker"></i></a>
 					
-					<p><span>21 Revolution Street</span> Paris, France</p>
+					<p><span>Calle 22B</span> Cartagena, Bolívar</p>
 				</div>
 
 				<div>
 					<i class="fa fa-phone"></i>
-					<p>(035) 681-2539</p>
+					<p>+57 311 4211659</p>
 				</div>
 
 				<div>
 					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:support@company.com">support@company.com</a></p>
+					<p><a href="mailto:support@company.com">support@ceficc.edu.co</a></p>
 				</div>
 
 			</div>
@@ -36,7 +36,7 @@ Sede Principal: Urbanizacion 11 de Noviembre manzana 11 lote 7 Telefono: (035)68
 			<div class="footer-right">
                 
                 <p class="footer-links">
-					<a href="#">Home</a>
+					<a href="../vista/index.php">Home</a>
 					·
 					<a href="#">Blog</a>
 					·
