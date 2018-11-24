@@ -1,8 +1,4 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Documento sin título</title>
+
 <link href="../Styles/CSSIncludeSlide.css" rel="stylesheet" type="text/css">
 <!--El orden de los css y js afectan el funcionamiento del slide-->
   <script src="../Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
@@ -98,7 +94,7 @@ return $resul;
      </div>
   </div><!-- end .container -->
 </div>
-    <div class="divSeccionMediaSlide">
+    <div class="divSeccionBajaSlide">
 
 
 <p class="slide_proyectos">Portafolio de Servicios y Emprendimiento</p>
@@ -135,8 +131,3 @@ echo'		<li><a href="'.$cancion->urlFile.'?Accion='.$cancion->Codigo.'"target="_b
  
 
     </div>    
-
-
-
-</body>
-</html>

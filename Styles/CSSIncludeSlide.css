@@ -249,39 +249,97 @@ opacity:0.2;
 }
 
 /*div contenido medio*/
-.divSeccionMediaSlide{
-	width:90%;
+.divSeccionBajaSlide{
+	width:100%;
 	/*height:600px;*/
 	margin:0 auto;
-background-color:#000000;
-margin-top:5px;
+background-color:#ffffff;/**/
+/**/margin-top:5px;
+margin-bottom:15px;
 
 	}
 	
 /*Estilos de la galeria*/
 
+.slide_proyectos{
+	/*background-color:#050505;*/	
+	margin-top:1px;
+		padding-top:15px;
+	padding-left:5%;
+
+	font-size:1.5rem;
+	/*font-style:#F5F2F2;*/
+	color:#AAA5A5;
+	/*border-color:#000000;
+	box-shadow: 0px 0px 10px #000 inset;
+	border-radius: 10px 10px 10px 10px;*/
+	border-bottom: solid 1px;
+
+	/*justify-content: center; display:flex; y justify-content: center ayudan a centrar el menu*/
+	}
 .galeria {
 	width: 100%;
 	margin: auto;
 	list-style: none;
-	padding: 5px;
+	/*padding: 5px;*/
 	box-sizing: border-box;
-	
+	text-decoration:none;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	text-justify:distribute;
 }
 
+.galeria a{
+text-decoration:none; /*quita el subrayado ubicandolo en la a*/
+}
 .galeria li {
+	width: 260px;
 	margin: 2px;
 }
+.galeria li:hover {
+	background:rgba(130,175,245,0.80);cursor:default;
+	}
+.galeria p{
+	margin-top:5px;
+	color:#000000;
+	word-wrap: break-word;
+	width:100%;/**/
+	text-justify:inter-word;
+	font-weight:bold;
 
-.galeria img {
-	width: 260px;
-	height: 150px;
-}
 
-/*Estilos del modal*/
+
+	/*background-color:red;*/
+	
+
+
+		
+	}
+.galeria embed{
+	width: 98%;
+	height: 170px;
+	padding-left:2px;
+	padding-top:2px;
+/*		padding:5px;
+border: 1px solid #D3D3D3; LightGray */
+		}
+/*.galeria img {
+	
+}*/
+/*PAGINA SLIDE*/
+
+/*Estilos de la galeria*/
+
+
+
+
+
+
+
+
+
+/*Estilos del modal
 
 .modal {
 	display: none;
@@ -312,7 +370,7 @@ margin-top:5px;
 	align-items: center;
 }
 .imagen a {
-	color: #fff;
+	color: #000000;
 	font-size: 40px;
 	text-decoration: none;
 	margin: 0 10px;
@@ -343,7 +401,7 @@ margin-top:5px;
 	border-radius: 50%;
 	line-height: 25px;
 }
-
+*/
 
  /*INICIO SCREEN ENTRE 800 Y 999 AZUL*/
 @media screen and (min-width:801px) and (max-width: 999px)  {

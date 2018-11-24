@@ -33,4 +33,26 @@
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
     <autor>5</autor>
   </Noticia>
+  <Noticia>
+    <Codigo>2119</Codigo>
+    <DetalleCodigo>0</DetalleCodigo>
+    <Titulo>tema cuatro&lt;br&gt;</Titulo>
+    <introduccionNoticia/>
+    <mensajeNoticia>&lt;p&gt;&lt;/p&gt;</mensajeNoticia>
+    <urlFile>../vista/proyectos_vista.php</urlFile>
+    <foto>energia_fotovoltaica.jpg</foto>
+    <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
+    <autor>5</autor>
+  </Noticia>
+  <Noticia>
+    <Codigo>2120</Codigo>
+    <DetalleCodigo>0</DetalleCodigo>
+    <Titulo>tema cuatro&lt;br&gt;</Titulo>
+    <introduccionNoticia/>
+    <mensajeNoticia>&lt;p&gt;&lt;/p&gt;</mensajeNoticia>
+    <urlFile>../vista/proyectos_vista.php</urlFile>
+    <foto>curso altura.jpg</foto>
+    <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
+    <autor>5</autor>
+  </Noticia>
 </Noticias>

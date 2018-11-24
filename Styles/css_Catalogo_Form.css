@@ -84,11 +84,12 @@ margin-bottom:0;
 	flex-wrap: wrap;
 	border-bottom: 1px solid #919494;
 /*	border-top: 1px solid #D7E0E1;*/
-	
+	background:rgba(130,175,245,0.80);cursor:default;
 	display:inline-block; /*y justify-content: center ayudan a centrar el menu*/
 justify-content: center; 
 
 }
+
 .ulOpcion_Menu .titulo {
 	display:inline-block;
 	text-align:center;
@@ -167,6 +168,9 @@ color:#0817C8;
 	border: 1px solid #D3D3D3; /*LightGray */
 padding:5px /*ayuda a separar los marcos*/
 }
+.ulCatalogo li:hover {
+	background:rgba(130,175,245,0.80);cursor:default;
+	}
 .ulCatalogo img {
 	width: 90%;
 	height: 150px;

@@ -6,7 +6,7 @@
 /*	background-color:#353131;
 */		}
 .contenedorOferta a{
-	text-decoration:none;
+	text-decoration:none;/*quita el subrayado ubicandolo en la a*/
 		}
 		
 .TituloOferta {
@@ -16,7 +16,8 @@
 .TituloOferta p{
 	margin-top:2px;
 	margin-bottom:2px;
-color:#E2E8E2;
+color:#000000;
+font-weight:bold;
  }
  .ulOferta {
 	width: 100%;
@@ -43,6 +44,10 @@ justify-content: center;
 	display:flex;/* y justify-content: center ayudan a centrar el li*/
 	
 }
+
+.ulOferta li:hover {
+	background:rgba(130,175,245,0.80);cursor:default;
+	}
 .ulOferta embed {
 	width: 97%;
 	height: 150px;

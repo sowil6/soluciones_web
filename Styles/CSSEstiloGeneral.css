@@ -3,11 +3,12 @@ body {
 	margin: 0;
 	padding: 0;
 	width:100%;
+	background-color: #C4D8E7;
 }
-#header {
-	/*width: 940px;*/
+header {
+	/*width: 940px;
 	height: 90px;
-	margin: 0 auto;
+	margin: 0 auto;*/
 	background-color: #FBFBFB;
 }
 a:link {
@@ -74,7 +75,8 @@ padding:5px;
 		}
 
 /*MASTER UNA COLUMNA*/
-.contentUnaColumna{background-color: #C4D8E7;
+.contentUnaColumna{
+	background-color: #C4D8E7;
 z-index:2;
 	width:100%;
 	/*justify-content: center; 
@@ -83,12 +85,6 @@ z-index:2;
 	}
 /*COLUMNA menu izquierdo*/
 
-/*controla columna izqueirda master*/
-.masterimagenoVideo{
-		/* width:91%;
-    display:block;estas dos lineas centran la imagen
-margin:auto;*/
-		}
 #tablaRepeaterDerecha {
     width:95%;
     /*margin-left:5px;*/
@@ -98,8 +94,8 @@ margin:auto;*/
 }
 /* ~~ The footer ~~ */
 footer {
-	padding: 10px 0;
-/*	background-color: #CCC49F;*/
+/*	padding: 10px 0;
+	background-color: red;*/
 	position: relative;/* this gives IE6 hasLayout to properly clear */
 	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
 }
@@ -424,53 +420,6 @@ width: 98%;
 padding:10px;
 
 }*/
-/*PAGINA SLIDE*/
-.slide_proyectos{
-	background-color:#050505;	
-	margin-top:1px;
-	min-width:45%;
-	font-size:1.5rem;
-	/*font-style:#F5F2F2;*/
-	color:#AAA5A5;
-	border-color:#000000;
-	box-shadow: 0px 0px 10px #000 inset;
-	border-radius: 10px 10px 10px 10px;
-	border: solid 1px;
-	justify-content: center; display:flex;/* y justify-content: center ayudan a centrar el menu*/
-	}
-.catalogoslideimagenoVideo{
-		width: 260px;
-	height: 150px;
-		border: 1px solid #D3D3D3; /*LightGray */
-padding:10px;/*Pone marco a la imagen*/
-	}
-
-/*Estilos de la galeria*/
-.galeria {
-	width: 100%;
-	margin: auto;
-	list-style: none;
-	padding: 5px;
-	box-sizing: border-box;
-	
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	/*background-color:#EDE1E2;*/
-}
-.galeria li {
-	margin: 2px;
-	word-wrap: break-word;
-}
-.galeria p {
-color:#F3E8E8;
-width:260px;
-	word-wrap: break-word;
-}
-.galeria img {
-	width: 260px;
-	height: 150px;
-}
 
 	
 
