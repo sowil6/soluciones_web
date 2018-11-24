@@ -29,9 +29,10 @@ width:100%;
 list-style:none;/*quitar las biñetas solo a los nav*/
 width:100%;
 border: 1px solid #D3D3D3;
-
-
 }
+.ulProyectoIZQ li:hover {
+	background:rgba(130,175,245,0.80);cursor:default;
+	}
 .ulProyectoIZQ embed {
 	width: 97%;
 	max-height: 200px;
