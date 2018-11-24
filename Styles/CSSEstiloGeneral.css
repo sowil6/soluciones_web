@@ -388,7 +388,6 @@ margin:0.4em auto;
 }
 
 
-
 	
 	/*DETALLE CATALOGO
 .contenedorDetalleCatalogo{
@@ -635,7 +634,7 @@ color:#0D56D7;
 	padding-bottom: 5px;
 	margin-top: 1px;
 }
-.resolucion {
+.resolucion_{
 top:10px;
   font-size:0.5rem;
   display:none;
@@ -683,7 +682,7 @@ header {
 .resolucion {
  display:none;
 }
-.resolucion {
+.resolucion_ {
 top:10px;
   font-size:0.5rem;
   display:none;
@@ -693,7 +692,7 @@ top:10px;
 	position:fixed;
 	 width:210px;
 	  height:35px;
-	  z-index:2;
+	  z-index:3;
 	  margin-left:12%
 	 
 	

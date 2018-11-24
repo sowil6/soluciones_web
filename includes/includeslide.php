@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Documento sin título</title>
-<link href="../Styles/CSSIncludeSlide.css" rel="stylesheet" type="text/css">
+<link href="../Styles/cssIncludeSlide.css" rel="stylesheet" type="text/css">
 <!--El orden de los css y js afectan el funcionamiento del slide-->
   <script src="../Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
 <!--  <link href="Styles/slideshow.css" rel="stylesheet" type="text/css" />-->

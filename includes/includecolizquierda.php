@@ -1,13 +1,5 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Documento sin título</title>
-<!--<link href="../Styles/cssIncludeColIzquierda.css" rel="stylesheet" type="text/css">-->
-<link rel="stylesheet" type="text/css" href="../Styles/cssIncludeColIzquierda.css">
-</head>
+<!----><link rel="stylesheet" type="text/css" href="../Styles/cssIncludeColIzquierda.css">
 
-<body>
 <div class="divMenuIzquierdo">
   <div class="divTituloMenuIzquierdo">
 <p>OFERTA ACADEMICA</p> 
@@ -73,5 +65,4 @@ return $resul;
 ?>
 	
     </div>
-</body>
-</html>
+
