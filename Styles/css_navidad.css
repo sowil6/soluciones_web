@@ -1,5 +1,5 @@
 /*para la nieve se utilizan los div vacios que estan en la pagina iniical de plantilla*/
-	body{background:grey;overflow:hidden;}
+	body{}
 
 @-moz-keyframes nieve{	
 	from{top:-40px;}
