@@ -36,7 +36,7 @@ Sede Principal: Urbanizacion 11 de Noviembre manzana 11 lote 7 Telefono: (035)68
 			<div class="footer-right">
                 
                 <p class="footer-links">
-					<a href="../vista/index.php">Home</a>
+					<a href="../vista/inicio.php">Home</a>
 					·
 					<a href="#">Blog</a>
 					·

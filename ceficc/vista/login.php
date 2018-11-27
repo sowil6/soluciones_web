@@ -42,7 +42,7 @@
                 <td>
                 </td>
                 <td>
-                    <a href="index.php">ir a Inicio</a>
+                    <a href="inicio.php">ir a Inicio</a>
                 </td>
             </tr>
         </table>

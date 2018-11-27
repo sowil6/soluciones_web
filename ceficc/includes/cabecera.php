@@ -1,5 +1,5 @@
-<link rel="shortcut icon" href= "../imgSistema/icono.ico" type="image/x-icon">
-
+<!--<link rel="shortcut icon" href= "../imgSistema/icono.ico" type="image/x-icon">-->
+<link rel="shortcut icon" href= "../imgSistema/icono.png" type="image/png">
 <?php function ValidaExtension($sExtension) {
 
             $resul;
@@ -65,6 +65,7 @@ return $resul;
                    $('.PSubtitulo2').removeClass('PSubtitulo2-fixed');
                    $('.menuLogo').removeClass('menuLogo-fixed');
 				  $('.menu').removeClass('menu-fixed');
+				  
                    
                }
            });
@@ -149,7 +150,7 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
 <label for="btn-menu"> <i class="fa fa-bars fa-3x"></i></label>   
 <nav class="menu">
     <ul>
-        <li> <a href="../vista/index.php">INICIO</a></li>
+        <li> <a href="../vista/inicio.php">INICIO</a></li>
         <li class="publico"> <a href="">INSTITUCIONAL</a>
             <ul class="ulNav">
                <li><a href="../vista/institucional.php?refpage=mision"><img src="../ImgSistema/imgMenu/bub.png" />Misión</a></li>
@@ -163,13 +164,13 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
        <li> <a href="">ESTUDIANTE</a>
 
         <ul class="ulNav">
-            <li><a href="/Academico/certificados.aspx"><img src="../ImgSistema/imgMenu/bub.png" />Certificados</a></li>
+          <!--  <li><a href="/Academico/certificados.aspx"><img src="../ImgSistema/imgMenu/bub.png" />Certificados</a></li>
             <li><a href="/Academico/inscripcion.aspx"><img src="../ImgSistema/imgMenu/bub.png" />Inscripciones</a></li>
-            <li><a href="../manager/Personas_controlador.php"><img src="../ImgSistema/imgMenu/bub.png" />Lista de Alumnos</a></li>
+            <li><a href="../manager/Personas_controlador.php"><img src="../ImgSistema/imgMenu/bub.png" />Lista de Alumnos</a></li>-->
             <li><a href="http://www.mansioningles.com" target="_blank"><img src="../ImgSistema/imgMenu/bub.png" />La Mansión del Ingles</a></li>
             <li><a href="https://es.duolingo.com" target="_blank"><img src="../ImgSistema/imgMenu/bub.png" />duolingo</a></li>
-            <li><a href="/Academico/Guias_Manuales.aspx"><img src="../ImgSistema/imgMenu/bub.png" />Descarga de Manuales Guias</a></li>
-        </ul>
+<!--            <li><a href="/Academico/Guias_Manuales.aspx"><img src="../ImgSistema/imgMenu/bub.png" />Descarga de Manuales Guias</a></li>
+-->        </ul>
 
     </li>
 
