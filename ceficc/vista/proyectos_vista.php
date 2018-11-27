@@ -71,7 +71,7 @@
    </header>
 
   <!-- InstanceBeginEditable name="EditRegionUnaColumna" -->
-<link rel="stylesheet" type="text/css" href="/soluciones-web/Styles/cssPagina_Proyectos.css">
+<link rel="stylesheet" type="text/css" href="../Styles/cssPagina_Proyectos.css">
   <article class="contentUnaColumna">
   <div class="contenedorProyecto"> 
   
