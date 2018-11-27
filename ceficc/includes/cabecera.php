@@ -1,5 +1,5 @@
-<!--<link rel="shortcut icon" href= "./../imgSistema/icono.ico" type="image/x-icon">-->
-<link rel="shortcut icon" href= "./../imgSistema/icono.png" type="image/png">
+<!--<link rel="shortcut icon" href= "./../ImgSistema/icono.ico" type="image/x-icon">-->
+<link rel="shortcut icon" href= "./../ImgSistema/icono.png" type="image/png">
 <?php function ValidaExtension($sExtension) {
 
             $resul;
