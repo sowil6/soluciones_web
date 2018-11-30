@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Noticias>
+  <Noticia>
+    <Codigo>1022</Codigo>
+    <DetalleCodigo>0</DetalleCodigo>
+    <Titulo>PROGRAMAS TECNICOS LABORALES&lt;br&gt;</Titulo>
+    <introduccionNoticia>AVALADOS POR EL MINISTERIO DE EDUCACION NACIONAL&lt;br&gt;</introduccionNoticia>
+    <mensajeNoticia>&lt;p&gt;Lic.de Funcionamiento mediante Res. 4679 del 2017 de la Secretaria de Educacion Distrital de Cartgaena de Indias y Res. 01-235 del 2013 de la Secretaria de Educacion de Bolívar&lt;br&gt;&lt;/p&gt;</mensajeNoticia>
+    <urlFile/>
+    <foto>slide-corporate-1.jpg</foto>
+    <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
+    <autor>4</autor>
+  </Noticia>
+  <Noticia>
+    <Codigo>1023</Codigo>
+    <DetalleCodigo>0</DetalleCodigo>
+    <Titulo>Inscripciones Abiertas&lt;br&gt;</Titulo>
+    <introduccionNoticia>TECNICO LABORAL BILINGÜE CON ENFASIS EN TURISMO&lt;br&gt;</introduccionNoticia>
+    <mensajeNoticia>&lt;p&gt;Ingles como segunda lengua - Tecnico laboral en electricidad Industrial - técnico Laboral en Seguridad ocupacional - Técnico Laboral en incendios y Emergencias&lt;br&gt;&lt;/p&gt;</mensajeNoticia>
+    <urlFile/>
+    <foto>WhatsApp Image 2018-07-06 at 6.57.58 PM.jpeg</foto>
+    <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
+    <autor>4</autor>
+  </Noticia>
+  <Noticia>
+    <Codigo>2052</Codigo>
+    <DetalleCodigo>0</DetalleCodigo>
+    <Titulo>Institución para el Trabajo y el Desarrollo Humano&lt;br&gt;</Titulo>
+    <introduccionNoticia>Damos una respuesta abierta a las expectativas laborales de nuestro entorno social y &lt;br&gt;</introduccionNoticia>
+    <mensajeNoticia>&lt;p&gt;Contamos con un conjunto de recursos gestionados con tecnicas de calidad total.&lt;/p&gt;</mensajeNoticia>
+    <urlFile/>
+    <foto>slider3.jpg</foto>
+    <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
+    <autor>4</autor>
+  </Noticia>
+</Noticias>

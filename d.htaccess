@@ -1,0 +1,31 @@
+#es la linea que nos dice si un directorio es un enlace simbólico, que lo siga.
+Options +FollowSymLinks 
+
+# proteger directorios
+# Options -Indexes 
+
+
+
+
+### decimos a Apache que queremos sobre escribir las URLs para crear URLs amigables
+RewriteEngine On
+
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+#RewriteRule ^(inicio)$ ../vista/inicio.php [L]
+
+
+
+ 
+#RewriteRule ^(.*),(.*)$ ./vista/inicio.php [L]
+#RewriteRule ^(.*),(.*)$ ./vista/institucional.php?refpage=$2
+ 
+###RewriteRule ../vista/institucional.php?refpage=mision ../vista/institucional.php?refpage=vision [L]
+<IfModule mod_rewrite.c >
+</IfModule>

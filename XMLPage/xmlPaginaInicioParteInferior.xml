@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Acto>
+  <Codigo name="13">
+    <DetalleCodigo>
+    </DetalleCodigo>
+    <Titulo>Posesionan a 216 nuevos docentes en Bolívar, tras eliminar educación contratada</Titulo>
+    <introduccionNoticia>
+    </introduccionNoticia>
+    <mensajeNoticia>Ayer se realizó el proceso de posesión de 216 actos administrativos de aquellos docentes que fueron seleccionados por el Banco de la Excelencia del Ministerio de Educación Nacional.</mensajeNoticia>
+    <url>
+    </url>
+    <xml>
+    </xml>
+    <foto>Desert.jpg</foto>
+    <fecha>15/02/2018</fecha>
+    <autor>William Lozano Posso</autor>
+  </Codigo>
+  <Codigo name="1014">
+    <DetalleCodigo>
+    </DetalleCodigo>
+    <Titulo>Adecuación y montaje de su sala de sistemas</Titulo>
+    <introduccionNoticia>
+    </introduccionNoticia>
+    <mensajeNoticia>Con nuestra experiencia de 10 años en el montaje y mantenimiento de laboratorios de sistemas, usted dispone de garantía de trabajos de calidad: Reciba la instalación de red interna del laboratorio, preparación de todos los computadores con los programas requeridos, asesoría y apoyo permanente para el cuidado, mantenimiento y estabilidad funcional de la sala u oficina de computo.</mensajeNoticia>
+    <url>
+    </url>
+    <xml>
+    </xml>
+    <foto>Lighthouse.jpg</foto>
+    <fecha>15/02/2018</fecha>
+    <autor>William Lozano Posso</autor>
+  </Codigo>
+</Acto>

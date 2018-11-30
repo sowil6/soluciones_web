@@ -1,0 +1,119 @@
+﻿body {
+}
+header {
+   position:relative;
+   width:100%;
+   background-color:white;
+   height:7%;
+}
+ .divTitulo1 {
+     display:none;
+}
+ #menu {
+      top:1px;
+    position:fixed;
+z-index:2;
+      float:right;
+    }
+/*PAGINA CURRICULO*/
+#divPrincipaCurriculo {
+width:100%;
+background-color:blue;
+}
+.submenuCurriculo {
+    width:100%;
+     background-color:darkseagreen;
+ box-shadow: 0px 0px 10px #000 inset;
+border-radius: 10px 10px 10px 10px;
+}
+#divgeneralInferiorCurriculo {
+float:left;
+width:60%;
+min-height:350px;
+
+display:inline;
+}
+.divInferiorDerechaCurriculo {
+width:40%;
+float:left;
+background-color:white;
+/*float:right;*/
+display:block;
+
+}
+#tablaCurriculo {
+    /*width:100%;*/
+    vertical-align:top;
+    /*background-color:aliceblue;*/
+    min-height:350px;
+}
+.tablaCurriculoCol1 {
+    width: 20%;
+   vertical-align:top;/*alinea en la parte superior de la tabla*/
+    }
+.tablaCurriculoCol2 {
+	width: 20%;
+   vertical-align:top;/*alinea en la parte superior de la tabla*/
+}
+.tablaCurriculoCol3 {
+	width: 20%;
+    vertical-align:top;/*alinea en la parte superior de la tabla*/
+}
+   /*.tablaCurriculoCol4 {
+	width: 40%;
+}*/
+.tablaResumenCurriculo {
+width:100%;
+}
+.tablaResumenCurriculo td:first-child {
+width:20%;
+}
+.tablaResumenCurriculo td:nth-child(2) {
+width:80%;
+}
+.divIngresaPrograma {
+    width:100%;
+ background-color:darkseagreen;
+ box-shadow: 0px 0px 10px #000 inset;
+border-radius: 10px 10px 10px 10px;
+ text-align:center;
+}
+.divIngresaModulos {
+    width:100%;
+       background-color:bisque;
+       box-shadow: 0px 0px 10px #000 inset;
+border-radius: 10px 10px 10px 10px;
+text-align:center;
+}
+.divIngresaContenidos {
+    width:100%;
+    background-color:lightblue;
+    box-shadow: 0px 0px 10px #000 inset;
+border-radius: 10px 10px 10px 10px;
+text-align:center;
+}
+.ResumenCurriculoEncabezado {
+     background-color:white;
+    width:100%;
+    height:68px
+}
+.gridTipoModulo {
+    background-color:white;
+     float:left;
+}
+.ColumnacodidoGrid {
+    width:10%;
+}
+.ColumnaNombreGrid {
+width:80%;
+}
+.modal-content {
+    display:inline-block;
+  width:800px;
+}
+.TextalignRight {
+    width:370px;
+}
+.col1TabProgr {
+
+}

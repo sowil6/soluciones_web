@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<noticias>
+  <noticia>
+    <Codigo>Paulo Coelho</Codigo>
+    <DetalleCodigo>Paulo Coelho</DetalleCodigo>
+    <Titulo>El Alquimista</Titulo>
+    <introduccionNoticia>1988</introduccionNoticia>
+    <mensajeNoticia>Maxico D.F. - Editorial Grijalbo</mensajeNoticia>
+    <urlFile>Maxico D.F. - Editorial Grijalbo</urlFile>
+    <xmlFile>Maxico D.F. - Editorial Grijalbo</xmlFile>
+    <foto>Maxico D.F. - Editorial Grijalbo</foto>
+    <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
+    <autor>Maxico D.F. - Editorial Grijalbo</autor>
+  </noticia>
+</noticias>

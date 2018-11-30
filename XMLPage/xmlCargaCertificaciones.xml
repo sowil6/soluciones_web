@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Noticias>
+  <Noticia>
+    <Codigo>11</Codigo>
+    <DetalleCodigo>0</DetalleCodigo>
+    <Titulo>SERVICIO BILINGÜE Y FORMACION ACADEMICA &lt;br&gt;</Titulo>
+    <introduccionNoticia>&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Con el Proyecto ENGLISH FAST TRACK PROJECT De acuerdo a la norma en la Escala Internacional MARCO COMUN EUROPEO DE REFERENCIA.&lt;/div&gt;</introduccionNoticia>
+    <mensajeNoticia>&lt;p&gt;Estamos dedicados  a fomentar el Bilingüismo en Cartagena, Bolívar y la Región Caribe Colombiana desde hace mas de 10 años .&lt;br&gt;&lt;/p&gt;</mensajeNoticia>
+    <urlFile>../vista/catalogocertificaciones.php</urlFile>
+    <foto>Englis_Fast_Track.jpg</foto>
+    <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
+    <autor>1</autor>
+  </Noticia>
+  <Noticia>
+    <Codigo>14</Codigo>
+    <DetalleCodigo/>
+    <Titulo>PRESENTACION DE OFERTA DE SERVICIOS EDUCATIVOS</Titulo>
+    <introduccionNoticia>Con más de 15 años de experiencia, es una institución educativa reconocida en la región.&lt;br&gt;</introduccionNoticia>
+    <mensajeNoticia>&lt;p&gt;&lt;b&gt;CORPORACION EDUCATIVA DE FORMACION INTREGAL DEL CARIBE CEFICC&lt;/b&gt;, con más de 15 años de experiencia, es una institución educativa reconocida en la región como eje de progreso que contribuye a la formación y cualificación permanente del talento humano, pues provee las herramientas necesarias que contribuyen al desarrollo de competencias laborales especificas en trabajadores e integrantes de la comunidad en general, teniendo en cuenta las necesidades del sector productivo de la región CEFICC posee las siguientes resoluciones y registro de programas.&lt;br&gt;REGISTRO DE PROGRAMA DE&lt;span style="color:rgb(11,83,148);"&gt;&lt;u style="color: rgb(11, 83, 148);"&gt; ELECTRICIDAD INDUSTRIAL &lt;/u&gt;&lt;/span&gt;&lt;u&gt;&lt;/u&gt;N°4568 SECRETARIA DE EDUCACIÓN DE CARTAGENA DE INDIAS.&lt;br&gt;REGISTRO DE PROGRAMAS DE &lt;u&gt;&lt;span style="color:rgb(204,0,0);"&gt;SALUD OCUPACIONAL&lt;/span&gt;&lt;/u&gt; N°4586 SECRETARIA DE EDUCACIÓN DE CARTAGENA DE INDIAS.&lt;br&gt;REGISTRO DE PROGRAMAS ACADÉMICO DE &lt;u&gt;&lt;span style="color:rgb(11,83,148);"&gt;INGLÉS&lt;/span&gt;&lt;/u&gt; N°7170 SECRETARIA DE EDUCACIÓN DE CARTAGENA DE INDIAS.&lt;br&gt;RESOLUCIÓN N° 01-235 SECRETARIA DE EDUCACIÓN DE BOLÍVAR.&lt;br&gt;RESOLUCION 46-79 SECRETARIA DISTRITAL DE CARTAGENA DE INDIAS &lt;br&gt;PERSONERIA JURIDICA N°1119 GOBERNACIÓN DE BOLÍVAR &lt;br&gt;NIT 80601430-1 CAMARA DE COMERCIO CARTAGENA &lt;br&gt;&lt;br&gt;&lt;/p&gt;</mensajeNoticia>
+    <urlFile>../vista/catalogocertificaciones.php</urlFile>
+    <foto>folleto.jpg</foto>
+    <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
+    <autor>1</autor>
+  </Noticia>
+</Noticias>

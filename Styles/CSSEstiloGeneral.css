@@ -1,0 +1,663 @@
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	width:100%;
+	background-color: #C4D8E7;
+}
+header {
+	/*width: 940px;
+	height: 90px;
+	margin: 0 auto;*/
+	background-color: #FBFBFB;
+}
+a:link {
+	/* color: #42413C;
+	text-decoration: underline; unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+/* ~~ This fixed width container surrounds all other blocks ~~ */
+.containerCeficc {
+	z-index:1;
+	width: 100%;
+
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+.contenedor{	
+background-color: #C4D8E7;
+	/**/	width: 100%;
+	 display: table;
+	 margin-top: 1px;
+	 	 	
+	}
+#contenidos {
+	/*width: 100px;*/
+  display: table-row;
+  justify-content: center; 
+	display:flex;/* y justify-content: center ayudan a centrar el menu*/
+}
+.contentIzquierda, .contentCentro, .contentDerecha {
+  display: table-cell;
+}
+.contentIzquierda {
+	display:inline-block;
+	float: left;
+	width: 20%;
+	/*	margin-top: 1px;
+	background-color: #C9C1C1;
+	padding-top: 0px;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 10px;
+	margin-top: 1px;
+	margin-left: 2px;
+	background-color:blue;*/
+}
+.contentCentro {
+	width: 58%;
+	float: left;
+display:inline-block;
+margin-rigth: 5px;
+margin-left: 5px;
+padding:5px;
+/*background-color:red;
+*/}
+.contentDerecha{
+	width: 19%;
+/*	background-color:#F7F7F7;*/
+	float:left;
+	display:inline-block;
+	
+		margin-left: 4px;
+		
+		}
+
+/*MASTER UNA COLUMNA*/
+.contentUnaColumna{
+	background-color: #C4D8E7;
+z-index:2;
+	width:100%;
+	/*justify-content: center; 
+	display:flex; y justify-content: center ayudan a centrar el menu*/
+	
+	}
+/*COLUMNA menu izquierdo*/
+
+#tablaRepeaterDerecha {
+    width:95%;
+    /*margin-left:5px;*/
+      border: 1px solid #D3D3D3; /*LightGray */
+  /*background-color:white;*/
+  padding:2px;
+}
+/* ~~ The footer ~~ */
+footer {
+/*	padding: 10px 0;
+	background-color: red;*/
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+}
+
+/*NOTA: problema con BOOTRASp cambiar el nombre de clase nav, col, porque crean conflicto y no funciona bien donde utilice estos nombres de class*/
+/*menu boton imagen login*/
+.contenedorHeader{
+	/*width:100%;*/
+	}
+.contenedorAntesMenu{
+	height:65px;
+	
+	}
+
+
+
+/*INFORMACION PBX EMAIL*/
+.contenedorHeader .info{
+float:right ;
+margin-top:15px;	
+/*top:10%;
+*/}
+.info-Email {
+ display:inline-block;
+   vertical-align:middle;
+}
+ul.InfoUL {
+    list-style:none;
+    margin:0;
+   display:inline-block;
+     
+    
+}
+ul.InfoUL li {
+    display:block;
+    float:left;
+    white-space:nowrap;
+     padding:0 8px 1px;
+}
+/*ul.InfoUL img {
+    display:inline-block;
+    border:none;
+    margin-right:8px;
+    vertical-align:middle;
+    
+}*/
+ul.InfoUL a {
+  /*  border-style:none;
+    border-width:0;*/
+    color:#272727;/*color de texto*/
+    cursor:pointer;
+    display:block;
+    font-size:0.6rem;
+    font-weight:bold;
+    /*padding:8px 10px;*//*separacion superior y separacion entre botones*/
+    text-align:left;
+    text-decoration:none;
+    /*text-shadow:#fff 0 1px 1px;*/
+   
+		
+}
+.feature-box-icon{
+	color: #38B7E3;
+	border-color: #383f48;
+	
+	}
+	
+.feature-box.feature-box-style-3 .feature-box-icon {
+	border-color: #0088cc;
+		}
+	
+/*LOGO*/
+.menuLogo {
+width:300px;/*con el valor que esta en las function de la pagina Site.Master controlar el ancho contenedor de la imagen*/
+    height:88%;/*altura del contenedor de la imagen*/
+/*	background-color:blue;
+*/   margin-left:4px;
+       float:left;
+     background-repeat:no-repeat;
+	 margin-top:1px;
+	 vertical-align:middle;
+background-color:#ffffff;
+border-radius:2em;
+	border: solid 1px;
+	padding:2px;
+	padding-right:5px;
+	border-color:rgba(218,225,245,0.82);
+}
+.menuLogo img{
+	width:100%;
+	height:100%;
+	
+	}
+.menuLogo-fixed {
+	  position:fixed;
+	  width:210px;
+	  height:40px;
+   top: 0; 
+     z-index:2;
+	}
+
+/*RESOLUCION SECRETARIA DE BOLIVAR*/
+.resolucion_ {
+	position:absolute;
+	width:100%;/*con el valor que esta en las function de la pagina Site.Master controlar el ancho contenedor de la imagen*/
+   top:1px;
+ color: blue;  
+     	 display:flex;/*display:flex y justify-content: center ayudan a centrar el menu*/
+  justify-content: center;/*display:flex y justify-content: center ayudan a centrar el menu*/
+  font-size:0.6rem;
+  text-align:center;
+}
+
+
+
+
+/* ~~ Miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty block element as the final element following the last floated block (within the .container) if the footer is removed or taken out of the .container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+/*HTML 5 support - Sets new HTML 5 tags to display:block so browsers know how to render the tags properly. */
+header, section, footer, aside, article, figure {
+	display: block;
+}
+
+/*footer*/
+.social-icons-facebook img{
+	height:50px;
+		width:50px;
+	}
+.social-icons-linkedin img{
+		height:50px;
+		width:50px;
+
+
+	}
+.social-icons-twitter img{
+		height:50px;
+		width:50px;
+
+
+	}
+
+
+/*PAGINA EDITAR NOTICIA*/	
+.formimagen{
+	width:100%;
+	
+	}
+.DivContenedorNoticia {
+width:99%;
+right:0;
+left:0;
+height:auto;
+background-color:red;
+}
+#divIzqEditorNoticia {
+background-color:#b5abab;
+width:50%;
+min-height:600px;
+float:left;
+/*overflow:scroll;*/  
+font: 12px sans-serif;
+border: solid 1px;
+
+}
+ #divDerEditorNoticia {
+background-color:red;
+/*background-color:#ffffff;*/
+width:49%;
+height:570px;
+float:right;
+border: solid 1px;
+overflow:scroll;
+/*display:none;*/
+}
+#img3{
+	width:100px;
+	height:70px;}
+#divImagenPrevia {
+  width: 200px;
+  height: 150px;
+  box-shadow: 0px 0px 10px #000 inset;
+  border-radius: 10px 10px 10px 10px;
+  border: solid 1px;
+  background-color:burlywood;
+  vertical-align:central;
+  padding:10px;
+}
+#crs_imgPrevia{
+	width:100%;
+	height:100%
+	}
+.textEditorTitulo {
+    width:97%;
+   min-height: 100px;
+}
+.textEditorIntroduccion {
+    width:98%;
+}
+.TablaCitaInputUp {
+   /*background-color:#C0B9B9;*/
+   width:100%;
+}
+.TablaCitaInputUp td:first-child {
+    width:20%;
+     /*background-color:blueviolet;*/
+}
+.TablaCitaInputUp td:nth-child(2) {
+    width:80%;
+   /*background-color:aquamarine;*/
+}
+/*.TablaCitaInputUp td:nth-child(3) {
+    width:30%;
+  
+}
+.TablaCitaInputUp td:nth-child(4) {
+    width:20%;
+  
+}*/
+.anchoControl {
+
+width:100%;
+}
+.DropDownListNoticias{
+	width:200px;
+
+	}
+.divBotones{
+	margin:0 auto;
+	background-color:aquamarine;
+		 display:flex;/*display:flex y justify-content: center ayudan a centrar el menu*/
+  justify-content: center;/*display:flex y justify-content: center ayudan a centrar el menu*/
+  transition: all 0.2s;
+	box-sizing: border-box;
+	border-radius:1em;
+	border: solid 1px;
+	}
+.btn{
+	width:auto;
+	/*height:23px;*/
+	margin:0.3em 0.3em 0.3em 0;/*quita espacio de botoners bootrasp*/
+	text-align:center;
+	display: inline-block;
+	padding:0.35em 1.2em;
+	font-weight:100;
+	transition: all 0.2s;
+	box-sizing: border-box;
+	border-radius:0.12em;
+	}
+@media all and (max-width:30em){
+a.button1{
+display:block;
+margin:0.4em auto;
+}
+} 
+/* 
+    Created on : 29/01/2015, 12:27:45 AM
+    Author     : RD
+*/
+.container_pagin{
+    border: 1px solid #ccc;
+    position: relative;
+    margin-top: -21px;
+}
+.container_pagin ul{
+    margin: 0px;
+}
+.container_pagin .pagin_inline{
+    width: 50%;
+    height: 45px;
+    padding: 5px;
+}
+.container_pagin .pagin_info{
+    padding: 12px;
+}
+.container_pagin .pagin_info select{
+    margin-left: 7px;
+}
+
+
+	
+	/*DETALLE CATALOGO
+.contenedorDetalleCatalogo{
+
+
+	background-color:green;
+		width:100%;
+		}
+.contenedorDetalleCatalogoIZQ{
+	width:20%;
+	background-color:green;
+	float:left;
+	
+		}
+.ulDetalleCatalogoIZQ {
+	width: 100%;
+	margin: auto;
+	list-style: none;
+	padding: 2px;
+	box-sizing: border-box;
+	justify-content: space-around;
+}	
+
+.ulDetalleCatalogoIZQ img {
+	width: 85%;
+	height: 50px;
+	border: 1px solid #D3D3D3; 
+padding:10px;
+}
+.detallecatalogoIZQimagenoVideo{
+width: 98%;
+	height: 100px;
+	border: 1px solid #D3D3D3; 
+padding:10px;
+
+}*/
+
+	
+
+/*PAGINA CATALOGO CERTIFICACIONES*/
+.contenedorCerti{
+	width:100%;
+	/*background-color:#8DABAF;
+	background-color:#FFFFFF;*/
+	}
+.divCertificaciones{
+	margin-top: -14px;
+	overflow:scroll;
+	width:99%;
+	height:700px;
+
+}
+.tablaCertificaciones{
+background-color:red;
+	width: 98%;
+}
+
+.ulcertiCatalogo {
+		width: 100%;
+	margin: auto;
+	list-style: none;
+
+	box-sizing: border-box;
+}	
+.ulcertiCatalogo li {
+width:100%;
+
+	margin: 5px;/*separacion entre imagenes*/
+	border: 1px solid #D3D3D3; /*LightGray */
+	padding:10px; /*ayuda a separar los marcos*/
+   	justify-content: center;/*display:flex y justify-content: center ayudan a centrar el menu*/
+}
+.ulcertiCatalogo img {
+	width: 100%;
+	/*height: 500px;*/
+/*	border: 1px solid #D3D3D3; 
+padding:10px;Pone marco a la imagen*/
+}
+.detallecataloCertiimagenoVideo{
+	width: 100%;
+	/*height: 500px;*/
+	border: 1px solid #D3D3D3; 
+	
+}
+
+/*INSTITUCIONAL*/
+.contenedorInstitucional{
+	width:100%;
+	
+	}
+.ulInstitucional {
+	width: 98%;
+	margin: auto;
+	list-style: none;
+	box-sizing: border-box;
+	display: flex;/*ubica los objetos en forma horizontal y bajando en linea*/
+	flex-wrap: wrap;
+	justify-content: space-around;
+}	
+.ulInstitucional li {
+	width:96%;
+	background-color:#F4F1F1;
+	/*margin: 5px;separacion entre imagenes*/
+	/*border: 1px solid #D3D3D3; pone borde cuadricula a los parrafos*/
+	padding:0 0 0 20px; /*ayuda a separar los marcos*/
+	   /*	justify-content: center;display:flex y justify-content: center ayudan a centrar el menu*/	
+}
+.ulInstitucional img {
+
+	width: 98%;
+	margin-top:1px;	
+	height: 400px;
+}
+.frase_titulo{
+	margin-top:1px;
+	min-width:45%;
+	position:absolute;
+	font-size:2rem;
+	font-style:#F5F2F2;
+	color:#AAA5A5;
+	border-color:#000000;
+	box-shadow: 0px 0px 10px #000 inset;
+	border-radius: 10px 10px 10px 10px;
+	border: solid 1px;
+	justify-content: center; display:flex;/* y justify-content: center ayudan a centrar el menu*/
+	}
+	
+/*INICIO SCREEN ENTRE 800 Y 999 AZUL*/
+@media screen and (min-width:801px) and (max-width: 999px)  {
+ .linePista{
+
+	width:100%;
+	height:2px;
+	background-color:blue;
+	}
+ 
+ body {
+	
+ font-size:11px;
+	}
+.contenedorHeader .info{
+		/*display:none;
+		margin-top:1%;	*/		
+		}
+		
+.resolucion_ {
+	
+top:10px; 
+color:#0D56D7;
+  font-size:0.5rem;
+  display:none;
+ background-color:red;
+}
+/*LOGO*/
+.menuLogo {
+/*width:300px;con el valor que esta en las function de la pagina Site.Master controlar el ancho contenedor de la imagen*/
+    height:90%;/*altura del contenedor de la imagen*/
+/*	background-color:blue;
+  left:1px;*/ 
+}
+.menuLogo-fixed {
+	  width:210px;
+	  height:35px;
+  	}
+.contenedorAntesMenu {
+	height: 50px;
+}
+
+
+	}
+
+/*SCREEN ENTRE 601 Y 800 VERDE*/	
+@media screen and (min-width:601px) and (max-width: 800px) {
+ .linePista{
+	width:100%;
+	height:2px;
+	background-color:green;
+	}
+ body {
+	
+ font-size:10px;
+	}
+.contenedorAntesMenu {
+	height: 45px;
+}
+.contenedorHeader .info{
+		/*display:none;*/
+		margin-top:15px;			
+		}
+
+.resolucion {
+
+ display:none;
+}
+
+.MasterColumIzq {
+	padding-bottom: 5px;
+	margin-top: 1px;
+}
+.resolucion_{
+top:10px;
+  font-size:0.5rem;
+  display:none;
+}
+/*LOGO*/
+.menuLogo {
+width:145px;/*con el valor que esta en las function de la pagina Site.Master controlar el ancho contenedor de la imagen*/
+  /*  height:90%;altura del contenedor de la imagen*/
+/*	
+  left:1px;*/ 
+  
+}
+.menuLogo-fixed {
+	 /* width:110px;*/
+	  height:35px;
+  	}
+	
+	ul.ulNav li a {
+	font-size:0.6rem;/*tamaño de la fuente del menu principal*/
+	
+	}
+	}
+
+/*SCREEN MOVIL 300 a 600 AMARILLO*/
+@media screen  and (min-width: 300px) and (max-width: 600px) {
+ .linePista{
+	width:100%;
+	height:2px;
+	background-color:yellow;
+	}
+	
+	 body {
+	
+ font-size:8px;
+	
+}
+header {
+/*	background-color: yellow;
+*/}
+.divContenedorMenu {
+	/*display:none;*/
+ }
+.info{
+		display:none;
+}
+.resolucion {
+ display:none;
+}
+.resolucion_ {
+top:10px;
+  font-size:0.5rem;
+  display:none;
+}
+/*LOGO*/
+.menuLogo {
+	position:fixed;
+	 width:210px;
+	  height:35px;
+	  z-index:3;
+	  margin-left:12%
+	 
+	
+/*width:250px;con el valor que esta en las function de la pagina Site.Master controlar el ancho contenedor de la imagen*/
+}
+/*.menuLogo-fixed {
+	  width:210px;
+	  height:35px;
+  	}*/
+	.contenedorAntesMenu {
+	height: 40px;
+}
+	}

@@ -1,0 +1,40 @@
+.form-group{
+   padding: 5px;
+}
+.divlogin{
+	width:700px;
+   margin:0 auto; /*centra el div*/
+border-radius: 10px 10px 10px 10px;
+border:double;
+background-color:ActiveBorder;
+margin-top: 5%;
+}
+
+.table-group {
+    width: 100%;
+     padding: 5px;
+}
+.table-group td:first-child{
+    width: 40%;
+    height: 24px;
+    text-align: right;
+/*    background-color: black;*/
+}
+.div-group {
+    width: 70%;
+}
+
+.form-control{
+    
+    height: 24px;
+}
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10-ago-2018, 15:54:34
+    Author     : master
+*/
+

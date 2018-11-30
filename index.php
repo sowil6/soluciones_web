@@ -1,3 +1,5 @@
 
 <?php 
- header("Location: ./ceficc/vista/inicio.php");?>
+/*  header("Location: inicio")*/
+header("Location: ./vista/inicio.php")
+ ;?>
