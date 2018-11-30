@@ -5,8 +5,8 @@ Options +FollowSymLinks
 # Options -Indexes 
 
 <IfModule mod_rewrite.c>
-#
-RewriteBase /soluciones-web/vista/ 
+
+#RewriteBase /vista/ 
 
 ## decimos a Apache que queremos sobre escribir las URLs para crear URLs amigables
 RewriteEngine On
