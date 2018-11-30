@@ -176,7 +176,7 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
 
     <li> <a href="">OFERTA ACADEMICA</a>
        <ul class="ulNav">
-        <li><a href="../vista/ofertaacademica.php"><img src="../ImgSistema/imgMenu/bub.png" /> OFERTA ACADEMICA</a></li>
+        <li><a href="ofertaacademica"><img src="../ImgSistema/imgMenu/bub.png" /> OFERTA ACADEMICA</a></li>
     </ul>
 
 </li>
@@ -185,7 +185,7 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
  <ul class="ulNav">
     <li><a href="../vista/loadimagen_vista.php"><img src="../ImgSistema/imgMenu/bub.png" /> Pagina Pruebas</a></li>
     <li><a href="/Academico/inscripcion.aspx"><img src="../ImgSistema/imgMenu/bub.png" />Gestión de Estudiantes</a></li>
-    <li><a href="../vista/noticia_vista.php"><img src="../ImgSistema/imgMenu/bub.png" />Editar Contenidos de la Pagina Web</a></li>
+    <li><a href="noticia_vista"><img src="../ImgSistema/imgMenu/bub.png" />Editar Contenidos de la Pagina Web</a></li>
 </ul>
 
 </li>
