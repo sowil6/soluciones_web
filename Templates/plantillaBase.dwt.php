@@ -67,14 +67,14 @@
     
     
   </header>
- <div class="contenedor">
+ <div id="contenedor">
  <div id="contenidos">
-  <div class="contentIzquierda">
+  <div id="contentIzquierda">
  <?php include("../includes/includecolizquierda.php")?>
   </div>
  
  <!-- TemplateBeginEditable name="EditRegionCentro" -->
-   <div class="contentCentro">
+   <div id="contentCentro">
   
 aqui el contenido    
   
@@ -82,7 +82,7 @@ aqui el contenido
    </div>
   <!-- TemplateEndEditable --><!-- end .content -->
  
-<div class="contentDerecha">
+<div id="contentDerecha">
    <?php include("../includes/includeColumnaDerecha.php")?>
 </div>
 </div><!-- end .contenidos -->

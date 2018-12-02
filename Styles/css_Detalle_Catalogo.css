@@ -1,5 +1,5 @@
 	/*DETALLE CATALOGO*/
-.contentCentro{
+#contentCentro{
 /*	background-color:green;
 */	}
 
@@ -11,13 +11,14 @@ background-color: #C4D8E7;
 	 	 	
 	}
 #contenidos_Cat {
-	/*width: 100px;*/
-  display: table-row;
-  justify-content: center; 
-	display:flex;/* y justify-content: center ayudan a centrar el menu*/
+	 display: -webkit-flex;
+   display: flex;
+   -webkit-flex-wrap: wrap;
+   flex-wrap: wrap;
 }
 .contenedorDetalleCatalogoIZQ, .contenedorDetalleCatalogoDER {
-  display: table-cell;
+   display: -webkit-flex;
+   display: flex;
   }
 .contenedorDetalleCatalogo{
 	

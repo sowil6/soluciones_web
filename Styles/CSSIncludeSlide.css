@@ -1,7 +1,7 @@
-﻿body {
+﻿/*body {
 }
 
-/*SLIDE SUPERIOR*/
+SLIDE SUPERIOR*/
 
 .divsliderSeccionSuperior {
   width:100%;
@@ -56,7 +56,6 @@ width:80%;
 }
 
 .TextoIntroSlide {
-	/*	 background-color:green;*/
 /*	bottom:50%;*/
 	 top:25%;
 	position:absolute;
@@ -164,9 +163,10 @@ bottom:5%;/**/
 	margin:0;
 	padding:0;
 	list-style:none;
+	 width:100%;
 }
 .slide {
-	z-index:100;
+	z-index:2;
 }
 .slide .sliderimagenoVideo {
    
@@ -194,7 +194,7 @@ bottom:5%;/**/
 	z-index:1;
 }
 .slides-pagination li {
-	display:inline;
+	display:inline;/*pone los numesos del slide en sentido horizontal*/
 }
 .slides-pagination a {
 	display:block;
@@ -407,10 +407,12 @@ border: 1px solid #D3D3D3; LightGray */
 @media screen and (min-width:801px) and (max-width: 999px)  {
 .divsliderSeccionSuperior {
   height:300px;
+  
 }
 
 .sliderimagenoVideo {
 height:300px;
+
   }
 
  .textoTituloSlide {
@@ -428,9 +430,6 @@ font-size:1rem;
 /*bottom:25%;*/
 }
 
-.resolucion_{
-	display:none;
-	}
 
 }
 	
@@ -460,9 +459,7 @@ font-size:0.8rem;
 /*bottom:23%;*/
 }
 
-.resolucion_{
-	display:none;
-	}
+
 }
 /*SCREEN MOVIL 300 a 600 AMARILLO*/
 @media screen  and (min-width: 300px) and (max-width: 600px) {
@@ -489,7 +486,5 @@ font-size:0.5rem;
 /*bottom:23%;*/
 }
 
-.resolucion_{
-	display:none;
-	}
+
 }

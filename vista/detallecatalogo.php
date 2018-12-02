@@ -67,9 +67,9 @@
     
     
   </header>
- <div class="contenedor">
+ <div id="contenedor">
  <div id="contenidos">
-  <div class="contentIzquierda">
+  <div id="contentIzquierda">
  <?php include("../includes/includecolizquierda.php")?>
   </div>
  
@@ -77,7 +77,7 @@
 <!-- <link href="../Styles/CSSEstiloGeneral.css" rel="stylesheet" type="text/css"> 
  <link rel="stylesheet" type="text/css" href="../Styles/cssOfertaAcademica.css">-->
 <link rel="stylesheet" type="text/css" href="../Styles/css_Detalle_Catalogo.css">
-<article class="contentCentro">
+<article id="contentCentro">
  <div class="contenedor_Cat">
  <div id="contenidos_Cat">
    <div class="contenedorDetalleCatalogo"> 
@@ -146,7 +146,7 @@ echo'</ul>';
   </article>
   <!-- InstanceEndEditable --><!-- end .content -->
  
-<div class="contentDerecha">
+<div id="contentDerecha">
    <?php include("../includes/includeColumnaDerecha.php")?>
 </div>
 </div><!-- end .contenidos -->

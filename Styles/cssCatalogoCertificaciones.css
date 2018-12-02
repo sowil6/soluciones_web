@@ -42,16 +42,18 @@ justify-content: center;
 	display:inline-block;
 	text-align:center;
 	width:98%;
-	color:#777374;
+	/*color:#777374;*/
   	background-color:#DFE8F7;
 	margin-bottom:5px;
   	margin-top:2px;
 	
 	}
-.Certificaciones_Imagen{}
+
 .Certificaciones_Intro{
+	margin-top:0;
 	text-align:justify;
-			width:auto;
+		width: 98%;
+		word-wrap:break-word;
 	}
 	
 .Certificaciones_mensaje{
@@ -63,23 +65,19 @@ justify-content: center;
 
 
 .uldetalleCerti embed {
-width: 98%;
+width: 60%;
 /*	height: 150px;
-*/	border: 1px solid #D3D3D3; /*LightGray */
-padding:1px;/*Pone marco a la imagen*/
+*/	/*border: 1px solid #D3D3D3; LightGray */
+padding:5px;/*Pone marco a la imagen*/
+float:left;
+
 
 }
 .uldetalleCerti a {
 
 	color:white;
 }
-.detalleCertifiimagenoVideo{
-width: 98%;
-/*	height: 150px;
-*/	border: 1px solid #D3D3D3; /*LightGray */
-padding:1px;/*Pone marco a la imagen*/
 
-}
 
  /*INICIO SCREEN ENTRE 800 Y 999*/
 @media screen and (min-width:801px) and (max-width: 999px)  {

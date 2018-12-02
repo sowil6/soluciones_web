@@ -1,0 +1,277 @@
+
+#btn-menu{
+display:none;
+/**/	}
+
+header label{
+	display:none;
+	width:18px;
+	height:20px;
+	padding:8px;
+	border-right:1px solid #fff;
+	
+	}
+	
+header label:hover{/*boton que hace aparecer y desaparecer el menu responsive*/
+	cursor:pointer;
+	background: rgba(0,0,0,0.3);/*sobre cuando se pasa el mouse encima*/
+}
+a:link {
+/*	color: #42413C;
+	text-decoration: underline;  unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/*BARRA DE MENU*/
+ .divContenedorMenu {  
+	position:relative;
+	width:100%;
+ /* background-color:#a70000;
+height:40px;
+*/   z-index:1;
+ }
+.divContenedorMenu-fixed {
+   position:fixed;
+   top: 0; 
+   height:7%;
+	 z-index:3; /**/
+}
+/*ESTILOS GENERALES*/
+.menu{
+/*	height:39px;
+*/	}
+.menu ul{
+	margin:0;
+	list-style:none;/*quitar las biñetas solo a los nav*/
+	padding:0;/*quitar espaciado entre botones, al quitarlo queda en columnas sin sangrias*/
+	background:#CCC6C6;/*color de fondo de los submenu
+	background-color:#a70000 !important;*/
+	justify-content: center; /*flex end o center para centrar el menu*/
+	}
+
+.menu li{
+/*border-right:1px solid #fff;
+border-left:1px solid #fff;*/
+
+	line-height:2.3rem;/*altura de los botones*/
+	position:relative;
+/*	min-width:100px;espacio de los botones en la barra de menu*/
+/*flex-grow: 1;distribuye los botones en la barra de menu*/
+
+
+	}
+
+.menu a{
+	font-size:0.9rem;
+/*	 font-weight:bold;
+*/	color:#ddd;/*color de las palabras del menu*/
+	display:block;
+	/*padding:0 2.5em;separacon entre botoness*/
+	text-decoration:none;
+	transition: 0.2s;
+	padding:2px 5px;/*separacion superior y separacion entre botones*/
+/*	transition: all 0.5s;*/
+ white-space: nowrap;/*no corta las frases, imprime una sola linea*/
+
+
+	}
+menu li a{
+	border-right:1px solid #fff;
+border-left:1px solid #fff;/**/
+margin-top:5px;
+margin-bottom:5px;
+	}
+.menu li ul{
+	position:absolute;
+		
+	}
+
+		
+/*.menu a:hover{color de la opcion cuando el mouse pasa encima*/
+/*background: rgba(255,255,255,0.96);
+color:#0B10E7;color de las letras de las opcines al pasar el mouse encima
+	}
+	*/
+ul.ulNav a:active,ul#ulNav a:focus {
+    outline-style:none;
+
+}
+
+	.menu li:hover>a {/*mantiene el focus en la opcion padre seleccinada*/
+    border-style:none;
+    background: rgba(255,255,255,0.96);
+    color:#0B10E7;/*cambia el texto a color negro cuando se pasa el mouse sobre el boton*/
+    font-size:0.9rem;
+    /*font-weight:bold;*/
+    text-decoration:none;
+	width:auto;/*ancho del color de fondo del boton seleccionado*/
+ /*   text-shadow:#181818 0 1px 1px;*/
+
+}
+/*PRIMER NIVEL*/
+
+.menu > ul{
+/* background-color:#a70000 !important;color de la barra de menu*/
+width:100%;/*espacio que ocupa el nav en la pantalla*/
+display:flex;
+}
+.menu > ul >li{
+	float: left;
+	}
+
+.menuNivel1 {
+	border-right:1px solid rgba(148,65,101,0.76);
+/*border-left:1px solid #fff;
+*/	
+margin-top:5px;
+margin-bottom:5px;
+
+	}
+#menuInicioNivel1{/*esto pone el borde izquierdo solo a la opcon inicio de la barra de menu*/
+/*	border-right:1px solid #fff;*/
+border-left:1px solid rgba(148,65,101,0.76);
+	
+	}
+/*SEGUNDO NIVEL*/
+.menu li li{
+/*	background:#A38E8F;
+*/
+	max-height:0;
+	overflow:hidden;
+	transition:all 0.2s;
+	width:auto;/*ancho del espacio de los submenu*/
+/*	flex-direction:column;muestra en columna las opciones*/
+
+	}
+
+.menu  li:hover >ul> li {
+
+	max-height:500px;/*esta parte hace visible los submenus ocultados en .menu li li max-height:0 - overflow:hidden; */
+	overflow:visible;
+	transition:all 0.2s;	
+	}
+
+.menu > ul >li >ul{
+	top:100%;
+		}
+
+.ulNav a {/*estilo para los submenus*/
+
+	background:#fff;
+    padding:0 15px 0 15px;/*permie espacio del lado izquierdo de la imagen de las opciones*/
+    color:#000;
+    text-align:left;
+
+	
+}
+
+.ulNav li {
+	   padding:0 10px 0 0;/*  (top) (derecha) (bottom) (left)pone lineas verticales a los costados de los submenu*/
+background:#fff;
+
+}
+
+ul.ulNav li:hover>a {	
+	background: rgba(164,156,156,0.58);
+    border-style:none;
+    color:#0B10E7;/*cambia el texto a color negro cuando se pasa el mouse sobre el boton*/
+ /*   font-size:11px;*/
+    font-weight:bold;
+    text-decoration:none;
+	/*width:100%;ancho del color de fondo del boton seleccionado
+margin-left:2px;*/
+    padding:0 0 0 10px;/*permie espacio del lado izquierdo de la imagen de las opciones*/
+
+
+}
+
+ul.ulNav img {
+    border:none;
+    margin-right:8px;
+    vertical-align:middle;
+}
+
+/*TERCER NIVEL*/
+.menu  ul ul ul{
+left:100%;
+top:0;
+}
+
+
+/*INICIO SCREEN ENTRE 800 Y 999 AZUL*/
+@media screen and (min-width:801px) and (max-width: 999px)  {
+
+.divContenedorMenu-fixed {
+   position:fixed;
+   top: 0; 
+   height:7%;
+	 z-index:3; /**/
+}
+.menu-fixed ul{
+	 position:absolute;
+	 	justify-content:end; /*flex end o center para centrar el menu*/
+	margin-right:110px;
+	}
+}
+
+/*SCREEN ENTRE 601 Y 800 VERDE*/	
+@media screen and (min-width:601px) and (max-width: 800px) {
+
+.menu-fixed ul{
+	 position:relative;
+	 justify-content: end; /*flex end o center para centrar el menu*/
+	}
+	
+	
+	
+}
+
+
+/*SCREEN MOVIL 300 a 500 AMARILLO*/
+@media screen  and (min-width:300px) and (max-width: 600px) {
+
+header label{
+		display:block;
+		}
+	
+	.divContenedorMenu {  
+	position:fixed;
+	top:0;
+	width:100%;
+  background-color:#fff;
+height:45px;
+   z-index:2;/*dos para que la numeracion de los slider no quede encima de las opciones del menu*/
+   border:1px solid #a70000;
+ }
+.menu{
+position:absolute;
+top:40px;
+left: 0;
+width:auto;/*lopuse auto, porque en 30% quedaban letras del menu fuera del contenedor*/
+transform: translate(-100%);
+transition: all 0.5s;
+	}
+
+.menu >ul{
+	
+	background: #555;
+flex-direction:column;/*muestra en columna las opciones*/
+}
+
+#btn-menu:checked ~ .menu {/*selector alt 126 ~*/
+transform: translate(0);
+	}
+
+
+.menu > ul >li >ul{
+	top:0;
+	left: 100%;
+	background: yellow;
+		}
+}
+
+#li_app_corporativa{
+	display:none;
+	}

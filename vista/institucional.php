@@ -72,7 +72,7 @@
 
   <!-- InstanceBeginEditable name="EditRegionUnaColumna" -->
   <article class="contentUnaColumna">
-      <link href="../Styles/CSSEstiloGeneral.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" type="text/css" href="../Styles/css_Institucional.css">
         <div class="contenedorInstitucional">
            <?php
        	$urlpagina = $_GET['refpage'];
@@ -107,8 +107,8 @@ $HTMLfoto_OVideo= "<img class='" .$master. "imagenoVideo '   src = '../Img/".$ca
 	//si es video se embebe en el control html video
 $HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = '../Img/".$cancion->foto. "' type = 'video/mp4' > <source src = '../img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
 		}
-	
-echo'<li><p class="frase_titulo">'.$cancion->Titulo. '</p> '.$HTMLfoto_OVideo.'</br><p> '. $cancion->introduccionNoticia.'</br>  '. $cancion->mensajeNoticia.'</p>';
+echo'<li><div class="divfrase_titulo"><p> '.$cancion->Titulo. '</p></div>';
+echo'<li><div class="cuerpoInstitucional">'.$HTMLfoto_OVideo.'<p class="institucional_Intro"> '. $cancion->introduccionNoticia.'</p></br> <p class="institucional_Mensaje"> '. $cancion->mensajeNoticia.'</p></div>';
 echo '</li>';
 }
 echo'</ul>';	  

@@ -67,14 +67,14 @@
     
     
   </header>
- <div class="contenedor">
+ <div id="contenedor">
  <div id="contenidos">
-  <div class="contentIzquierda">
+  <div id="contentIzquierda">
  <?php include("../includes/includecolizquierda.php")?>
   </div>
  
  <!-- InstanceBeginEditable name="EditRegionCentro" -->
-   <div class="contentCentro">
+   <div id="contentCentro">
   
  <link rel="stylesheet" type="text/css" href="../Styles/cssOfertaAcademica.css">
     
@@ -115,7 +115,7 @@ echo'</ul>';
    </div>
   <!-- InstanceEndEditable --><!-- end .content -->
  
-<div class="contentDerecha">
+<div id="contentDerecha">
    <?php include("../includes/includeColumnaDerecha.php")?>
 </div>
 </div><!-- end .contenidos -->

@@ -9,7 +9,7 @@
     private $user = 'root';
     private $pass = '';
     private $motor = 'mysql';
-    private $dbname = 'bdcefic';
+    private $dbname = 'ceficce1_bd2018';
 	  	
 		
          public static function conexion() {
