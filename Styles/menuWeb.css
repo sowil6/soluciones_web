@@ -25,7 +25,7 @@ height:auto;
    z-index:1;
  }
 .divContenedorMenu-fixed {
-   position:fixed;
+  /* position:fixed;*/
    top: 0; 
   /*  height:7%;
 	 z-index:3;*/
@@ -39,6 +39,7 @@ height:auto;
 
 .menuWeb ul{
 	margin:0;
+	
 	list-style:none;/*quitar las biñetas solo a los nav*/
 	padding:0;/*quitar espaciado entre botones, al quitarlo queda en columnas sin sangrias*/
 	/*background:#CCC6C6;color de fondo de los submenu

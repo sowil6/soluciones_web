@@ -4,38 +4,59 @@ body
       padding: 1.25em; /* 20 */
     }
 
+/*BARRA DE MENU*/
+ .divContenedorMenu {  
+	position:absolute;
+	width:100%;
+		background-color:#a70000 !important;/* color de la barra de menu*/
+
+ 
+height:auto;
+   z-index:1;
+ }
+.divContenedorMenu-fixed {
+   position:fixed;
+   top: 0; 
+  /*  height:7%;
+	 z-index:3;*/
+}
+
+.clearfix{
+	margin:0;
+padding:0;}
+
     #nav
-    {
+    {margin:0;padding:0;
       width: 60em; /* 1000 */
       font-family: 'Open Sans', sans-serif;
       font-weight: 400;
-      position: absolute;
-      top: 25%;
-      left: 50%;
+      position: relative;
+/*      top: 25%;
+*/      left: 50%;
       margin-left: -30em; /* 30 480 */
     }
 
-      #nav > a
-      {
-        display: none;
-      }
-
-      #nav li
-      {
-        position: relative;
-      }
-        #nav li a
-        {
-          color: #fff;
-          display: block;
-        }
-        #nav li a:active
-        {
-          background-color: #c00 !important;
-        }
-
-      #nav span:after
-      {
+#nav > a{
+  display: none;
+	}
+ #nav  a {
+/*font-size:0.9rem;*/
+text-decoration:none;
+/*transition: 0.2s;*/ 
+ white-space: nowrap;/*no corta las frases, imprime una sola linea*/
+  }
+ #nav li {
+	 line-height: 1.1em; /* 60 (24) altura de los botones menu*/
+  position: relative;
+  }
+ #nav li a{
+ color: #fff;
+ display: block;
+  }
+ #nav li a:active{
+ background-color: #c00 !important;
+ }
+#nav span:after{
         width: 0;
         height: 0;
         border: 0.313em solid transparent; /* 5 */
@@ -49,65 +70,90 @@ body
       }
 
       /* first level */
-
-      #nav > ul
-      {
-        height: 3.75em; /* 60 */
-        background-color: #e15a1f;
+ #nav  ul
+{
+/*height: 3.75em;  60
+background-color: green; */
+list-style:none;/*quitar las biñetas solo a los nav*/
+/*width:100%;espacio que ocupa el nav en la pantalla*/
       }
         #nav > ul > li
         {
-          width: 25%;
+		/*	background-color: green;*/
+          width: 20%;
           height: 100%;
           float: left;
         }
           #nav > ul > li > a
           {
             height: 100%;
-            font-size: 1.5em; /* 24 */
-            line-height: 2.5em; /* 60 (24) */
+            font-size: 1em; /* 24 */
+            line-height: 2.5em; /* 60 (24) altura de los botones submenu*/
             text-align: center;
           }
+		  
+		  
+
             #nav > ul > li:not( :last-child ) > a
             {
-              border-right: 1px solid #cc470d;
+              border-right: 1px solid #fff;
             }
             #nav > ul > li:hover > a,
             #nav > ul:not( :hover ) > li.active > a
-            {
-              background-color: #cc470d;
+			            {
+             background-color: #ffff;
+			 color:#0B10E7;/*cambia el texto a color azul cuando se pasa el mouse sobre el boton*/
+			 border-bottom: 1px solid #a70000;
+			  border-top: 1px solid #a70000;
+
             }
 
 
         /* second level */
 
-        #nav li ul
+ #nav li ul /*  #nav li ul*/
         {
-          background-color: #cc470d;
-          display: none;
+        background-color: #C34AC7;/*color de fondo del ul submenu*/
+           display: none; /**/
           position: absolute;
           top: 100%;
+		  width:auto;
+        }
+ #nav li ul li/*  new li ul li*/
+        {
+        background-color: #C34AC7;/*color de fondo del ul submenu*/
+          /*  display: none;*/
+       
+       margin-left: -40px;
+		 
         }
           #nav li:hover ul
           {
             display: block;
-            left: 0;
-            right: 0;
+           left: 0;
+           /*  right: 0;*/
+          }
+		   #nav >ul >ul:hover
+          {
+           	width:auto;/*ancho del espacio de los submenu*/
           }
             #nav li:not( :first-child ):hover ul
             {
               left: -1px;
             }
             #nav li ul a
-            {
+            {     background-color: red;
               font-size: 1.25em; /* 20 */
               border-top: 1px solid #e15a1f;
               padding: 0.75em; /* 15 (20) */
+			  margin-left:0;
             }
               #nav li ul li a:hover,
               #nav li ul:not( :hover ) li.active a
               {
-                background-color: #e15a1f;
+                background-color: #fff;
+				    color:#0B10E7;/*cambia el texto a color azul cuando se pasa el mouse sobre el boton*/
+
               }
 
 

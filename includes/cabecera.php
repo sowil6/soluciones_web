@@ -9,7 +9,7 @@
   <link rel="icon" href="../favicon.ico" />
   <link rel="shortcut icon" href= "../ImgSistema/icono.png" type="image/png">
   
-  <link rel="stylesheet" href="../main.css" />
+ <!-- <link rel="stylesheet" href="../main.css" />-->
   <link rel="stylesheet" href="../Styles/estilos.css">
 <script src="doubletaptogo.js"></script>
 <?php function ValidaExtension($sExtension) {
@@ -43,7 +43,7 @@
 return $resul;
            			
         }
-?>	<link rel="stylesheet" href="../Styles/menuWeb.css">
+?>	<!--<link rel="stylesheet" href="../Styles/menuWeb.css">-->
 <link href="../Styles/css_navidad.css" rel="stylesheet" type="text/css">
 <link href="../Styles/CSSEstiloGeneral.css" rel="stylesheet" type="text/css">
  <link rel="stylesheet" href="../Styles/footer-distributed-with-address-and-phones.css">
@@ -223,8 +223,6 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
 </nav>
 -->
 <nav id="nav" role="navigation">
-  <a href="#nav" title="Show navigation">Show navigation</a>
-  <a href="#" title="Hide navigation">Hide navigation</a>
   <ul class="clearfix">
     <li class="menuNivel1" id="menuInicioNivel1"> <a href="inicio">Inicio</a></li>
     <li class="menuNivel1" id="publico"> <a href="#">Institucional</a>
