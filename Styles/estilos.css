@@ -160,7 +160,7 @@ color:#0B10E7;/*cambia el texto a color azul cuando se pasa el mouse sobre el bo
 	  .nav-fixed {
    display:flex;
     justify-content: end;
-/*	 z-index:3;*/
+	 z-index:5;/**/
 }
 	  
     }
@@ -176,7 +176,7 @@ color:#0B10E7;/*cambia el texto a color azul cuando se pasa el mouse sobre el bo
       {
         position: relative;
         top: auto;
-        left: auto;
+        left: auto; z-index:5;
       }
         #nav > a
         {
