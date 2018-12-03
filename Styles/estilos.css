@@ -18,6 +18,7 @@ height:2.5em;
 .nav-fixed {
    position:fixed;
    top: 0; 
+  
   /*  height:7%;
 	 z-index:3;*/
 }
@@ -30,7 +31,7 @@ padding:0;
 
     #nav
     {margin:0;padding:0;
-/*	background-color:#a70000 !important; color de la barra de menu*/
+	background-color:#a70000 ;/*!important; color de la barra de menu*/
       width: 100%; /* 1000 */
       font-family: 'Open Sans', sans-serif;
       font-weight: 400;
@@ -41,8 +42,6 @@ padding:0;
 	    z-index:2;
 		
 		
-	
- 
      
      /* position: absolute;
      top: 0;*/
@@ -98,7 +97,7 @@ transition: 0.2s;*/
 {
 display: flex;
 justify-content: center; /*flex end o center para centrar el menu*/
-background-color:#a70000 !important; /*color de la barra de menu*/
+background-color:#a70000 ;/*!important; color de la barra de menu*/
 
 list-style:none;/*quitar las biñetas solo a los nav*/
 /*width:100%;espacio que ocupa el nav en la pantalla*/
@@ -185,21 +184,23 @@ list-style:none;/*quitar las biñetas solo a los nav*/
 /*INICIO SCREEN ENTRE 800 Y 999 AZUL*/
 @media screen and (min-width:801px) and (max-width: 999px)  {
 
-.nav-fixed ul{ background-color: #fff;
-display: flex;
-	 justify-content: end; /*flex end o center para centrar el menu*/
-	}
+.nav-fixed {
+   display:flex;
+    justify-content: end;
+/*	 z-index:3;*/
+}
 	
 }
 
     @media only screen and ( max-width: 62.5em ) /* 1000 */
     {
-      #nav
-      {
-      /*  width: 100%;
-        position: static;
-        margin: 0;*/
-      }
+     
+	  .nav-fixed {
+   display:flex;
+    justify-content: end;
+/*	 z-index:3;*/
+}
+	  
     }
 
     @media only screen and ( max-width: 40em ) /* 640 */
