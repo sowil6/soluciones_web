@@ -112,7 +112,7 @@ border-top: 1px solid #a70000;
 
 #nav li ul /*  #nav li ul*/
         {
-background-color: #C34AC7;/*color de fondo del ul submenu*/
+/*background-color: #C34AC7;color de fondo del ul submenu*/
 display: none; /**/
 position: absolute;
 top: 100%;
@@ -180,7 +180,7 @@ color:#0B10E7;/*cambia el texto a color azul cuando se pasa el mouse sobre el bo
       }
         #nav > a
         {
-          width: 1.5em; /* 50 */
+          width: 3.125em; /* 50 */
           height: 3.125em; /* 50 */
           text-align: left;
           text-indent: -9999px;
@@ -233,7 +233,7 @@ color:#0B10E7;/*cambia el texto a color azul cuando se pasa el mouse sobre el bo
         }
           #nav > ul > li > a
           {
-            height: auto;
+            height: 4em;
             text-align: left;
             padding: 0 0.833em; /* 20 (24) */
           }
