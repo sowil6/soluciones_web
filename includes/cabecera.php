@@ -44,6 +44,7 @@ return $resul;
            			
         }
 ?>	<!--<link rel="stylesheet" href="../Styles/menuWeb.css">-->
+<script src="../Scripts/doubletaptogo.js"></script>
 <link href="../Styles/css_navidad.css" rel="stylesheet" type="text/css">
 <link href="../Styles/CSSEstiloGeneral.css" rel="stylesheet" type="text/css">
  <link rel="stylesheet" href="../Styles/footer-distributed-with-address-and-phones.css">
@@ -57,12 +58,12 @@ return $resul;
 -->
   <script type="text/javascript">
             $(document).ready(function () {
-                var altura = $('.divContenedorMenu').offset().top;
+                var altura = $('#nav').offset().top;
                //alert(altura );
              $(window).on('scroll', function () {
                if ($(window).scrollTop() > altura) {
                    $('.divTitulo').addClass('divTitulo-fixed');
-                   $('.divContenedorMenu').addClass('divContenedorMenu-fixed');
+                   $('#nav').addClass('nav-fixed');
                    $('.divlogotipo').addClass('divlogotipo-fixed');
                    $('.PTitulo').addClass('PTitulo-fixed');
                    $('.PSubtitulo1').addClass('PSubtitulo1-fixed');
@@ -70,7 +71,7 @@ return $resul;
                    $('.menuWeb').addClass('menuWeb-fixed');
 				     } else {
                    $('.divTitulo').removeClass('divTitulo-fixed');
-                   $('.divContenedorMenu').removeClass('divContenedorMenu-fixed');
+                   $('#nav').removeClass('nav-fixed');
                    $('.divlogotipo').removeClass('divlogotipo-fixed');
                    $('.PTitulo').removeClass('PTitulo-fixed');
                    $('.PSubtitulo1').removeClass('PSubtitulo1-fixed');
@@ -172,57 +173,10 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
 </div>
          
   
-  <div class="divContenedorMenu">
- <!--       <input type="checkbox" id="btn-menu">
-<label for="btn-menu"> <i class="fa fa-bars fa-1x"></i></label>
-  -->
-
-
-<!--<nav class="menuWeb">
-    <ul>
-        <li class="menuNivel1" id="menuInicioNivel1"> <a href="inicio">INICIO</a></li>
-        <li class="menuNivel1" id="publico"> <a href="#">INSTITUCIONAL</a>
-           
-            <ul class="ulNav">
-               <li><a href="institucional,mision"><img src="../ImgSistema/imgMenu/bub.png" />Misión</a></li>
-               <li><a href="institucional,vision"><img src="../ImgSistema/imgMenu/bub.png" />Vision</a></li>
-               <li><a href="institucional,principios"><img src="../ImgSistema/imgMenu/bub.png" />Principios Institucionales</a></li>
-               <li><a href=".institucional,valores"><img src="../ImgSistema/imgMenu/bub.png" />Valores Éticos Institucionales</a></li>
-               <li><a href="institucional,calidad"><img src="../ImgSistema/imgMenu/bub.png" />Sistema de Calidad</a></li>
-           </ul>
-       </li>
-
-       <li class="menuNivel1"> <a href="">ESTUDIANTE</a>
-
-        <ul class="ulNav">
-            <li><a href="http://www.mansioningles.com" target="_blank"><img src="../ImgSistema/imgMenu/bub.png" />La Mansión del Ingles</a></li>
-            <li><a href="https://es.duolingo.com" target="_blank"><img src="../ImgSistema/imgMenu/bub.png" />duolingo</a></li>
-        </ul>
-
-    </li>
-
-    <li class="menuNivel1" > <a href="">OFERTA ACADEMICA</a>
-       <ul class="ulNav">
-        <li><a href="ofertaacademica"><img src="../ImgSistema/imgMenu/bub.png" /> OFERTA ACADEMICA</a></li>
-    </ul>
-
-</li>
-
-<li  class="menuNivel1" id="li_app_corporativa"> <a href="">APP CORPORATIVA</a>
- <ul class="ulNav">
-    <li><a href="../vista/loadimagen_vista.php"><img src="../ImgSistema/imgMenu/bub.png" /> Pagina Pruebas</a></li>
-    <li><a href="/Academico/inscripcion.aspx"><img src="../ImgSistema/imgMenu/bub.png" />Gestión de Estudiantes</a></li>
-    <li><a href="noticia_vista"><img src="../ImgSistema/imgMenu/bub.png" />Editar Contenidos de la Pagina Web</a></li>
-</ul>
-
-</li>
-
-</ul>
-
-
-</nav>
--->
+  <div class="divContenedorMenu"> </div>
 <nav id="nav" role="navigation">
+  <a href="#nav" title="Show navigation">Show navigation</a>
+  <a href="#" title="Hide navigation">Hide navigation</a>
   <ul class="clearfix">
     <li class="menuNivel1" id="menuInicioNivel1"> <a href="inicio">Inicio</a></li>
     <li class="menuNivel1" id="publico"> <a href="#">Institucional</a>
@@ -252,7 +206,7 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
 </nav>
 
 
- </div>
+
 
                          
 </div>

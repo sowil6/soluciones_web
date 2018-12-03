@@ -1,49 +1,73 @@
 body
     {
-      background-color: #f7efeb;
-      padding: 1.25em; /* 20 */
+    /*   background-color: #f7efeb;
+      padding: 1.25em; 20 */
     }
 
 /*BARRA DE MENU*/
- .divContenedorMenu {  
-	position:absolute;
+ .divContenedorMenux {  
+	position:relative;
 	width:100%;
-		background-color:#a70000 !important;/* color de la barra de menu*/
+/*		background-color:#a70000 !important; color de la barra de menu*/
 
  
-height:auto;
-   z-index:1;
+height:2.5em;
+   z-index:10;
+   
  }
-.divContenedorMenu-fixed {
+.nav-fixed {
    position:fixed;
    top: 0; 
   /*  height:7%;
 	 z-index:3;*/
 }
 
+
 .clearfix{
 	margin:0;
-padding:0;}
+padding:0;
+}
 
     #nav
     {margin:0;padding:0;
-      width: 60em; /* 1000 */
+/*	background-color:#a70000 !important; color de la barra de menu*/
+      width: 100%; /* 1000 */
       font-family: 'Open Sans', sans-serif;
       font-weight: 400;
-      position: relative;
-/*      top: 25%;
-*/      left: 50%;
-      margin-left: -30em; /* 30 480 */
+   /*    position: relative;;
+      top: 25%;
+      left: 50%;*/
+     /* margin-left: -30em;  30 480 */
+	    z-index:2;
+		
+		
+	
+ 
+     
+     /* position: absolute;
+     top: 0;*/
+  
+ 
+		
     }
 
 #nav > a{
   display: none;
 	}
  #nav  a {
+padding:2px 5px;/*separacion superior y separacion entre botones*/
 /*font-size:0.9rem;*/
-text-decoration:none;
-/*transition: 0.2s;*/ 
+text-decoration:none;	
+/*display:block;
+transition: 0.2s;*/ 
  white-space: nowrap;/*no corta las frases, imprime una sola linea*/
+
+
+
+
+
+
+
   }
  #nav li {
 	 line-height: 1.1em; /* 60 (24) altura de los botones menu*/
@@ -72,15 +96,17 @@ text-decoration:none;
       /* first level */
  #nav  ul
 {
-/*height: 3.75em;  60
-background-color: green; */
+display: flex;
+justify-content: center; /*flex end o center para centrar el menu*/
+background-color:#a70000 !important; /*color de la barra de menu*/
+
 list-style:none;/*quitar las biñetas solo a los nav*/
 /*width:100%;espacio que ocupa el nav en la pantalla*/
       }
         #nav > ul > li
         {
-		/*	background-color: green;*/
-          width: 20%;
+		/*	background-color: green;
+          width: 12.5%;*/
           height: 100%;
           float: left;
         }
@@ -156,14 +182,23 @@ list-style:none;/*quitar las biñetas solo a los nav*/
 
               }
 
+/*INICIO SCREEN ENTRE 800 Y 999 AZUL*/
+@media screen and (min-width:801px) and (max-width: 999px)  {
+
+.nav-fixed ul{ background-color: #fff;
+display: flex;
+	 justify-content: end; /*flex end o center para centrar el menu*/
+	}
+	
+}
 
     @media only screen and ( max-width: 62.5em ) /* 1000 */
     {
       #nav
       {
-        width: 100%;
+      /*  width: 100%;
         position: static;
-        margin: 0;
+        margin: 0;*/
       }
     }
 
