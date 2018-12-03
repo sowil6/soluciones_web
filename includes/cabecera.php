@@ -1,5 +1,17 @@
 <!--<link rel="shortcut icon" href= "./../ImgSistema/icono.ico" type="image/x-icon">-->
-<link rel="shortcut icon" href= "../ImgSistema/icono.png" type="image/png">
+
+  <title>Drop-Down Navigation: Touch-Friendly and Responsive demo by Osvaldas Valutis</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="Demo of Drop-Down Navigation: Touch-Friendly and Responsive" />
+  <meta name="robots" content="all">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="canonical" href="/examples/drop-down-navigation-touch-friendly-and-responsive">
+  <link rel="icon" href="../favicon.ico" />
+  <link rel="shortcut icon" href= "../ImgSistema/icono.png" type="image/png">
+  
+  <link rel="stylesheet" href="../main.css" />
+  <link rel="stylesheet" href="../Styles/estilos.css">
+<script src="doubletaptogo.js"></script>
 <?php function ValidaExtension($sExtension) {
 
             $resul;
@@ -89,11 +101,21 @@ return $resul;
              }
 
           
-       
+    $('.menuWeb li >ul> li').click(function(){
+  $('menuWeb  li >ul> li').show();
+  $(this).next().hide();
+
+});   
 
           
 
           </script>
+          <script>
+  $( function()
+  {
+    $( '#nav li:has(ul)' ).doubleTapToGo();
+  });
+</script>
 <div class="contenedorHeader">
 <div class="contenedorAntesMenu">
  <div class="linePista"> </div>
@@ -151,13 +173,16 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
          
   
   <div class="divContenedorMenu">
-        <input type="checkbox" id="btn-menu">
+ <!--       <input type="checkbox" id="btn-menu">
 <label for="btn-menu"> <i class="fa fa-bars fa-1x"></i></label>
-<!--  -->
-<nav class="menuWeb">
+  -->
+
+
+<!--<nav class="menuWeb">
     <ul>
         <li class="menuNivel1" id="menuInicioNivel1"> <a href="inicio">INICIO</a></li>
-        <li class="menuNivel1" id="publico"> <a href="">INSTITUCIONAL</a>
+        <li class="menuNivel1" id="publico"> <a href="#">INSTITUCIONAL</a>
+           
             <ul class="ulNav">
                <li><a href="institucional,mision"><img src="../ImgSistema/imgMenu/bub.png" />Misión</a></li>
                <li><a href="institucional,vision"><img src="../ImgSistema/imgMenu/bub.png" />Vision</a></li>
@@ -195,6 +220,37 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
 </ul>
 
 
+</nav>
+-->
+<nav id="nav" role="navigation">
+  <a href="#nav" title="Show navigation">Show navigation</a>
+  <a href="#" title="Hide navigation">Hide navigation</a>
+  <ul class="clearfix">
+    <li class="menuNivel1" id="menuInicioNivel1"> <a href="inicio">Inicio</a></li>
+    <li class="menuNivel1" id="publico"> <a href="#">Institucional</a>
+      <ul>
+     <li><a href="institucional,mision"><img src="../ImgSistema/imgMenu/bub.png" />Misión</a></li>
+               <li><a href="institucional,vision"><img src="../ImgSistema/imgMenu/bub.png" />Vision</a></li>
+               <li><a href="institucional,principios"><img src="../ImgSistema/imgMenu/bub.png" />Principios Institucionales</a></li>
+               <li><a href=".institucional,valores"><img src="../ImgSistema/imgMenu/bub.png" />Valores Éticos Institucionales</a></li>
+               <li><a href="institucional,calidad"><img src="../ImgSistema/imgMenu/bub.png" />Sistema de Calidad</a></li>
+       </ul>
+    </li>
+     <li class="menuNivel1" id="publico"> <a href="#">Estudiante</a>
+      <ul>
+     <li><a href="institucional,mision"><img src="../ImgSistema/imgMenu/bub.png" />Misión</a></li>
+            <li><a href="http://www.mansioningles.com" target="_blank"><img src="../ImgSistema/imgMenu/bub.png" />La Mansión del Ingles</a></li>
+            <li><a href="https://es.duolingo.com" target="_blank"><img src="../ImgSistema/imgMenu/bub.png" />duolingo</a></li>
+       </ul>
+    </li>
+    <li class="active">
+     <a href="">OFERTA ACADEMICA</a>
+      <ul>
+      <li><a href="ofertaacademica"><img src="../ImgSistema/imgMenu/bub.png" /> OFERTA ACADEMICA</a></li>
+      </ul>
+    </li>
+    <li><a href="?about">About</a></li>
+  </ul>
 </nav>
 
 

@@ -124,12 +124,14 @@ border-left:1px solid rgba(148,65,101,0.76);
 	width:auto;/*ancho del espacio de los submenu*/
 /*	flex-direction:column;muestra en columna las opciones*/
 }
-.menuWeb  li:hover >ul> li {
+.menuWebx  li:hover >ul> li {
 
 	max-height:500px;/*esta parte hace visible los submenus ocultados en .menu li li max-height:0 - overflow:hidden; */
 	overflow:visible;
 	transition:all 0.2s;	
 	}
+
+	
 .menuWeb > ul >li >ul{
 	top:100%;
 		}
@@ -235,3 +237,7 @@ transform: translate(0);
 #li_app_corporativa{
 	display:none;
 	}
+
+
+
+/*prueba de open menu clic*/
