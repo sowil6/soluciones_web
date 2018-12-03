@@ -234,13 +234,16 @@ border-top: 1px solid yellow;
 	
 		.resolucion_ {
 	  display:none;
+	  
  }
  
  .menuLogo{position:fixed;
-	width:40%;
-	  margin-left:15%;
-	  height:auto;
-	 z-index:4;
+	width:65%;
+	height:40px;
+	
+	marging-rigth:0;
+		
+	 	 z-index:4;
 	
 	 }
 	 

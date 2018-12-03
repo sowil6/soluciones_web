@@ -179,36 +179,31 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
   <a href="#" title="Hide navigation">Hide navigation</a>
   <ul class="clearfix">
     <li class="menuNivel1" id="menuInicioNivel1"> <a href="inicio">Inicio</a></li>
-    <li class="menuNivel1" id="publico"> <a href="#">Institucional</a>
+    <li class="menuNivel1" id="publico"> <a href="#" aria-haspopup="true"><span>Institucional</span></a>
       <ul>
-     <li><a href="institucional,mision"><img src="../ImgSistema/imgMenu/bub.png" />Misión</a></li>
+     <li><a  href="institucional,mision"><img src="../ImgSistema/imgMenu/bub.png" />Misión</a></li>
                <li><a href="institucional,vision"><img src="../ImgSistema/imgMenu/bub.png" />Vision</a></li>
                <li><a href="institucional,principios"><img src="../ImgSistema/imgMenu/bub.png" />Principios Institucionales</a></li>
                <li><a href=".institucional,valores"><img src="../ImgSistema/imgMenu/bub.png" />Valores Éticos Institucionales</a></li>
                <li><a href="institucional,calidad"><img src="../ImgSistema/imgMenu/bub.png" />Sistema de Calidad</a></li>
        </ul>
     </li>
-     <li class="menuNivel1" id="publico"> <a href="#">Estudiante</a>
+     <li class="menuNivel1" id="publico"> <a href="#" aria-haspopup="true"><span>Estudiante</span></a>
       <ul>
-     <li><a href="institucional,mision"><img src="../ImgSistema/imgMenu/bub.png" />Misión</a></li>
-            <li><a href="http://www.mansioningles.com" target="_blank"><img src="../ImgSistema/imgMenu/bub.png" />La Mansión del Ingles</a></li>
-            <li><a href="https://es.duolingo.com" target="_blank"><img src="../ImgSistema/imgMenu/bub.png" />duolingo</a></li>
+    <li><a href="http://www.mansioningles.com" target="_blank"><img src="../ImgSistema/imgMenu/bub.png" />La Mansión del Ingles</a></li>
+    <li><a href="https://es.duolingo.com" target="_blank"><img src="../ImgSistema/imgMenu/bub.png" />duolingo</a></li>
        </ul>
     </li>
     <li class="active">
-     <a href="">OFERTA ACADEMICA</a>
+     <a aria-haspopup="true" href="#" aria-haspopup="true"><span>OFERTA ACADEMICA</span></a>
       <ul>
       <li><a href="ofertaacademica"><img src="../ImgSistema/imgMenu/bub.png" /> OFERTA ACADEMICA</a></li>
       </ul>
     </li>
-    <li><a href="?about">About</a></li>
-  </ul>
+<!--    <li><a href="?about">About</a></li>
+-->  </ul>
 </nav>
-
-
-
-
-                         
+                      
 </div>
      
             <!--</section>-->

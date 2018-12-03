@@ -29,47 +29,23 @@ height:2.5em;
 padding:0;
 }
 
-    #nav
-    {margin:0;padding:0;
-	background-color:#a70000 ;/*!important; color de la barra de menu*/
-      width: 100%; /* 1000 */
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 400;
-   /*    position: relative;;
-      top: 25%;
-      left: 50%;*/
-     /* margin-left: -30em;  30 480 */
-	    z-index:2;
-		
-		
-     
-     /* position: absolute;
-     top: 0;*/
-  
- 
-		
+#nav{
+ width: 100%; /* 1000 */
+font-family: 'Open Sans', sans-serif;
+font-weight: 400;
+position: absolute;
+z-index:2;
     }
-
 #nav > a{
   display: none;
 	}
  #nav  a {
-padding:2px 5px;/*separacion superior y separacion entre botones*/
-/*font-size:0.9rem;*/
+padding:2px 15px;/*separacion superior y separacion entre botones*/
 text-decoration:none;	
-/*display:block;
-transition: 0.2s;*/ 
  white-space: nowrap;/*no corta las frases, imprime una sola linea*/
-
-
-
-
-
-
-
   }
  #nav li {
-	 line-height: 1.1em; /* 60 (24) altura de los botones menu*/
+	/*  line-height: 1.1em; 60 (24) altura de los botones menu*/
   position: relative;
   }
  #nav li a{
@@ -93,93 +69,79 @@ transition: 0.2s;*/
       }
 
       /* first level */
- #nav  ul
-{
-display: flex;
+ #nav  ul{
 justify-content: center; /*flex end o center para centrar el menu*/
-background-color:#a70000 ;/*!important; color de la barra de menu*/
-
+display: flex;
 list-style:none;/*quitar las biñetas solo a los nav*/
-/*width:100%;espacio que ocupa el nav en la pantalla*/
+width:100%;/*espacio que ocupa el nav en la pantalla*/
       }
-        #nav > ul > li
-        {
-		/*	background-color: green;
-          width: 12.5%;*/
-          height: 100%;
-          float: left;
+#nav > ul{
+background-color: #e15a1f;
+background-color:#a70000 !important;/* color de la barra de menu*/
+
+height: auto;
+}	  
+#nav > ul > li {
+ height: 100%;
+ float: left;
         }
-          #nav > ul > li > a
-          {
-            height: 100%;
-            font-size: 1em; /* 24 */
-            line-height: 2.5em; /* 60 (24) altura de los botones submenu*/
-            text-align: center;
+#nav > ul > li > a {
+height: 100%;
+font-size: 1em; /* 24 */
+line-height: 2.5em; /* 60 (24) altura de los botones submenu*/
+text-align: center;
           }
-		  
-		  
-
-            #nav > ul > li:not( :last-child ) > a
-            {
-              border-right: 1px solid #fff;
-            }
-            #nav > ul > li:hover > a,
-            #nav > ul:not( :hover ) > li.active > a
-			            {
-             background-color: #ffff;
-			 color:#0B10E7;/*cambia el texto a color azul cuando se pasa el mouse sobre el boton*/
-			 border-bottom: 1px solid #a70000;
-			  border-top: 1px solid #a70000;
-
+ #nav > ul > li:not( :last-child ) > a {
+	 /*  border-right: 1px solid #fff;  estilo original, se cambio por los dos qu */            }
+ #nav > ul > li > a{
+ border-right: 1px solid #fff;/*pone borde derecho a los botones del menu*/
+  }
+#nav > ul > li:first-child > a {
+border-left: 1px solid #fff;/*pone bordeizquierdo solo al primer boton del menu*/
+   }
+  #nav > ul > li:hover > a,
+   #nav > ul:not( :hover ) > li.active > a   {
+   background-color: #ffff;
+ color:#0B10E7;/*cambia el texto a color azul cuando se pasa el mouse sobre el boton*/
+border-bottom: 1px solid #a70000;
+border-top: 1px solid #a70000;
             }
 
 
         /* second level */
 
- #nav li ul /*  #nav li ul*/
+#nav li ul /*  #nav li ul*/
         {
-        background-color: #C34AC7;/*color de fondo del ul submenu*/
-           display: none; /**/
-          position: absolute;
-          top: 100%;
-		  width:auto;
+background-color: #C34AC7;/*color de fondo del ul submenu*/
+display: none; /**/
+position: absolute;
+top: 100%;
+ width:auto;
         }
  #nav li ul li/*  new li ul li*/
         {
-        background-color: #C34AC7;/*color de fondo del ul submenu*/
-          /*  display: none;*/
-       
-       margin-left: -40px;
-		 
+       margin-left: -40px;/*permite rodar a la izquierda las opciones del submenu*/
         }
-          #nav li:hover ul
-          {
-            display: block;
-           left: 0;
-           /*  right: 0;*/
-          }
-		   #nav >ul >ul:hover
-          {
-           	width:auto;/*ancho del espacio de los submenu*/
-          }
-            #nav li:not( :first-child ):hover ul
-            {
-              left: -1px;
-            }
-            #nav li ul a
-            {     background-color: red;
-              font-size: 1.25em; /* 20 */
-              border-top: 1px solid #e15a1f;
-              padding: 0.75em; /* 15 (20) */
-			  margin-left:0;
-            }
-              #nav li ul li a:hover,
-              #nav li ul:not( :hover ) li.active a
-              {
-                background-color: #fff;
-				    color:#0B10E7;/*cambia el texto a color azul cuando se pasa el mouse sobre el boton*/
+ #nav li:hover ul {
+ display: block;
+ left: 0;
+  }
+#nav li:not( :first-child ):hover ul{
+  left: -1px;
+ }
+ #nav li ul a  {
+background-color:#a70000 ;/* color de fondo de los submenu*/
 
-              }
+font-size: 1.25em; /* 20 */
+ border-top: 1px solid #e15a1f;
+ padding: 0.75em; /* 15 (20) */
+margin-left:0;
+            }
+ #nav li ul li a:hover,
+#nav li ul:not( :hover ) li.active a {
+background-color: #fff;
+color:#0B10E7;/*cambia el texto a color azul cuando se pasa el mouse sobre el boton*/
+ }
 
 /*INICIO SCREEN ENTRE 800 Y 999 AZUL*/
 @media screen and (min-width:801px) and (max-width: 999px)  {
@@ -218,11 +180,11 @@ list-style:none;/*quitar las biñetas solo a los nav*/
       }
         #nav > a
         {
-          width: 3.125em; /* 50 */
+          width: 1.5em; /* 50 */
           height: 3.125em; /* 50 */
           text-align: left;
           text-indent: -9999px;
-          background-color: #e15a1f;
+          background-color: rgba(152,87,59,1.00);
           position: relative;
         }
           #nav > a:before,
@@ -239,7 +201,10 @@ list-style:none;/*quitar las biñetas solo a los nav*/
           {
             top: 60%;
           }
-
+#nav > a:hover,
+#nav > a:hover{/*boton que hace aparecer y desaparecer el menu responsive*/
+	background: rgba(0,0,0,0.3);/*sobre cuando se pasa el mouse encima*/
+}
         #nav:not( :target ) > a:first-of-type,
         #nav:target > a:last-of-type
         {
