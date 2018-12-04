@@ -1,7 +1,7 @@
 /*nota el slide no foncunionaba porque habia un div qeue bajaba y ocupaba el espacio del slide*/
 body {
 	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
-	margin: 0;
+	/*margin: 0;*/
 	padding: 0;
 	width:100%;
 /*	background-color: #C4D8E7;
@@ -346,7 +346,7 @@ border-top: 1px solid yellow;
  .menuLogo{position:fixed;
 	width:65%;
 	height:34px;
-	
+	top:0;
 	marging-rigth:0;
 		
 	 	 z-index:4;

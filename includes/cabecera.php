@@ -4,14 +4,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="description" content="Demo of Drop-Down Navigation: Touch-Friendly and Responsive" />
   <meta name="robots" content="all">
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="canonical" href="/examples/drop-down-navigation-touch-friendly-and-responsive">
-  <link rel="icon" href="../favicon.ico" />
-  <link rel="shortcut icon" href= "../ImgSistema/icono.png" type="image/png">
-  
- <!-- <link rel="stylesheet" href="../main.css" />-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+     <link rel="shortcut icon" href= "../ImgSistema/icono.png" type="image/png">
+   <link rel="stylesheet" type="text/css" href="../Font/demo-files/demo.css">
   <link rel="stylesheet" href="../Styles/estilos.css">
-<script src="doubletaptogo.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
 <?php function ValidaExtension($sExtension) {
 
             $resul;
@@ -44,7 +42,7 @@ return $resul;
            			
         }
 ?>	<!--<link rel="stylesheet" href="../Styles/menuWeb.css">-->
-<script src="../Scripts/doubletaptogo.js"></script>
+
 <link href="../Styles/css_navidad.css" rel="stylesheet" type="text/css">
 <link href="../Styles/CSSEstiloGeneral.css" rel="stylesheet" type="text/css">
  <link rel="stylesheet" href="../Styles/footer-distributed-with-address-and-phones.css">
@@ -101,21 +99,32 @@ return $resul;
 
              }
 
-          
-    $('.menuWeb li >ul> li').click(function(){
-  $('menuWeb  li >ul> li').show();
-  $(this).next().hide();
-
-});   
-
-          
-
           </script>
           <script>
-  $( function()
-  {
-    $( '#nav li:has(ul)' ).doubleTapToGo();
-  });
+ $(document).ready(main);
+ 
+var contador = 1;
+ 
+function main () {
+	$('.menu_bar').click(function(){
+		if (contador == 1) {
+			$('nav').animate({
+				left: '0'
+			});
+			contador = 0;
+		} else {
+			contador = 1;
+			$('nav').animate({
+				left: '-100%'
+			});
+		}
+	});
+ 
+	// Mostramos y ocultamos submenus
+	$('.submenu').click(function(){
+		$(this).children('.children').slideToggle();
+	});
+}
 </script>
 <div class="contenedorHeader">
 <div class="contenedorAntesMenu">
@@ -172,79 +181,42 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
             
 </div>
          
-  
-  <div class="divContenedorMenu"> </div>
-<nav id="nav" role="navigation">
-  <a href="#nav" title="Show navigation">Show navigation</a>
-  <a href="#" title="Hide navigation">Hide navigation</a>
-  <ul class="clearfix">
-    <li class="menuNivel1" id="menuInicioNivel1"> <a href="inicio">Inicio</a></li>
-    <li class="menuNivel1" id="publico"> <a href="#" aria-haspopup="true"><span>Institucional</span></a>
-      <ul>
-     <li><a  href="institucional,mision"><img src="../ImgSistema/imgMenu/bub.png" />Misión</a></li>
-               <li><a href="institucional,vision"><img src="../ImgSistema/imgMenu/bub.png" />Vision</a></li>
-               <li><a href="institucional,principios"><img src="../ImgSistema/imgMenu/bub.png" />Principios Institucionales</a></li>
-               <li><a href=".institucional,valores"><img src="../ImgSistema/imgMenu/bub.png" />Valores Éticos Institucionales</a></li>
-               <li><a href="institucional,calidad"><img src="../ImgSistema/imgMenu/bub.png" />Sistema de Calidad</a></li>
-       </ul>
-    </li>
-     <li class="menuNivel1" id="publico"> <a href="#" aria-haspopup="true"><span>Estudiante</span></a>
-      <ul>
-    <li><a href="http://www.mansioningles.com" target="_blank"><img src="../ImgSistema/imgMenu/bub.png" />La Mansión del Ingles</a></li>
-    <li><a href="https://es.duolingo.com" target="_blank"><img src="../ImgSistema/imgMenu/bub.png" />duolingo</a></li>
-       </ul>
-    </li>
-    <li class="active">
-     <a aria-haspopup="true" href="#" aria-haspopup="true"><span>OFERTA ACADEMICA</span></a>
-      <ul>
-      <li><a href="ofertaacademica"><img src="../ImgSistema/imgMenu/bub.png" /> OFERTA ACADEMICA</a></li>
-      </ul>
-    </li>
-<!--    <li><a href="?about">About</a></li>
--->  </ul>
-</nav>
+   	<menu>
+		<div class="menu_bar">
+			<a href="#" class="bt-menu"><span class="icon icon-list2"></span></a>
+		</div>
+ 
+		<nav>
+			<ul>
+				<li><a href="inicio"><span class="icon icon-home"></span>Inicio</a></li>
+				
+                <li class="submenu">
+					<a href="#"><span class="icon icon-office"></span>Institucional  <span class="icon icon-circle-down"></span></a>
+					<ul class="children">
+						<li><a href="institucional,mision">Mision <span class="icon icon-dot"></span></a></li>
+						<li><a href="institucional,vision">Visión <span class="icon icon-dot"></span></a></li>
+						<li><a href="institucional,principios">Principios Institucionales<span class="icon icon-dot"></span></a></li>
+                        <li><a href="institucional,valores">Valores Éticos Institucionales<span class="icon icon-dot"></span></a></li>
+                        <li><a href="institucional,calidad">Sistema de Calidad<span class="icon icon-dot"></span></a></li>
+					</ul>
+				</li>
+                
+                	<li class="submenu">
+					<a href="#"><span class="icon icon-user-tie"></span>Estudiante  <span class="icon icon-circle-down"></span></a>
+					<ul class="children">
+						<li><a href="http://www.mansioningles.com" target="_blank">La Mansión del Ingles<span class="icon icon-dot"></span></a></li>
+						<li><a href="https://es.duolingo.com" target="_blank">duolingo<span class="icon icon-dot"></span></a></li>
+					</ul>
+				</li>
+                
+				<li><a href="ofertaacademica"><span class="icon icon-pencil2"></span>Oferta Academica  </a></li>
+				<li><a href="#"><span class="icon icon-mail"></span>Contacto</a></li>
+			</ul>
+		</nav>
+	</menu>  
+
                       
 </div>
      
             <!--</section>-->
 
-                 <script>
-        $('.item').hover(
-            function () {
-                var $this = $(this);
-                expand($this);
-            },
-            function () {
-                var $this = $(this);
-                collapse($this);
-            }
-        );
-        function expand($elem) {
-            var angle = 0;
-            var t = setInterval(function () {
-                if (angle == 1440) {
-                    clearInterval(t);
-                    return;
-                }
-                angle += 40;
-                $('.link', $elem).stop().animate({ rotate: '+=-40deg' }, 0);
-            }, 10);
-            $elem.stop().animate({ width: '360px' }, 1000)//ancho de desplazamiento  numero despues del ancho, velocidad de desplazamiento
-            .find('.item_content').fadeIn(400, function () {
-                $(this).find('p').stop(true, true).fadeIn(600);
-            });
-        }
-        function collapse($elem) {
-            var angle = 1440;
-            var t = setInterval(function () {
-                if (angle == 0) {
-                    clearInterval(t);
-                    return;
-                }
-                angle -= 40;
-                $('.link', $elem).stop().animate({ rotate: '+=40deg' }, 0);
-            }, 10);
-            $elem.stop().animate({ width: '80px' }, 1000)
-            .find('.item_content').stop(true, true).fadeOut().find('p').stop(true, true).fadeOut();
-        }
-    </script>
