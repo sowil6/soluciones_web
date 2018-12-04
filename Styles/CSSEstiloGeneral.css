@@ -89,6 +89,7 @@ z-index:2;
 	display:flex;
 	justify-content:space-around; /*flex end o center para centrar el menu*/
 }
+
 /*INFORMACION PBX EMAIL*/
  .info{
 	margin-top:1%;
@@ -345,12 +346,12 @@ border-top: 1px solid yellow;
  
  .menuLogo{position:fixed;
 	width:65%;
-	height:34px;
+	height:84px;
 	top:0;
 	marging-rigth:0;
 		
 	 	 z-index:4;
-	
+	display:none;
 	 }
 	 
 

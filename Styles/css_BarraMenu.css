@@ -8,7 +8,17 @@
  
 body {background:#FEFEFE;}
  
-.menu_bar {
+ /*BARRA DE MENU*/
+.barraMenu-fixed{
+	position:fixed;
+top:0;
+display:flex;
+	 	justify-content:end; /*flex end o center para centrar el menu*/
+		padding-right:10%;
+ z-index:2;
+	}
+ 
+.btn_menu_bar {
 	display:none;
 }
  
@@ -17,13 +27,21 @@ menu {
 }
  
 
- 
+ .class_menu-fixed nav {
+		position: fixed;
+	top:0;
+	display:flex;
+	justify-content:end;
+	padding-right:4%;
+
+	   z-index:2;
+	}
  
 menu nav {
 	background:#023859;
 	background-color:#a70000 !important;/* color de la barra de menu*/
 	z-index:1000;
-	line-height: 1em; /* 60 (24) */
+	line-height: 1.5m; /* 60 (24) tambien sirve para definit la altura de la barra de menu*/
 	width:100%;
 
 }
@@ -49,35 +67,27 @@ color:#0B10E7;/*cambia el texto a color azul cuando se pasa el mouse sobre el bo
 border-bottom: 1px solid #a70000;
 border-top: 1px solid #a70000;
 }
-
-
- 
 menu nav ul li {
 	display:inline-block;
 	position: relative;
 }
- 
 menu nav ul li:hover {
 	background:#ffffff;
 	border-bottom:2px solid #a70000;
 		border-top:2px solid #a70000;
 }
- 
 menu nav ul li a {
 	color:#fff;
 	display:block;
 	text-decoration:none;
 	padding: 10px;/*ayuda a definir la altura de la barra de menu*/
 }
- 
 header nav ul li a span {
 	margin-right:10px;
 }
- 
 menu nav ul li:hover .children {
 	display:block;
 }
- 
 menu nav ul li .children {
 	display: none;
 	background:#a70000;
@@ -85,13 +95,11 @@ menu nav ul li .children {
 	width: 150%;
 	z-index:1000;
 }
- 
 menu nav ul li .children li {
 	display:block;
 	overflow: hidden;
 	border-bottom: 1px solid rgba(255,255,255,.5);
 }
- 
 menu nav ul li .children li a {
 	display: block;
 }
@@ -117,7 +125,13 @@ menu nav ul li .caret {
   
 /*INICIO SCREEN ENTRE 800 Y 999 AZUL*/
 @media screen and (min-width:801px) and (max-width: 999px)  {
+
  
+	.class_menu-fixed {
+		position: fixed;
+	top:100px;
+	   z-index:13;
+	}
 	
 	}
 	
@@ -134,69 +148,68 @@ menu nav ul li .caret {
 		margin-top:50px;
 	}
  
-	.menu_bar {
-		display:block;
-		width:60px;
+	.btn_menu_bar {
 		position: fixed;
+		display:block;
+		width:100%;
 		top:0;
-		background:green;
-		z-index:100;
+		background:rgba(6,122,205,0.9);
+		z-index:3;
 		padding:0;
 	}
  
-	.menu_bar .bt-menu {
+	.btn_menu_bar .bt-menu {
 		display: block;
-		padding: 10px;/*paddin del boton de menu*/
+		padding: 5px;/*paddin del boton de menu*/
 		color: #fff;
 		overflow: hidden;
 		font-size: 25px;
 		text-decoration: none;
 	}
  
-	.menu_bar span {
+	.btn_menu_bar span {
 		float: right;
 		font-size: 40px;
 	}
  
-	menu nav {
+	.class_menu .nav_barraMenu {
 		width: 70%;
 		height: calc(100% - 80px);
 		position: fixed;
 		right:100%;
 		margin: 0;
-		overflow: scroll;
+		overflow: hidden;
 		margin-top:0;
 	}
- menu nav ul {
+ .class_menu .nav_barraMenu ul {
 	justify-content:flex-start; /*flex end o center para centrar el menu*/
 	display:block;
 	
 }
-	menu nav ul li {
+	.class_menu .nav_barraMenu ul li {
 		display: block;
 		border-bottom:1px solid rgba(255,255,255,.5);
 	}
  
-	menu nav ul li a {
+	.class_menu .nav_barraMenu ul li a {
 		display: block;
 		padding:20px;/*se cambia el padin para tener mas espacio en moviles*/
 	}
  
-	menu nav ul li:hover .children {
+	.class_menu .nav_barraMenu ul li:hover .children {
 		display: none;
 	}
  
-	menu nav ul li .children {
+	.class_menu .nav_barraMenu ul li .children {
 		width: 100%;
 		position: relative;
 		background:#0743A0;
 	}
- 
-	menu nav ul li .children li a {
+ .nav_barraMenu ul li .children li a {
 		margin-left:20px;
 	}
  
-	menu nav ul li .caret {
+	.class_menu .nav_barraMenu ul li .caret {
 		float: right;
 	}
 }

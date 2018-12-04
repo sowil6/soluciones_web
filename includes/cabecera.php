@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
      <link rel="shortcut icon" href= "../ImgSistema/icono.png" type="image/png">
    <link rel="stylesheet" type="text/css" href="../Font/demo-files/demo.css">
-  <link rel="stylesheet" href="../Styles/estilos.css">
+  <link rel="stylesheet" href="../Styles/css_BarraMenu.css">
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 
 <?php function ValidaExtension($sExtension) {
@@ -56,8 +56,8 @@ return $resul;
 -->
   <script type="text/javascript">
             $(document).ready(function () {
-                var altura = $('#nav').offset().top;
-               //alert(altura );
+                var altura = $('nav').offset().top;
+              //alert(altura );
              $(window).on('scroll', function () {
                if ($(window).scrollTop() > altura) {
                    $('.divTitulo').addClass('divTitulo-fixed');
@@ -66,7 +66,9 @@ return $resul;
                    $('.PTitulo').addClass('PTitulo-fixed');
                    $('.PSubtitulo1').addClass('PSubtitulo1-fixed');
                    $('.menuLogo').addClass('menuLogo-fixed');
-                   $('.menuWeb').addClass('menuWeb-fixed');
+                   $('.nav_barraMenu').addClass('nav_barraMenu-fixed');
+				   $('.btn_menu_bar').addClass('btn_menu_bar-fixed');
+				   $('.class_menu').addClass('class_menu-fixed');
 				     } else {
                    $('.divTitulo').removeClass('divTitulo-fixed');
                    $('#nav').removeClass('nav-fixed');
@@ -75,9 +77,9 @@ return $resul;
                    $('.PSubtitulo1').removeClass('PSubtitulo1-fixed');
                    $('.PSubtitulo2').removeClass('PSubtitulo2-fixed');
                    $('.menuLogo').removeClass('menuLogo-fixed');
-				  $('.menuWeb').removeClass('menuWeb-fixed');
-				  
-                   
+				  $('.nav_barraMenu').removeClass('nav_barraMenu-fixed');
+				   $('.btn_menu_bar').removeClass('btn_menu_bar-fixed');
+                    $('.class_menu').removeClass('class_menu-fixed');
                }
            });
 
@@ -106,20 +108,32 @@ return $resul;
 var contador = 1;
  
 function main () {
-	$('.menu_bar').click(function(){
+	$('.btn_menu_bar').click(function(){
 		if (contador == 1) {
-			$('nav').animate({
+			$('.nav_barraMenu').animate({
 				left: '0'
 			});
 			contador = 0;
 		} else {
 			contador = 1;
-			$('nav').animate({
+			$('.nav_barraMenu').animate({
 				left: '-100%'
 			});
 		}
 	});
- 
+ $('.btn_menu_bar-fixed').click(function(){
+		if (contador == 1) {
+			$('.nav_barraMenu-fixed').animate({
+				left: '0'
+			});
+			contador = 0;
+		} else {
+			contador = 1;
+			$('.nav_barraMenu-fixed').animate({
+				left: '-100%'
+			});
+		}
+	});
 	// Mostramos y ocultamos submenus
 	$('.submenu').click(function(){
 		$(this).children('.children').slideToggle();
@@ -181,12 +195,12 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
             
 </div>
          
-   	<menu>
-		<div class="menu_bar">
-			<a href="#" class="bt-menu"><span class="icon icon-list2"></span></a>
+   	<menu class="class_menu">
+		<div class="btn_menu_bar">
+			<a href="#" class="bt-menu"><span class="icon icon-list2"></span>menu</a>
 		</div>
  
-		<nav>
+		<nav class="nav_barraMenu">
 			<ul>
 				<li><a href="inicio"><span class="icon icon-home"></span>Inicio</a></li>
 				
