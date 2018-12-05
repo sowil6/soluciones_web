@@ -156,7 +156,7 @@ justify-content: end;
 /*SCREEN MOVIL 300 a 600 AMARILLO*/
 @media screen  and (min-width: 300px) and (max-width: 800px) {
 	body {
-		margin-top:50px;
+	
 	}
  
 	.btn_menu_bar {
@@ -167,7 +167,7 @@ justify-content: end;
 		position: fixed;
 		top:0;
 		background:rgba(208,174,174,1.00);
-		z-index:100;
+		z-index:2;
 text-align:left;		
 	}
  
@@ -204,7 +204,7 @@ position: relative;
 		margin: 0;
 	/*	overflow: scroll;*/
 		top:50px;
-			z-index:5;
+			z-index:5;display:block;
 	}
  menu nav ul {
 	justify-content:flex-start; /*flex end o center para centrar el menu*/

@@ -346,8 +346,26 @@ font-size:0.5rem;
 	 padding-left:10px;
  width:69%;
  }
-
-
+.menuLogo {
+position: absolute;
+top:0;
+z-index: 3;
+left:0;
+width:16em;/*con el valor que esta en las function de la pagina Site.Master controlar el ancho contenedor de la imagen*/
+height:3em;/*altura del contenedor de la imagen*/
+margin-left:55px;
+	
+}
+.menuLogo {
+position: fixed;
+top:0;
+z-index: 3;
+left:0;
+width:16em;/*con el valor que esta en las function de la pagina Site.Master controlar el ancho contenedor de la imagen*/
+height:3em;/*altura del contenedor de la imagen*/
+margin-left:55px;
+	
+}
 	
 	}
 /*SCREEN MOVIL 300 a 600 AMARILLO*/
@@ -361,9 +379,27 @@ border-top: 1px solid yellow;
 	  
  }
  
-
+.menuLogo {
+position: absolute;
+top:0;
+z-index: 3;
+left:0;
+width:16em;/*con el valor que esta en las function de la pagina Site.Master controlar el ancho contenedor de la imagen*/
+height:3em;/*altura del contenedor de la imagen*/
+margin-left:55px;
+	
+}
 	 
-
+.menuLogo-fixed {
+position: fixed;
+top:0;
+z-index: 3;
+left:0;
+width:16em;/*con el valor que esta en las function de la pagina Site.Master controlar el ancho contenedor de la imagen*/
+height:3em;/*altura del contenedor de la imagen*/
+margin-left:55px;
+	
+}
  .info{
 	display:none;
  }
