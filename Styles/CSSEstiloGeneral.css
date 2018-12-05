@@ -343,8 +343,12 @@ font-size:0.5rem;
  }
 
  .info{
-	 padding-left:10px;
- width:69%;
+ 	position: fixed;
+	top:0;
+ right: 140px;
+ width:40%;
+ z-index: 3;
+ display: none;
  }
 .menuLogo {
 position: absolute;
