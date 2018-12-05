@@ -160,7 +160,7 @@ justify-content: end;
 /*SCREEN MOVIL 300 a 600 AMARILLO*/
 @media screen  and (min-width: 300px) and (max-width: 800px) {
 	body {
-	
+	margin-top:50px;
 	}
  
 	.btn_menu_bar {
