@@ -56,7 +56,7 @@ return $resul;
 -->
   <script type="text/javascript">
             $(document).ready(function () {
-                var altura = $('nav').offset().top;
+                var altura = $('header').offset().top;
               //alert(altura );
              $(window).on('scroll', function () {
                if ($(window).scrollTop() > altura) {
@@ -67,7 +67,7 @@ return $resul;
                    $('.PSubtitulo1').addClass('PSubtitulo1-fixed');
                    $('.menuLogo').addClass('menuLogo-fixed');
                    $('.nav_barraMenu').addClass('nav_barraMenu-fixed');
-				   $('.btn_menu_bar').addClass('btn_menu_bar-fixed');
+				   $('.info').addClass('info-fixed');
 				   $('.class_menu').addClass('class_menu-fixed');
 				     } else {
                    $('.divTitulo').removeClass('divTitulo-fixed');
@@ -78,7 +78,7 @@ return $resul;
                    $('.PSubtitulo2').removeClass('PSubtitulo2-fixed');
                    $('.menuLogo').removeClass('menuLogo-fixed');
 				  $('.nav_barraMenu').removeClass('nav_barraMenu-fixed');
-				   $('.btn_menu_bar').removeClass('btn_menu_bar-fixed');
+				   $('.info').removeClass('info-fixed');
                     $('.class_menu').removeClass('class_menu-fixed');
                }
            });
@@ -197,7 +197,7 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
          
    	<menu class="class_menu">
 		<div class="btn_menu_bar">
-			<a href="#" class="bt-menu"><span class="icon icon-list2"></span>menu</a>
+			<a href="#" class="bt-menu"><span class="nombre_icon">menu</span><span class="icon icon-menu"></span></a>
 		</div>
  
 		<nav class="nav_barraMenu">

@@ -9,39 +9,43 @@
 body {background:#FEFEFE;}
  
  /*BARRA DE MENU*/
-.barraMenu-fixed{
+.barraMenus-fixed{
 	position:fixed;
 top:0;
 display:flex;
-	 	justify-content:end; /*flex end o center para centrar el menu*/
-		padding-right:10%;
+justify-content:end; /*flex end o center para centrar el menu*/
+padding-right:10%;
+transition: 2s;
  z-index:2;
 	}
- 
+
+.class_menu-fixed nav {/*probando si hay efecto con color de fondo*/
+background-color: yellow;
+width: 100%;
+position: fixed;
+top:0;
+padding-right: 7%;
+display: flex;
+justify-content: end;
+ z-index:2;
+	} 
 .btn_menu_bar {
 	display:none;
+		
 }
- 
+
 menu {
 	width: 100%;
 }
  
 
- .class_menu-fixed nav {
-		position: fixed;
-	top:0;
-	display:flex;
-	justify-content:end;
-	padding-right:4%;
 
-	   z-index:2;
-	}
  
 menu nav {
 	background:#023859;
 	background-color:#a70000 !important;/* color de la barra de menu*/
 	z-index:1000;
-	line-height: 1.5m; /* 60 (24) tambien sirve para definit la altura de la barra de menu*/
+	line-height: 1.7em; /* 60 (24) tambien sirve para definit la altura de la barra de menu*/
 	width:100%;
 
 }
@@ -126,13 +130,19 @@ menu nav ul li .caret {
 /*INICIO SCREEN ENTRE 800 Y 999 AZUL*/
 @media screen and (min-width:801px) and (max-width: 999px)  {
 
- 
-	.class_menu-fixed {
-		position: fixed;
-	top:100px;
-	   z-index:13;
-	}
+.class_menu-fixed nav{/*probando si hay efecto con color de fondo*/
+background-color: yellow;
+width: 100%;
+height: 80px;
+position: fixed;
+top:0;
+padding-top: 40px;
+display: flex;
+justify-content: end;
+ z-index:2;
+	} 
 	
+
 	}
 	
 	/*SCREEN ENTRE 601 Y 800 VERDE*/	
@@ -142,75 +152,89 @@ menu nav ul li .caret {
 
 	
 	}
+	
 /*SCREEN MOVIL 300 a 600 AMARILLO*/
-@media screen  and (min-width: 300px) and (max-width: 600px) {
+@media screen  and (min-width: 300px) and (max-width: 800px) {
 	body {
 		margin-top:50px;
 	}
  
 	.btn_menu_bar {
-		position: fixed;
+		margin:0;padding:0;
 		display:block;
-		width:100%;
+		width:50px;
+		height:50px;
+		position: fixed;
 		top:0;
-		background:rgba(6,122,205,0.9);
-		z-index:3;
-		padding:0;
+		background:rgba(208,174,174,1.00);
+		z-index:100;
+		
 	}
  
 	.btn_menu_bar .bt-menu {
-		display: block;
-		padding: 5px;/*paddin del boton de menu*/
-		color: #fff;
+		color: #000;
 		overflow: hidden;
-		font-size: 25px;
+		/*font-size: 12px;*/
 		text-decoration: none;
 	}
- 
-	.btn_menu_bar span {
+	 .bt-menu  .nombre_icon {
+		 margin:0;
+		padding:0;
+ font-size:100%;
+	
+		display:block;
+			float: right;
+	 }
+	.bt-menu span {
+		position:relative;
+		bottom:5px;
 		float: right;
-		font-size: 40px;
+		font-size: 35px;
+		
 	}
- 
-	.class_menu .nav_barraMenu {
+
+	menu nav{
 		width: 70%;
 		height: calc(100% - 80px);
 		position: fixed;
 		right:100%;
 		margin: 0;
-		overflow: hidden;
-		margin-top:0;
+	/*	overflow: scroll;*/
+		top:50px;
+			z-index:5;
 	}
- .class_menu .nav_barraMenu ul {
+ menu nav ul {
 	justify-content:flex-start; /*flex end o center para centrar el menu*/
 	display:block;
 	
 }
-	.class_menu .nav_barraMenu ul li {
+	menu nav ul li {
 		display: block;
 		border-bottom:1px solid rgba(255,255,255,.5);
 	}
  
-	.class_menu .nav_barraMenu ul li a {
+	menu nav ul li a {
 		display: block;
 		padding:20px;/*se cambia el padin para tener mas espacio en moviles*/
 	}
  
-	.class_menu .nav_barraMenu ul li:hover .children {
+	menu nav ul li:hover .children {
 		display: none;
 	}
  
-	.class_menu .nav_barraMenu ul li .children {
+	menu nav ul li .children {
 		width: 100%;
 		position: relative;
 		background:#0743A0;
 	}
- .nav_barraMenu ul li .children li a {
+ 
+	menu nav ul li .children li a {
 		margin-left:20px;
 	}
  
-	.class_menu .nav_barraMenu ul li .caret {
+	menu nav ul li .caret {
 		float: right;
 	}
 }
-
+	
+	
