@@ -162,34 +162,37 @@ justify-content: end;
 	.btn_menu_bar {
 		margin:0;padding:0;
 		display:block;
-		width:50px;
+		width:100%;
 		height:50px;
 		position: fixed;
 		top:0;
 		background:rgba(208,174,174,1.00);
 		z-index:100;
-		
+text-align:left;		
 	}
  
 	.btn_menu_bar .bt-menu {
 		color: #000;
 		overflow: hidden;
+position: relative;
 		/*font-size: 12px;*/
 		text-decoration: none;
 	}
 	 .bt-menu  .nombre_icon {
 		 margin:0;
 		padding:0;
- font-size:100%;
-	
+ 		font-size:100%;
 		display:block;
-			float: right;
+		position: absolute;
+		top:12px;			
 	 }
 	.bt-menu span {
-		position:relative;
-		bottom:5px;
-		float: right;
+		position:absolute;
+		display:block;
+	 top:15px;
+		
 		font-size: 35px;
+		position: relative;
 		
 	}
 
