@@ -24,7 +24,7 @@ $HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source s
 	
 /*if($cancion->Codigo==$v2){}*/
 echo '<li><span class="titulo">'. $cancion->Titulo.'</span>';
-echo'<a href="'.$cancion->urlFile.'?Accion='.$cancion->Codigo.'"><div class="Contenedor_img_mas_Intro"><div class="contenedorImagen">'.$HTMLfoto_OVideo.'</div> <div class="MenuIzquierdo_Intro" ><p>'. $cancion->introduccionNoticia.'</p></div></div></a>';
+echo'<a href="'.$cancion->urlFile.'?Accion='.$cancion->Codigo.'"><div class="contenedorImagen">'.$HTMLfoto_OVideo.'</div> <div class="MenuIzquierdo_Intro" ><p>'. $cancion->introduccionNoticia.'</p></div></a>';
 echo '</li>';
 
 
