@@ -170,10 +170,18 @@ margin:0;
 	margin:0 auto;
 	display:inline-block;
 }*/
+.ulMenuIzquierdo li{
+	
+	display: flex;
+
+	
+	
+}
 .Contenedor_img_mas_Intro{
 	padding:0;
 	margin:0;
-	flex-direction:column;/*muestra en columna las opciones*/
+	display: inline-block;
+	/*flex-direction:column;muestra en columna las opciones*/
 
 	
 		}

@@ -2,9 +2,8 @@
 
   <title>Drop-Down Navigation: Touch-Friendly and Responsive demo by Osvaldas Valutis</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="description" content="Demo of Drop-Down Navigation: Touch-Friendly and Responsive" />
   <meta name="robots" content="all">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="shortcut icon" href= "../ImgSistema/icono.png" type="image/png">
    <link rel="stylesheet" type="text/css" href="../Font/demo-files/demo.css">
   <link rel="stylesheet" href="../Styles/css_BarraMenu.css">
