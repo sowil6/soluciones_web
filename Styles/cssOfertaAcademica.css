@@ -30,9 +30,9 @@ font-weight:bold;
 justify-content: space-around; /*	item omitido buscando que los li inicien en la izqueirda */
 }
 .ulOferta li {
-	width:30%;
+	width:200px;
 	background-color: #060505;
-	height:250px;
+	height:auto;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:2px;
@@ -49,8 +49,9 @@ justify-content: center;
 	background:rgba(130,175,245,0.80);cursor:default;
 	}
 .ulOferta embed {
-	width: 97%;
-	height: 150px;
+	box-sizing: border-box; 
+	width: 100%;
+	height: auto;
 	padding:2px;
 	border: 1px solid #D3D3D3;  
 }
@@ -59,10 +60,10 @@ justify-content: center;
 	color:white;
 }
 .ofertaimagenoVideo{
-	width: 98%;
+	/*width: 98%;
 	height: 150px;
-	border: 1px solid #D3D3D3; /*LightGray */
-padding:10px;/*Pone marco a la imagen*/
+	border: 1px solid #D3D3D3; LightGray */
+p/*adding:10px;Pone marco a la imagen*/
 }
 
 
