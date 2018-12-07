@@ -222,7 +222,7 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
 				</li>
                 
 				<li><a href="ofertaacademica"><span class="icon icon-pencil2"></span>Oferta Academica  </a></li>
-				<li><a href="#"><span class="icon icon-mail"></span>Contacto</a></li>
+				<li><a href="contacto_vista"><span class="icon icon-mail"></span>Contacto</a></li>
 			</ul>
 		</nav>
 	</menu>  

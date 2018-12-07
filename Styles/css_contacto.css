@@ -1,0 +1,79 @@
+/* CSS Document */
+
+.contentUnaColumna{
+display:flex;
+margin:0;
+justify-content:center;	
+	}
+.div_contacto{
+	width:80%;
+
+	background:#DB1326;
+	margin:20px;
+	padding:50px;
+
+	
+	}
+.div_contacto img{
+	width:500px;
+	
+	
+	}
+.div_contacto	.footer-center,
+.div_contacto .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.div_contacto .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.div_contacto .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.div_contacto .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.div_contacto .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+.div_contacto .footer-icons{
+	margin-top: 25px;
+}
+
+.div_contacto .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
