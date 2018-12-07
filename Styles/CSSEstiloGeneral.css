@@ -118,7 +118,6 @@ z-index:2;
     cursor:pointer;
 	
 	}
-
 .InfoUL a{
 	font-size:0.7rem;
 	color:#000;/*color de texto*/
@@ -131,7 +130,6 @@ z-index:2;
 	width:80%;
 	
 	}
-	
 .info-Phone {
 	float:left;
 	/*background-color:green;*/
@@ -148,7 +146,6 @@ z-index:2;
    	height:100%;
 	margin-top:0;
 }
-
 
 /*LOGO*/
 .menuLogo {
@@ -280,6 +277,7 @@ width:100%;
 	}
 .divBotones{
 	margin:0 auto;
+	height:40px;
 	background-color:aquamarine;
 		 display:flex;/*display:flex y justify-content: center ayudan a centrar el menu*/
   justify-content: center;/*display:flex y justify-content: center ayudan a centrar el menu*/
@@ -290,11 +288,11 @@ width:100%;
 	}
 .btn{
 	width:auto;
-	/*height:23px;*/
-	margin:0.3em 0.3em 0.3em 0;/*quita espacio de botoners bootrasp*/
+	height:30px;/**/
+	margin:0.3em 0.3em 1.3em 0;/*quita espacio de botoners bootrasp*/
 	text-align:center;
 	display: inline-block;
-	padding:0.35em 1.2em;
+	padding:0.35em 0.2em 2px ;
 	font-weight:100;
 	transition: all 0.2s;
 	box-sizing: border-box;

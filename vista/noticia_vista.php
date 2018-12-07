@@ -74,14 +74,14 @@
  
 	
 	
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">-->
 
 <link href="../Styles/cssTextEditor.css" rel="stylesheet" type="text/css" /><!--Estas dos link solo funcionan ubicnadolos aqui, permiten mostrar los botones del editor-->
  <link href="../Styles/jquery-te-1.4.0.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="../Scripts/jquery.min.js" charset="utf-8"></script>
 <script src="../Scripts/jquery-te-1.4.0.min.js" type="text/javascript" charset="utf-8"></script>
-<link rel="stylesheet" type="text/css" href="../Styles/bootstrap.min.css"><!-- -->
+<link rel="stylesheet" type="text/css" href="../Styles/bootstrap.min.css"> <!---->
 
   <script>
 $(document).ready(function(){
@@ -497,20 +497,20 @@ if(editando=="Subtemas"){opcionSelect();}else{TraerSubtemas();}
      
 <div id="divIzqEditorNoticia">
    <div class="divBotones">
-      <input type="button" class="btn btn-success"  id="btngrabar" href="javascript:;" onClick="grabar($('#cod').val(),$('#detCod').val(),$('#btngrabar').val());return false;" value="Grabar"/>  
-      <input type="button" class="btn btn-success" href="javascript:;" onClick="publicar();return false;" value="Publicar"/>   
-      <button type="button"  class="btn btn-danger" href="javascript:;" onClick="eliminar();return false;">Eliminar</button>
-      <input type="button" class="btn btn-success" href="javascript:;" onClick="nuevo();return false;" value="Nuevo"/>
-      <input type="button" class="btn btn-success" href="javascript:;" onClick="edit();return false;" value="Edit"/>
-      <input type="button" class="btn btn-success" id="subtemas" href="javascript:;" onClick="editarSubtemas();return false;" style="visibility:hidden" value="Subtemas"/>
-<button class="status">Toggle jQTE</button>
+      <input type="button" 	class="btn btn-success" href="javascript:;"		onClick="grabar($('#cod').val(),$('#detCod').val(),$('#btngrabar').val());return false;" value="Grabar" id="btngrabar"   />  
+      <input type="button" 	class="btn btn-success" href="javascript:;" 	onClick="publicar();return false;" 		value="Publicar"/>   
+      <button type="button" class="btn btn-danger" 	href="javascript:;" 	onClick="eliminar();return false;">Eliminar</button>
+      <input type="button" 	class="btn btn-success" href="javascript:;" 	onClick="nuevo();return false;" 		value="Nuevo"/>
+<!--      <input type="button" 	class="btn btn-success" href="javascript:;" 	onClick="edit();return false;" 			value="Edit"/>
+-->      <input type="button" 	class="btn btn-success" href="javascript:;"		onClick="editarSubtemas();return false;"	id="subtemas"  value="Subtemas" style="visibility:hidden" />
+	 <!-- <button class="status">Toggle jQTE</button>-->
    </div>
  <table class="TablaCitaInputUp">
  <tr>
  <td>
    <select class="DropDownListNoticias" name="option" id="IDopcion" href="javascript:;" onChange="opcionSelect();return false;" >
      <option value="" disabled selected>Seleccione un Item para Editar su contenido</option>
-     <option value="1">1. Nuestras Certificaciones</option>
+     <option value="1">1. Informativo</option>
      <option value="2">2. Menu Oferta Academica</option>
      <option value="4">4. Pagina Inicio Contenido Superior</option>
      <option value="5">5. Pagina Inicio Contenido Bajo</option>

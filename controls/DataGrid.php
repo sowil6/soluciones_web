@@ -58,7 +58,7 @@ class DataGrid{
             $header .= '<th>'.$title.'</th>';
         }
         if($this->_axions && $e == ''){
-            $header .= '<th>Acciones</th>';
+            $header .= '<th>Editar</th>';
         }
         $header .=      '</tr>';
         $header .= '</thead>';

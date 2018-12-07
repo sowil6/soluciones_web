@@ -1,10 +1,10 @@
 <!doctype html>
-<html><head>
+<html>
+<head>
 <meta charset="utf-8">
 <!-- TemplateBeginEditable name="doctitle" -->
-<title>Corporación Educativa de Formación Integral del Caribe - CEFIC </title>
 <!-- TemplateEndEditable -->
-
+  <?php include("../includes/head_include.php")?>
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
 </head>

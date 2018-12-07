@@ -1,10 +1,11 @@
 <!doctype html>
-<html><!-- InstanceBegin template="/Templates/plantillaBase.dwt.php" codeOutsideHTMLIsLocked="false" --><head>
+<html><!-- InstanceBegin template="/Templates/plantillaBase.dwt.php" codeOutsideHTMLIsLocked="false" -->
+<head>
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>CEFIC</title>
 <!-- InstanceEndEditable -->
-
+  <?php include("../includes/head_include.php")?>
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
 </head>
@@ -81,15 +82,15 @@
 -->  
     <div class="contenedorCatalogo">
     
-    <div class="div_ulOpcion_Menu">
-  <div class="divTitulo_ulOpcion_Menu">
+    <div class="div_ulOpcion_Menu_en_catalogo">
+  <div class="divTitulo_ulOpcion_Menu_en_catalogo">
 <p>OFERTA ACADEMICA</p> 
  </div>
          <?php
        
 $master="MenuIzquierdo";
 $canciones = simplexml_load_file("../XMLPage/xmlMenuCatalogo.xml");
-echo'	<ul class="ulOpcion_Menu">';
+echo'	<ul class="ulOpcion_Menu_en_catalogo">';
 foreach($canciones as $cancion)
 {
 	$info = new SplFileInfo($cancion->foto);//obtenemos la extension del archivo

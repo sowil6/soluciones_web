@@ -1,10 +1,14 @@
 <!--<link rel="shortcut icon" href= "./../ImgSistema/icono.ico" type="image/x-icon">-->
 
-  <title>Drop-Down Navigation: Touch-Friendly and Responsive demo by Osvaldas Valutis</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="robots" content="all">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="shortcut icon" href= "../ImgSistema/icono.png" type="image/png">
+
+
+ <link href="../Styles/css_navidad.css" rel="stylesheet" type="text/css">
+<link href="../Styles/CSSEstiloGeneral.css" rel="stylesheet" type="text/css">
+ <link rel="stylesheet" href="../Styles/footer-distributed-with-address-and-phones.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/regular.css" integrity="sha384-zkhEzh7td0PG30vxQk1D9liRKeizzot4eqkJ8gB3/I+mZ1rjgQk+BSt2F6rT2c+I" crossorigin="anonymous">
+
+	
    <link rel="stylesheet" type="text/css" href="../Font/demo-files/demo.css">
   <link rel="stylesheet" href="../Styles/css_BarraMenu.css">
 <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -42,11 +46,6 @@ return $resul;
         }
 ?>	<!--<link rel="stylesheet" href="../Styles/menuWeb.css">-->
 
-<link href="../Styles/css_navidad.css" rel="stylesheet" type="text/css">
-<link href="../Styles/CSSEstiloGeneral.css" rel="stylesheet" type="text/css">
- <link rel="stylesheet" href="../Styles/footer-distributed-with-address-and-phones.css">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/regular.css" integrity="sha384-zkhEzh7td0PG30vxQk1D9liRKeizzot4eqkJ8gB3/I+mZ1rjgQk+BSt2F6rT2c+I" crossorigin="anonymous">
 <!-- <script src="../Scripts/jquery.min.js" type="text/javascript"></script> 
 -->
 

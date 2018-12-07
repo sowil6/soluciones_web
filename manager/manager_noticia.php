@@ -175,7 +175,8 @@ $Noticias= noticia_modelo::get_Noticias($ubicacion);//se almacenan los datos de 
 $contenido = $xml->createElement('Noticias');
     $tema = $xml->appendChild($contenido);
 	
-	foreach  ($Noticias as $fila){echo "</br>"."en get noticia";
+	foreach  ($Noticias as $fila){
+//		echo "</br>"."en get noticia";
 //se cargan los set del beans notica con los valores de la consulta
 	$noticia= setNoticia($fila);
 	
@@ -511,8 +512,7 @@ function setNoticia($fila){
 	return $noticia;
 	}
 function verGets($noticia){
-echo	"en gest ".
-'</br> cod='.$noticia->getCodigoNoticia().
+echo '</br> cod='.$noticia->getCodigoNoticia().
 '</br> detCod='.$noticia->getCodigoDetalleNoticia(),
 '</br> titulo='.$noticia->getTituloNoticia(),
 '</br> intro='.$noticia->getIntroduccionNoticia(),

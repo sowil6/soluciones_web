@@ -78,7 +78,7 @@
   
  <div class="contenedorProyectoIZQ">
   <div class="divTituloulProyectoIZQ">
-<p>CERTIFICACIONES</p> 
+<p>PORTAFOLIO</p> 
  </div>
  
  
@@ -145,8 +145,8 @@ return $resul;
       
 
        <div class="contenedorProyectoDER">
-           <div class="slide_proyectos">Portafolio de Servicios y Emprendimiento</div>
-  <?php
+<!--           <div class="slide_proyectos">Portafolio de Servicios</div>
+-->  <?php
        
 $master="ProyectoDER";
 $canciones = simplexml_load_file("../XMLPage/xmlPaginaInicioParteBaja.xml");
@@ -165,7 +165,7 @@ $HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source s
 		}
 		$cod = $_GET['Accion'];
 if($cancion->Codigo==$cod){
-echo '<li>  <p class="titulo">'. $cancion->Titulo.'</p>';    
+echo '<li>  <p class="tituloDer">'. $cancion->Titulo.'</p>';    
 echo $HTMLfoto_OVideo.'<p class="Intro">'. $cancion->introduccionNoticia.'</p> ';
 echo '<div class="Mensaje">'.$cancion->mensajeNoticia.'</div> ';
 echo '</li>';

@@ -14,11 +14,11 @@
   <Noticia>
     <Codigo>2094</Codigo>
     <DetalleCodigo>0</DetalleCodigo>
-    <Titulo>ELECTRICIDAD&lt;br&gt;</Titulo>
-    <introduccionNoticia>ELECTRICIDAD INDUSTRIAL &lt;br&gt;</introduccionNoticia>
+    <Titulo>Técnico Laboral en&lt;br&gt;</Titulo>
+    <introduccionNoticia>Electricidad Industrial&lt;br&gt;</introduccionNoticia>
     <mensajeNoticia>&lt;p&gt;hola Contenido dsds&lt;br&gt;&lt;/p&gt;</mensajeNoticia>
     <urlFile>../vista/catalogoform.php</urlFile>
-    <foto>ELECTRICIDAD.jpg</foto>
+    <foto>maquina_Electrica_Rotativas.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
     <autor>2</autor>
   </Noticia>
@@ -36,8 +36,8 @@
   <Noticia>
     <Codigo>2118</Codigo>
     <DetalleCodigo>0</DetalleCodigo>
-    <Titulo>ENERGIA&lt;br&gt;</Titulo>
-    <introduccionNoticia>ENERGIA FOTOVOLTAICA&lt;br&gt;</introduccionNoticia>
+    <Titulo>Técnico Laboral en&lt;br&gt;</Titulo>
+    <introduccionNoticia>Energía Fotovoltaica&lt;br&gt;</introduccionNoticia>
     <mensajeNoticia>&lt;p&gt;&lt;/p&gt;</mensajeNoticia>
     <urlFile>../vista/catalogoform.php</urlFile>
     <foto>energia_fotovoltaica.jpg</foto>

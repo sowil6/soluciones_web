@@ -16,7 +16,7 @@
 			/* echo '<script language="javascript">alert("En Conectar exito");</script>'; */
 try{
 //		 $con = 'mysql:host='.$this->host.';port='.$this->port.';dbname='.$this->dbname; original
-		 $conexion =  new PDO('mysql:host=localhost; dbname=bdcefic', 'root','');
+		 $conexion =  new PDO('mysql:host=localhost; dbname=ceficce1_bd2018', 'root','');
                     
                     $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                     
