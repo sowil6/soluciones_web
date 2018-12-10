@@ -3,8 +3,8 @@
 <IfModule mod_rewrite.c>
 #Options +FollowSymLinks 
 
-# proteger directorios
-# Options -Indexes 
+# # proteger directorios
+Options -Indexes 
 
 # decimos a Apache que queremos sobre escribir las URLs para crear URLs amigables
 

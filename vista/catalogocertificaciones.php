@@ -97,14 +97,20 @@ $HTMLfoto_OVideo= "<embed class='" .$master. "imagenoVideo '   src = './Img/".$c
 	//si es video se embebe en el control html video
 $HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = '../Img/".$cancion->foto. "' type = 'video/mp4' > <source src = './img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
 		}
-	$v2 = $_GET['Accion'];
-	if($cancion->Codigo==$v2){
+	$v2 = isset( $_GET['Accion']);
+
+	if($v2!=null&& $cancion->Codigo==$v2){//if $v2
 
 echo '<li><span class="Certificaciones_titulo">'. $cancion->Titulo.'</span>';
 echo'<div class="Certificaciones_Imagen">'.$HTMLfoto_OVideo.'</div> <div class="Certificaciones_Intro" ><p>'. $cancion->introduccionNoticia.'</p></div><div class="Certificaciones_mensaje" ><p>'. $cancion->mensajeNoticia.'<p>';
 echo '</li>';
 
-}}
+}//end if $v2
+else{
+echo '<h1> Procedimiento anormal, por favor proceda adecuadamente </h1>';	
+	}//end else 
+
+}
 echo'</ul>';	  
 
 ?>

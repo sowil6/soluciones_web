@@ -101,13 +101,18 @@ $HTMLfoto_OVideo= "<embed class='" .$master. "imagenoVideo '   src = './Img/".$c
 	//si es video se embebe en el control html video
 $HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = './Img/".$cancion->foto. "' type = 'video/mp4' > <source src = './img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
 		}
-	$v2 = $_GET['Accion'];
-	$detalleCod = $_GET['dcod'];
-if($cancion->DetalleCodigo==$detalleCod){
+	$v2 = isset( $_GET['Accion']);
+	$detalleCod = isset($_GET['dcod']);
+	
+if($detalleCod!=null&& $cancion->DetalleCodigo==$detalleCod){//if $v2
 echo'<li><a href="'.$cancion->urlFile.'?Accion='.$cancion->Codigo.'&dcod='.$cancion->DetalleCodigo.'"><li>  <p class="titulo">'. $cancion->Titulo.'</p>';
 echo $HTMLfoto_OVideo.'<p class="Intro">'. $cancion->introduccionNoticia.'</p> </a>';
 echo '</li>';
-}}
+}//end if $v2
+else{
+echo '<h1> Procedimiento anormal, por favor proceda adecuadamente </h1>';	
+	}//end else 
+}
 echo'</ul>';	  
 
 ?>
