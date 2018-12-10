@@ -30,8 +30,8 @@ background-color: #C4D8E7;
 	text-align:center;
 	width:100%;
 	font-weight:bold;
-	
-
+	background-color:#a70000 !important;
+color:#fff;
 }
 .contenedorDetalleCatalogoIZQ{
 	width:20%;

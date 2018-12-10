@@ -98,7 +98,7 @@ $HTMLfoto_OVideo= "<embed class='" .$master. "imagenoVideo '   src = './Img/".$c
 	//si es video se embebe en el control html video
 $HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = '../Img/".$cancion->foto. "' type = 'video/mp4' > <source src = './img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
 		}
-	$v2 = isset( $_GET['Accion']);
+	if(isset( $_GET['Accion'])){$v2=$_GET['Accion'];}
 
 	if($v2!=null&& $cancion->Codigo==$v2){//if $v2
 
@@ -107,9 +107,7 @@ echo'<div class="Certificaciones_Imagen">'.$HTMLfoto_OVideo.'</div> <div class="
 echo '</li>';
 
 }//end if $v2
-else{
-echo '<h1> Procedimiento anormal, por favor proceda adecuadamente </h1>';	
-	}//end else 
+
 
 }
 echo'</ul>';	  

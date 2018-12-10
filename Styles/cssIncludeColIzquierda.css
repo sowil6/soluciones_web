@@ -44,6 +44,13 @@ background-color:#F7F7F7;/**/
 	background:rgba(130,175,245,0.80);cursor:default;
 	}
 
+.ulMenuIzquierdo > li.active > a{
+background-color: #fff;
+color:red;/*cambia el texto a color azul cuando se pasa el mouse sobre el boton*/
+
+
+}	
+	
 	
 .ulMenuIzquierdo li .titulo {
 	position: absolute;

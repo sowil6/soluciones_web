@@ -24,13 +24,14 @@ header {
 		width: 100%;
 	 display: table;*/
 	 /*margin-top: 1px;*/
-	 	 	
+	
 	}
 #contenidos {
  display: -webkit-flex;
    display: flex;
    -webkit-flex-wrap: wrap;
    flex-wrap: wrap;
+   justify-content:center;
 		
 }
 #contentIzquierda, #contentCentro, #contentDerecha {

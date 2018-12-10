@@ -1,5 +1,12 @@
 <!----><link rel="stylesheet" type="text/css" href="./Styles/cssIncludeColIzquierda.css">
+<script>
+ $('.ulMenuIzquierdo').click(function(){
 
+			$('.ulMenuIzquierdo li').css({'background-color': 'red'});
+
+		
+	});
+</script>
 <div class="divMenuIzquierdo">
   <div class="divTituloMenuIzquierdo">
 <p>PROGRAMAS</p> 

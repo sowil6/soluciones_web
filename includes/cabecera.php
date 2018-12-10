@@ -115,19 +115,7 @@ function main () {
 			});
 		}
 	});
- $('.btn_menu_bar-fixed').click(function(){
-		if (contador == 1) {
-			$('.nav_barraMenu-fixed').animate({
-				left: '0'
-			});
-			contador = 0;
-		} else {
-			contador = 1;
-			$('.nav_barraMenu-fixed').animate({
-				left: '-100%'
-			});
-		}
-	});
+
 	// Mostramos y ocultamos submenus
 	$('.submenu').click(function(){
 		$(this).children('.children').slideToggle();
