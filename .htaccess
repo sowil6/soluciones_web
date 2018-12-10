@@ -9,7 +9,7 @@ Options -Indexes
 # decimos a Apache que queremos sobre escribir las URLs para crear URLs amigables
 
 RewriteEngine On
-RewriteBase /soluciones-web/
+#RewriteBase /
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
