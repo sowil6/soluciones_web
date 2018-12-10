@@ -3,7 +3,7 @@
     <head>
         <title>TODO supply a title</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link href="../Styles/dataGrid.css" rel="stylesheet">
+        <link href="./Styles/dataGrid.css" rel="stylesheet">
         
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -11,9 +11,9 @@
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
         
-        <script src="../Scripts/jquery.min.js"></script>
+        <script src="./Scripts/jquery.min.js"></script>
  
-        <script src="../Scripts/jquery-3.3.1.js"></script>
+        <script src="./Scripts/jquery-3.3.1.js"></script>
        <script>
        function prueba(){
 
@@ -23,7 +23,7 @@
         };
 		$.ajax({
 			data: parametros,
-			url:"../manager/manager_pruebas.php",
+			url:"./manager/manager_pruebas.php",
 			type:"post",
 			beforeSend: function(){
 				$("#resultado").html("Procesando, espere por favor");

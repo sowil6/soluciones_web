@@ -4,6 +4,7 @@
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>CEFIC</title>
 <!-- InstanceEndEditable -->
+  <?php include("./includes/head_include.php")?>
 <!--<link href="../Styles/bootstrapCSS/bootstrap.css" rel="stylesheet" type="text/css">
 <script src="../Scripts/jquery-css-transform.js" type="text/javascript"></script>-->
  
@@ -67,11 +68,11 @@
 <div class="containerCeficc">
   <header>
   
-  <?php include("../includes/cabecera.php")?>
+  <?php include("./includes/cabecera.php")?>
    </header>
 
   <!-- InstanceBeginEditable name="EditRegionUnaColumna" -->
-<link rel="stylesheet" type="text/css" href="../Styles/cssPagina_Proyectos.css">
+<link rel="stylesheet" type="text/css" href="./Styles/cssPagina_Proyectos.css">
   <article class="contentUnaColumna">
   <div class="contenedorProyecto"> 
   
@@ -85,7 +86,7 @@
          <?php
        
 $master="ProyectoIZQ";
-$canciones = simplexml_load_file("../XMLPage/xmlPaginaInicioParteBaja.xml");
+$canciones = simplexml_load_file("./XMLPage/xmlPaginaInicioParteBaja.xml");
 echo'	<ul class="ulProyectoIZQ">';
 foreach($canciones as $cancion)
 {
@@ -94,10 +95,10 @@ foreach($canciones as $cancion)
 $estado=ValidaExtension($ext);//con la extension evaluamos si es tipo imagen o video
 if($estado==1){
 	//si es imagen se embebe en el control html imagen
-$HTMLfoto_OVideo= "<embed class='" .$master. "imagenoVideo '   src = '../Img/".$cancion->foto. "' />";
+$HTMLfoto_OVideo= "<embed class='" .$master. "imagenoVideo '   src = './Img/".$cancion->foto. "' />";
 }else{
 	//si es video se embebe en el control html video
-$HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = '../Img/".$cancion->foto. "' type = 'video/mp4' > <source src = '../img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
+$HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = './Img/".$cancion->foto. "' type = 'video/mp4' > <source src = './img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
 		}
 	
 /*if($cancion->Codigo==$v2){}*/
@@ -149,7 +150,7 @@ return $resul;
 -->  <?php
        
 $master="ProyectoDER";
-$canciones = simplexml_load_file("../XMLPage/xmlPaginaInicioParteBaja.xml");
+$canciones = simplexml_load_file("./XMLPage/xmlPaginaInicioParteBaja.xml");
 echo'	<ul class="ulProyectoDER">';
 foreach($canciones as $cancion)
 {
@@ -158,10 +159,10 @@ foreach($canciones as $cancion)
 $estado=ValidaExtension($ext);//con la extension evaluamos si es tipo imagen o video
 if($estado==1){
 	//si es imagen se embebe en el control html imagen
-$HTMLfoto_OVideo= "<embed class='".$master. "imagenoVideo'   src = '../Img/".$cancion->foto. "' />";
+$HTMLfoto_OVideo= "<embed class='".$master. "imagenoVideo'   src = './Img/".$cancion->foto. "' />";
 }else{
 	//si es video se embebe en el control html video
-$HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = '../Img/".$cancion->foto. "' type = 'video/mp4' > <source src = '../img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
+$HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = './Img/".$cancion->foto. "' type = 'video/mp4' > <source src = './img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
 		}
 		$cod = $_GET['Accion'];
 if($cancion->Codigo==$cod){
@@ -181,7 +182,7 @@ echo'</ul>';
   <!-- InstanceEndEditable --><!-- end .content -->
 
   <footer>
-     <?php include("../includes/footer.php")?>
+     <?php include("./includes/footer.php")?>
      </footer>
  </div> <!-- end .container -->
  

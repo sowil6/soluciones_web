@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>Documento sin título</title>
 </head>
-  <link rel="stylesheet" type="text/css" href="../Styles/cssIncludeColumnaDerecha.css">
+  <link rel="stylesheet" type="text/css" href="./Styles/cssIncludeColumnaDerecha.css">
 
 <div class="divColumnaDerecha">
   <div class="divTituloColumnaDerecha">
@@ -13,7 +13,7 @@
          <?php
        
 $master="ColumnaDerecha";
-$canciones = simplexml_load_file("../XMLPage/xmlCargaCertificaciones.xml");
+$canciones = simplexml_load_file("./XMLPage/xmlCargaCertificaciones.xml");
 echo'	<ul class="ulColumnaDerecha">';
 foreach($canciones as $cancion)
 {
@@ -22,10 +22,10 @@ foreach($canciones as $cancion)
 $estado=ValidaExtension($ext);//con la extension evaluamos si es tipo imagen o video
 if($estado==1){
 	//si es imagen se embebe en el control html imagen
-$HTMLfoto_OVideo= "<embed class='" .$master. "imagenoVideo '   src = '../Img/".$cancion->foto. "' />";
+$HTMLfoto_OVideo= "<embed class='" .$master. "imagenoVideo '   src = './Img/".$cancion->foto. "' />";
 }else{
 	//si es video se embebe en el control html video
-$HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = '../Img/".$cancion->foto. "' type = 'video/mp4' > <source src = '../img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
+$HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = './Img/".$cancion->foto. "' type = 'video/mp4' > <source src = './img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
 		}
 	
 /*if($cancion->Codigo==$v2){}*/

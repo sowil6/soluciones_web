@@ -4,6 +4,7 @@
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>CEFIC</title>
 <!-- InstanceEndEditable -->
+  <?php include("./includes/head_include.php")?>
 <!--<link href="../Styles/bootstrapCSS/bootstrap.css" rel="stylesheet" type="text/css">
 <script src="../Scripts/jquery-css-transform.js" type="text/javascript"></script>-->
  
@@ -67,30 +68,30 @@
 <div class="containerCeficc">
   <header>
   
-  <?php include("../includes/cabecera.php")?>
+  <?php include("./includes/cabecera.php")?>
    </header>
 
   <!-- InstanceBeginEditable name="EditRegionUnaColumna" -->
   <article class="contentUnaColumna">
-      <link rel="stylesheet" type="text/css" href="../Styles/css_Institucional.css">
+      <link rel="stylesheet" type="text/css" href="./Styles/css_Institucional.css">
         <div class="contenedorInstitucional">
            <?php
        	$urlpagina = $_GET['refpage'];
 
 		if($urlpagina=="vision"){
-			$canciones = simplexml_load_file("../XMLPage/xmlPaginaInstitucionalVision.xml");
+			$canciones = simplexml_load_file("./XMLPage/xmlPaginaInstitucionalVision.xml");
 				}
 						if($urlpagina=="mision"){
-			$canciones = simplexml_load_file("../XMLPage/xmlPaginaInstitucionalMision.xml");
+			$canciones = simplexml_load_file("./XMLPage/xmlPaginaInstitucionalMision.xml");
 				}
 						if($urlpagina=="principios"){
-			$canciones = simplexml_load_file("../XMLPage/xmlPaginaInstitucionalPrincipios.xml");
+			$canciones = simplexml_load_file("./XMLPage/xmlPaginaInstitucionalPrincipios.xml");
 				}
 						if($urlpagina=="valores"){
-			$canciones = simplexml_load_file("../XMLPage/xmlPaginaInstitucionalValores.xml");
+			$canciones = simplexml_load_file("./XMLPage/xmlPaginaInstitucionalValores.xml");
 				}
 					if($urlpagina=="calidad"){
-			$canciones = simplexml_load_file("../XMLPage/xmlPaginaInstitucionalCalidad.xml");
+			$canciones = simplexml_load_file("./XMLPage/xmlPaginaInstitucionalCalidad.xml");
 				}
 $master="Institucional";
 
@@ -102,10 +103,10 @@ foreach($canciones as $cancion)
 $estado=ValidaExtension($ext);//con la extension evaluamos si es tipo imagen o video
 if($estado==1){
 	//si es imagen se embebe en el control html imagen
-$HTMLfoto_OVideo= "<img class='" .$master. "imagenoVideo '   src = '../Img/".$cancion->foto. "' />";
+$HTMLfoto_OVideo= "<img class='" .$master. "imagenoVideo '   src = './Img/".$cancion->foto. "' />";
 }else{
 	//si es video se embebe en el control html video
-$HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = '../Img/".$cancion->foto. "' type = 'video/mp4' > <source src = '../img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
+$HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = './Img/".$cancion->foto. "' type = 'video/mp4' > <source src = './img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
 		}
 echo'<li><div class="divfrase_titulo"><p> '.$cancion->Titulo. '</p></div>';
 echo'<li><div class="cuerpoInstitucional">'.$HTMLfoto_OVideo.'<p class="institucional_Intro"> '. $cancion->introduccionNoticia.'</p></br> <p class="institucional_Mensaje"> '. $cancion->mensajeNoticia.'</p></div>';
@@ -152,7 +153,7 @@ return $resul;
   <!-- InstanceEndEditable --><!-- end .content -->
 
   <footer>
-     <?php include("../includes/footer.php")?>
+     <?php include("./includes/footer.php")?>
      </footer>
  </div> <!-- end .container -->
  

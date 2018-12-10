@@ -1,5 +1,10 @@
 
 <?php 
-/*  header("Location: inicio")*/
-header("Location: ./vista/inicio.php")
- ;?>
+///definir ruta
+define("RUTA_BASE", dirname(realpath(__FILE__))."/");
+//echo "en index.php " .RUTA_BASE;
+include "libreria/core.php";
+
+/*  header("Location: inicio")
+header("Location: p1inicio")*/
+ ?>

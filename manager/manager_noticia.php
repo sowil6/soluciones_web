@@ -464,32 +464,32 @@ function opcion($opt, $noticia){
 	case 5:
         $noticia->setUbicacionNoticia("inicioContenidoBajo");
 		$noticia->setUrlPaginaNoticia("../vista/proyectos_vista.php");
-		$noticia->setUrlHojaXML("../XMLPage/xmlPaginaInicioParteBaja.xml");//xml que se debe crear
+		$noticia->setUrlHojaXML("./XMLPage/xmlPaginaInicioParteBaja.xml");//xml que se debe crear
         break;
 	case 6:
         $noticia->setUbicacionNoticia("mision");
 		$noticia->setUrlPaginaNoticia("");
-		$noticia->setUrlHojaXML("../XMLPage/xmlPaginaInstitucionalMision.xml");//xml que se debe crear
+		$noticia->setUrlHojaXML("./XMLPage/xmlPaginaInstitucionalMision.xml");//xml que se debe crear
         break;
 	case 7:
         $noticia->setUbicacionNoticia("vision");
 		$noticia->setUrlPaginaNoticia("");
-		$noticia->setUrlHojaXML("../XMLPage/xmlPaginaInstitucionalVision.xml");//xml que se debe crear
+		$noticia->setUrlHojaXML("./XMLPage/xmlPaginaInstitucionalVision.xml");//xml que se debe crear
         break;
 	case 8:
         $noticia->setUbicacionNoticia("valores");
 		$noticia->setUrlPaginaNoticia("");
-		$noticia->setUrlHojaXML("../XMLPage/xmlPaginaInstitucionalValores.xml");//xml que se debe crear
+		$noticia->setUrlHojaXML("./XMLPage/xmlPaginaInstitucionalValores.xml");//xml que se debe crear
         break;
 	case 9:
         $noticia->setUbicacionNoticia("principios");
 		$noticia->setUrlPaginaNoticia("");
-		$noticia->setUrlHojaXML("../XMLPage/xmlPaginaInstitucionalPrincipios.xml");//xml que se debe crear
+		$noticia->setUrlHojaXML("./XMLPage/xmlPaginaInstitucionalPrincipios.xml");//xml que se debe crear
         break;
 		case 10:
         $noticia->setUbicacionNoticia("calidad");
 		$noticia->setUrlPaginaNoticia("");
-		$noticia->setUrlHojaXML("../XMLPage/xmlPaginaInstitucionalCalidad.xml");//xml que se debe crear
+		$noticia->setUrlHojaXML("./XMLPage/xmlPaginaInstitucionalCalidad.xml");//xml que se debe crear
         break;
 		
 }
@@ -536,7 +536,7 @@ if (isset($_FILES["foto"]))
     $dimensiones = getimagesize($ruta_provisional);
     $width = $dimensiones[0];
     $height = $dimensiones[1];
-    $carpeta = "../temp/";
+    $carpeta = "./temp/";
 
     if ($tipo != 'image/jpg' && $tipo != 'image/jpeg' && $tipo != 'image/png' && $tipo != 'image/gif'&& $tipo != 'application/pdf')
     {
@@ -566,7 +566,7 @@ if (isset($_FILES["foto"]))
 
 function eliminarFiles(){
 	echo "eliminando filas";
-	$files = glob('../temp/*'); //obtenemos todos los nombres de los ficheros
+	$files = glob('./temp/*'); //obtenemos todos los nombres de los ficheros
 foreach($files as $file){
     if(is_file($file))
 	

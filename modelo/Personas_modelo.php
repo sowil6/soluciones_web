@@ -20,7 +20,7 @@
  }
 
  if (isset($_POST["crv"])){
-require_once "../modelo/Conectar.php"; 
+require_once "./modelo/Conectar.php"; 
  $base = Conectar::conexion();
                
 			   
@@ -33,7 +33,7 @@ require_once "../modelo/Conectar.php";
                 $Consulta = $base->prepare($sql);
 
                 $Consulta->execute(array(":nom"=>$nombre,":ape"=>$apellido,":ema"=>$email));
-header("Location:../vista/Personas_vista.php");
+header("Location:./vista/Personas_vista.php");
                
             }
 
@@ -52,7 +52,7 @@ header("Location:../vista/Personas_vista.php");
        
         $base->query("DELETE FROM usuarios WHERE id='$id'");
             
-        header("Location:../index.php");
+        header("Location:./index.php");
 return $id." Eliminando registroon___";
  }
  
@@ -82,7 +82,7 @@ return " Eliminando registroon___";
                     
                     //La sentencia require_once es idéntica a require excepto que PHP verificará si el archivo 
                     //ya ha sido incluido y si es así, no se incluye (require) de nuevo.
-                    require_once("../modelo/Conectar.php");
+                    require_once("./modelo/Conectar.php");
                     
                     //Esta es la forma en la que conectamos con un metodo estatico, primero llamamos a la
                     //clase seguido de su metodo.

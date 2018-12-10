@@ -1,9 +1,9 @@
 
-<link href="../Styles/CSSIncludeSlide.css" rel="stylesheet" type="text/css">
+<link href="./Styles/CSSIncludeSlide.css" rel="stylesheet" type="text/css">
 <!--El orden de los css y js afectan el funcionamiento del slide-->
-  <script src="../Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
+  <script src="./Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
 <!--  <link href="Styles/slideshow.css" rel="stylesheet" type="text/css" />-->
-    <script src="../Scripts/slideshow.js" type="text/javascript"></script>
+    <script src="./Scripts/slideshow.js" type="text/javascript"></script>
 <!--    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
      <script type="text/javascript" >
         $(document).ready(function () {
@@ -28,7 +28,7 @@
   <?php
        
 $master="slider";
-$canciones = simplexml_load_file("../XMLPage/xmlPaginaInicioParteSuperior.xml");
+$canciones = simplexml_load_file("./XMLPage/xmlPaginaInicioParteSuperior.xml");
 foreach($canciones as $cancion)
 {
 	$info = new SplFileInfo($cancion->foto);//obtenemos la extension del archivo
@@ -36,10 +36,10 @@ foreach($canciones as $cancion)
 $estado=ValidaExtension($ext);//con la extension evaluamos si es tipo imagen o video
 if($estado==1){
 	//si es imagen se embebe en el control html imagen
-$HTMLfoto_OVideo= "<img class='" .$master. "imagenoVideo '   src = '../Img/".$cancion->foto. "' />";
+$HTMLfoto_OVideo= "<img class='" .$master. "imagenoVideo '   src = './Img/".$cancion->foto. "' />";
 }else{
 	//si es video se embebe en el control html video
-$HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = '../Img/".$cancion->foto. "' type = 'video/mp4' > <source src = '../img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
+$HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = './Img/".$cancion->foto. "' type = 'video/mp4' > <source src = './img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
 		}
 echo' <li class="slide">';
 echo'  <svg height="400" width="800">';
@@ -102,7 +102,7 @@ return $resul;
     <?php
        
 $master="catalogoslide";
-$canciones = simplexml_load_file("../XMLPage/xmlPaginaInicioParteBaja.xml");
+$canciones = simplexml_load_file("./XMLPage/xmlPaginaInicioParteBaja.xml");
 echo'	<ul class="galeria">';
 foreach($canciones as $cancion)
 {
@@ -112,12 +112,12 @@ $estado=ValidaExtension($ext);//con la extension evaluamos si es tipo imagen o v
 if($estado==1){
 	//si es imagen se embebe en el control html imagen
 
-$HTMLfoto_OVideo= "<embed class='" .$master. "imagenoVideo'   src = '../Img/" . $cancion->foto. "' />";
+$HTMLfoto_OVideo= "<embed class='" .$master. "imagenoVideo'   src = './Img/" . $cancion->foto. "' />";
 }else{
 	//si es video se embebe en el control html video
-$HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = '../Img/" . $cancion->foto. "' type = 'video/mp4' > <source src = '../img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
+$HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = '../Img/" . $cancion->foto. "' type = 'video/mp4' > <source src = './img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
 
-$HTMLfoto_OVideo= "<embed class='" .$master. "imagenoVideo'   src = '../Img/".$cancion->foto. "' />";
+$HTMLfoto_OVideo= "<embed class='" .$master. "imagenoVideo'   src = './Img/".$cancion->foto. "' />";
 }
 
 echo'		<li><a href="'.$cancion->urlFile.'?Accion='.$cancion->Codigo.'"target="_blank">'.$HTMLfoto_OVideo.' </br><p>'. $cancion->Titulo.'</p></a></li>';

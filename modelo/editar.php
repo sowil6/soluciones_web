@@ -14,7 +14,7 @@
 <?php
 
     //Primero incluimos el archivo Conectar.php.
-    require_once "../modelo/Conectar.php"; 
+    require_once "./modelo/Conectar.php"; 
 
     //Al ser un metodo statico llamamos directamente a la clase sin instanciar y obtemos la conexion.
     $base = Conectar::conexion();
@@ -38,7 +38,7 @@
         $Consulta = $base->prepare($sql);
 	    $Consulta->execute(array(":miID"=>$ide,":miNom"=>$nom,":apelli"=>$ape,":emai"=>$ema));
 
-        header("Location:../vista/Personas_vista.php");
+        header("Location:./vista/Personas_vista.php");
 
     }
        

@@ -1,6 +1,6 @@
 <?php
 echo "entro php";
-include_once("../modelo/Conectar.php");
+include_once("./modelo/Conectar.php");
 $db = Conectar::conexion();
 
  // realizamos la consulta para obtener el mayor id insertado

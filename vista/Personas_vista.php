@@ -4,6 +4,7 @@
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>CEFIC</title>
 <!-- InstanceEndEditable -->
+  <?php include("./includes/head_include.php")?>
 <!--<link href="../Styles/bootstrapCSS/bootstrap.css" rel="stylesheet" type="text/css">
 <script src="../Scripts/jquery-css-transform.js" type="text/javascript"></script>-->
  
@@ -67,7 +68,7 @@
 <div class="containerCeficc">
   <header>
   
-  <?php include("../includes/cabecera.php")?>
+  <?php include("./includes/cabecera.php")?>
    </header>
 
   <!-- InstanceBeginEditable name="EditRegionUnaColumna" -->
@@ -83,7 +84,7 @@
   function irFuncion(id) {
         $.ajax({
             type:'POST', //aqui puede ser igual get
-            url: '../modelo/Personas_modelo.php',//aqui va tu direccion donde esta tu funcion php
+            url: './modelo/Personas_modelo.php',//aqui va tu direccion donde esta tu funcion php
             data: {condicion: "delete",id:id},//aqui tus datos
             success:function(resultado){
                 //lo que devuelve tu archivo mifuncion.php
@@ -100,11 +101,11 @@
 		 
 			  </script>
   <article class="contentUnaColumna">
-  <link rel="stylesheet" type="text/css" href="../Styles/hoja.css">
+  <link rel="stylesheet" type="text/css" href="./Styles/hoja.css">
        <h1>Lista de Registros de Tabla de nombres</h1><br>
         
         
-        <form action="../modelo/Personas_modelo.php" method="post">
+        <form action="./modelo/Personas_modelo.php" method="post">
 
   <table width="50%" border="0" align="center">
     <tr >
@@ -120,7 +121,7 @@
     
     <?php
         
-        require_once ("../modelo/Paginacion.php");
+        require_once ("./modelo/Paginacion.php");
     
 	foreach ($registros as $persona):
     if($persona->nombre!=""){
@@ -138,7 +139,7 @@
 
       <td class="bot"><a href="">
               <input type='button' name='del' id='del' value='Borrar' onclick="irFuncion(<?php echo $persona->id?>);"></a></td>
-      <td class='bot'><a href="../modelo/editar.php?id=<?php echo $persona->id?> 
+      <td class='bot'><a href="./modelo/editar.php?id=<?php echo $persona->id?> 
                          & nombre=<?php echo $persona->nombre?> 
                          & apellido=<?php echo $persona->apellido?> 
                          & email=<?php echo $persona->email?>">
@@ -179,7 +180,7 @@
   <!-- InstanceEndEditable --><!-- end .content -->
 
   <footer>
-     <?php include("../includes/footer.php")?>
+     <?php include("./includes/footer.php")?>
      </footer>
  </div> <!-- end .container -->
  

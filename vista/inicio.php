@@ -2,8 +2,9 @@
 <html><!-- InstanceBegin template="/Templates/PlantillaUnaColumna.dwt.php" codeOutsideHTMLIsLocked="false" --><head>
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title> <?php include("../includes/titulo.php");?></title>
+<title> <?php include("./includes/titulo.php");?></title>
 <!-- InstanceEndEditable -->
+  <?php include("./includes/head_include.php")?>
 <!--<link href="../Styles/bootstrapCSS/bootstrap.css" rel="stylesheet" type="text/css">
 <script src="../Scripts/jquery-css-transform.js" type="text/javascript"></script>-->
  
@@ -67,19 +68,19 @@
 <div class="containerCeficc">
   <header>
   
-  <?php include("../includes/cabecera.php")?>
+  <?php include("./includes/cabecera.php")?>
    </header>
 
   <!-- InstanceBeginEditable name="EditRegionUnaColumna" -->
   <article class="contentUnaColumna">
       
-<?php include("../includes/includeslide.php")?>
+<?php include("./includes/includeslide.php")?>
   
   </article>
   <!-- InstanceEndEditable --><!-- end .content -->
 
   <footer>
-     <?php include("../includes/footer.php")?>
+     <?php include("./includes/footer.php")?>
      </footer>
  </div> <!-- end .container -->
  

@@ -2,9 +2,8 @@
 <html><head>
 <meta charset="utf-8">
 <!-- TemplateBeginEditable name="doctitle" -->
-<title>Corporación Educativa de Formación Integral del Caribe - CEFIC </title>
-<!-- TemplateEndEditable 
--->
+<!-- TemplateEndEditable -->
+  <?php include("./includes/head_include.php")?>
 <!--<link href="../Styles/bootstrapCSS/bootstrap.css" rel="stylesheet" type="text/css">
 <script src="../Scripts/jquery-css-transform.js" type="text/javascript"></script>-->
  
@@ -68,7 +67,7 @@
 <div class="containerCeficc">
   <header>
   
-  <?php include("../includes/cabecera.php")?>
+  <?php include("./includes/cabecera.php")?>
    </header>
 
   <!-- TemplateBeginEditable name="EditRegionUnaColumna" -->
@@ -80,7 +79,7 @@
   <!-- TemplateEndEditable --><!-- end .content -->
 
   <footer>
-     <?php include("../includes/footer.php")?>
+     <?php include("./includes/footer.php")?>
      </footer>
  </div> <!-- end .container -->
  

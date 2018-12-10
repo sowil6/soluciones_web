@@ -152,7 +152,7 @@ class DataGrid{
 
             $chk .= '<input type="checkbox" name="chk_'.$this->_id.'[]" id="chk_'.$this->_id.$fila.'" values="'.$valores.'" onclick="'.$onc.'" />';
         }
-       $chk =  '<embed id="img3" src="../Img/'.$valores.'"/>';
+       $chk =  '<embed id="img3" src="./Img/'.$valores.'"/>';
         $td2 = '<td>'.$chk.'</td>';
      
         return $td2;

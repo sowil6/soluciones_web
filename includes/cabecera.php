@@ -1,16 +1,16 @@
-<!--<link rel="shortcut icon" href= "./../ImgSistema/icono.ico" type="image/x-icon">-->
 
 
 
- <link href="../Styles/css_navidad.css" rel="stylesheet" type="text/css">
-<link href="../Styles/CSSEstiloGeneral.css" rel="stylesheet" type="text/css">
+
+ <link href="./Styles/css_navidad.css" rel="stylesheet" type="text/css">
+<link href="./Styles/CSSEstiloGeneral.css" rel="stylesheet" type="text/css">
  <link rel="stylesheet" href="../Styles/footer-distributed-with-address-and-phones.css">
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/regular.css" integrity="sha384-zkhEzh7td0PG30vxQk1D9liRKeizzot4eqkJ8gB3/I+mZ1rjgQk+BSt2F6rT2c+I" crossorigin="anonymous">
 
 	
-   <link rel="stylesheet" type="text/css" href="../Font/demo-files/demo.css">
-  <link rel="stylesheet" href="../Styles/css_BarraMenu.css">
+   <link rel="stylesheet" type="text/css" href="./Font/demo-files/demo.css">
+  <link rel="stylesheet" href="./Styles/css_BarraMenu.css">
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 
 <?php function ValidaExtension($sExtension) {
@@ -49,7 +49,7 @@ return $resul;
 <!-- <script src="../Scripts/jquery.min.js" type="text/javascript"></script> 
 -->
 
-<script type="text/javascript" src="../Scripts/jquery-3.3.1.js"></script><!--Esta linea permite que funcione la barraherrameinte-fixed
+<script type="text/javascript" src="./Scripts/jquery-3.3.1.js"></script><!--Esta linea permite que funcione la barraherrameinte-fixed
 
 -->
   <script type="text/javascript">
@@ -142,7 +142,7 @@ function main () {
 <div class="contenedorAntesMenu">
  <div class="linePista"> </div>
 <div class="menuLogo" >
- <img src="../ImgSistema/logofront.png"/>
+ <img src="./ImgSistema/logofront.png"/>
            
             
         </div>    
@@ -200,16 +200,16 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
  
 		<nav class="nav_barraMenu">
 			<ul>
-				<li><a href="inicio"><span class="icon icon-home"></span>Inicio</a></li>
+				<li><a href="."><span class="icon icon-home"></span>Inicio</a></li>
 				
                 <li class="submenu">
 					<a href="#"><span class="icon icon-office"></span>Institucional  <span class="icon icon-circle-down"></span></a>
 					<ul class="children">
-						<li><a href="institucional,mision">Mision <span class="icon icon-dot"></span></a></li>
-						<li><a href="institucional,vision">Visión <span class="icon icon-dot"></span></a></li>
-						<li><a href="institucional,principios">Principios Institucionales<span class="icon icon-dot"></span></a></li>
-                        <li><a href="institucional,valores">Valores Éticos Institucionales<span class="icon icon-dot"></span></a></li>
-                        <li><a href="institucional,calidad">Sistema de Calidad<span class="icon icon-dot"></span></a></li>
+						<li><a href="institucional?refpage=mision">Mision <span class="icon icon-dot"></span></a></li>
+						<li><a href="institucional?refpage=vision">Visión <span class="icon icon-dot"></span></a></li>
+						<li><a href="institucional?refpage=principios">Principios Institucionales<span class="icon icon-dot"></span></a></li>
+                        <li><a href="institucional?refpage=valores">Valores Éticos Institucionales<span class="icon icon-dot"></span></a></li>
+                        <li><a href="institucional?refpage=calidad">Sistema de Calidad<span class="icon icon-dot"></span></a></li>
 					</ul>
 				</li>
                 
@@ -221,8 +221,8 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
 					</ul>
 				</li>
                 
-				<li><a href="ofertaacademica"><span class="icon icon-pencil2"></span>Oferta Academica  </a></li>
-				<li><a href="contacto_vista"><span class="icon icon-mail"></span>Contacto</a></li>
+				<li><a href="oferta"><span class="icon icon-pencil2"></span>Oferta Academica  </a></li>
+				<li><a href="contacto"><span class="icon icon-mail"></span>Contacto</a></li>
 			</ul>
 		</nav>
 	</menu>  

@@ -4,6 +4,7 @@
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>CEFIC</title>
 <!-- InstanceEndEditable -->
+  <?php include("./includes/head_include.php")?>
 <!--<link href="../Styles/bootstrapCSS/bootstrap.css" rel="stylesheet" type="text/css">
 <script src="../Scripts/jquery-css-transform.js" type="text/javascript"></script>-->
  
@@ -67,7 +68,7 @@
 <div class="containerCeficc">
   <header>
   
-  <?php include("../includes/cabecera.php")?>
+  <?php include("./includes/cabecera.php")?>
    </header>
 
   <!-- InstanceBeginEditable name="EditRegionUnaColumna" -->
@@ -77,11 +78,11 @@
 <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">-->
 
-<link href="../Styles/cssTextEditor.css" rel="stylesheet" type="text/css" /><!--Estas dos link solo funcionan ubicnadolos aqui, permiten mostrar los botones del editor-->
- <link href="../Styles/jquery-te-1.4.0.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="../Scripts/jquery.min.js" charset="utf-8"></script>
-<script src="../Scripts/jquery-te-1.4.0.min.js" type="text/javascript" charset="utf-8"></script>
-<link rel="stylesheet" type="text/css" href="../Styles/bootstrap.min.css"> <!---->
+<link href="./Styles/cssTextEditor.css" rel="stylesheet" type="text/css" /><!--Estas dos link solo funcionan ubicnadolos aqui, permiten mostrar los botones del editor-->
+ <link href="./Styles/jquery-te-1.4.0.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="./Scripts/jquery.min.js" charset="utf-8"></script>
+<script src="./Scripts/jquery-te-1.4.0.min.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="./Styles/bootstrap.min.css"> <!---->
 
   <script>
 $(document).ready(function(){
@@ -139,7 +140,7 @@ var editando=	document.getElementById('subtemas').value;
        		};
 		$.ajax({
 			data: parametros,
-			url:"../manager/manager_noticia.php",
+			url:"./manager/manager_noticia.php",
 			type:"post",
 			beforeSend: function(){
 				$("#resultado").html("Procesando, espere por favor");
@@ -172,7 +173,7 @@ var parametros={"ejecutar":"editar",
 "cod":codi  };
 			$.ajax({
 			type:"POST",
-			url:"../manager/manager_noticia.php",
+			url:"./manager/manager_noticia.php",
 			//dataType:'json',//se omite el tipo de datos y en el resultado se parsea con JSON.parse el resultado
 			data:parametros,
 			beforeSend: function(){
@@ -202,7 +203,7 @@ $('.contenido').jqteVal(response[0].mensajeNoticia); //Setter
 
 
  var img = document.getElementById('crs_imgPrevia');
-	img.src= "../Img/"+response[0].fotoNoticia;
+	img.src= "./Img/"+response[0].fotoNoticia;
 
 document.getElementById('imgnombre').value=response[0].fotoNoticia;
 document.getElementById('pagXML').value=response[0].xmlHojaNoticia;
@@ -232,7 +233,7 @@ var editando=	document.getElementById('subtemas');
 	document.getElementById("btngrabar").value ="Grabar";//cambiar el nombre del boton grabar a Actualizar
 	
 	var img = document.getElementById('crs_imgPrevia');
-	img.src = '../ImgSistema/noHaSeleccionadoImagen.jpg';
+	img.src = './ImgSistema/noHaSeleccionadoImagen.jpg';
 	
 
 		$('.titulo').jqteVal(""); //Setter
@@ -252,7 +253,7 @@ var editando=	document.getElementById('subtemas');
 function init() {
 		//alert("en init");
 	$(document).ready(function () {
-		  HTMLfoto_OVideo = "<img id='crs_imgPrevia'  src='../ImgSistema/noHaSeleccionadoImagen.jpg' width='100%' height='100%' alt='' />";
+		  HTMLfoto_OVideo = "<img id='crs_imgPrevia'  src='./ImgSistema/noHaSeleccionadoImagen.jpg' width='100%' height='100%' alt='' />";
   document.getElementById("demo").innerHTML = HTMLfoto_OVideo;
 		});
 		
@@ -266,7 +267,7 @@ function mostrarImagen(event) {
   var file = event.target.files[0];
   var reader = new FileReader();
   reader.onload = function(event) {
-  HTMLfoto_OVideo = "<embed id='crs_imgPrevia' src='../ImgSistema/noHaSeleccionadoImagen.jpg' />";
+  HTMLfoto_OVideo = "<embed id='crs_imgPrevia' src='./ImgSistema/noHaSeleccionadoImagen.jpg' />";
   
   
   document.getElementById("demo").innerHTML = HTMLfoto_OVideo;
@@ -315,7 +316,7 @@ function publicar(){
         };
 		$.ajax({
 			data: parametros,
-			url:"../manager/manager_noticia.php",
+			url:"./manager/manager_noticia.php",
 			type:"post",
 			beforeSend: function(){
 				//$("#resultado").html("Procesando, espere por favor");
@@ -350,7 +351,7 @@ var editando=	document.getElementById('subtemas').value;
 		$.ajax({
 			type:"POST",
 			data: parametros,
-			url:"../manager/manager_noticia.php",
+			url:"./manager/manager_noticia.php",
 			dataType: 'html',
 			beforeSend: function(){
 				$("#conctainer_datagrid").html("Procesando, espere por favor");
@@ -396,7 +397,7 @@ var codigoDetalle= document.getElementById('detCod').value=cod;
 		$.ajax({
 			type:"POST",
 			data: parametros,
-			url:"../manager/manager_noticia.php",
+			url:"./manager/manager_noticia.php",
 			dataType: 'html',
 			beforeSend: function(){
 				$("#conctainer_datagrid").html("Procesando, espere por favor");
@@ -442,7 +443,7 @@ var cod = document.getElementById('cod').value;
 		$.ajax({
 			type:"POST",
 			data: parametros,
-			url:"../manager/manager_noticia.php",
+			url:"./manager/manager_noticia.php",
 			dataType: 'html',
 			beforeSend: function(){
 				$("#divsubtemas_datagrid").html("Procesando, espere por favor");
@@ -467,7 +468,7 @@ var cod = document.getElementById('cod').value;
 		$.ajax({
 			type:"POST",
 			data: parametros,
-			url:"../manager/manager_noticia.php",
+			url:"./manager/manager_noticia.php",
 			dataType: 'html',
 			beforeSend: function(){
 				$("#divsubtemas_datagrid").html("Procesando, espere por favor");
@@ -601,7 +602,7 @@ $(".contenido").jqte();
   <!-- InstanceEndEditable --><!-- end .content -->
 
   <footer>
-     <?php include("../includes/footer.php")?>
+     <?php include("./includes/footer.php")?>
      </footer>
  </div> <!-- end .container -->
  

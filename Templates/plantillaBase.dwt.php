@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <!-- TemplateBeginEditable name="doctitle" -->
 <!-- TemplateEndEditable -->
-  <?php include("../includes/head_include.php")?>
+  <?php include("./includes/head_include.php")?>
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
 </head>
@@ -63,14 +63,14 @@
 <div class="containerCeficc">
   <header>
   
-  <?php include("../includes/cabecera.php")?>
+  <?php include("./includes/cabecera.php")?>
     
     
   </header>
  <div id="contenedor">
  <div id="contenidos">
   <div id="contentIzquierda">
- <?php include("../includes/includecolizquierda.php")?>
+ <?php include("./includes/includecolizquierda.php")?>
   </div>
  
  <!-- TemplateBeginEditable name="EditRegionCentro" -->
@@ -83,14 +83,14 @@ aqui el contenido
   <!-- TemplateEndEditable --><!-- end .content -->
  
 <div id="contentDerecha">
-   <?php include("../includes/includeColumnaDerecha.php")?>
+   <?php include("./includes/includeColumnaDerecha.php")?>
 </div>
 </div><!-- end .contenidos -->
 </div><!-- end .contenedor -->
   </div><!-- end .sidebar1 -->
 
   <footer>
-     <?php include("../includes/footer.php")?>
+     <?php include("./includes/footer.php")?>
      </footer>
  </div> <!-- end .container -->
  
