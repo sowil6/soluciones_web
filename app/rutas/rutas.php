@@ -10,7 +10,7 @@ $ruta->controladores(array("/" =>"WelcomeController",
 	"/noticia"=>"AppController",
 	"/catalogoform"=>"CatalogoController",
 	"/proyecto"=>"ProyectoController",
-	"/catalogo_det"=>"CatalogoDetalleController",
+	"/detallecatalogo"=>"CatalogoDetalleController",
 	"/certificaciones"=>"CertificacionesController"
 	
 

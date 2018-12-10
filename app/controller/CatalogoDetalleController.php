@@ -5,7 +5,7 @@ class CatalogoDetalleController{
 
 	public function index(){
 	include_once LIBRERIA ."Vista.php";
-	return Vista::crear("catalogo_det");
+	return Vista::crear("detallecatalogo");
 
 
 		

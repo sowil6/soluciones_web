@@ -432,7 +432,7 @@ function opcion($opt, $noticia){
 	switch ($opt) {
       case 1:
 		$noticia->setUbicacionNoticia("certificaciones");
-		$noticia->setUrlPaginaNoticia("catalogocertificaciones");
+		$noticia->setUrlPaginaNoticia("certificaciones");
 		$noticia->setUrlHojaXML("xmlCargaCertificaciones.xml");//xml que se debe crear
 	     break;
     case 2:

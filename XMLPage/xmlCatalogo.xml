@@ -6,7 +6,7 @@
     <Titulo>Manua de Trabajo en altura&lt;br&gt;</Titulo>
     <introduccionNoticia>Manual de trabajo en altura&lt;br&gt;</introduccionNoticia>
     <mensajeNoticia>&lt;p&gt;&lt;/p&gt;</mensajeNoticia>
-    <urlFile>../vista/detallecatalogo.php</urlFile>
+    <urlFile>detallecatalogo</urlFile>
     <foto>Manual_TRABAJO_EN_ALTURAS.pdf</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
     <autor>2</autor>
@@ -17,7 +17,7 @@
     <Titulo>0</Titulo>
     <introduccionNoticia>hola intro dsdsdsd ds &lt;br&gt;</introduccionNoticia>
     <mensajeNoticia>&lt;p&gt;hola Contenido dsdsds sds&lt;br&gt;&lt;/p&gt;</mensajeNoticia>
-    <urlFile>../vista/detallecatalogo.php</urlFile>
+    <urlFile>detallecatalogo</urlFile>
     <foto>curso altura.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
     <autor>2</autor>
@@ -28,7 +28,7 @@
     <Titulo>0</Titulo>
     <introduccionNoticia>intro ganchos&lt;br&gt;</introduccionNoticia>
     <mensajeNoticia>&lt;p&gt;mnensaje ganchos&lt;br&gt;&lt;/p&gt;</mensajeNoticia>
-    <urlFile>../vista/detallecatalogo.php</urlFile>
+    <urlFile>detallecatalogo</urlFile>
     <foto>ganchos de seguridad.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
     <autor>2</autor>
@@ -39,7 +39,7 @@
     <Titulo>0</Titulo>
     <introduccionNoticia>intro ganchos&lt;br&gt;</introduccionNoticia>
     <mensajeNoticia>&lt;p&gt;mnensaje ganchos&lt;br&gt;&lt;/p&gt;</mensajeNoticia>
-    <urlFile>../vista/detallecatalogo.php</urlFile>
+    <urlFile>detallecatalogo</urlFile>
     <foto>ganchos de seguridad.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
     <autor>2</autor>
@@ -63,6 +63,17 @@
     <mensajeNoticia>&lt;p&gt;dasd&lt;/p&gt;</mensajeNoticia>
     <urlFile>detallecatalogo</urlFile>
     <foto>slide-corporate-1.jpg</foto>
+    <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
+    <autor>2</autor>
+  </Noticia>
+  <Noticia>
+    <Codigo>2115</Codigo>
+    <DetalleCodigo>1038</DetalleCodigo>
+    <Titulo>SEGURIDAD</Titulo>
+    <introduccionNoticia>SEGURIDAD OCUPACIONAL&lt;br&gt;</introduccionNoticia>
+    <mensajeNoticia>&lt;p&gt;DSDS&lt;/p&gt;</mensajeNoticia>
+    <urlFile>detallecatalogo</urlFile>
+    <foto>seguridad_ocupacional.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
     <autor>2</autor>
   </Noticia>
