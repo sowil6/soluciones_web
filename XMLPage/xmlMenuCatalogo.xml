@@ -6,7 +6,7 @@
     <Titulo>INGLES</Titulo>
     <introduccionNoticia>Programa de Ingles Sistema Europeo</introduccionNoticia>
     <mensajeNoticia>&lt;p&gt;dasd&lt;/p&gt;</mensajeNoticia>
-    <urlFile>../vista/catalogoform.php</urlFile>
+    <urlFile>catalogoform</urlFile>
     <foto>programa_Ingles.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
     <autor>2</autor>
@@ -17,7 +17,7 @@
     <Titulo>Técnico Laboral en&lt;br&gt;</Titulo>
     <introduccionNoticia>Electricidad Industrial&lt;br&gt;</introduccionNoticia>
     <mensajeNoticia>&lt;p&gt;hola Contenido dsds&lt;br&gt;&lt;/p&gt;</mensajeNoticia>
-    <urlFile>../vista/catalogoform.php</urlFile>
+    <urlFile>catalogoform</urlFile>
     <foto>maquina_Electrica_Rotativas.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
     <autor>2</autor>
@@ -28,7 +28,7 @@
     <Titulo>SEGURIDAD</Titulo>
     <introduccionNoticia>SEGURIDAD OCUPACIONAL&lt;br&gt;</introduccionNoticia>
     <mensajeNoticia>&lt;p&gt;DSDS&lt;/p&gt;</mensajeNoticia>
-    <urlFile>../vista/catalogoform.php</urlFile>
+    <urlFile>catalogoform</urlFile>
     <foto>seguridad_ocupacional.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
     <autor>2</autor>
@@ -39,7 +39,7 @@
     <Titulo>Técnico Laboral en&lt;br&gt;</Titulo>
     <introduccionNoticia>Energía Fotovoltaica&lt;br&gt;</introduccionNoticia>
     <mensajeNoticia>&lt;p&gt;&lt;/p&gt;</mensajeNoticia>
-    <urlFile>../vista/catalogoform.php</urlFile>
+    <urlFile>catalogoform</urlFile>
     <foto>energia_fotovoltaica.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
     <autor>2</autor>

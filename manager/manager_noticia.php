@@ -226,7 +226,7 @@ $contenido = $xml->createElement('Noticias');
 		}
 //		con los datos obtenidos se crea o reeecribe el xml
 //echo "la pagina xml que se crea es= ".$paginaxml."esta";
- $xml->save($paginaxml);
+ $xml->save("../XMLPage/".$paginaxml);
  
 //Mostramos el XML puro
  $resultado= "<p><b>El XML ha sido creado.... Mostrando en texto plano:</b></p>".htmlentities($el_xml)."<br/><hr>";
@@ -431,65 +431,65 @@ function opcion($opt, $noticia){
 	switch ($opt) {
       case 1:
 		$noticia->setUbicacionNoticia("certificaciones");
-		$noticia->setUrlPaginaNoticia("../vista/catalogocertificaciones.php");
-		$noticia->setUrlHojaXML("../XMLPage/xmlCargaCertificaciones.xml");//xml que se debe crear
+		$noticia->setUrlPaginaNoticia("catalogocertificaciones");
+		$noticia->setUrlHojaXML("xmlCargaCertificaciones.xml");//xml que se debe crear
 	     break;
     case 2:
 	
 		if($subtema!="Subtemas"){		//si es un subtema, dejamos sin ubicacion la noticia
     	$noticia->setUbicacionNoticia("Subtemas_Menu");
-		$noticia->setUrlPaginaNoticia("../vista/detallecatalogo.php");
-		$noticia->setUrlHojaXML("../XMLPage/xmlCatalogo.xml");
+		$noticia->setUrlPaginaNoticia("detallecatalogo");
+		$noticia->setUrlHojaXML("xmlCatalogo.xml");
 		}
 		else
 		
 		{
 		$noticia->setUbicacionNoticia("menuOfertaIZQ");	
-		$noticia->setUrlPaginaNoticia("../vista/catalogoform.php");
-		$noticia->setUrlHojaXML("../XMLPage/xmlMenuCatalogo.xml");//xml que se debe crear
+		$noticia->setUrlPaginaNoticia("catalogoform");
+		$noticia->setUrlHojaXML("xmlMenuCatalogo.xml");//xml que se debe crear
 		}
 	
 	   
         break;
 	case 3:
       $noticia->setUbicacionNoticia("subMenuOferta");
-		$noticia->setUrlPaginaNoticia("../vista/detallecatalogo.php");
-		$noticia->setUrlHojaXML("../XMLPage/xmlCatalogo.xml");//xml que se debe crear
+		$noticia->setUrlPaginaNoticia("detallecatalogo");
+		$noticia->setUrlHojaXML("xmlCatalogo.xml");//xml que se debe crear
         break;
 	case 4:
         $noticia->setUbicacionNoticia("inicioSlide");
 		$noticia->setUrlPaginaNoticia("");
-		$noticia->setUrlHojaXML("../XMLPage/xmlPaginaInicioParteSuperior.xml");//xml que se debe crear
+		$noticia->setUrlHojaXML("xmlPaginaInicioParteSuperior.xml");//xml que se debe crear
         break;
 	case 5:
         $noticia->setUbicacionNoticia("inicioContenidoBajo");
-		$noticia->setUrlPaginaNoticia("../vista/proyectos_vista.php");
-		$noticia->setUrlHojaXML("./XMLPage/xmlPaginaInicioParteBaja.xml");//xml que se debe crear
+		$noticia->setUrlPaginaNoticia("proyectos_vista");
+		$noticia->setUrlHojaXML("xmlPaginaInicioParteBaja.xml");//xml que se debe crear
         break;
 	case 6:
         $noticia->setUbicacionNoticia("mision");
 		$noticia->setUrlPaginaNoticia("");
-		$noticia->setUrlHojaXML("./XMLPage/xmlPaginaInstitucionalMision.xml");//xml que se debe crear
+		$noticia->setUrlHojaXML("xmlPaginaInstitucionalMision.xml");//xml que se debe crear
         break;
 	case 7:
         $noticia->setUbicacionNoticia("vision");
 		$noticia->setUrlPaginaNoticia("");
-		$noticia->setUrlHojaXML("./XMLPage/xmlPaginaInstitucionalVision.xml");//xml que se debe crear
+		$noticia->setUrlHojaXML("xmlPaginaInstitucionalVision.xml");//xml que se debe crear
         break;
 	case 8:
         $noticia->setUbicacionNoticia("valores");
 		$noticia->setUrlPaginaNoticia("");
-		$noticia->setUrlHojaXML("./XMLPage/xmlPaginaInstitucionalValores.xml");//xml que se debe crear
+		$noticia->setUrlHojaXML("xmlPaginaInstitucionalValores.xml");//xml que se debe crear
         break;
 	case 9:
         $noticia->setUbicacionNoticia("principios");
 		$noticia->setUrlPaginaNoticia("");
-		$noticia->setUrlHojaXML("./XMLPage/xmlPaginaInstitucionalPrincipios.xml");//xml que se debe crear
+		$noticia->setUrlHojaXML("xmlPaginaInstitucionalPrincipios.xml");//xml que se debe crear
         break;
 		case 10:
         $noticia->setUbicacionNoticia("calidad");
 		$noticia->setUrlPaginaNoticia("");
-		$noticia->setUrlHojaXML("./XMLPage/xmlPaginaInstitucionalCalidad.xml");//xml que se debe crear
+		$noticia->setUrlHojaXML("xmlPaginaInstitucionalCalidad.xml");//xml que se debe crear
         break;
 		
 }

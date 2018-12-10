@@ -7,6 +7,11 @@ $ruta->controladores(array("/" =>"WelcomeController",
 	"/institucional"=>"InstitucionalController",
 	"/oferta"=>"OfertaController",
 	"/contacto"=>"ContactoController",
-	"/noticia"=>"AppController"
+	"/noticia"=>"AppController",
+	"/catalogoform"=>"CatalogoController",
+	"/proyecto"=>"ProyectoController",
+	"/catalogo_det"=>"CatalogoDetalleController",
+	"/certificaciones"=>"CertificacionesController"
+	
 
 ));
