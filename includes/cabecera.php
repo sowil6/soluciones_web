@@ -5,8 +5,8 @@
  <link href="./Styles/css_navidad.css" rel="stylesheet" type="text/css">
 <link href="./Styles/CSSEstiloGeneral.css" rel="stylesheet" type="text/css">
  <link href="./Styles/footer-distributed-with-address-and-phones.css" rel="stylesheet">
- <linkhref="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" > 
-<linkhref="https://use.fontawesome.com/releases/v5.2.0/css/regular.css"  rel="stylesheet" integrity="sha384-zkhEzh7td0PG30vxQk1D9liRKeizzot4eqkJ8gB3/I+mZ1rjgQk+BSt2F6rT2c+I" crossorigin="anonymous">
+ <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" > 
+<link href="https://use.fontawesome.com/releases/v5.2.0/css/regular.css"  rel="stylesheet" integrity="sha384-zkhEzh7td0PG30vxQk1D9liRKeizzot4eqkJ8gB3/I+mZ1rjgQk+BSt2F6rT2c+I" crossorigin="anonymous">
 
 	
    <link href="./Font/demo-files/demo.css" rel="stylesheet" type="text/css" >
