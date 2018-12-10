@@ -2,10 +2,10 @@
 <html><!-- InstanceBegin template="/Templates/plantillaBase.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
-<!-- InstanceBeginEditable name="doctitle" -->
-<title>CEFIC</title>
-<!-- InstanceEndEditable -->
   <?php include(RUTA_INCLUDE."head_include.php")?>
+<!-- InstanceBeginEditable name="doctitle" -->
+<!-- InstanceEndEditable -->
+
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
 </head>

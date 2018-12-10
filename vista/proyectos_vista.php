@@ -1,10 +1,11 @@
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/PlantillaUnaColumna.dwt.php" codeOutsideHTMLIsLocked="false" --><head>
 <meta charset="utf-8">
+<?php include(RUTA_INCLUDE."head_include.php")?>
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>CEFIC</title>
 <!-- InstanceEndEditable -->
-  <?php include(RUTA_INCLUDE."head_include.php")?>
+  
 <!--<link href="../Styles/bootstrapCSS/bootstrap.css" rel="stylesheet" type="text/css">
 <script src="../Scripts/jquery-css-transform.js" type="text/javascript"></script>-->
  

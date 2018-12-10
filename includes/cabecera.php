@@ -1,7 +1,3 @@
-
-
-
-
  <link href="./Styles/css_navidad.css" rel="stylesheet" type="text/css">
 <link href="./Styles/CSSEstiloGeneral.css" rel="stylesheet" type="text/css">
  <link href="./Styles/footer-distributed-with-address-and-phones.css" rel="stylesheet">

@@ -2,9 +2,10 @@
 <html>
 <head>
 <meta charset="utf-8">
+  <?php include(RUTA_INCLUDE."head_include.php")?>
 <!-- TemplateBeginEditable name="doctitle" -->
 <!-- TemplateEndEditable -->
-  <?php include(RUTA_INCLUDE."head_include.php")?>
+
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
 </head>

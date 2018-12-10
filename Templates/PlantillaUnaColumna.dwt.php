@@ -1,9 +1,10 @@
 <!doctype html>
 <html><head>
 <meta charset="utf-8">
+<?php include(RUTA_INCLUDE."head_include.php")?>
 <!-- TemplateBeginEditable name="doctitle" -->
 <!-- TemplateEndEditable -->
-  <?php include(RUTA_INCLUDE."head_include.php")?>
+  
 <!--<link href="../Styles/bootstrapCSS/bootstrap.css" rel="stylesheet" type="text/css">
 <script src="../Scripts/jquery-css-transform.js" type="text/javascript"></script>-->
  
