@@ -464,7 +464,7 @@ function opcion($opt, $noticia){
         break;
 	case 5:
         $noticia->setUbicacionNoticia("inicioContenidoBajo");
-		$noticia->setUrlPaginaNoticia("proyectos_vista");
+		$noticia->setUrlPaginaNoticia("proyectos");
 		$noticia->setUrlHojaXML("xmlPaginaInicioParteBaja.xml");//xml que se debe crear
         break;
 	case 6:

@@ -83,7 +83,7 @@
 <script type="text/javascript" src="./Scripts/jquery.min.js" charset="utf-8"></script>
 <script src="./Scripts/jquery-te-1.4.0.min.js" type="text/javascript" charset="utf-8"></script>
 <link rel="stylesheet" type="text/css" href="./Styles/bootstrap.min.css"> <!---->
-
+<link rel="stylesheet" type="text/css" href="./Styles/cssNoticia.css">
   <script>
 $(document).ready(function(){
   
@@ -288,13 +288,13 @@ $.ajax({
 	contentType:false,
 	processData:false,
 	beforeSend: function(){
-		alert("no se enviaron los datos");
+		//alert("no se enviaron los datos");
 		console.log("no se enviaron los datos");
 		},
 		success: function(response){
 document.getElementById('imgnombre').value=response;;
 			console.log("*"+response+"*");
-			alert(response);
+			//alert(response);
 			}
 	});	
 	}
@@ -507,6 +507,7 @@ if(editando=="Subtemas"){opcionSelect();}else{TraerSubtemas();}
 -->      <input type="button" 	class="btn btn-success" href="javascript:;"		onClick="editarSubtemas();return false;"	id="subtemas"  value="Subtemas" style="visibility:hidden" />
 	 <!-- <button class="status">Toggle jQTE</button>-->
    </div>
+ <div class="div_noticias"> 
  <table class="TablaCitaInputUp">
  <tr>
  <td>
@@ -545,7 +546,7 @@ if(editando=="Subtemas"){opcionSelect();}else{TraerSubtemas();}
  
  Texto de Contenido:
               <textarea   rows="3" class="contenido"   name="contenido" id="contenido" ></textarea></td>
- 
+ </div> 
          </div>
        
         <div id="divDerEditorNoticia">

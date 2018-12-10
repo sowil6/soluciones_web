@@ -9,7 +9,7 @@
 body {background:#FEFEFE;}
  
  /*BARRA DE MENU*/
-.barraMenus-fixed{
+.sbarraMenu-fixed{
 	position:fixed;
 top:0;
 display:flex;

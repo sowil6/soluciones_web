@@ -5,7 +5,7 @@ class ProyectoController{
 
 	public function index(){
 	include_once LIBRERIA ."Vista.php";
-	return Vista::crear("proyecto");
+	return Vista::crear("proyectos_vista");
 
 
 		

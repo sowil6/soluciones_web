@@ -18,7 +18,7 @@ $ruta.=$paths[$i]."/";//si no es el ultimo le ponemos una barra inclinada
 
 }//end for
 //comprobr si el archivo existe
-echo "la ruta es: ". $ruta;
+//echo "la ruta es: ". $ruta;
 if (file_exists(VISTA_RUTA.$ruta)){
 include  VISTA_RUTA.$ruta;
 }else{
