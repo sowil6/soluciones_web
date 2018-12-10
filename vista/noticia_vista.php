@@ -4,7 +4,7 @@
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>CEFIC</title>
 <!-- InstanceEndEditable -->
-  <?php include("./includes/head_include.php")?>
+  <?php include(RUTA_INCLUDE."head_include.php")?>
 <!--<link href="../Styles/bootstrapCSS/bootstrap.css" rel="stylesheet" type="text/css">
 <script src="../Scripts/jquery-css-transform.js" type="text/javascript"></script>-->
  
@@ -68,7 +68,7 @@
 <div class="containerCeficc">
   <header>
   
-  <?php include("./includes/cabecera.php")?>
+  <?php include(RUTA_INCLUDE."cabecera.php")?>
    </header>
 
   <!-- InstanceBeginEditable name="EditRegionUnaColumna" -->
@@ -283,17 +283,18 @@ function uploadimagen(){
 var parametros	= new FormData($("#formimagen")[0]);
 $.ajax({
 	data: parametros,
-	url:"../manager/manager_noticia.php",
+	url:"./manager/manager_noticia.php",
 	type:"POST",
 	contentType:false,
 	processData:false,
 	beforeSend: function(){
+		alert("no se enviaron los datos");
 		console.log("no se enviaron los datos");
 		},
 		success: function(response){
 document.getElementById('imgnombre').value=response;;
 			console.log("*"+response+"*");
-			//alert(response);
+			alert(response);
 			}
 	});	
 	}
@@ -602,7 +603,7 @@ $(".contenido").jqte();
   <!-- InstanceEndEditable --><!-- end .content -->
 
   <footer>
-     <?php include("./includes/footer.php")?>
+     <?php include(RUTA_INCLUDE."footer.php")?>
      </footer>
  </div> <!-- end .container -->
  

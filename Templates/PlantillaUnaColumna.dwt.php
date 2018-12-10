@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <!-- TemplateBeginEditable name="doctitle" -->
 <!-- TemplateEndEditable -->
-  <?php include("./includes/head_include.php")?>
+  <?php include(RUTA_INCLUDE."head_include.php")?>
 <!--<link href="../Styles/bootstrapCSS/bootstrap.css" rel="stylesheet" type="text/css">
 <script src="../Scripts/jquery-css-transform.js" type="text/javascript"></script>-->
  
@@ -67,7 +67,7 @@
 <div class="containerCeficc">
   <header>
   
-  <?php include("./includes/cabecera.php")?>
+  <?php include(RUTA_INCLUDE."cabecera.php")?>
    </header>
 
   <!-- TemplateBeginEditable name="EditRegionUnaColumna" -->
@@ -79,7 +79,7 @@
   <!-- TemplateEndEditable --><!-- end .content -->
 
   <footer>
-     <?php include("./includes/footer.php")?>
+     <?php include(RUTA_INCLUDE."footer.php")?>
      </footer>
  </div> <!-- end .container -->
  

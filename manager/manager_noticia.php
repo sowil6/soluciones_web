@@ -1,4 +1,5 @@
 <?php
+;
    global $subtema;
    	if(isset($_POST["subtema"])=="si"){ $subtema="si";}else{ $subtema="no";}
 class manager_noticia{
@@ -116,8 +117,8 @@ mover_Imagen($noti);
 	$Noticias= array();
 	
 function mover_Imagen($noti){
-	$filDirTemp="../temp/".$noti->getFotoNoticia();
-	$fildirNew="../img/".$noti->getFotoNoticia();
+	$filDirTemp="./temp/".$noti->getFotoNoticia();
+	$fildirNew="./img/".$noti->getFotoNoticia();
 	if(file_exists($filDirTemp)){
 		rename($filDirTemp, $fildirNew);
 		}
@@ -536,7 +537,7 @@ if (isset($_FILES["foto"]))
     $dimensiones = getimagesize($ruta_provisional);
     $width = $dimensiones[0];
     $height = $dimensiones[1];
-    $carpeta = "./temp/";
+    $carpeta = "../temp/";
 
     if ($tipo != 'image/jpg' && $tipo != 'image/jpeg' && $tipo != 'image/png' && $tipo != 'image/gif'&& $tipo != 'application/pdf')
     {

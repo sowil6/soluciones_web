@@ -5,7 +5,7 @@ class CertificacionesController{
 
 	public function index(){
 	include_once LIBRERIA ."Vista.php";
-	return Vista::crear("certificaciones");
+	return Vista::crear("catalogocertificaciones");
 
 
 		
