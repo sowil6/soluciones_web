@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <title>Documento sin título</title>
 </head>
-<link rel="stylesheet" type="text/css" href="./Styles/css_Estudiante.css">
 <body>
     <form method="post" class="formimagen" name="formimagen" id="formimagen" enctype="multipart/form-data"  >
 
