@@ -163,12 +163,13 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
               <span class="fa-stack fa-lg">
   
   <i class="fa fa-circle  fa-stack-2x " style="color:#4495E9"></i>
-   <i class="fa fa-envelope  fa-stack-1x " style="color:#a70000"></i>
+  <a href="http://webmail.ceficc.edu.co" target="_blank">  <i class="fa fa-envelope  fa-stack-1x " style="color:#a70000"></i></a>
 </span>
-                     <a>
+                    <div class="div-mb-email">
                    <strong class="mb-none">info@ceficc.edu.co</strong><br />
                        <strong><small>Solicita Información por Correo</small></strong>
-                 </a> </div>   
+                 </div>
+                 </div>   
                   
                </li>
                
