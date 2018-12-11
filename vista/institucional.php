@@ -76,7 +76,8 @@
       <link rel="stylesheet" type="text/css" href="./Styles/css_Institucional.css">
         <div class="contenedorInstitucional">
            <?php
-       	$urlpagina = isset($_GET['refpage']);
+		   if(isset($_GET['refpage'])){ $urlpagina = $_GET['refpage'];}
+
 	if($urlpagina!=null){//if $urlpagina
 			if($urlpagina=="vision"){
 			$canciones = simplexml_load_file("./XMLPage/xmlPaginaInstitucionalVision.xml");

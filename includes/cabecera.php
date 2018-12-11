@@ -125,6 +125,7 @@ function main () {
 <div class="contenedorHeader">
 <div class="contenedorAntesMenu">
  <div class="linePista"> </div>
+ 
 <div class="menuLogo" >
  <img src="./ImgSistema/logofront.png"/>
            
@@ -202,6 +203,9 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
 					<ul class="children">
 						<li><a href="http://www.mansioningles.com" target="_blank">La Mansión del Ingles<span class="icon icon-dot"></span></a></li>
 						<li><a href="https://es.duolingo.com" target="_blank">duolingo<span class="icon icon-dot"></span></a></li>
+                       <li><a href="estudiante?action=inscripcion">Inscripción<span class="icon icon-dot"></span></a></li>
+                       <li><a href="estudiante?action=certificado">Certificdo<span class="icon icon-dot"></span></a></li>
+
 					</ul>
 				</li>
                 
