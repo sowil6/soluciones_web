@@ -1,0 +1,232 @@
+.contenedor_Arbol{
+margin:0;
+padding:0;
+width: 60px;
+height: 95px;
+position: absolute;
+
+left:10px;
+
+top:25px;
+/*background:rgba(175,232,231,1.00)
+*/}	
+
+
+/*ANIMACION UNO*/
+.contenedor_Arbol .blink {
+
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+/*para hacer aparecer y desaparecer el texto*/
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+/*para hacer girar el texto*/
+@keyframes blink {  
+  0% { color: orange; }
+  100% { color: yellow; }
+}
+@-webkit-keyframes blink {
+  0% { color: orange; }
+  100% { color: yellow; }
+}
+.contenedor_Arbol .blink {
+  -webkit-animation: blink 1s linear infinite;
+  -moz-animation: blink 1s linear infinite;
+  animation: blink 1s linear infinite;
+}
+
+/*ANIMACION BLINK2*/
+.contenedor_Arbol .blink2 {
+
+  animation: blink2-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink2-animation 1s steps(5, start) infinite;
+}
+/*para hacer aparecer y desaparecer el texto*/
+@keyframes blink2-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink2-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+/*para hacer girar el texto*/
+@keyframes blink2 {  
+  0% { color: red; }
+  100% { color: blue; }
+}
+@-webkit-keyframes blink2 {
+  0% { color: red; }
+  100% { color: blue; }
+}
+.contenedor_Arbol .blink2 {
+  -webkit-animation: blink2 1s linear infinite;
+  -moz-animation: blink2 1s linear infinite;
+  animation: blink2 1s linear infinite;
+}
+
+/*ANIMACION BLINK3*/
+.contenedor_Arbol .blink3 {
+
+  animation: blink3-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink3-animation 1s steps(5, start) infinite;
+}
+/*para hacer aparecer y desaparecer el texto*/
+@keyframes blink3-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink3-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+/*para hacer cambiar el color*/
+@keyframes blink3 {  
+  0% { color: #FF1493; }
+  100% { color: #FFD700; }
+}
+@-webkit-keyframes blink3 {
+  0% { color: #FF1493; }
+  100% { color: #FFD700; }
+}
+.contenedor_Arbol .blink3 {
+  -webkit-animation: blink3 1s linear infinite;
+  -moz-animation: blink3 1s linear infinite;
+  animation: blink3 1s linear infinite;
+}
+
+/*ANIMACION BLINK4*/
+.contenedor_Arbol .blink4 {
+
+  animation: blink4-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink4-animation 1s steps(5, start) infinite;
+}
+/*para hacer aparecer y desaparecer el texto*/
+@keyframes blink4-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink4-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+/*para hacer cambiar el color*/
+@keyframes blink4 {  
+  0% { color: red; }
+  100% { color: blue; }
+}
+@-webkit-keyframes blink4 {
+  0% { color: red; }
+  100% { color: blue; }
+}
+.contenedor_Arbol .blink4 {
+  -webkit-animation: blink4 1s linear infinite;
+  -moz-animation: blink4 1s linear infinite;
+  animation: blink4 1s linear infinite;
+}
+/*ANIMACION ARBOL*/
+.contenedor_Arbol .arbol {
+
+  animation: arbol-animation 1s steps(5, start) infinite;
+  -webkit-animation: arbol-animation 1s steps(5, start) infinite;
+}
+/*para hacer aparecer y desaparecer el texto*/
+@keyframes arbol-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes arbol-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+/*para hacer girar el texto*/
+@keyframes arbol {  
+  0% { color: #006400; }
+  100% { color: #7FFF00; }
+}
+@-webkit-keyframes arbol {
+  0% { color: #006400; }
+  100% { color: #7FFF00; }
+}
+.contenedor_Arbol .arbol {
+  -webkit-animation: arbol 1s linear infinite;
+  -moz-animation: arbol 1s linear infinite;
+  animation: arbol 1s linear infinite;
+}
+
+
+
+/*para hacer aparecer y desaparecer el texto*/
+@keyframes estrella-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes estrella-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+/*para hacer girar el texto*/
+@keyframes estrella {  
+  0% { color: red; }
+  100% { color: blue; }
+}
+@-webkit-keyframes estrella {
+  0% { color: red; }
+  100% { color: blue; }
+}
+
+.contenedor_Arbol .fa-tree{
+    position: absolute;
+    font-size: 4rem;
+    top:32px;
+    left: 0;
+}
+.contenedor_Arbol .starGira{
+position: absolute;
+top:4px;
+left: 16px;
+font-size: 1.5rem;
+z-index: 1;
+}
+
+.blink, .blink2{
+    position: relative;
+    top: 62px;
+left:3px;
+}
+.contenedor_Arbol .contenedorEstrellas{
+margin:0;
+padding:0;
+    position: absolute;
+	font-size:0.8rem;
+    width: 12px;
+   top: 6px;
+left:20px;
+flex-direction:column;/*muestra en columna las opciones*/
+z-index: 4;
+}

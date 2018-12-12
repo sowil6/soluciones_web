@@ -8,7 +8,7 @@
    <link href="./Font/demo-files/demo.css" rel="stylesheet" type="text/css" >
   <link href="./Styles/css_BarraMenu.css" rel="stylesheet" >
 <script src="http://code.jquery.com/jquery-latest.js"></script>
-
+<link href="./Styles/arbol_navidad.css" rel="stylesheet" type="text/css">
 <?php function ValidaExtension($sExtension) {
 
             $resul;
@@ -139,6 +139,22 @@ Resolución 4679 Secretaria de Educación Distrital de Cartagena de Indias</br>
 Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartagena – Colombia
 
     </div>
+<div class="contenedor_Arbol">
+	
+
+<i class="starGira fa fa-star fa-lg fa-spin"></i>
+<i class="arbol fa fa-tree fa-lg"></i>
+
+<i class="blink fa fa-star-half fa-lg fa-spin"></i>
+<i class="blink2 fa fa-star fa-lg fa-spin"></i>
+<i class="blink fa fa-star-half fa-lg fa-spin"></i>
+<div class="contenedorEstrellas">
+
+<i class="blink3 fa fa-star fa-lg fa-spin"></i>
+<i class="blink4 fa fa-star fa-lg fa-spin"></i>
+<i class="blink3 fa fa-star fa-lg fa-spin"></i>
+</div>
+</div>
 
 <div class="info">
 
@@ -167,7 +183,7 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
 </span>
                     <div class="div-mb-email">
                    <strong class="mb-none">info@ceficc.edu.co</strong><br />
-                       <strong><small>Solicita Información por Correo</small></strong>
+                       <strong class="mb-none">Solicita Información por Correo</strong>
                  </div>
                  </div>   
                   
