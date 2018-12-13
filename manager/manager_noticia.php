@@ -117,8 +117,8 @@ mover_Imagen($noti);
 	$Noticias= array();
 	
 function mover_Imagen($noti){
-	$filDirTemp="./temp/".$noti->getFotoNoticia();
-	$fildirNew="./img/".$noti->getFotoNoticia();
+	$filDirTemp="../temp/".$noti->getFotoNoticia();
+	$fildirNew="../Img/".$noti->getFotoNoticia();
 	if(file_exists($filDirTemp)){
 		rename($filDirTemp, $fildirNew);
 		}
@@ -468,26 +468,31 @@ function opcion($opt, $noticia){
 		$noticia->setUrlHojaXML("xmlPaginaInicioParteBaja.xml");//xml que se debe crear
         break;
 	case 6:
+        $noticia->setUbicacionNoticia("inicioConvenios");
+		$noticia->setUrlPaginaNoticia("");
+		$noticia->setUrlHojaXML("xmlPaginaInicioConvenios.xml");//xml que se debe crear
+        break;
+	case 7:
         $noticia->setUbicacionNoticia("mision");
 		$noticia->setUrlPaginaNoticia("");
 		$noticia->setUrlHojaXML("xmlPaginaInstitucionalMision.xml");//xml que se debe crear
         break;
-	case 7:
+	case 8:
         $noticia->setUbicacionNoticia("vision");
 		$noticia->setUrlPaginaNoticia("");
 		$noticia->setUrlHojaXML("xmlPaginaInstitucionalVision.xml");//xml que se debe crear
         break;
-	case 8:
+	case 9:
         $noticia->setUbicacionNoticia("valores");
 		$noticia->setUrlPaginaNoticia("");
 		$noticia->setUrlHojaXML("xmlPaginaInstitucionalValores.xml");//xml que se debe crear
         break;
-	case 9:
+	case 10:
         $noticia->setUbicacionNoticia("principios");
 		$noticia->setUrlPaginaNoticia("");
 		$noticia->setUrlHojaXML("xmlPaginaInstitucionalPrincipios.xml");//xml que se debe crear
         break;
-		case 10:
+	case 11:
         $noticia->setUbicacionNoticia("calidad");
 		$noticia->setUrlPaginaNoticia("");
 		$noticia->setUrlHojaXML("xmlPaginaInstitucionalCalidad.xml");//xml que se debe crear

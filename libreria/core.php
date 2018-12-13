@@ -7,6 +7,9 @@ define ("LIBRERIA", RUTA_BASE."libreria/");
 define ("RUTA_INCLUDE", RUTA_BASE."includes/");
 define ("RUTA_STYLES", RUTA_BASE."Styles/");
 define ("RUTA_SCRIPTS", RUTA_BASE."Scrips/");
+define ("RUTA_TEMP", RUTA_BASE."Temp/");
+define ("RUTA_IMG", RUTA_BASE."Img/");
+
 //echo "</br>ruta en core.php ".VISTA_RUTA;
 
 include "Ruta.php";

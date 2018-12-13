@@ -130,4 +130,44 @@ echo'		<li><a href="'.$cancion->urlFile.'?Accion='.$cancion->Codigo.'"target="_b
             
  
 
+    </div>  
+    
+        <div class="divSeccionConvenios">
+
+
+<p class="Titulo_Convenios">CONVENIOS</p>
+La CORPORACIÓN EDUCATIVA CEFICC tiene convenio con las siguientes entidades a nivel regional y nacional.
+	
+    <?php
+       
+$master="catalogoslide";
+$canciones = simplexml_load_file("./XMLPage/xmlPaginaInicioConvenios.xml");
+echo'	<ul class="ulConvenios">';
+foreach($canciones as $cancion)
+{
+	$info = new SplFileInfo($cancion->foto);//obtenemos la extension del archivo
+	$ext= $info->getExtension();
+$estado=ValidaExtension($ext);//con la extension evaluamos si es tipo imagen o video
+if($estado==1){
+	//si es imagen se embebe en el control html imagen
+
+$HTMLfoto_OVideo= "<embed class='" .$master. "imagenoVideo'   src = './Img/" . $cancion->foto. "' />";
+}else{
+	//si es video se embebe en el control html video
+$HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source src = '../Img/" . $cancion->foto. "' type = 'video/mp4' > <source src = './img/" . $cancion->foto. "' type = 'video/ogg' ></ video >";
+
+$HTMLfoto_OVideo= "<embed class='" .$master. "imagenoVideo'   src = './Img/".$cancion->foto. "' />";
+}
+
+echo'		<li>'.$HTMLfoto_OVideo.' </br><p>'. $cancion->Titulo.'</p></li>';
+
+
+}
+   echo'	</ul>';	  
+
+?>
+            
+ 
+
     </div>    
+  

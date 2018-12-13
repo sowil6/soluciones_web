@@ -147,7 +147,8 @@ var editando=	document.getElementById('subtemas').value;
 				
 				},
 			success: function (response){
-				$("#resultado").html(" Proceso terminado");
+				//$("#resultado").html(" Proceso terminado");
+				alert(" Proceso terminado");
 			if(editando=="Subtemas"){opcionSelect();}else{TraerSubtemas();}
 				console.log(response);
 				}
@@ -517,11 +518,13 @@ if(editando=="Subtemas"){opcionSelect();}else{TraerSubtemas();}
      <option value="2">2. Menu Oferta Academica</option>
      <option value="4">4. Pagina Inicio Contenido Superior</option>
      <option value="5">5. Pagina Inicio Contenido Bajo</option>
-     <option value="6">6. Pagina Institucional Mision</option>
-     <option value="7">7. Pagina Institucional Vision</option>
-     <option value="8">8. Pagina Institucional Valores</option>
-     <option value="9">9. Pagina Institucional Principios</option>
-     <option value="10">10. Pagina Institucional Sistema de Calidad</option>
+     <option value="6">6. Pagina Inicio Contenido Convenios</option>
+     <option value="7">7. Pagina Institucional Mision</option>
+     <option value="8">8. Pagina Institucional Vision</option>
+     <option value="9">9. Pagina Institucional Valores</option>
+     <option value="10">10. Pagina Institucional Principios</option>
+     <option value="11">11. Pagina Institucional Sistema de Calidad</option>
+     
     
    </select></td>
   <td>Codigo:

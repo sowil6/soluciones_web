@@ -168,7 +168,7 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
                   </span>
                       
                 <a>
-                   <strong class="mb-none">(PBX) 6411390</strong><br />
+                   <strong class="mb-none">6812539 - (+57) 3012807094</strong><br />
                    <strong><small>Hora de Atención 7:00-18:00</small></strong>            
                     </a>
                     
@@ -182,7 +182,8 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
   <a href="http://webmail.ceficc.edu.co" target="_blank">  <i class="fa fa-envelope  fa-stack-1x " style="color:#a70000"></i></a>
 </span>
                     <div class="div-mb-email">
-                   <strong class="mb-none">info@ceficc.edu.co</strong><br />
+                   <strong class="mb-none">secretaria.general@ceficc.edu.co<br />
+                   ceficcaribe2020@hotmail.com</strong><br />
                        <strong class="mb-none">Solicita Información por Correo</strong>
                  </div>
                  </div>   

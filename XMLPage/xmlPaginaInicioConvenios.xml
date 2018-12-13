@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Noticias>
+  <Noticia>
+    <Codigo>2122</Codigo>
+    <DetalleCodigo>0</DetalleCodigo>
+    <Titulo>APIC</Titulo>
+    <introduccionNoticia>ASOCIACION DE PERIODISTAS INDEPENDIENTES DE COLOMBIA&lt;br&gt;</introduccionNoticia>
+    <mensajeNoticia>&lt;p&gt;lata lata &lt;br&gt;&lt;/p&gt;</mensajeNoticia>
+    <urlFile/>
+    <foto>APIC.jpg</foto>
+    <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
+    <autor>6</autor>
+  </Noticia>
+</Noticias>
