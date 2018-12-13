@@ -50,7 +50,7 @@ return $resul;
 -->
   <script type="text/javascript">
             $(document).ready(function () {
-                var altura = $('header').offset().top;
+                var altura = $('.class_menu').offset().top;
               //alert(altura );
              $(window).on('scroll', function () {
                if ($(window).scrollTop() > altura) {
@@ -61,8 +61,8 @@ return $resul;
                    $('.PSubtitulo1').addClass('PSubtitulo1-fixed');
                    $('.menuLogo').addClass('menuLogo-fixed');
                    $('.nav_barraMenu').addClass('nav_barraMenu-fixed');
-				   $('.info').addClass('info-fixed');
-				   $('.class_menu').addClass('class_menu-fixed');
+				           $('.info').addClass('info-fixed');
+				          
 				     } else {
                    $('.divTitulo').removeClass('divTitulo-fixed');
                    $('#nav').removeClass('nav-fixed');
@@ -71,9 +71,9 @@ return $resul;
                    $('.PSubtitulo1').removeClass('PSubtitulo1-fixed');
                    $('.PSubtitulo2').removeClass('PSubtitulo2-fixed');
                    $('.menuLogo').removeClass('menuLogo-fixed');
-				  $('.nav_barraMenu').removeClass('nav_barraMenu-fixed');
-				   $('.info').removeClass('info-fixed');
-                    $('.class_menu').removeClass('class_menu-fixed');
+				           $('.nav_barraMenu').removeClass('nav_barraMenu-fixed');
+				           $('.info').removeClass('info-fixed');
+                  
                }
            });
 
@@ -182,7 +182,7 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
   <a href="http://webmail.ceficc.edu.co" target="_blank">  <i class="fa fa-envelope  fa-stack-1x " style="color:#a70000"></i></a>
 </span>
                     <div class="div-mb-email">
-                   <strong class="mb-none">secretaria.general@ceficc.edu.co<br />
+                   <strong class="mb-none">secretaria.general@ceficc.edu.co
                    ceficcaribe2020@hotmail.com</strong><br />
                        <strong class="mb-none">Solicita Información por Correo</strong>
                  </div>

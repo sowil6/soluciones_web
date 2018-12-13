@@ -9,25 +9,23 @@
 body {background:#FEFEFE;}
  
  /*BARRA DE MENU*/
-.sbarraMenu-fixed{
-	position:fixed;
-top:0;
-display:flex;
-justify-content:end; /*flex end o center para centrar el menu*/
-padding-right:10%;
-transition: 2s;
- z-index:2;
-	}
+.nav_barraMenu-fixed ul{
+	top:0;
+	position: fixed;
+	background-color:#a70000;
+	z-index: 1;
+	width: 100%;
+	padding-left: 30%;
 
-.class_menu-fixed nav {/*probando si hay efecto con color de fondo*/
-background-color: yellow;
+	}
+.xxclass_menu-fixedd nav{/*probando si hay efecto con color de fondo*/
+
 width: 100%;
-position: fixed;
+/*position: fixed;
 top:0;
 padding-right: 7%;
-display: flex;
-justify-content: end;
- z-index:2;
+justify-content:flex-end;
+ z-index:1;*/
 	} 
 .btn_menu_bar {
 	display:none;
@@ -38,32 +36,34 @@ justify-content: end;
 	background: rgba(255,255,255,.5);
 		
 }
-menu {
+.class_menu {
 	width: 100%;
+	background-color:#a70000;
+	z-index: 1;
 }
  
 
 
  
-menu nav {
-	background:#023859;
-	background-color:#a70000 !important;/* color de la barra de menu*/
+.class_menu nav {
+	
+	background-color:#a70000; /*!important; color de la barra de menu*/
 	z-index:1000;
 	line-height: 1.7em; /* 60 (24) tambien sirve para definit la altura de la barra de menu*/
 	width:100%;
 
 }
  
-menu nav ul {
+.class_menu nav ul {
 	justify-content: center; /*flex end o center para centrar el menu*/
 	display: flex;
 	list-style:none;
 }
-menu nav ul ul  a:hover{
+.class_menu nav ul ul  a:hover{
 	color:#0B10E7;/*cambia el texto a color azul cuando se pasa el mouse sobre el boton*/
 
 }
-menu nav li a:hover{
+.class_menu nav li a:hover{
 	color:#000;/*cambia el texto a color azul cuando se pasa el mouse sobre el boton*/
 
 }
@@ -75,16 +75,16 @@ color:#0B10E7;/*cambia el texto a color azul cuando se pasa el mouse sobre el bo
 border-bottom: 1px solid #a70000;
 border-top: 1px solid #a70000;
 }
-menu nav ul li {
+.class_menu nav ul li {
 	display:inline-block;
 	position: relative;
 }
-menu nav ul li:hover {
+.class_menu nav ul li:hover {
 	background:#ffffff;
 	border-bottom:2px solid #a70000;
 		border-top:2px solid #a70000;
 }
-menu nav ul li a {
+.class_menu nav ul li a {
 	color:#fff;
 	display:block;
 	text-decoration:none;
@@ -93,17 +93,17 @@ menu nav ul li a {
 header nav ul li a span {
 	margin-right:10px;
 }
-menu nav ul li:hover .children {
+.class_menu nav ul li:hover .children {
 	display:block;
 }
-menu nav ul li .children {
+.class_menu nav ul li .children {
 	display: none;
 	background:#a70000;
 	position: absolute;
 	width: 150%;
 	z-index:1000;
 }
-menu nav ul li .children li {
+.class_menu nav ul li .children li {
 	display:block;
 	overflow: hidden;
 	border-bottom: 1px solid rgba(255,255,255,.5);
@@ -112,7 +112,7 @@ menu nav ul li .children li a {
 	display: block;
 }
  
-menu nav ul li .children li a span {
+.class_menu nav ul li .children li a span {
 	float: right;
 	position: relative;
 	top:3px;
@@ -120,7 +120,7 @@ menu nav ul li .children li a span {
 	margin-left:10px;
 }
  
-menu nav ul li .caret {
+.class_menu nav ul li .caret {
 	position: relative;
 	top:3px;
 	margin-left:10px;
@@ -138,8 +138,8 @@ menu nav ul li .caret {
 background-color: yellow;
 width: 100%;
 height: 80px;
-position: fixed;
-top:0;
+/*position: fixed;
+*/top:0;
 padding-top: 40px;
 display: flex;
 justify-content: end;
