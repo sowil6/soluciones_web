@@ -97,12 +97,15 @@ return $resul;
     <div class="divSeccionBajaSlide">
 
 
-<p class="slide_proyectos">Portafolio de Servicios y Emprendimiento</p>
+<p class="slide_proyectos">Portafolio de Servicios</p>
 	
     <?php
        
 $master="catalogoslide";
-$canciones = simplexml_load_file("./XMLPage/xmlPaginaInicioParteBaja.xml");
+
+
+/*$canciones = simplexml_load_file("./XMLPage/xmlPaginaInicioParteBaja.xml");*/
+$canciones = simplexml_load_file("./XMLPage/xmlMenuCatalogo.xml");
 echo'	<ul class="galeria">';
 foreach($canciones as $cancion)
 {
