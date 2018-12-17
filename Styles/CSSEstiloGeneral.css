@@ -93,9 +93,9 @@ z-index:2;
 
 /*INFORMACION PBX EMAIL*/
  .info{
-	margin-top:1%;
-	width:36%;/*con el valor que esta en las function de la pagina Site.Master controlar el ancho contenedor de la imagen*/
-    height:100%;/*altura del contenedor de la imagen*/
+	margin-top:2px;
+	width:39%;/*con el valor que esta en las function de la pagina Site.Master controlar el ancho contenedor de la imagen*/
+    height:4.2em;/*altura del contenedor de la imagen*/
 /*	padding:1px;
    margin-left:4px;
    	 margin-top:1px;
@@ -184,7 +184,7 @@ z-index:3;
 /*RESOLUCION SECRETARIA DE BOLIVAR*/
 .resolucion_ {
 		/*background-color:green;*/
-	width:41%;/*con el valor que esta en las function de la pagina Site.Master controlar el ancho contenedor de la imagen*/
+	width:38%;/*con el valor que esta en las function de la pagina Site.Master controlar el ancho contenedor de la imagen*/
    top:1px;
  color: blue;  
   display:flex;/*display:flex y justify-content: center ayudan a centrar el menu*/
@@ -206,15 +206,17 @@ z-index:3;
   font-size:0.5rem;
 }
 
-.info-fixed {
+.info-fixed {background:#fff;
 font-size:0.5rem;
 position: fixed;
-top: 10px;
+top: 0px;
 right:10px;
 z-index: 3;
 color:#fff;
-display: none;
-	}
+width:50%
+
+/*display: none;
+*/	}
 
 .info-fixed .InfoUL a{
 font-size:0.6rem;

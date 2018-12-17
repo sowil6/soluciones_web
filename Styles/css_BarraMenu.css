@@ -9,25 +9,8 @@
 body {background:#FEFEFE;}
  
  /*BARRA DE MENU*/
-.nav_barraMenu-fixed ul{
-	top:0;
-	position: fixed;
-	background-color:#a70000;
-	z-index: 1;
-	width: 100%;
-	padding-left: 30%;
-z-index:2;
-	}
-.xxclass_menu-fixedd nav{/*probando si hay efecto con color de fondo*/
-
-width: 100%;
-/*position: fixed;
-top:0;
-padding-right: 7%;
-justify-content:flex-end;
- z-index:1;*/
-	} 
-.btn_menu_bar {
+ 
+ .btn_menu_bar {
 	display:none;
 		
 }
@@ -36,6 +19,25 @@ justify-content:flex-end;
 	background: rgba(255,255,255,.5);
 		
 }
+/*.nav_barraMenu-fixed ul{
+	top:0;
+	position: fixed;
+	background-color:#a70000;
+	/*z-index: 1;
+	width: 100%;
+	padding-left: 30%;
+z-index:2;
+	}*/
+.class_menu-fixed {/*probando si hay efecto con color de fondo*/
+position: fixed;
+top:0;
+padding-left: 30%;
+width: 100%;
+/*padding-right: 7%;
+justify-content:flex-end;
+ z-index:1;*/
+	} 
+
 .class_menu {
 	width: 100%;
 	background-color:#a70000;
@@ -108,7 +110,7 @@ header nav ul li a span {
 	overflow: hidden;
 	border-bottom: 1px solid rgba(255,255,255,.5);
 }
-menu nav ul li .children li a {
+.class_menu nav ul li .children li a {
 	display: block;
 }
  
@@ -134,14 +136,15 @@ menu nav ul li .children li a {
 /*INICIO SCREEN ENTRE 800 Y 999 AZUL*/
 @media screen and (min-width:801px) and (max-width: 999px)  {
 
-.class_menu-fixed nav{/*probando si hay efecto con color de fondo*/
-background-color: yellow;
+.class_menu-fixed {/*probando si hay efecto con color de fondo
+background-color: yellow;*/
 width: 100%;
 height: 80px;
 /*position: fixed;
 */top:0;
 padding-top: 40px;
-display: flex;
+padding-left: 0;
+/*display: flex;*/
 justify-content: end;
  z-index:2;
 	} 
@@ -202,7 +205,7 @@ position: relative;
 		
 	}
 
-	menu nav{
+	.class_menu nav{
 		width: 70%;
 		height: calc(100% - 80px);
 		position: fixed;
@@ -212,36 +215,36 @@ position: relative;
 		top:50px;
 			z-index:5;display:block;
 	}
- menu nav ul {
+ .class_menu nav ul {
 	justify-content:flex-start; /*flex end o center para centrar el menu*/
 	display:block;
 	
 }
-	menu nav ul li {
+	.class_menu nav ul li {
 		display: block;
 		border-bottom:1px solid rgba(255,255,255,.5);
 	}
  
-	menu nav ul li a {
+	.class_menu nav ul li a {
 		display: block;
 		padding:20px;/*se cambia el padin para tener mas espacio en moviles*/
 	}
  
-	menu nav ul li:hover .children {
+	.class_menu nav ul li:hover .children {
 		display: none;
 	}
  
-	menu nav ul li .children {
+	.class_menu nav ul li .children {
 		width: 100%;
 		position: relative;
 		background:#0743A0;
 	}
  
-	menu nav ul li .children li a {
+	.class_menu nav ul li .children li a {
 		margin-left:20px;
 	}
  
-	menu nav ul li .caret {
+	.class_menu nav ul li .caret {
 		float: right;
 	}
 }

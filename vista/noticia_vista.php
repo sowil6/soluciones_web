@@ -147,8 +147,8 @@ var editando=	document.getElementById('subtemas').value;
 				
 				},
 			success: function (response){
-				//$("#resultado").html(" Proceso terminado");
-				alert(" Proceso terminado");
+				$("#resultado").html(" Proceso terminado");
+				//alert(" Proceso terminado");
 			if(editando=="Subtemas"){opcionSelect();}else{TraerSubtemas();}
 				console.log(response);
 				}

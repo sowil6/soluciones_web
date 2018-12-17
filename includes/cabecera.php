@@ -60,7 +60,7 @@ return $resul;
                    $('.PTitulo').addClass('PTitulo-fixed');
                    $('.PSubtitulo1').addClass('PSubtitulo1-fixed');
                    $('.menuLogo').addClass('menuLogo-fixed');
-                   $('.nav_barraMenu').addClass('nav_barraMenu-fixed');
+                   $('.class_menu').addClass('class_menu-fixed');
 				           $('.info').addClass('info-fixed');
 				          
 				     } else {
@@ -71,7 +71,7 @@ return $resul;
                    $('.PSubtitulo1').removeClass('PSubtitulo1-fixed');
                    $('.PSubtitulo2').removeClass('PSubtitulo2-fixed');
                    $('.menuLogo').removeClass('menuLogo-fixed');
-				           $('.nav_barraMenu').removeClass('nav_barraMenu-fixed');
+				           $('.class_menu').removeClass('class_menu-fixed');
 				           $('.info').removeClass('info-fixed');
                   
                }

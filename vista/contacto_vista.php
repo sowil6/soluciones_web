@@ -178,12 +178,12 @@
 
 				<div>
 					<i class="fa fa-phone"></i>
-					<p>+57 311 4211659</p>
+					<p>oficina 6812539</br>movil (+57 301 2807094) (+57 300 8135952)</p>
 				</div>
 
 				<div>
 					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:support@company.com">secretaria.general@ceficc.edu.co</a></p>
+					<p><a href="mailto:secretaria.general@ceficc.edu.co">secretaria.general@ceficc.edu.co <br />ceficcaribe2020@hotmail.com</a></p>
 				</div>
 
 			</div>
