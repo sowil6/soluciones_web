@@ -34,14 +34,14 @@ top:0;
 padding-left: 30%;
 width: 100%;
 /*padding-right: 7%;
-justify-content:flex-end;
- z-index:1;*/
+justify-content:flex-end;*/
+ z-index:2;
 	} 
 
 .class_menu {
 	width: 100%;
 	background-color:#a70000;
-	z-index: 1;
+	z-index: 2;
 }
  
 
@@ -187,12 +187,10 @@ position: relative;
 	}
 	 .bt-menu  .nombre_icon {
 		 margin:0;
-		padding:0;
+		padding:0;position:relative;
  		font-size:100%;
-		display:flex;
-		
 		top:1px;	
-		float:right; 
+		float:right;/**/ 
 		padding-right: 5px;		
 	 }
 	.bt-menu span {
@@ -201,10 +199,12 @@ position: relative;
 	 top:5px;
 		
 		font-size: 35px;
-		position: relative;
-		
+/*		position: relative;
+*/		
 	}
-
+.class_menu-fixed {
+	padding-left: 0;
+	}
 	.class_menu nav{
 		width: 70%;
 		height: calc(100% - 80px);
@@ -213,7 +213,9 @@ position: relative;
 		margin: 0;
 	/*	overflow: scroll;*/
 		top:50px;
-			z-index:5;display:block;
+			z-index:5;
+			display:block;
+			
 	}
  .class_menu nav ul {
 	justify-content:flex-start; /*flex end o center para centrar el menu*/

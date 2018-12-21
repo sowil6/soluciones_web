@@ -198,7 +198,7 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
          
    	<menu class="class_menu">
 		<div class="btn_menu_bar">
-			<a href="#" class="bt-menu"><span class="nombre_icon"> barra de </br>menu tactil</span><span class="icon icon-menu"></span></a>
+			<a href="#" class="bt-menu"><span class="nombre_icon"> barra de </br>menu táctil</span><span class="icon icon-menu"></span></a>
 		</div>
  
 		<nav class="nav_barraMenu">
