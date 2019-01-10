@@ -1,15 +1,3 @@
-DELIMITER $$
-
-USE `bdcefic`$$
-
-DROP PROCEDURE IF EXISTS `dataGrid`$$
-
-CREATE DEFINER=`root`@`localhost` PROCEDURE `dataGrid`(
-	IN _flag CHAR(1),
-	IN _criterio VARCHAR(200),
-	IN _pagina INT,
-	IN _reg_x_pag INT
-    )
 BEGIN
 		
 	DECLARE search VARCHAR(200) DEFAULT '';
@@ -19,7 +7,7 @@ BEGIN
 	SET _pag_actual=(_pagina - 1) * _reg_x_pag;
 	
 	IF _criterio != '' THEN
-		SET search = CONCAT(' WHERE ubicacionNoticia LIKE "%',_pagUbicacion,'%" ');
+		SET search = CONCAT(' where ubicacionNoticia LIKE "%',_criterio,'%"');
 	END IF;
 	
 	SET @sentencia = CONCAT('
@@ -51,8 +39,7 @@ BEGIN
 			mensajeNoticia,
 			fotoNoticia,
 			@countx AS total 
-	FROM table_noticia 
-	',search,' 
+	FROM table_noticia  WHERE ubicacionNoticia LIKE "%',_pagUbicacion,'%"
 	',_limit,';
 	');
 	
@@ -61,6 +48,4 @@ BEGIN
 	
 	DEALLOCATE PREPARE consulta;
 	SET @sentencia = NULL;
-    END$$
-
-DELIMITER ;
+    END

@@ -245,17 +245,17 @@ $Grid = new DataGrid("gridT");//se inicializa el grid para crearlo
 //opciones para el paginado del grid
 $cod = isset($_REQUEST['cod'])?$_REQUEST['cod']:'';
 $subtema = isset($_REQUEST['subtema'])?$_REQUEST['subtema']:'';
+$criterio = isset($_REQUEST['_criterio'])?$_REQUEST['_criterio']:'';
 $page     = isset($_REQUEST['_page'])?$_REQUEST['_page']:1;
 $regxpag  = isset($_REQUEST['_regxpag'])?$_REQUEST['_regxpag']:10;
-
 $noti=function_BeansNoticia();//obtenemos la ubicacion de la noticia
 
 
 if($subtema!="Subtemas"){
-$criterio=  ' WHERE codigoNoticia="'.$cod.'"';//se optiene la ubicacion de la pagina
+$pagUbicacion=  $cod;//se optiene la ubicacion de la pagina
 }else{
 	$ubicacion =$noti->getUbicacionNoticia();//se optiene la ubicacion de la pagina
-	$criterio=  ' WHERE ubicacionNoticia = "'.$ubicacion.'"';//consulta segun el codigo es enviado o no	
+	$pagUbicacion=  $ubicacion;//consulta segun el codigo es enviado o no	
 	}
 	
 
@@ -301,16 +301,19 @@ $Grid->addAccion(array(
 	)
 );
 
+
 $Grid->selectData(array(
     "info"=>false,
     "criterio"=>$criterio,
+    "pagUbicacion"=>$pagUbicacion,
     "class"=>"noticia_modelo",
     "method"=>"getDataSP",
     "paginate"=>array(
-       //"ajax"=>"index.getDatagrid",
+       "ajax"=>"index.getDatagrid",
         "page"=>$page,
         "reg_x_pag"=>$regxpag,
-        "itemPaginas"=>10
+		 "itemPaginas"=>10
+		
     )
 ));
 

@@ -1,4 +1,5 @@
 <?php
+	  $pagUbicacion = isset($_REQUEST['pagUbicacion'])?$_REQUEST['pagUbicacion']:'';
 
 class noticia_modelo{
 private  $db;        //En esta variable almacenaremos la conexion.
@@ -13,12 +14,12 @@ public function noticia_modelo(){ //Constructor.
     
       }
 	  
-	  
-public function getDataSP($flag,$criterio='',$page=1,$regxpag=10){
+public function getDataSP($flag,$criterio='',$page=1,$regxpag=10,$pagUbicacion=''){
 include_once("../modelo/Conectar.php");
 		$db = Conectar::conexion();
-        $sql = "CALL dataGrid('".$flag."','".$criterio."','".$page."','".$regxpag."'); ";
-        $data = $db->query($sql);
+        $sql = "CALL dataGrid('".$flag."','".$criterio."','".$page."','".$regxpag."','".$pagUbicacion."'); ";
+		echo $sql;
+		$data = $db->query($sql);
         $result = $data->fetchAll(PDO::FETCH_ASSOC);
         return $result;
     }  

@@ -360,6 +360,7 @@ class DataGrid{
 
     public function selectData($obj){
         $this->_criterio = isset($obj['criterio'])?$obj['criterio']:'';
+		$this->_pagUbicacion = isset($obj['pagUbicacion'])?$obj['pagUbicacion']:'';
         $this->_info = isset($obj['info'])?$obj['info']:false;
         $class    = isset($obj['class'])?$obj['class']:'';
         $method   = isset($obj['method'])?$obj['method']:'';
@@ -370,7 +371,7 @@ class DataGrid{
         $regxpag = isset($this->_paginate['reg_x_pag'])?$this->_paginate['reg_x_pag']:'';
         
         $Obj = new $class();
-        $result = $Obj->$method('P',  $this->_criterio,$pag,$regxpag);
+        $result = $Obj->$method('P',  $this->_criterio,$pag,$regxpag,$this->_pagUbicacion);
         
         $this->_data = $result;
         $this->totalRegistros = $this->_data[0]['total'];

@@ -1,4 +1,5 @@
 .contenedor_Arbol{
+	display:none;/*para desactivar para fecha fuera de navidad*/
 margin:0;
 padding:0;
 width: 60px;

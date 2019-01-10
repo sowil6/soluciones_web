@@ -14,7 +14,7 @@
 <!-- TemplateEndEditable -->
 
 </head>
-<div class="tpl-snow">
+<!--<div class="tpl-snow">
     <div></div>
     <div></div>
     <div></div>
@@ -64,7 +64,7 @@
     <div></div>
     <div></div>
 </div>
-<body expr:class=';"loading" + data:blog.mobileClass';>
+--><body expr:class=';"loading" + data:blog.mobileClass';>
 <div class="containerCeficc">
   <header>
   

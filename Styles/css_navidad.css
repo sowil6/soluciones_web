@@ -1,6 +1,9 @@
 /*para la nieve se utilizan los div vacios que estan en la pagina iniical de plantilla*/
 	body{}
-
+.tpl-snow{
+		/*desactivado por pasar la fecha de navidad*/
+		display:none;
+	}
 @-moz-keyframes nieve{	
 	from{top:-40px;}
     to{top:101%;}
