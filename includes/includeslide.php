@@ -1,16 +1,70 @@
 
+
+<!--<script src="./Scripts/jquery.min.js"></script>
+--><link rel="stylesheet" href="./Styles/bootstrapCSS/bootstrap.min.css">
+<script src="./Scripts/bootstrapJS/bootstrap.min.js" ></script>
 <link href="./Styles/CSSIncludeSlide.css" rel="stylesheet" type="text/css">
 <!--El orden de los css y js afectan el funcionamiento del slide-->
   <script src="./Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
 <!--  <link href="Styles/slideshow.css" rel="stylesheet" type="text/css" />-->
     <script src="./Scripts/slideshow.js" type="text/javascript"></script>
-<!--    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+<!--    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+-->
+
+
      <script type="text/javascript" >
         $(document).ready(function () {
 
             // Create slideshow instances
             var $s = $('.slideshow').slides();
+			
+			
+		$(document).on("click", "#btnAgregarModulo", function () {
+var myBookId = $(this).data('tit');   	$(".modal-body #nombreprograma").val( myBookId );
+var myBookId2 = $(this).data('foto');		$(".modal-body #horasPrograma").val( myBookId2 );
+
+var myBookId3 = $(this).data('intro');		$(".modal-body #ObjetivoGeneralPrograma").val(myBookId3);
+
+var myBookId4 = $(this).data('men'); 		$(".modal-body #ObjetivosEspecificosPrograma").val(myBookId4 );
+HTMLfoto_OVideo = "<embed id='crs_imgPrevia' src='./ImgSistema/noHaSeleccionadoImagen.jpg' />";	
+	document.getElementById("demo").innerHTML = HTMLfoto_OVideo;	
+		
+	/* $("#exampleModal").modal();
+   
+    });*/
+  
+ // enviarDato(myBookId);
+ 
+   
+});	
+	
+	
+			
         });
+
+
+function enviarDato(id){
+//alert (id);
+
+	 var dato = id;
+    $.ajax({
+      data: {"dato" : dato},
+      url: "./includes/modal.php",
+      type: "post",
+      success:  function (response) {
+       //alert(response);
+      }
+    });
+ 
+	
+	}
+
+
+
+
+
+
+
 
     </script>
     <style>
@@ -94,6 +148,8 @@ return $resul;
      </div>
   </div><!-- end .container -->
 </div>
+
+<!--INICIO MODULO PROGRAMAS-->
     <div class="divSeccionBajaSlide">
 
 
@@ -134,7 +190,9 @@ echo'		<li><a href="'.$cancion->urlFile.'?Accion='.$cancion->Codigo.'"target="_b
  
 
     </div>  
+<!--FIN MODULO PROGRAMAS-->
     
+    <!--MODULO CONVENIOS-->
         <div class="divSeccionConvenios">
 
 
@@ -162,15 +220,27 @@ $HTMLfoto_OVideo= "<video controls  class='" .$master. "imagenoVideo'> <source s
 $HTMLfoto_OVideo= "<embed class='" .$master. "imagenoVideo'   src = './Img/".$cancion->foto. "' />";
 }
 
-echo'		<li>'.$HTMLfoto_OVideo.' </br><p>'. $cancion->Titulo.'</p></li>';
+
+
+
+echo'<li>';
+echo '<a  id="btnAgregarModulo" href="#"  data-toggle="modal" data-target="#exampleModal" data-tit='. $cancion->Titulo.' data-foto='. $cancion->foto.' data-intro='.$cancion->introduccionNoticia.' data-men='.$cancion->mensajeNoticia.'>';
+echo $HTMLfoto_OVideo.' <p>'. $cancion->Titulo.'</p> ';
+echo '</a></li>';
 
 
 }
    echo'	</ul>';	  
 
 ?>
-            
+       
  
 
     </div>    
-  
+<!--FIN MODULO CONVENIOS-->  
+
+<!--INICIO POPU-->  
+<?php
+include_once('./includes/modal.php');
+?>
+<!--FIN POPU-->  

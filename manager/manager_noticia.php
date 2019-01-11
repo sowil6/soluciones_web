@@ -173,8 +173,8 @@ $ubicacion=	"SELECT * FROM table_noticia where ubicacionNoticia='".$ubic."'";
 $Noticias= noticia_modelo::get_Noticias($ubicacion);//se almacenan los datos de la consulta en la variable Noticia
  $xml = new DomDocument('1.0', 'UTF-8');
 
-$contenido = $xml->createElement('Noticias');
-    $tema = $xml->appendChild($contenido);
+$_contenido = $xml->createElement('Noticias');
+    $tema = $xml->appendChild($_contenido);
 	
 	foreach  ($Noticias as $fila){
 //		echo "</br>"."en get noticia";
@@ -184,7 +184,7 @@ $contenido = $xml->createElement('Noticias');
 	
  
     $tema = $xml->createElement('Noticia');
-    $tema = $contenido->appendChild($tema);
+    $tema = $_contenido->appendChild($tema);
      
   	$Codigo = $xml->createElement('Codigo',$noticia->getCodigoNoticia());
     $Codigo = $tema->appendChild($Codigo);
@@ -198,7 +198,7 @@ $contenido = $xml->createElement('Noticias');
     $introduccionNoticia = $xml->createElement('introduccionNoticia',$noticia->getIntroduccionNoticia());
     $introduccionNoticia = $tema->appendChild($introduccionNoticia);
  
-    $mensajeNoticia = $xml->createElement('mensajeNoticia','<p>'.$noticia->getMensajeNoticia().'</p>');
+    $mensajeNoticia = $xml->createElement('mensajeNoticia',$noticia->getMensajeNoticia());
     $mensajeNoticia = $tema->appendChild($mensajeNoticia);
  
  	$urlFile = $xml->createElement('urlFile',$noticia->getUrlPaginaNoticia());

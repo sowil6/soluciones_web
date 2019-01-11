@@ -4,8 +4,8 @@
     <Codigo>2122</Codigo>
     <DetalleCodigo>0</DetalleCodigo>
     <Titulo>CUERPO DE BOMBEROS VOLUNTARIOS DE ARJONA BOLIVAR</Titulo>
-    <introduccionNoticia>&lt;br&gt;</introduccionNoticia>
-    <mensajeNoticia>&lt;p&gt;lata lata &lt;br&gt;&lt;/p&gt;</mensajeNoticia>
+    <introduccionNoticia>intro bomberos</introduccionNoticia>
+    <mensajeNoticia>contenido  bomberos</mensajeNoticia>
     <urlFile/>
     <foto>Bomberos_Voluntarios_Arjona.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
@@ -16,7 +16,7 @@
     <DetalleCodigo>0</DetalleCodigo>
     <Titulo>APIC Asociación de Periodistas Independientes de Colombia</Titulo>
     <introduccionNoticia/>
-    <mensajeNoticia>&lt;p&gt;&lt;/p&gt;</mensajeNoticia>
+    <mensajeNoticia/>
     <urlFile/>
     <foto>APIC.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
@@ -27,7 +27,7 @@
     <DetalleCodigo>0</DetalleCodigo>
     <Titulo>Fundacón ASENAU Marinos Mercantes</Titulo>
     <introduccionNoticia/>
-    <mensajeNoticia>&lt;p&gt;&lt;/p&gt;</mensajeNoticia>
+    <mensajeNoticia/>
     <urlFile/>
     <foto>fundacion_ASENU.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
@@ -38,7 +38,7 @@
     <DetalleCodigo>0</DetalleCodigo>
     <Titulo>ASOTEC Asociación de Técnicos Electricistas del Caribe</Titulo>
     <introduccionNoticia/>
-    <mensajeNoticia>&lt;p&gt;&lt;/p&gt;</mensajeNoticia>
+    <mensajeNoticia/>
     <urlFile/>
     <foto>asotec.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
@@ -49,7 +49,7 @@
     <DetalleCodigo>0</DetalleCodigo>
     <Titulo>ASOTELBO Asociación de Técnicos Electricistas de Bolívar</Titulo>
     <introduccionNoticia/>
-    <mensajeNoticia>&lt;p&gt;&lt;/p&gt;</mensajeNoticia>
+    <mensajeNoticia/>
     <urlFile/>
     <foto>asotelbo_logo.jpeg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
@@ -60,7 +60,7 @@
     <DetalleCodigo>0</DetalleCodigo>
     <Titulo>COLEGIO AMOR A BOLIVAR</Titulo>
     <introduccionNoticia/>
-    <mensajeNoticia>&lt;p&gt;&lt;/p&gt;</mensajeNoticia>
+    <mensajeNoticia/>
     <urlFile/>
     <foto>amor_a_bolivar.jpeg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
@@ -71,7 +71,7 @@
     <DetalleCodigo>0</DetalleCodigo>
     <Titulo>ATEPROGUA</Titulo>
     <introduccionNoticia/>
-    <mensajeNoticia>&lt;p&gt;&lt;/p&gt;</mensajeNoticia>
+    <mensajeNoticia/>
     <urlFile/>
     <foto>ATEPROGUA.png</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
@@ -82,7 +82,7 @@
     <DetalleCodigo>0</DetalleCodigo>
     <Titulo>SINCONTAXCAR Sindicato de Conductores de Taxi Cartagena</Titulo>
     <introduccionNoticia/>
-    <mensajeNoticia>&lt;p&gt;&lt;/p&gt;</mensajeNoticia>
+    <mensajeNoticia/>
     <urlFile/>
     <foto>sincontaxcar.jpeg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
@@ -93,7 +93,7 @@
     <DetalleCodigo>0</DetalleCodigo>
     <Titulo>COMFAMILIAR Caja de Compensación familiar</Titulo>
     <introduccionNoticia/>
-    <mensajeNoticia>&lt;p&gt;&lt;/p&gt;</mensajeNoticia>
+    <mensajeNoticia/>
     <urlFile/>
     <foto>comfamiliar.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
@@ -104,7 +104,7 @@
     <DetalleCodigo>0</DetalleCodigo>
     <Titulo>ASOTESUC Asociacion de tecnicos electricistas de sucre</Titulo>
     <introduccionNoticia/>
-    <mensajeNoticia>&lt;p&gt;&lt;/p&gt;</mensajeNoticia>
+    <mensajeNoticia/>
     <urlFile/>
     <foto>asotesuc.jpeg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
@@ -115,7 +115,7 @@
     <DetalleCodigo>0</DetalleCodigo>
     <Titulo>ASTEA Asociación de Técnicos Electricistas del Atlantico</Titulo>
     <introduccionNoticia/>
-    <mensajeNoticia>&lt;p&gt;&lt;/p&gt;</mensajeNoticia>
+    <mensajeNoticia/>
     <urlFile/>
     <foto>astea3.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
@@ -126,9 +126,31 @@
     <DetalleCodigo>0</DetalleCodigo>
     <Titulo>ASTEUNCOR Asociación de Técnicos Electricistas y Afines Unidos de Córdoba</Titulo>
     <introduccionNoticia/>
-    <mensajeNoticia>&lt;p&gt;&lt;/p&gt;</mensajeNoticia>
+    <mensajeNoticia/>
     <urlFile/>
     <foto>logoASTEUNCOR(300x391).jpg</foto>
+    <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
+    <autor>6</autor>
+  </Noticia>
+  <Noticia>
+    <Codigo>2134</Codigo>
+    <DetalleCodigo>0</DetalleCodigo>
+    <Titulo>ASTEUNCOR Asociación de Técnicos Electricistas y Afines Unidos de Córdoba</Titulo>
+    <introduccionNoticia/>
+    <mensajeNoticia/>
+    <urlFile/>
+    <foto>logoASTEUNCOR(300x391).jpg</foto>
+    <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
+    <autor>6</autor>
+  </Noticia>
+  <Noticia>
+    <Codigo>2136</Codigo>
+    <DetalleCodigo>0</DetalleCodigo>
+    <Titulo>titulo</Titulo>
+    <introduccionNoticia>intro</introduccionNoticia>
+    <mensajeNoticia>contenido</mensajeNoticia>
+    <urlFile/>
+    <foto>Bomberos_Voluntarios_Arjona.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
     <autor>6</autor>
   </Noticia>

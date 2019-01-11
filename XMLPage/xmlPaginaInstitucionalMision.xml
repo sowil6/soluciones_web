@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Noticias>
   <Noticia>
-    <Codigo>2116</Codigo>
+    <Codigo>2042</Codigo>
     <DetalleCodigo>0</DetalleCodigo>
-    <Titulo>mision</Titulo>
-    <introduccionNoticia>miison introduccion&lt;br&gt;</introduccionNoticia>
-    <mensajeNoticia>&lt;p&gt;mision contenido&lt;br&gt;&lt;/p&gt;</mensajeNoticia>
+    <Titulo>Mision</Titulo>
+    <introduccionNoticia>&lt;span style="color: rgb(119, 119, 119); font-family: "Open Sans", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"&gt;Impulsar prioritariamente la formación integral de nuestros educandos, en la marca de la filosofía del éxito con fundamento en la actitud positiva, ofreciendo los conocimientos y condiciones para el desempeño excelente en el campo técnico, con alto sentido ético y de compromiso con el desarrollo sostenible de los sectores sociales, comerciales, tecnológicos del país y del mundo globalizado.&lt;/span&gt;</introduccionNoticia>
+    <mensajeNoticia>&lt;span style="color: rgb(119, 119, 119); font-family: "Open Sans", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"&gt;Nuestros programas están diseñados bajo los parámetros por competencias laborales, tomando como punto estratégico: el conocimiento, la productividad y la innovación. Además de esto se promoverá el desarrollo social económico y sostenible.&lt;/span&gt;</mensajeNoticia>
     <urlFile/>
-    <foto>1.jpg</foto>
+    <foto>slider3.jpg</foto>
     <fecha>Maxico D.F. - Editorial Grijalbo</fecha>
-    <autor>6</autor>
+    <autor>7</autor>
   </Noticia>
 </Noticias>
