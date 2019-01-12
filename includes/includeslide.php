@@ -26,15 +26,9 @@ var myBookId3 = $(this).data('intro');		$(".modal-body #ObjetivoGeneralPrograma"
 
 var myBookId4 = $(this).data('men'); 		$(".modal-body #ObjetivosEspecificosPrograma").val(myBookId4 );
 HTMLfoto_OVideo = "<embed id='crs_imgPrevia' src='./ImgSistema/noHaSeleccionadoImagen.jpg' />";	
-	document.getElementById("demo").innerHTML = HTMLfoto_OVideo;	
-		
-	/* $("#exampleModal").modal();
-   
-    });*/
-  
- // enviarDato(myBookId);
- 
-   
+document.getElementById("demo").innerHTML = HTMLfoto_OVideo;	
+var img = document.getElementById('crs_imgPrevia');
+	img.src= "./Img/"+myBookId2;
 });	
 	
 	

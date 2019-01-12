@@ -4,25 +4,22 @@
   <div class="modal-dialog" style="width:800px" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="AccionModal"></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <h1 class="modal-title" id="AccionModal"></h1>
+        <button type="button" class="close"  data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
-        </button>
-         
+      </button>
+          <h1 class="modal-title" id="AccionModal">Convenio</h1><!--ubique esta linea aqui, porque me pario mejor-->
           
       </div>
       <div class="modal-body" style="background-color:lightblue" >
-
-      <?php
-
-?>
+ <span id="nombreprograma"></span>
 <div id="divImagenPrevia"> <span  id="demo" > No hay Imagen Seleccionada</span></div>
             <table>
             <tr>
                 <td class="col1TabProgr">
                     Nombre del programa:</td>
                 <td >
-                    <input id="nombreprograma" class="TextalignRight" type="text"   /></td>
+                    <input id="nombreprograma2" class="TextalignRight" type="text"   /></td>
             </tr>
                 <tr>
                 <td class="col1TabProgr">
