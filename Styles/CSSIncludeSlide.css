@@ -27,7 +27,7 @@ width:80%;
 	position:absolute;
 	 color:#ffffff;
 	 font-weight:bold;
-	   font-size:1.5rem;
+	   font-size:2.7rem;
 	     line-height:1;/*interlineado separacion entre lineas de texto*/
  /* padding: 0px 0 10px 0px;sup 0 abajo izq*/
   word-wrap:break-word;
@@ -57,11 +57,11 @@ width:80%;
 
 .TextoIntroSlide {
 /*	bottom:50%;*/
-	 top:25%;
+	 top:37%;
 	position:absolute;
 	 color:#ffffff;
 	 font-weight:bold;
-	   font-size:2rem;
+	   font-size:2.2rem;
 	     line-height:1;/*interlineado separacion entre lineas de texto*/
  /* padding: 0px 0 10px 0px;sup 0 abajo izq*/
   word-wrap:break-word;
@@ -96,7 +96,7 @@ width:80%;
 	 word-wrap:break-word;
 	color:#ffffff;
 		
-      font-size:1rem;
+      font-size:1.5rem;
    /* padding: 48px 0 0 0px;sup 0 abajo izq*/
     text-align:left;
     line-height:1;/*interlineado separacion entre lineas de texto*/
@@ -467,18 +467,18 @@ height:300px;
   }
 
  .textoTituloSlide {
-/*top: 10%;*/
- font-size:1.3em;
+/*top: 10%;
+ font-size:1.3em;*/
    }
 
 .TextoIntroSlide {
- /*top:20%;*/
- font-size:1.8rem;
+ /*top:20%;
+ font-size:1.8rem;*/
    }
 
 .TextoMensajeSlide {
-font-size:1rem;
-/*bottom:25%;*/
+/*font-size:1rem;
+bottom:25%;*/
 }
 
 

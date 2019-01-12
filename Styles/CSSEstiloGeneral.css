@@ -100,7 +100,7 @@ z-index:2;
    margin-left:4px;
    	 margin-top:1px;
 	background-color:blue;*/
-	
+	font-size:1rem;
 	padding-right:1px;
 	margin-right:2px;
 	display:inline-flex;
@@ -114,14 +114,14 @@ z-index:2;
 /*	background-color:yellow;*/
 	width:100%;
 	height:100%;
-	font-size:0.7rem;
+	font-size:1rem;
 	color:#000;/*color de texto*/
    /* cursor:pointer*/;
 	
 	}
 .InfoUL a{
-	font-size:0.7rem;
-	color:#000;/*color de texto*/
+/*	font-size:0.7rem;
+*/	color:#000;/*color de texto*/
 	width:80%;
 	}
 .InfoUL span {
@@ -189,7 +189,7 @@ z-index:3;
  color: blue;  
   display:flex;/*display:flex y justify-content: center ayudan a centrar el menu*/
   justify-content: center;/*display:flex y justify-content: center ayudan a centrar el menu*/
-  font-size:0.6rem;
+  font-size:1rem;
   text-align:center;
   margin:5px;
   z-index:2;
@@ -203,11 +203,11 @@ z-index:3;
 	border-top: 1px solid blue;
 	}
 .resolucion_ {
-  font-size:0.5rem;
+  font-size:0.7rem;
 }
 
 .info-fixed {
-font-size:0.5rem;
+font-size:0.9rem;
 position: fixed;
 top: 0px;
 right:10px;
@@ -219,10 +219,10 @@ width:50%
 */	}
 
 .info-fixed .InfoUL a{
-font-size:0.6rem;
+font-size:0.9rem;
 color:#000;	}	
 .InfoUL{
-font-size:0.5rem;
+font-size:0.7rem;
 	}
 	
 	}

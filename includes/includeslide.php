@@ -1,13 +1,12 @@
 
-
-<!--<script src="./Scripts/jquery.min.js"></script>
---><link rel="stylesheet" href="./Styles/bootstrapCSS/bootstrap.min.css">
+<link  href="./Styles/bootstrapCSS/bootstrap.min.css" rel="stylesheet">
+<!---->
+<script src="./Scripts/jquery.min.js"></script>
 <script src="./Scripts/bootstrapJS/bootstrap.min.js" ></script>
 <link href="./Styles/CSSIncludeSlide.css" rel="stylesheet" type="text/css">
-<!--El orden de los css y js afectan el funcionamiento del slide-->
-  <script src="./Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
-<!--  <link href="Styles/slideshow.css" rel="stylesheet" type="text/css" />-->
-    <script src="./Scripts/slideshow.js" type="text/javascript"></script>
+<!--El orden de los css y js afectan el funcionamiento del slide
+  <script src="./Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>-->
+  <script src="./Scripts/slideshow.js" type="text/javascript"></script>
 <!--    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 -->
 

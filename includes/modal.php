@@ -1,5 +1,3 @@
-<!doctype html>
-<html>
 <!--INICIO POPU-->  
 
    <div class="modal fade" id="exampleModal"   role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -69,4 +67,3 @@
 </div>
 
 <!--FIN POPU--> 
-</html>
