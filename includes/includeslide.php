@@ -67,7 +67,6 @@ function enviarDato(id){
 </head>
 
 <body>
-<center><iframe src="https://www.google.es/maps/place/10%C2%B022'46.2%22N+75%C2%B027'53.4%22W/@10.3795,-75.466492,17z/data=!4m6!3m5!1s0x0:0x0!7e2!8m2!3d10.3795096!4d-75.4648394" height="500"> </iframe></center>  
 
  <div class="divsliderSeccionSuperior">
 <div class="containerslider">
