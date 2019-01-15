@@ -1,33 +1,37 @@
   <?php
   
-  
  class Conectar{
 	 
-	/*private $user = 'root';
-    private $pass = '';
-	*/
-	private $user = 'ceficce1';
-    private $pass = 'cefic2018/';
-	
-	private $host = 'localhost';
-    private $port = '3306';
-    private $motor = 'mysql';
-    private $dbname = 'ceficce1_bd2018';
-	  	
+    private $driver;
+    private $host, $user, $pass, $database, $charset;
+  
+    public function __construct() {
+       $bd_cfg = require_once './modelo/basedatos.php';
+    	$driver=$bd_cfg["driver"];
+        $host=$bd_cfg["host"];
+        $user=$bd_cfg["user"];
+        $pass=$bd_cfg["pass"];
+        $database=$bd_cfg["database"];
+        $charset=$bd_cfg["charset"];
+   
+    }
+
 		
-         public static function conexion() {
-		 $user = 'ceficce1';
-    $passw = 'cefic2018/';
-			/* echo '<script language="javascript">alert("En Conectar exito");</script>'; */
+public function conexion() {
+/*	 $bd_cfg = require_once './modelo/basedatos.php';
+    	$this->driver=$bd_cfg["driver"];
+        $this->host=$bd_cfg["host"];
+        $this->user=$bd_cfg["user"];
+        $this->pass=$bd_cfg["pass"];
+        $this->database=$bd_cfg["database"];
+        $this->charset=$bd_cfg["charset"];*/
 try{
-//		 $con = 'mysql:host='.$this->host.';port='.$this->port.';dbname='.$this->dbname; original
-	//	 $conexion =  new PDO('mysql:host=localhost; dbname=ceficce1_bd2018', 'root','');
-	 	 $conexion =  new PDO('mysql:host=localhost; dbname=ceficce1_bd2018', $user, $passw);
-                    
-                    $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                    
-                    $conexion->exec("SET CHARACTER SET utf8");
-		/*echo '<script language="javascript">alert("En Conectar exito2");</script>'; */
+	
+	 if($this->driver=="mysql" || $this->driver==null){
+	 	 $conexion =  new PDO($this->driver.":dbname=".$this->database, $this->user, $this->pass);
+         $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+         $conexion->exec("SET CHARACTER SET utf8");
+}
 			return $conexion;
 		   }
 		   catch (Exception $ex)
@@ -40,6 +44,7 @@ try{
                   echo "En la Linea: " . $ex->getLine();
       }
  }
+ 
 }
         
         

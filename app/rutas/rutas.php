@@ -2,7 +2,8 @@
 
 //todas las rutas disponibles en el proyecto
 $ruta= new Ruta();
-$ruta->controladores(array("/" =>"WelcomeController",
+$ruta->controladores(
+	array("/" =>"WelcomeController",
 	"/usuarios"=>"UsuarioController" ,
 	"/institucional"=>"InstitucionalController",
 	"/oferta"=>"OfertaController",
@@ -12,7 +13,10 @@ $ruta->controladores(array("/" =>"WelcomeController",
 	"/proyectos"=>"ProyectoController",
 	"/detallecatalogo"=>"CatalogoDetalleController",
 	"/certificaciones"=>"CertificacionesController",
-	"/estudiante"=>"EstudianteController"
+	"/estudiante"=>"EstudianteController",
+	"/login"=>"LoginController",
+	"/registro"=>"RegistroController",
+	"/logeado"=>"LogeadoController",
+	""=>"RaizController"
 	
-
-));
+	));
