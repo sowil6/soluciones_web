@@ -88,7 +88,7 @@ if($data["cantidad"]>0){
 		if (empty($password)) {
 			array_push($errors, "Password is required");
 		}
-		if (count($errors) == 0) {
+	/*	if (count($errors) == 0) {
 			$password = md5($password);
 			$query = "SELECT * FROM table_usuario WHERE username='$username' AND password='$password'";
 			$results = mysqli_query($bd, $query);
@@ -119,7 +119,15 @@ if($data["cantidad"]>0){
 			}else {
 				array_push($errors, "Wrong username/password combination");
 			}
+			
+			
 		}
+		
+		*/
+		
+		//para prueba de login sin consultar a la base de datos
+			$_SESSION['nivel_acceso'] = $rol;
+			$_SESSION['username'] = $username;
 	}
 	
 
