@@ -82,19 +82,19 @@ if($data["cantidad"]>0){
 	if (isset($_POST['login_user'])) {
 		$username = mysqli_real_escape_string($bd, $_POST['username']);
 		$password = mysqli_real_escape_string($bd, $_POST['password']);
-		$username="maira lozano";
-		$password = "1";
+		$_SESSION['nivel_acceso'] = "1";
+			$_SESSION['username'] = "maira lozano";
 		if (empty($username)) {
 			array_push($errors, "Username is required");
 		}
 		if (empty($password)) {
 			array_push($errors, "Password is required");
 		}
-	if (count($errors) == 0) {//inicio if count($errors
-			/*$password = md5($password);
+		if (count($errors) == 0) {
+			$password = md5($password);
 			$query = "SELECT * FROM table_usuario WHERE username='$username' AND password='$password'";
 			$results = mysqli_query($bd, $query);
-			if (mysqli_num_rows($results) == 1) {//inicio if (mysqli_num_rows
+			if (mysqli_num_rows($results) == 1) {
 				$_SESSION['username'] = $username;
 				$_SESSION['success'] = "You are now logged in";
 			foreach  ($results as $fila){//recorremos los datos y utilizamos el ide para hacer una consulta en la tabla personamain y obtener el nombre
@@ -104,24 +104,18 @@ if($data["cantidad"]>0){
 					//$ruta=substr($ruta, 0,-4);//nota aqui coregir cuando es punto y la extension
 					
 					//si la ruta no tiene enlace, solo toma el mombre de login.php
-					//echo $ruta;
+				//	echo $ruta;
 					//die();
 					if($ruta=="login.php"){echo "<script> window.location='.'</script>";
 					
 					}else{
 					echo "<script> window.location='".$ruta."'</script>";
-						}//fin if (mysqli_num_rows*/
+						}
 				
-				$_SESSION['nivel_acceso'] = "1";
-			$_SESSION['username'] = "maira lozano";
-			echo "<script> window.location='.'</script>";
-			
 			}else {
 				array_push($errors, "Wrong username/password combination");
-			}//fin if count($errors
-		
-		//para prueba de login sin consultar a la base de datos
-			
+			}
+		}
 	}
 	
 
