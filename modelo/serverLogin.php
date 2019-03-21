@@ -82,7 +82,9 @@ if($data["cantidad"]>0){
 	if (isset($_POST['login_user'])) {
 		$username = mysqli_real_escape_string($bd, $_POST['username']);
 		$password = mysqli_real_escape_string($bd, $_POST['password']);
-			if (empty($username)) {
+		$username="maira lozano";
+		$password = "1";
+		if (empty($username)) {
 			array_push($errors, "Username is required");
 		}
 		if (empty($password)) {
@@ -133,11 +135,11 @@ if (isset($_GET['logout'])) {
 		$_SESSION['nivel_acceso']=1;
 		//unset($_SESSION['success']);
 		$ruta=substr($ruta, 0,-4);
-echo $ruta.$_SESSION['nivel_acceso'];
+//echo $ruta.$_SESSION['nivel_acceso'];
 		//die();
 	//echo "<script> window.location='".$ruta."'<script>";//se omite esta para que inicie por index y se oculte la opcion
     //Administrativo en la barra de menu
-	echo "<script> window.location='.'</script>";
+	echo "<script> window.location='.'</script>";//redirecciona a la pagina de inicio
 		
 
 	}

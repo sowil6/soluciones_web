@@ -7,7 +7,7 @@ session_start();
 	
 	include "libreria/core.php";
 
-echo "en index la ruta de model esss" .RUTA_MODELO."manager";
+//echo "en index la ruta de model esss" .RUTA_MODELO."manager";
 /*	 
 
 	if (!isset($_SESSION['username'])) {

@@ -78,7 +78,7 @@ return $resul;
 			   
            });// fin $(window).on
 
- var roll= <?php include_once(RUTA_INCLUDE.'include_session.php'); echo $_SESSION['nivel_acceso']; ?>;
+ var roll= <?php echo $_SESSION['nivel_acceso']; ?>;
  if(roll==1){document.getElementById('Administrativo').style.visibility="hidden";//oculta los alert en globo
 }else{
 	document.getElementById('Administrativo').style.visibility="visible";//oculta los alert en globo
@@ -144,7 +144,7 @@ function main () {
         <!--LOGIN-->
 <div class="login_">  
      <!-- logged in user information -->
-		<?php include_once(RUTA_INCLUDE.'include_session.php');$rolnombre= new include_session(); $rol_acceso = $rolnombre->getRol($_SESSION['nivel_acceso']); if (isset($_SESSION['username'])) :    ?>
+		<?php $rolnombre= new include_session(); $rol_acceso = $rolnombre->getRol($_SESSION['nivel_acceso']); if (isset($_SESSION['username'])) :    ?>
 			<a href="login?logout='1'" style="color: red;">logout </a> Welcome <?php echo $_SESSION['username']?><!--." ".$rol_acceso; ?>-->  
               <?php  else : //echo $rol_acceso; este echo es opcional, se puede quitar despues?>
             <a href="login" style="color: red;">login</a>   <!---->
@@ -315,7 +315,7 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
 		</nav>
         <div class="login_">  
      <!-- logged in user information -->
-		<?php echo RUTA_INCLUDE;include_once(RUTA_INCLUDE.'include_session.php');$rolnombre= new include_session(); $rol_acceso = $rolnombre->getRol($_SESSION['nivel_acceso']); if (isset($_SESSION['username'])) :    ?>
+		<?php include_once(RUTA_INCLUDE.'include_session.php');$rolnombre= new include_session(); $rol_acceso = $rolnombre->getRol($_SESSION['nivel_acceso']); if (isset($_SESSION['username'])) :    ?>
 			<a href="login?logout='1'" style="color: red;">logout </a> Welcome <?php echo $_SESSION['username'];?><!--." ".$rol_acceso; ?>-->  
               <?php  else : //echo $rol_acceso; este echo es opcional, se puede quitar despues ?>
          <a href="login" style="color: red;">login</a>  <!---->
