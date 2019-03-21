@@ -1,5 +1,5 @@
 <?php 
-session_start();
+//session_start();
 $rol=0;
 if (isset($_SESSION['username'])) {
 	//$ruta=substr($ruta, 0,-4);
