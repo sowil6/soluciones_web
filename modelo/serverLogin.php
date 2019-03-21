@@ -122,7 +122,7 @@ if($data["cantidad"]>0){
 			//estas tres lineas con para prueba de login sin consultar a la base de datos
 			$_SESSION['nivel_acceso'] = "1";
 			$_SESSION['username'] = "maira lozano";
-			echo "<script> window.location='estudiante?action=certificado'</script>";	
+			echo "<script> window.location='.'</script>";	
 			
 			}//fin if (count($errors) == 0
 	}
