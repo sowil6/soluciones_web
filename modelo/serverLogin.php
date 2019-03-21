@@ -1,29 +1,25 @@
 <?php 
-	session_start();
-
-	// variable declaration
 	$username = "";
 	$email    = "";
 	$errors = array(); 
 	$_SESSION['success'] = "";/**/
-
+		if (isset($_GET['ruta'])) {
+		$ruta= $_GET['ruta'];
+			//$ruta=substr($ruta, 0,-4);
+		}
 	// connect to database
-	/**/
-	$bd_cfg = require_once './modelo/basedatos.php';
+	$bd_cfg = include RUTA_MODELO.'basedatos.php';
 	$driver=$bd_cfg["driver"];
     $host=$bd_cfg["host"];
 	$bduser=$bd_cfg["user"];
 	$bdpass=$bd_cfg["pass"];
     $database=$bd_cfg["database"];
-
 	$bd = mysqli_connect('localhost', $bduser, $bdpass, $database);
-
 //NUEVO REGISTRO
 if (isset($_POST['reg_new'])) {
 header('location: registro');
 }
 //FIN NUEVO REGISTRO
-
 	// REGISTER USER
 if (isset($_POST['reg_user'])) {
 /*echo '<script language="javascript">alert("Hola en modelo ");</script>';
@@ -36,15 +32,24 @@ if (isset($_POST['reg_user'])) {
 		$email = mysqli_real_escape_string($bd, $_POST['email']);
 		$pass = mysqli_real_escape_string($bd, $_POST['pass']);
 		$rpass = mysqli_real_escape_string($bd, $_POST['rpass']);
+		$nivel_acceso = mysqli_real_escape_string($bd, $_POST['rol_option']);
 
 		// form validation: ensure that the form is correctly filled
 		if (empty($username)) { array_push($errors, "Username is required"); }
 		if (empty($email)) { array_push($errors, "Email is required"); }
 		if (empty($pass)) { array_push($errors, "Password is required"); }
+		if (empty($nivel_acceso)) { array_push($errors, "nivel de acceso requerido"); }
+
 
 		if ($pass != $rpass) {
 			array_push($errors, "The two passwords do not match");
 		}
+		
+//obtener el numero ultimo registro en la tabla		
+$sqlMax="SELECT max(id) AS max_page FROM table_usuario";
+$resMas=mysqli_query($bd, $sqlMax);
+$idprevio=mysqli_fetch_array($resMas);
+$id=$idprevio['max_page']+1;
 //validar si el nombre de uusuario existe
 $sql="select count(*) as cantidad from table_usuario where username='$username'";
 $res=mysqli_query($bd, $sql);
@@ -56,8 +61,10 @@ if($data["cantidad"]>0){
 		// register user if there are no errors in the form
 		if (count($errors) == 0) {
 			$pass = md5($rpass);//encrypt the password before saving in the database
-			$query = "INSERT INTO table_usuario (username, acceso, password) 
-					  VALUES('$username', '$email', '$pass')";
+			$query = "INSERT INTO table_usuario (id,username, nivel_acceso, email, password) 
+					  VALUES('$id','$username', '$nivel_acceso','$email', '$pass')";
+  			mysqli_query($bd, $query);
+			$query ="insert into tabla_personamain (idPersona)  values ('$id')" ;
 			mysqli_query($bd, $query);
 
 			$_SESSION['username'] = $username;
@@ -70,32 +77,71 @@ if($data["cantidad"]>0){
 	}
 }
 	// FIN REGISTER USER... 
-
+	
 	// LOGIN USER
 	if (isset($_POST['login_user'])) {
 		$username = mysqli_real_escape_string($bd, $_POST['username']);
 		$password = mysqli_real_escape_string($bd, $_POST['password']);
-
 		if (empty($username)) {
 			array_push($errors, "Username is required");
 		}
 		if (empty($password)) {
 			array_push($errors, "Password is required");
 		}
-
 		if (count($errors) == 0) {
 			$password = md5($password);
 			$query = "SELECT * FROM table_usuario WHERE username='$username' AND password='$password'";
 			$results = mysqli_query($bd, $query);
-
 			if (mysqli_num_rows($results) == 1) {
 				$_SESSION['username'] = $username;
 				$_SESSION['success'] = "You are now logged in";
-				header('location: logeado');
+			foreach  ($results as $fila){//recorremos los datos y utilizamos el ide para hacer una consulta en la tabla personamain y obtener el nombre
+				 $rol = $fila['nivel_acceso'];
+				$_SESSION['nivel_acceso'] = $rol;
+					}//cierra foreach
+					//$ruta=substr($ruta, 0,-4);//nota aqui coregir cuando es punto y la extension
+					
+					//si la ruta no tiene enlace, solo toma el mombre de login.php
+					//echo $ruta;
+					//die();
+					if($ruta=="login.php"){echo "<script> window.location='.'</script>";
+					
+					}else{
+					echo "<script> window.location='".$ruta."'</script>";
+						}
+					//redirigir($ruta, $rol);
+					
+					
+					
+			
+//redirigir($ruta, $rol);
+
 			}else {
 				array_push($errors, "Wrong username/password combination");
 			}
 		}
 	}
+	
 
+	
+
+//CERRAR CESION
+if (isset($_GET['logout'])) {
+			session_destroy();
+		unset($_SESSION['username']);
+		unset($_SESSION['nivel_acceso']);
+		$_SESSION['nivel_acceso']=1;
+		//unset($_SESSION['success']);
+		$ruta=substr($ruta, 0,-4);
+echo $ruta.$_SESSION['nivel_acceso'];
+		//die();
+	//echo "<script> window.location='".$ruta."'<script>";//se omite esta para que inicie por index y se oculte la opcion
+    //Administrativo en la barra de menu
+	echo "<script> window.location='.'</script>";
+		
+
+	}
+	
+	
+	
 ?>

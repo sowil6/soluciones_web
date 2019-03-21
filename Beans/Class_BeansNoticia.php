@@ -20,7 +20,7 @@ class Class_BeansNoticia{
         return $this->$idnoticia;
     }
  public function setIdnoticia($idnoticia) {
-        $this->id = $idnoticia;
+        $this->idnoticia = $idnoticia;
     }
 
   public function getCodigoNoticia() {

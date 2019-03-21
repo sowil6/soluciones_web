@@ -4,7 +4,7 @@ class EstudianteController{
 	public function index(){
 
 		include_once LIBRERIA ."Vista.php";
-	return Vista::crear("gestion_estudiante_vista");
+	return Vista::crear("gestion_estudiante");
 	}
 
 	public function insertar(){

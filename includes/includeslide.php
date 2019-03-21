@@ -1,14 +1,9 @@
 
-<link  href="./Styles/bootstrapCSS/bootstrap.min.css" rel="stylesheet">
-<!---->
-<script src="./Scripts/jquery.min.js"></script>
-<script src="./Scripts/bootstrapJS/bootstrap.min.js" ></script>
+<!--<script src="./Scripts/bootstrapJS/bootstrap.min.js" ></script>-->
+<link rel="stylesheet" type="text/css" href="./Styles/bootstrapCSS/bootstrap.min.css">
 <link href="./Styles/CSSIncludeSlide.css" rel="stylesheet" type="text/css">
-<!--El orden de los css y js afectan el funcionamiento del slide
-  <script src="./Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>-->
+<!--El orden de los css y js afectan el funcionamiento del slide-->
   <script src="./Scripts/slideshow.js" type="text/javascript"></script>
-<!--    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
--->
 
 
      <script type="text/javascript" >
@@ -100,40 +95,7 @@ echo	$HTMLfoto_OVideo;
 echo'  </li>';
 
 }
-  /*    function ValidaExtension($sExtension) {
 
-            $resul;
-            switch ($sExtension)
-            {
-                case "jpg":
-                case "jpeg":
-                case "png":
-                case "gif":
-                case "bmp":
-                case "JPG":
-                case "JPEG":
-                case "PNG":
-                case "GIF":
-                case "BMP":
-               $resul=TRUE;
-					//echo "nombre imagen----".$sExtension."..///// ".$resul." estado";
-                break;
-
-                default:
-                case "mp4":
-                case "avi":
-                case "wmv":
-				$resul=FALSE;
-//									echo "nombre imagen----".$sExtension."..///// ".$resul." estado";
-
-                    break;
-            }
-return $resul;
-          
-			
-          			
-        }
-*/
 ?>
                
            </ul>

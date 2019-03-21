@@ -4,7 +4,7 @@
 $ruta= new Ruta();
 $ruta->controladores(
 	array("/" =>"WelcomeController",
-	"/usuarios"=>"UsuarioController" ,
+	""=>"InicioController" ,
 	"/institucional"=>"InstitucionalController",
 	"/oferta"=>"OfertaController",
 	"/contacto"=>"ContactoController",
@@ -17,6 +17,9 @@ $ruta->controladores(
 	"/login"=>"LoginController",
 	"/registro"=>"RegistroController",
 	"/logeado"=>"LogeadoController",
+	"/sin_acceso"=>"SinAccesoController",
+	"/inscripcion"=>"InscripcionController",
+	"/consultarinscripcion"=>"ConsultaInscripcionController",
 	""=>"RaizController"
 	
 	));

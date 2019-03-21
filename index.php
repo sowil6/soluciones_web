@@ -6,7 +6,9 @@
 //echo "en index.php " .RUTA_BASE;
 	
 	include "libreria/core.php";
-	session_start(); 
+
+echo "en index la ruta de model esss" .RUTA_MODELO."manager";
+/*	session_start(); 
 
 	if (!isset($_SESSION['username'])) {
 		$_SESSION['msg'] = "You must log in first";
@@ -17,7 +19,7 @@ if (isset($_GET['logout'])) {
 		session_destroy();
 		unset($_SESSION['username']);
 		header("location: /");
-	}
+	}*/
  ?>
  <?php 
 /*	

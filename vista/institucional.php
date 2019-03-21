@@ -122,38 +122,7 @@ else{
 echo '<h1> Procedimiento anormal, por favor proceda adecuadamente </h1>';	
 	}//end $urlpagina 
 echo'</ul>';	  
-/* function ValidaExtension($sExtension) {
 
-            $resul;
-            switch ($sExtension)
-            {
-                case "jpg":
-                case "jpeg":
-                case "png":
-                case "gif":
-                case "bmp":
-                case "JPG":
-                case "JPEG":
-                case "PNG":
-                case "GIF":
-                case "BMP":
-               $resul=TRUE;
-				
-                break;
-
-                default:
-                case "mp4":
-                case "avi":
-                case "wmv":
-				$resul=FALSE;
-                    break;
-            }
-return $resul;
-          
-			
-          			
-        }
-	*/	
 ?>
        </div> 
 

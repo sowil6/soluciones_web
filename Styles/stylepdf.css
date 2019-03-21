@@ -1,0 +1,188 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  color: #5D6975;
+  text-decoration: underline;
+}
+
+body {
+  position: relative;
+  width: 21cm;  
+  height: 29.7cm; 
+  margin: 0 auto; 
+  color: #001028;
+  background: #FFFFFF; 
+  font-family: Arial, sans-serif; 
+  font-size: 12px; 
+  font-family: Arial;
+}
+
+header {
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.tabla_reporte td:first-child {
+  width:20%;
+}
+.tabla_reporte td:nth-child(2) {
+  background: red;
+   width:85%;
+}
+.titulo_reporte{
+ width: auto;
+ float:right;
+	position:absolute;
+	margin-top:10px;
+
+		color:rgba(8,13,221,1.00);
+		font-size:15px;
+			text-align: center;
+		vertical-align: top;
+		  border-bottom: 1px solid  #5D6975;
+		 /* background:yellow;*/
+	}
+.logo {
+background:yellow;	
+float: left;
+	margin-top:15px;
+ width: 10%;
+}
+
+img {	position:fixed;
+	
+  width: 100%;
+}
+
+h1 {
+  border-top: 1px solid  #5D6975;
+  border-bottom: 1px solid  #5D6975;
+  padding-top:10px;
+  color: #5D6975;
+  font-size: 1.5em;
+  line-height: 1em;
+  font-weight: normal;
+  margin: 0 0 20px 0;
+  background: url(../imgSistema/logo2019ceficGris.jpg);
+  background-size:40px;
+  text-align:center;
+}
+
+.datos_inscripcion{
+		 color: #000;
+		font-size:12px;
+		text-align:left;
+	}
+
+span {
+/*color:rgba(136,129,129,1.00);*/
+padding:50px;
+
+  font-size: 1em;
+  color:red;
+ 
+}
+.row{
+	width:100%;
+	}
+.col-sm-6{
+	width:50%;
+	display:block;
+		}
+.izq{
+	float:left;
+	}
+.der{
+	float:right;
+	}
+
+.compania {
+  float: right;
+  text-align: right;
+  padding-bottom:10px;
+}
+
+.tabla_report_consulta_inscritos{
+	width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 20px;
+	
+	}
+
+/*#project div,
+#company div {
+  white-space: nowrap;        
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 20px;
+}
+
+table tr:nth-child(2n-1) td {
+  background: #F5F5F5;
+}
+
+table th,
+table td {
+  text-align: center;
+}
+
+table th {
+  padding: 5px 20px;
+  color: #5D6975;
+  border-bottom: 1px solid #C1CED9;
+  white-space: nowrap;        
+  font-weight: normal;
+}
+
+table .service,
+table .desc {
+  text-align: left;
+}
+
+table td {
+  padding: 20px;
+  text-align: right;
+}
+
+table td.service,
+table td.desc {
+  vertical-align: top;
+}
+
+table td.unit,
+table td.qty,
+table td.total {
+  font-size: 1.2em;
+}
+
+table td.grand {
+  border-top: 1px solid #5D6975;;
+}
+
+#notices .notice {
+  color: #5D6975;
+  font-size: 1.2em;
+}
+
+footer {
+  color: #5D6975;
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #C1CED9;
+  padding: 8px 0;
+  text-align: center;
+}*/
+
+
+	

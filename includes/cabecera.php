@@ -1,19 +1,19 @@
 <!-- <link href="./Styles/css_navidad.css" rel="stylesheet" type="text/css">
---><link href="./Styles/CSSEstiloGeneral.css" rel="stylesheet" type="text/css">
+-->
+<?php include_once(RUTA_INCLUDE.'include_session.php');?>
+
+<link href="./Styles/CSSEstiloGeneral.css" rel="stylesheet" type="text/css">
  <link href="./Styles/footer-distributed-with-address-and-phones.css" rel="stylesheet">
  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" > 
 <link href="https://use.fontawesome.com/releases/v5.2.0/css/regular.css"  rel="stylesheet" integrity="sha384-zkhEzh7td0PG30vxQk1D9liRKeizzot4eqkJ8gB3/I+mZ1rjgQk+BSt2F6rT2c+I" crossorigin="anonymous">
-
-
-
-	
+  <script src="./Scripts/jquery-1.12.0.js" type="text/javascript"></script><!---->
    <link href="./Font/demo-files/demo.css" rel="stylesheet" type="text/css" ><!--Controla los iconos de la barra de menu-->
   <link href="./Styles/css_BarraMenu.css" rel="stylesheet" >
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <link href="./Styles/arbol_navidad.css" rel="stylesheet" type="text/css"><!--dejar activo para que oculte el arbol de navidad-->
 
-<?php function ValidaExtension($sExtension) {
-
+<?php 
+function ValidaExtension($sExtension) {
             $resul;
             switch ($sExtension)
             {
@@ -41,22 +41,18 @@
                     break;
             }
 return $resul;
-           			
-        }
-?>	<!--<link rel="stylesheet" href="../Styles/menuWeb.css">-->
-
-<!-- <script src="../Scripts/jquery.min.js" type="text/javascript"></script> 
--->
-
+        }?>	
 <script type="text/javascript" src="./Scripts/jquery-3.3.1.js"></script><!--Esta linea permite que funcione la barraherrameinte-fixed
-
 -->
   <script type="text/javascript">
-            $(document).ready(function () {
+             $(document).ready(function () {//inicio $(document).ready
+				
                 var altura = $('.class_menu').offset().top;
               //alert(altura );
-             $(window).on('scroll', function () {
-               if ($(window).scrollTop() > altura) {
+             $(window).on('scroll', function () {//inicio $(window).on
+              
+			   if ($(window).scrollTop() > altura){//inicio if ($(window).scrollTop(
+			    
                    $('.divTitulo').addClass('divTitulo-fixed');
                    $('#nav').addClass('nav-fixed');
                    $('.divlogotipo').addClass('divlogotipo-fixed');
@@ -66,7 +62,8 @@ return $resul;
                    $('.class_menu').addClass('class_menu-fixed');
 				           $('.info').addClass('info-fixed');
 				          
-				     } else {
+				     } 
+					 else   {
                    $('.divTitulo').removeClass('divTitulo-fixed');
                    $('#nav').removeClass('nav-fixed');
                    $('.divlogotipo').removeClass('divlogotipo-fixed');
@@ -77,10 +74,20 @@ return $resul;
 				           $('.class_menu').removeClass('class_menu-fixed');
 				           $('.info').removeClass('info-fixed');
                   
-               }
-           });
+               }//fin if ($(window).scrollTop(
+			   
+           });// fin $(window).on
 
-       });
+ var roll= <?php include_once(RUTA_INCLUDE.'include_session.php'); echo $_SESSION['nivel_acceso']; ?>;
+ if(roll==1){document.getElementById('Administrativo').style.visibility="hidden";//oculta los alert en globo
+}else{
+	document.getElementById('Administrativo').style.visibility="visible";//oculta los alert en globo
+	}//fin if(roll==1)
+
+
+
+
+       });//fin $(document).ready
 
              function Confirm() {
                  var confirm_value = document.createElement("INPUT");
@@ -132,9 +139,20 @@ function main () {
 <div class="menuLogo" >
  <img src="./ImgSistema/logofront.png"/>
            
-            
+      
         </div>    
-  
+        <!--LOGIN-->
+<div class="login_">  
+     <!-- logged in user information -->
+		<?php include_once(RUTA_INCLUDE.'include_session.php');$rolnombre= new include_session(); $rol_acceso = $rolnombre->getRol($_SESSION['nivel_acceso']); if (isset($_SESSION['username'])) :    ?>
+			<a href="login?logout='1'" style="color: red;">logout </a> Welcome <?php echo $_SESSION['username']?><!--." ".$rol_acceso; ?>-->  
+              <?php  else : //echo $rol_acceso; este echo es opcional, se puede quitar despues?>
+            <a href="login" style="color: red;">login</a>   <!---->
+		<?php endif ?>
+   
+         </div> 
+       
+<!--FIN LOGIN-->
 
    <div  class="resolucion_">
      Resolución 01-235  Secretaria de Educación de Bolívar</br> 
@@ -223,7 +241,7 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
                       
                 <a>
                    <strong class="mb-none">6812539 - (+57) 3012807094</strong><br />
-                   <strong><small>Hora de Atención 7:00-18:00</small></strong>            
+                   <strong>Hora de Atención 7:00-18:00</strong>            
                     </a>
                     
                     </div> 
@@ -248,23 +266,12 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
           
             </div>
 
-<!--LOGIN-->
-<div class="login">  
-<span class="fa-stack fa-lg">
-<i class="fa fa-circle  fa-stack-2x " style="color:#4495E9"></i>
-<a href="login">  <i class="fa fa-envelope  fa-stack-1x " style="color:#a70000"></i>
-</span>
-<div class="div-mb-email">
-<strong class="mb-none">login</strong>
-    </div> </a>
-   
-         </div> 
-<!--FIN LOGIN-->
+
 </div>
          
    	<menu class="class_menu">
 		<div class="btn_menu_bar">
-			<a href="#" class="bt-menu"><span class="nombre_icon"> barra de </br>menu táctil</span><span class="icon icon-menu"></span></a>
+			<a href="#" class="bt-menu"><span class="icon icon-menu"></span></a>
 		</div>
  
 		<nav class="nav_barraMenu">
@@ -287,16 +294,34 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
 					<ul class="children">
 						<li><a href="http://www.mansioningles.com" target="_blank">La Mansión del Ingles<span class="icon icon-dot"></span></a></li>
 						<li><a href="https://es.duolingo.com" target="_blank">duolingo<span class="icon icon-dot"></span></a></li>
-                      <!-- <li><a href="estudiante?action=inscripcion">Inscripción<span class="icon icon-dot"></span></a></li>
-                       <li><a href="estudiante?action=certificado">Certificdo<span class="icon icon-dot"></span></a></li>-->
+                       <li><a href="estudiante?action=inscripcion">Inscripción<span class="icon icon-dot"></span></a></li>
+                      <!----> <li><a href="estudiante?action=certificado">Certificaciones<span class="icon icon-dot"></span></a></li>
 
 					</ul>
 				</li>
                 
 				<li><a href="oferta"><span class="icon icon-pencil2"></span>Oferta Academica  </a></li>
 				<li><a href="contacto"><span class="icon icon-mail"></span>Contacto</a></li>
+                	<li class="submenu" id="Administrativo" style="visibility:hidden">
+					<a href="#"><span class="icon icon-user-tie"></span>Administrativo  <span class="icon icon-circle-down"></span></a>
+					<ul class="children">
+						<li><a href="registro" >Registro<span class="icon icon-dot"></span></a></li>
+						<li><a href="noticia" >Noticias<span class="icon icon-dot"></span></a></li>
+                        <li><a href="logeado" >Logeado<span class="icon icon-dot"></span></a></li>
+                          <li><a href="consultarinscripcion" >Consultar Inscritos<span class="icon icon-dot"></span></a></li>
+					</ul>
+				</li>
 			</ul>
 		</nav>
+        <div class="login_">  
+     <!-- logged in user information -->
+		<?php echo RUTA_INCLUDE;include_once(RUTA_INCLUDE.'include_session.php');$rolnombre= new include_session(); $rol_acceso = $rolnombre->getRol($_SESSION['nivel_acceso']); if (isset($_SESSION['username'])) :    ?>
+			<a href="login?logout='1'" style="color: red;">logout </a> Welcome <?php echo $_SESSION['username'];?><!--." ".$rol_acceso; ?>-->  
+              <?php  else : //echo $rol_acceso; este echo es opcional, se puede quitar despues ?>
+         <a href="login" style="color: red;">login</a>  <!---->
+		<?php endif; ?>
+   
+         </div> 
 	</menu>  
 
                       

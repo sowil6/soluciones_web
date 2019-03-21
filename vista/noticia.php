@@ -1,3 +1,10 @@
+   <?php  
+if (!isset($_SESSION['username'])) {//las paguinas que requieran login, deben llevar este if
+		$_SESSION['msg'] = "You must log in first";
+		$ruta=substr($ruta, 0,-4);
+		header('location: login?ruta='.$ruta);
+	}
+ ?>
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/PlantillaUnaColumna.dwt.php" codeOutsideHTMLIsLocked="false" --><head>
 <meta charset="utf-8">
@@ -151,7 +158,22 @@
       <textarea   rows="3" class="titulo"   name="titulo"  id="titulo"  ></textarea> 
       
       <input  type="hidden" id="HiddenTitulo">
-  <input type="file"   id="foto"  name="foto" size="20" style="width:70%"> <input  type="text" id="imgnombre" name="paramfile" style="width:29%"></td>
+  <div class="row"><!-- inicio fila -->
+  
+   <div class="col-sm-8"><!-- inicio col-sm 1 -->
+  <input type="file"   id="foto"  name="foto" size="20" style="width:70%">
+  <input  type="text" id="imgnombre" name="paramfile" style="width:29%">
+  
+  </div><!-- fin col-sm 1-->
+  
+<div class="col-sm-2"><!-- inicio col-sm 2 -->
+posision:<input  type="text" id="posicion" name="posision" style="width:80%">
+
+  </div><!-- fin col-sm 2 -->
+  </div><!-- fin fila -->
+  
+  
+  </td>
   </tr>
  </table>
  Introduccion:

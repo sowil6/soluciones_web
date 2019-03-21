@@ -1,63 +1,48 @@
 		<footer class="footer-distributed">
 
-			<div class="footer-left">
-
-				<h3>Cef<span>icc</span></h3>
-
-					<p class="footer-company-about">
-					<span>Contáctenos</span>
-					Todos los Derechos Reservados a la Corporación de Formación Integral del Caribe. CEFICC - Cartagena 2017
-Sede Principal: Urbanizacion 11 de Noviembre manzana 11 lote 7 Telefono: (035)6812539 - Móvil: 301-2807094
-				</p>
-
-				<p class="footer-company-name">Elaborado por William Lozano P. &copy; 2018</p>
-			</div>
-
-			<div class="footer-center">
-
-				<div>
-                <a href="https://www.google.es/maps/place/10%C2%B022'46.2%22N+75%C2%B027'53.4%22W/@10.37951,-75.4670277,683m/data=!3m2!1e3!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d10.3795096!4d-75.4648394" target="_blank"><i class="fa fa-map-marker"></i></a>
-					
-					<p><span>Calle 22B</span> Cartagena, Bolívar</p>
-				</div>
-
+			<div class="footer-left"></div>
+<div class="footer-center">
+				<h3>CEFICC <br/><span>Corporación de Formación Integral del Caribe</span></h3>
+<p>Contáctenos <br/>Direccion: Urbanización 11 de Nobiembre Mz 11 Lote 7</p>
 				<div>
 					<i class="fa fa-phone"></i>
 					<p>oficina 6812539</br>movil (+57 301 2807094) (+57 300 8135952)</p>
 				</div>
-
 				<div>
 					<i class="fa fa-envelope"></i>
 						<p><a href="mailto:secretaria.general@ceficc.edu.co">secretaria.general@ceficc.edu.co <br />ceficcaribe2020@hotmail.com</a></p>
-				</div>
-
-			</div>
-
-			<div class="footer-right">
-                
-                <p class="footer-links">
-					<a href="../vista/inicio.php">Home</a>
-					·
-					<a href="#">Blog</a>
-					·
-					<a href="#">Pricing</a>
-					·
-					<a href="#">About</a>
-					·
-					<a href="#">Faq</a>
-					·
-					<a href="#">Contact</a>
-				</p>
-
-				<div class="footer-icons">
+				
+<br/>
 
 					<a href="https://www.facebook.com/profile.php?id=100019469347982&ref=br_rs" target="_blank"><i class="fa fa-facebook"></i></a>
 					<a href="https://twitter.com/ceficc" target="_blank"><i class="fa fa-twitter"></i></a>
 					<a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
 					<a href="#" target="_blank"><i class="fa fa-github"></i></a>
+				
+                </div>
+                
+                <p class="footer-company-about">
+					
+					Todos los Derechos Reservados a la Corporación de Formación Integral del Caribe. CEFICC - Cartagena 2017
+Sede Principal: Urbanizacion 11 de Noviembre manzana 11 lote 7 Telefono: (035)6812539 - Móvil: 301-2807094
+				</p>
 
+				<p class="footer-company-name"></br>Elaborado por: William Lozano Posso </br> Ingeniero Especialista Tel. Cel 315 6691598 - email: sowil6@gmail.com</br> &copy; 2018</p>
+			</div>
+
+			<div class="footer-right">
+                
+             <div><p>Direccion: Urbanización 11 de Nobiembre Mz 11 Lote 7</p>
+                <a href="https://goo.gl/maps/9n6rrYjx7GT2" target="_blank"><i class="fa fa-map-marker"></i>
+					Ir al Mapa <br/></a>
+					
 				</div>
+<iframe class="mapIframe" src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d62792.24662346992!2d-75.49548803712258!3d10.380576335357665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m5!1s0x8ef62f9c3b25a7a9%3A0x9154a5ab2957747f!2sParque+India+Catalina%2C+C32%2C+Cartagena%2C+Bol%C3%ADvar!3m2!1d10.4256721!2d-75.54424759999999!4m3!3m2!1d10.3795556!2d-75.4648611!5e0!3m2!1ses!2sco!4v1547598647230"  frameborder="0" style="border:0" allowfullscreen></iframe>
+				
 
+				
+<!--<div class="footer-icons"></div>
+-->
 			</div>
 
 		</footer>

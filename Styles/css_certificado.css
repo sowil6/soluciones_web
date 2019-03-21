@@ -1,0 +1,62 @@
+.contentUnaColumna{
+	margin:0;
+	padding: 0;
+	background-color:#fff;
+
+
+}
+#login .container #login-row #login-column #login-box {
+
+  max-width: 500px;
+margin: 0 auto;
+  border: 1px solid #fff;
+  background-color: #EAEAEA;
+}
+
+.container{
+padding: 8px;
+
+}
+
+.row_form_certificado{
+width: 47%;
+margin:0 auto;
+}
+
+
+.la_documento{
+/*	padding-top:14px;
+*/	width:auto;
+	}
+.documento{
+	width:30%;
+	float: right;
+		display:inline-block;
+	}
+
+
+.table {
+	background:#DDD8D8;
+	box-shadow:5px 5px 3px #808080;
+	top:0px;
+	margin-bottom:185px;
+}
+
+.tabla_consultaInscritos{
+	width:80%;
+	padding:10px;
+	
+	border:1px solid #000;
+	box-shadow:5px 5px 3px #808080;
+
+	margin:0 auto;
+	margin-bottom:50px;
+
+
+}
+.btn {
+ 
+  margin-top: 4.35em;
+ 
+/*  border: 2px groove (internal value);
+*/}

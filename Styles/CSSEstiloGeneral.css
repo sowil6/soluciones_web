@@ -1,3 +1,8 @@
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
 /*nota el slide no foncunionaba porque habia un div qeue bajaba y ocupaba el espacio del slide*/
 body {
 	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
@@ -6,6 +11,11 @@ body {
 	width:100%;
 /*	background-color: #C4D8E7;
 */}
+a:link
+{
+text-decoration:none;
+
+}
 header {
 	/*width: 940px;
 	
@@ -91,20 +101,23 @@ z-index:2;
 	justify-content:space-around; /*flex end o center para centrar el menu*/
 }
 
+
+
 /*INFORMACION PBX EMAIL*/
  .info{
-	margin-top:2px;
+	margin-top:16px;
 	width:39%;/*con el valor que esta en las function de la pagina Site.Master controlar el ancho contenedor de la imagen*/
     height:4.2em;/*altura del contenedor de la imagen*/
 /*	padding:1px;
    margin-left:4px;
    	 margin-top:1px;
 	background-color:blue;*/
-	font-size:1rem;
+	font-size:10px;
 	padding-right:1px;
 	margin-right:2px;
 	display:inline-flex;
 	z-index:2;
+
 
 }
 .InfoUL {
@@ -114,7 +127,7 @@ z-index:2;
 /*	background-color:yellow;*/
 	width:100%;
 	height:100%;
-	font-size:1rem;
+	/*font-size:0.7rem;*/
 	color:#000;/*color de texto*/
    /* cursor:pointer*/;
 	
@@ -147,32 +160,43 @@ z-index:2;
 .div-mb-email{
 	text-align:left;
 	text-decoration:none;
-	list-style:none;
-
-
 	}
+	
+	/*IPALABRA LOGIN Y LOGOUT DE LA CABECERA el ccs del formulario login y logout esta en csslogin.css*/
+ .login_{
+	top:0px;
+	right:10px;
+	font-size:14px;
+position:fixed;
+height:15px;
+
+z-index: 3;
+	}
+	.login_ a{
+		text-decoration:none;
+		}
 /*LOGO*/
 .menuLogo {
 	margin:0;
 	padding:0;
 	left:0;
 width:16em;/*con el valor que esta en las function de la pagina Site.Master controlar el ancho contenedor de la imagen*/
-    height:3.8em;/*altura del contenedor de la imagen*/
+    height:4.2em;/*altura del contenedor de la imagen*/
 /*	background-color:blue;*/
    margin-left:55px;
       background-repeat:no-repeat;
-	 margin-top:0;
-	/* vertical-align:middle;*/
-background-color:#ffffff;
+	 margin-top:4px;
+	/* vertical-align:middle;
+background-color:#ffffff;*/
 border-radius:25em;
-	border: solid 1px;
+	/*border: solid 1px;*/
 	padding-right:5px;
 	border-color:rgba(218,225,245,0.82);
 	z-index: 2;
 }
 .menuLogo img{
 	width:100%;
-	height:100%;
+	height:78%;
 	
 	}
 .menuLogo-fixed {
@@ -189,7 +213,7 @@ z-index:3;
  color: blue;  
   display:flex;/*display:flex y justify-content: center ayudan a centrar el menu*/
   justify-content: center;/*display:flex y justify-content: center ayudan a centrar el menu*/
-  font-size:1rem;
+  font-size:11px;
   text-align:center;
   margin:5px;
   z-index:2;

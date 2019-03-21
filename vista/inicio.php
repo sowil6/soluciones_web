@@ -1,3 +1,12 @@
+<?php 
+/*if (isset($_GET['logout'])) {
+		session_destroy();
+		unset($_SESSION['username']);
+		echo "<script> window.location='./'</script>";		
+
+	}
+*/
+?>
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/PlantillaUnaColumna.dwt.php" codeOutsideHTMLIsLocked="false" --><head>
 <meta charset="utf-8">

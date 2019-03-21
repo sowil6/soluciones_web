@@ -1,37 +1,90 @@
-<?php
- include('./modelo/serverLogin.php');
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/PlantillaUnaColumna.dwt.php" codeOutsideHTMLIsLocked="false" --><head>
+<meta charset="utf-8">
+<?php include(RUTA_INCLUDE."head_include.php")?>
+<!-- InstanceBeginEditable name="doctitle" -->
+<!-- InstanceEndEditable -->
+  
+<!--<link href="../Styles/bootstrapCSS/bootstrap.css" rel="stylesheet" type="text/css">
+<script src="../Scripts/jquery-css-transform.js" type="text/javascript"></script>-->
+ 
+
+
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+
+</head>
+<!--<div class="tpl-snow">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+--><body expr:class=';"loading" + data:blog.mobileClass';>
+<div class="containerCeficc">
+  <header>
+  
+  <?php include(RUTA_INCLUDE."cabecera.php")?>
+   </header>
+
+  <!-- InstanceBeginEditable name="EditRegionUnaColumna" -->
+  <article class="contentUnaColumna">
+      <?php
+include('./modelo/serverLogin.php');
  ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Registration system PHP and MySQL</title>
-	<link rel="stylesheet" type="text/css" href="./Styles/cssLogin.css"></head>
-<body>
+<?php include(RUTA_INCLUDE."include_login.php")?>
+  
+  </article>
+  <!-- InstanceEndEditable --><!-- end .content -->
 
-	<div class="header">
-		<h2>Login</h2>
-	</div>
-	
-	<form method="post" action="login">
-
-		<?php include('./includes/errors.php'); ?>
-
-		<div class="input-group">
-			<label>Username</label>
-			<input type="text" name="username" >
-		</div>
-		<div class="input-group">
-			<label>Password</label>
-			<input type="password" name="password">
-		</div>
-		<div class="input-group">
-			<button type="submit" class="btn" name="login_user">Login</button>
-		</div>
-		<p>
-			No tienes una cuenta? <a href="registro">Registrese Aquí</a>
-		</p>
-	</form>
-
-
+  <footer>
+     <?php include(RUTA_INCLUDE."footer.php")?>
+     </footer>
+ </div> <!-- end .container -->
+ 
 </body>
-</html>
+<!-- InstanceEnd --></html>

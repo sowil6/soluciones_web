@@ -9,6 +9,9 @@ define ("RUTA_STYLES", RUTA_BASE."Styles/");
 define ("RUTA_SCRIPTS", RUTA_BASE."Scrips/");
 define ("RUTA_TEMP", RUTA_BASE."Temp/");
 define ("RUTA_IMG", RUTA_BASE."Img/");
+define ("RUTA_MODELO", RUTA_BASE."modelo/");
+define ("RUTA_MANAGER", RUTA_BASE."manager/");
+define ("RUTA_BEANS", RUTA_BASE."Beans/");
 
 //echo "</br>ruta en core.php ".VISTA_RUTA;
 
