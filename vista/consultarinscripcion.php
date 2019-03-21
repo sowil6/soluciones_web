@@ -1,6 +1,6 @@
    <?php  
 if (!isset($_SESSION['username'])) {//las paguinas que requieran login, deben llevar este if
-		$_SESSION['msg'] = "You must log in first";
+		$_SESSION['msg'] = "You must log in firsttt";
 		$ruta=substr($ruta, 0,-4);
 		header('location: login?ruta='.$ruta);
 	}

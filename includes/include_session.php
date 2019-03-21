@@ -4,7 +4,7 @@
 //echo "session start()";
 
 if (!isset($_SESSION['username'])) {
-		$_SESSION['msg'] = "You must log in first";
+		$_SESSION['msg'] = "You must log in firstsa";
 		//$ruta=substr($ruta, 0,-4);
 	 $_SESSION['nivel_acceso']=1;
 	}

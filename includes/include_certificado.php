@@ -23,7 +23,9 @@ $(document).ready(function(){
 <?php
 include_once RUTA_MANAGER. "manager_inscripcion.php";
 ?>
-
+<?php
+print_r($_SESSION);
+?>
 
 <!--Globo mensaje-->
  <div class="contenedor-balloon" id="contenedor-balloon">

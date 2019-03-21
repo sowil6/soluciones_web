@@ -1,6 +1,6 @@
   <?php  
 if (!isset($_SESSION['username'])) {
-		$_SESSION['msg'] = "You must log in first";
+		$_SESSION['msg'] = "You must log in firstinscripcion";
 		$ruta=substr($ruta, 0,-4);
 		header('location: login?ruta='.$ruta);
 	}
