@@ -126,8 +126,8 @@ if($data["cantidad"]>0){
 		*/
 		
 		//para prueba de login sin consultar a la base de datos
-			$_SESSION['nivel_acceso'] = $rol;
-			$_SESSION['username'] = $username;
+			$_SESSION['nivel_acceso'] = "1";
+			$_SESSION['username'] = "maira";
 	}
 	
 
