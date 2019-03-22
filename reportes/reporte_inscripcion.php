@@ -4,11 +4,11 @@ if(isset($_GET["documento"]))
 	$documento=$_GET["documento"];
 	$id_estudiante=$_GET["id_estudiante"];
   echo $documento."------".$id_estudiante;
-  die();
+ 
 }
-
-
-require_once('../mpdf/vendor/autoload.php');
+echo $documento."------".$id_estudiante;
+ die();
+require_once('./mpdf/vendor/autoload.php');
 $html="
 <!DOCTYPE html>
 <html>
