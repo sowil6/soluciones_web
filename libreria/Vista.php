@@ -88,12 +88,12 @@ switch($rol){
   
 case 0:
   $menu = array('gestion_estudiante.php','noticia.php','logeado.php','institucional.php','contacto_vista.php', 'ofertaacademica.php', 'sin_acceso.php','inicio.php','login.php','registro.php','ofertaacademica.php',
-'consultarinscripcion.php', 'reporte_inscripcion.php' );
+'consultarinscripcion.php', 'reporte_inscripcion.php', 'pruebas.php' );
   return $menu; 
   break;
 
 case 1:
-    $menu = array('gestion_estudiante.php','institucional.php', 'logeado.php','oferta.php', 'sin_acceso.php','inicio.php','login.php' , 'reporte_inscripcion.php');
+    $menu = array('gestion_estudiante.php','institucional.php', 'logeado.php','oferta.php', 'sin_acceso.php','inicio.php','login.php' , 'reporte_inscripcion.php', 'pruebas.php');
 	return $menu; 
   	break;
 
