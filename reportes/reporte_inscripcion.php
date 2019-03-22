@@ -3,7 +3,8 @@ if(isset($_GET["documento"]))
 {
 	$documento=$_GET["documento"];
 	$id_estudiante=$_GET["id_estudiante"];
- //  echo $documento."------".$id_estudiante;
+  echo $documento."------".$id_estudiante;
+  die();
 }
 
 
@@ -55,7 +56,7 @@ $html="
 <div class='row'> <!--inicio row2-->
    
     </div><h1>CONSTANCIA DE INSCRIPCION";
-
+function temporal(){
 
 $html.="";
 if(defined('RUTA_BASE')){
@@ -100,7 +101,7 @@ $html.=
 		   
     </header>";
 }
-
+}
 $mpdf = new \Mpdf\Mpdf();
 	$css= file_get_contents(VISTA_RUTA.'Styles/stylepdf.css');
 	/*$css2= file_get_contents('../Styles/bootstrap3.3.5.min.css');

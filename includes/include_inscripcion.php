@@ -27,7 +27,7 @@ function iniciodeInscripcion(){
 var f = new Date();
 document.getElementById('fecha').value=f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear();
 document.getElementById('contenedor-balloon').style.visibility="hidden";//oculta los alert en globo
-document.getElementById('group-row').style.visibility="hidden";//oculta el formulario inferior
+//document.getElementById('group-row').style.visibility="hidden";oculta el formulario inferior
 document.getElementById('divRepPassword').style.visibility="hidden";//oculta el div de repetir pasword
 //document.getElementById('inscripciones').style.visibility="hidden";
 document.getElementById('box_inscripciones').style.visibility="hidden";//oculta la caja de cursos incritos
@@ -510,12 +510,22 @@ function html_to_pdf(){ //lo activas con un OnClick
 location.href="./reportes/print_pdf.php?html="+ html + "&ejecutar=Boton_prueba" ,'_blank';
 }
 
-
 function generapdf(){ //lo activas con un OnClick
+
+	//alert(html);
+	documento_="";
+	id_estudiante_="";
+	location.href="reporte_inscripcion?documento="+ documento_+"&id_estudiante="+id_estudiante_ ;
+}
+
+
+
+function generapdf2(){ //lo activas con un OnClick
 	var documento_= document.getElementById('documento').value;
 	var id_estudiante_= document.getElementById('la_id').innerHTML;
 	if(id_estudiante_!=""){
 	//alert(html);
+	;
 location.href="reporte_inscripcion?documento="+ documento_+"&id_estudiante="+id_estudiante_ ;
 }
 }//fin function generapdf
