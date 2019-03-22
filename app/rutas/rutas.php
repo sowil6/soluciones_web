@@ -20,6 +20,7 @@ $ruta->controladores(
 	"/sin_acceso"=>"SinAccesoController",
 	"/inscripcion"=>"InscripcionController",
 	"/consultarinscripcion"=>"ConsultaInscripcionController",
+	"/reporte_inscripcion"=>"Reporte_InscripcionController",
 	""=>"RaizController"
 	
 	));

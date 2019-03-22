@@ -516,7 +516,7 @@ function generapdf(){ //lo activas con un OnClick
 	var id_estudiante_= document.getElementById('la_id').innerHTML;
 	if(id_estudiante_!=""){
 	//alert(html);
-location.href="./reportes/reporte_inscripcion.php?documento="+ documento_+"&id_estudiante="+id_estudiante_ ;
+location.href="reporte_inscripcion?documento="+ documento_+"&id_estudiante="+id_estudiante_ ;
 }
 }//fin function generapdf
 
@@ -575,11 +575,11 @@ CARTAGENA – COLOMBIA
  <i class="fa icon-asterisco fa-asterisk"></i>
 
 </span><label class="la_documento">Numero de Documento:</label> 
- <input  class="documento" type="text" id="documento" name="documento"  onkeyup="Exist_Estudio();return false;"><!--// return false Evitar ejecutar el submit del formulario.-->
+ <input  class="documento" type="text" id="documento" name="documento"  value="8" onkeyup="Exist_Estudio();return false;"><!--// return false Evitar ejecutar el submit del formulario.-->
   <div>
 
 <i class="fa icon-asterisco fa-asterisk"></i><label class="la_password" id="la_password">Digite una Contraseña:</label> 
-<input  class="password" type="password" id="password" name="password" value="" ><!---->
+<input  class="password" type="password" id="password" name="password" value="1" ><!---->
  </div>
 <div class="divPepPassword" id="divRepPassword">
  <i class="fa icon-asterisco fa-asterisk"></i><label class="la_rep_password" id="la_rep_password">Repita la Contraseña:</label> 

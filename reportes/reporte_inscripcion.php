@@ -102,7 +102,7 @@ $html.=
 }
 
 $mpdf = new \Mpdf\Mpdf();
-	$css= file_get_contents('../Styles/stylepdf.css');
+	$css= file_get_contents(VISTA_RUTA.'Styles/stylepdf.css');
 	/*$css2= file_get_contents('../Styles/bootstrap3.3.5.min.css');
 	$css3= file_get_contents('https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js');
 	$css4= file_get_contents('../Scripts/jquery.min.js');*/
@@ -112,8 +112,8 @@ $mpdf = new \Mpdf\Mpdf();
 	$mpdf->WriteHTML($css3,1);
 	$mpdf->WriteHTML($css4,1);*/
 
-	$mpdf->WriteHTML($html);
-	$mpdf->Output("",'I');
+	/*$mpdf->WriteHTML($html);
+	$mpdf->Output("",'I');*/
 
 ?>
 

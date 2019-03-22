@@ -1,17 +1,6 @@
 <!-- <link href="./Styles/css_navidad.css" rel="stylesheet" type="text/css">
 -->
 <?php include_once(RUTA_INCLUDE.'include_session.php');?>
-
-<link href="./Styles/CSSEstiloGeneral.css" rel="stylesheet" type="text/css">
- <link href="./Styles/footer-distributed-with-address-and-phones.css" rel="stylesheet">
- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" > 
-<link href="https://use.fontawesome.com/releases/v5.2.0/css/regular.css"  rel="stylesheet" integrity="sha384-zkhEzh7td0PG30vxQk1D9liRKeizzot4eqkJ8gB3/I+mZ1rjgQk+BSt2F6rT2c+I" crossorigin="anonymous">
-  <script src="./Scripts/jquery-1.12.0.js" type="text/javascript"></script><!---->
-   <link href="./Font/demo-files/demo.css" rel="stylesheet" type="text/css" ><!--Controla los iconos de la barra de menu-->
-  <link href="./Styles/css_BarraMenu.css" rel="stylesheet" >
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<link href="./Styles/arbol_navidad.css" rel="stylesheet" type="text/css"><!--dejar activo para que oculte el arbol de navidad-->
-
 <?php 
 function ValidaExtension($sExtension) {
             $resul;
@@ -42,6 +31,17 @@ function ValidaExtension($sExtension) {
             }
 return $resul;
         }?>	
+
+<link href="./Styles/CSSEstiloGeneral.css" rel="stylesheet" type="text/css">
+ <link href="./Styles/footer-distributed-with-address-and-phones.css" rel="stylesheet">
+ <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" > 
+<link href="https://use.fontawesome.com/releases/v5.2.0/css/regular.css"  rel="stylesheet" integrity="sha384-zkhEzh7td0PG30vxQk1D9liRKeizzot4eqkJ8gB3/I+mZ1rjgQk+BSt2F6rT2c+I" crossorigin="anonymous">
+  <script src="./Scripts/jquery-1.12.0.js" type="text/javascript"></script><!---->
+   <link href="./Font/demo-files/demo.css" rel="stylesheet" type="text/css" ><!--Controla los iconos de la barra de menu-->
+  <link href="./Styles/css_BarraMenu.css" rel="stylesheet" >
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<link href="./Styles/arbol_navidad.css" rel="stylesheet" type="text/css"><!--dejar activo para que oculte el arbol de navidad-->
+
 <script type="text/javascript" src="./Scripts/jquery-3.3.1.js"></script><!--Esta linea permite que funcione la barraherrameinte-fixed
 -->
   <script type="text/javascript">
@@ -144,14 +144,17 @@ function main () {
         <!--LOGIN-->
 <div class="login_">  
      <!-- logged in user information -->
-		<?php $rolnombre= new include_session(); $rol_acceso = $rolnombre->getRol($_SESSION['nivel_acceso']); if (isset($_SESSION['username'])) :    ?>
+			<?php   $rolnombre= new include_session(); $rol_acceso = $rolnombre->getRol($_SESSION['nivel_acceso']); if (isset($_SESSION['username'])) {    ?>
 			<a href="login?logout='1'" style="color: red;">logout </a> Welcome <?php echo $_SESSION['username']?><!--." ".$rol_acceso; ?>-->  
-              <?php  else : //echo $rol_acceso; este echo es opcional, se puede quitar despues?>
+              <?php } else { //echo $rol_acceso; este echo es opcional, se puede quitar despues?>
             <a href="login" style="color: red;">login</a>   <!---->
-		<?php endif ?>
+		<?php } ?>
    
          </div> 
-       
+        <?php /* if(session_status()==PHP_SESSION_DISABLED){echo '--- deshabilitada --';}else{echo '  -- habilitada -- ';};*/?>
+     <?php /* if(session_status()==PHP_SESSION_NONE){echo '---  no xiste --';}else{echo '  -- existe -- ';};*/?>
+     <?php  /* if(session_status()==PHP_SESSION_ACTIVE){echo '--- ACTIVA --';}else{echo '  -- INACTIVA -- ';};*/?>
+     
 <!--FIN LOGIN-->
 
    <div  class="resolucion_">
@@ -315,11 +318,11 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
 		</nav>
         <div class="login_">  
      <!-- logged in user information -->
-		<?php include_once(RUTA_INCLUDE.'include_session.php');$rolnombre= new include_session(); $rol_acceso = $rolnombre->getRol($_SESSION['nivel_acceso']); if (isset($_SESSION['username'])) :    ?>
-			<a href="login?logout='1'" style="color: red;">logout </a> Welcome <?php echo $_SESSION['username'];?><!--." ".$rol_acceso; ?>-->  
-              <?php  else : //echo $rol_acceso; este echo es opcional, se puede quitar despues ?>
-         <a href="login" style="color: red;">login</a>  <!---->
-		<?php endif; ?>
+		<?php   $rolnombre= new include_session(); $rol_acceso = $rolnombre->getRol($_SESSION['nivel_acceso']); if (isset($_SESSION['username'])) {    ?>
+			<a href="login?logout='1'" style="color: red;">logout </a> Welcome <?php echo $_SESSION['username']?><!--." ".$rol_acceso; ?>-->  
+              <?php } else { //echo $rol_acceso; este echo es opcional, se puede quitar despues?>
+            <a href="login" style="color: red;">login</a>   <!---->
+		<?php } ?>
    
          </div> 
 	</menu>  
