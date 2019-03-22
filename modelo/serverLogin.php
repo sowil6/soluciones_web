@@ -83,8 +83,8 @@ if($data["cantidad"]>0){
 	   
 		$username = mysqli_real_escape_string($bd, $_POST['username']);
 		$password = mysqli_real_escape_string($bd, $_POST['password']);
-	/*	$username="maira lozano";
-		$password = "2";*/
+	/**/	$username="maira lozano";
+		$password = "2";
 		if (empty($username)) {
 			array_push($errors, "Username is required");
 		}
@@ -92,7 +92,7 @@ if($data["cantidad"]>0){
 			array_push($errors, "Password is required");
 		}
 		if (count($errors) == 0) {//inicio if (count($errors) == 0
-	/*		*/
+	/*		
 			
 			$password = md5($password);
 			$query = "SELECT * FROM table_usuario WHERE username='$username' AND password='$password'";
@@ -118,13 +118,13 @@ if($data["cantidad"]>0){
 						}else {
 							array_push($errors, "Wrong username/password combination");
 						}//fin if (mysqli_num_rows
-						
+						*/
 						
 		/*	//estas tres lineas con para prueba de login sin consultar a la base de datos
-		
+		*/
 			$_SESSION['nivel_acceso'] = "2";
 			$_SESSION['username'] = "maira lozano";
-		echo "<script> window.location='.'</script>";	*/
+		echo "<script> window.location='.'</script>";	
 		
 			}//fin if (count($errors) == 0
 
