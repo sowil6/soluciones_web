@@ -511,16 +511,6 @@ location.href="./reportes/print_pdf.php?html="+ html + "&ejecutar=Boton_prueba" 
 }
 
 function generapdf(){ //lo activas con un OnClick
-
-	//alert(html);
-	documento_="";
-	id_estudiante_="";
-	location.href="reporte_inscripcion?documento="+ documento_+"&id_estudiante="+id_estudiante_ ;
-}
-
-
-
-function generapdf2(){ //lo activas con un OnClick
 	var documento_= document.getElementById('documento').value;
 	var id_estudiante_= document.getElementById('la_id').innerHTML;
 	if(id_estudiante_!=""){
@@ -789,7 +779,7 @@ CARTAGENA – COLOMBIA
 <div class="row">
 <button type="button" class="btn btn-success"  id="btngrabar" title="permite registrar y/o actualizar la inscripcion de estudiante"	href="javascript:;" 	onClick="grabar();return false;">Enviar</button>
 <button type="button" class="btn btn-success"  id="btnNuevo" title="permite la incripcion de un nuevo estudiante"	href="javascript:;" 	onClick="nuevo();">Nueva Inscripción</button>
-<button type="button" class="btn btn-success"  id="btnNuevo" title=""	href="javascript:;" 	onClick="generapdf();">Generar Pdf</button>
+<button type="button" class="btn btn-success"  id="btnNuevo" title=""	href="javascript:;" 	onClick="generapdf();">Descargar en Pdf</button>
 
 
 

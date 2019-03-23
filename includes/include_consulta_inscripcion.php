@@ -82,7 +82,7 @@ include_once RUTA_MANAGER. "manager_inscripcion.php";
    </select></td>
       <td>      <button type="button" class="btn btn-success btn-continuar"  id="btn-continuar"	href="javascript:;" onClick="Boton_consultaEstudiante();return false;">Consultar</button>
 <button type="button" class="btn btn-success btn-continuar"  id="btn-continuar"	href="javascript:;" onClick="Boton_Prueba();return false;">Prueba</button>
-<button type="button" class="btn btn-success"  id="btnNuevo" title=""	href="javascript:;" 	onClick="Boton_ReporteConsultaPDF();">Reporte Pdf</button>
+<button type="button" class="btn btn-success"  id="btnNuevo" title=""	href="javascript:;" 	onClick="Boton_ReporteConsultaPDF();">Descargar Reporte en Pdf</button>
 
 </td>
     </tr>
@@ -290,7 +290,7 @@ include_once RUTA_MANAGER. "manager_inscripcion.php";
    <div class="row">
 <button type="button" class="btn btn-success izq"  id="btngrabar"	href="javascript:;" 	onClick="grabar();return false;">Enviar</button>
 <button type="button" class="btn btn-danger der"  id="btnNuevo"	href="javascript:;" 	onClick="eliminar();">Eliminar</button>
-<button type="button" class="btn btn-success"  id="btnNuevo" title=""	href="javascript:;" 	onClick="generapdf();">Generar Pdf</button>
+<button type="button" class="btn btn-success"  id="btnNuevo" title=""	href="javascript:;" 	onClick="generapdf();">Descargar en Pdf</button>
 
  	 </div> 
     </div><!--fin_columna-->
