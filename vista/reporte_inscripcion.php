@@ -13,7 +13,7 @@ function Header()
     // Movernos a la derecha
     $this->Cell(50);
     // Título
-    $this->Cell(30,10,'No veo el titulo2',1,0,'C');
+    $this->Cell(30,10,'No veo el titulo3',1,0,'C');
     // Salto de línea
     $this->Ln(20);/**/
 }
