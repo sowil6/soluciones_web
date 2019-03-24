@@ -105,12 +105,12 @@ $html.=
 }
 $html2="hola mundo";
 $mpdf = new \Mpdf\Mpdf();
-	$css= file_get_contents('./Styles/stylepdf.css');
+	//$css= file_get_contents('./Styles/stylepdf.css');
 	/*$css2= file_get_contents('../Styles/bootstrap3.3.5.min.css');
 	$css3= file_get_contents('https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js');
 	$css4= file_get_contents('../Scripts/jquery.min.js');*/
 
-	$mpdf->WriteHTML($css,1);
+	//$mpdf->WriteHTML($css,1);
 	/*$mpdf->WriteHTML($css2,1);
 	$mpdf->WriteHTML($css3,1);
 	$mpdf->WriteHTML($css4,1);*/
