@@ -4,7 +4,7 @@
 //echo "ruta  ".RUTA_BASE."-- -".RUTA_Mpdf;
 echo "ruta home " .__FILE__ ."--";
 if(file_exists(RUTA_Mpdf.'vendor/autoload.php')) {
-require_once(RUTA_Mpdf.'vendor/autoload.php');echo "existe el file5";
+require_once(RUTA_Mpdf.'vendor/autoload.php');echo "existe el file2";
 $html="<!doctype html>
 <html>
 <head>
