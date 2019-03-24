@@ -5,9 +5,9 @@ class PDF extends FPDF
 {
 // Cabecera de página
 function Header()
-{
-    // Logo
+{    // Logo
     $this->Image('./imgSistema/logo_ceficc.png',10,8,13);
+	
     // Arial bold 15
     $this->SetFont('Arial','B',15);
     // Movernos a la derecha
