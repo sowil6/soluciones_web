@@ -56,68 +56,21 @@ $html="
 	   
 <div class='row'> <!--inicio row2-->
    
-    </div><h1>CONSTANCIA DE INSCRIPCION";
+    </div><h1>CONSTANCIA DE INSCRIPCION
 
-
-$html.="";
-if(defined('RUTA_BASE')){
-include_once RUTA_MODELO."modelo_inscripcion.php"; 
-include_once RUTA_BEANS.'beans_estudiante.php';
-echo "si definida";
-}
-else
-{
-	echo "si definida";
-include_once "./modelo/modelo_inscripcion.php";
-include_once './Beans/beans_estudiante.php';
-}
-/*$documento=73;
-$id=29;*/
-$result= modelo_inscripcion::get_Datos($id_estudiante,$documento);
-	echo $result;
-
-foreach ($result as $estudiante) { 
-$html.=
-  "<div class='col-sm-6  datos_inscripcion'><!--fin col c-->
-  
-  		<div><span>Fecha de inscripción:</span>".$estudiante['fecha_inscripcion']."</div>
-       	<div><span>NOMBRE del estudiante:</span>".$estudiante['nombre']."</div>
-        <div><span>PROGRAMA INSCRITO:</span>".$estudiante['programa']."</div>
-        <div><span>JORNADA:</span>".$estudiante['jornada']."</div>
-        <div><span>SEXO:</span>".$estudiante['sexo']."</div>
-		<div><span>CIUDAD:</span>".$estudiante['ciudad']."</div>
-		<div><span>LUGAR DE NACIMIENTO:</span>".$estudiante['lugar_nacido']."</div>
-		<div><span>DIRECCION:</span>".$estudiante['direccion']."</div>
-		<div><span>EMAIL:</span>".$estudiante['email']."</div>
-		<div><span>TELEFONO:</span>".$estudiante['telefono_fijo']." -  ".$estudiante['telefono_Cel']."</div>
-		<div><span>NOMBRE DE LA EMPRESA DONDE LABORA:</span>".$estudiante['empresa']."</div>
-		<div><span>CARGO:</span>".$estudiante['cargo']."</div>
-		<div><span>DIRECCION DE LA EMPRESA:</span>".$estudiante['direccion_empresa']."</div>
-		<div><span>TELEFONO DE LA EMPRESA:</span>".$estudiante['telefono_empresa']."</div>
-        		
-		
-		  </div><!--fin col c->
-		</h1>
-      </div><!--fin row2-->
-	 	 
-		   
     </header>";
-}
+
 
 $mpdf = new \Mpdf\Mpdf();
 	$css= file_get_contents('./Styles/stylepdf.css');
-	/*$css2= file_get_contents('../Styles/bootstrap3.3.5.min.css');
-	$css3= file_get_contents('https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js');
-	$css4= file_get_contents('../Scripts/jquery.min.js');*/
-
 	$mpdf->WriteHTML($css,1);
 	/*$mpdf->WriteHTML($css2,1);
 	$mpdf->WriteHTML($css3,1);
 	$mpdf->WriteHTML($css4,1);*/
 
 	$mpdf->WriteHTML($html);
-//	$mpdf->Output("inscripcion.pdf",'I');
-//	$mpdf->Output($documento.".pdf",'D');genera el fichero y forza la descarga
+	$mpdf->Output("inscripcion.pdf",'I');
+////	$mpdf->Output($documento.".pdf",'D');genera el fichero y forza la descarga
 }else{echo "no existe el archivo";}
 ?>
 
