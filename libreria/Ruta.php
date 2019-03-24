@@ -17,7 +17,7 @@ class Ruta
 
 		$uri= isset($_GET["uri"]) ?$_GET["uri"]:"/";//recupera la url del proyecto
 		$paths=explode("/", $uri);
-		//print_r($paths);
+		print_r($paths);
 		//echo "</br>recuperacion de la url ". $uri;
 		//hacer condicional para saber si esta en un
 		//controlador o en una ruta principal
