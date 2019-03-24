@@ -35,7 +35,7 @@ $html="¡hola mundo";
 
 
 
-$pdf = new PDF();
+$pdf = new FPDF();
 $pdf->AliasNbPages();
 $pdf->AddPage();
 $pdf->SetFont('Arial','B',16);
