@@ -21,12 +21,12 @@ function Header()
 // Pie de página
 function Footer()
 {
-  /*  // Posición: a 1,5 cm del final
+   // Posición: a 1,5 cm del final
     $this->SetY(-15);
     // Arial italic 8
     $this->SetFont('Arial','I',8);
     // Número de página
-    $this->Cell(0,10,utf8_decode('Página ').$this->PageNo().'/{nb}',0,0,'C');*/
+    $this->Cell(0,10,utf8_decode('Página ').$this->PageNo().'/{nb}',0,0,'C'); /**/
 }
 }
 $html="¡hola mundo";
