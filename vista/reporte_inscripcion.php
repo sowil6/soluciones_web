@@ -74,7 +74,7 @@ include_once './Beans/beans_estudiante.php';
 /*$documento=73;
 $id=29;*/
 $result= modelo_inscripcion::get_Datos($id_estudiante,$documento);
-	echo $result;
+	
 
 foreach ($result as $estudiante) { 
 $html.=
