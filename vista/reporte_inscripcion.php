@@ -4,7 +4,7 @@
 //echo "ruta  ".RUTA_BASE."-- -".RUTA_Mpdf;
 echo "ruta home " .__FILE__ ."--";
 if(file_exists(RUTA_Mpdf.'vendor/autoload.php')) {
-require_once(RUTA_Mpdf.'vendor/autoload.php');echo "existe el file2";
+require_once(RUTA_Mpdf.'vendor/autoload.php');echo "existe el file3";
 echo $html="<!doctype html>
 <html>
 <head>
@@ -37,7 +37,7 @@ $mpdf = new \Mpdf\Mpdf();
 
 	$mpdf->WriteHTML($html);
 //$mpdf->Output("inscripcion.pdf",'I');
-		$mpdf->Output($documento.".pdf",'D');//genera el fichero y forza la descarga
+		$mpdf->Output("hola.pdf",'D');//genera el fichero y forza la descarga
 }else{echo "no existe el archivo";}
 ?>
 
