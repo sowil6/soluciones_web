@@ -117,8 +117,8 @@ $mpdf = new \Mpdf\Mpdf();
 
 	$mpdf->WriteHTML($html2);
 //	$mpdf->Output();
-////	$mpdf->Output("inscripcion.pdf",'I');
-	$mpdf->Output($documento.".pdf",'D');genera el fichero y forza la descarga
+//	$mpdf->Output("inscripcion.pdf",'I');
+	$mpdf->Output($documento.".pdf",'D');//genera el fichero y forza la descarga
 }else{echo "no existe el archivo";}
 ?>
 
