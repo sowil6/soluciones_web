@@ -30,14 +30,14 @@ location.href='reporte_inscripcion?documento='+ documento_+'&id_estudiante='+id_
 
 $mpdf = new \Mpdf\Mpdf();
 	$css= file_get_contents('./Styles/stylepdf.css');
-	/*$mpdf->WriteHTML($css,1);
-	$mpdf->WriteHTML($css2,1);
+	$mpdf->WriteHTML($css,1);
+	/*$mpdf->WriteHTML($css2,1);
 	$mpdf->WriteHTML($css3,1);
 	$mpdf->WriteHTML($css4,1);*/
 
 	$mpdf->WriteHTML($html);
-$mpdf->Output("inscripcion.pdf",'I');
-//		$mpdf->Output($documento.".pdf",'D');//genera el fichero y forza la descarga
+//$mpdf->Output("inscripcion.pdf",'I');
+		$mpdf->Output($documento.".pdf",'D');//genera el fichero y forza la descarga
 }else{echo "no existe el archivo";}
 ?>
 
