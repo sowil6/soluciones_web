@@ -1,6 +1,6 @@
 <?php 
 
-define("APP_RUTA",RUTA_BASE."app/");
+define("APP_RUTA",RUTA_BASE."SP/");
 define("VISTA_RUTA",RUTA_BASE."vista/");
 define ("RUTA", APP_RUTA."rutas/");
 define ("LIBRERIA", RUTA_BASE."libreria/");
