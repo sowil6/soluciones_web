@@ -103,7 +103,7 @@ $html.=
 		   
     </header>";
 }
-
+$html2="hola mundo";
 $mpdf = new \Mpdf\Mpdf();
 	$css= file_get_contents('./Styles/stylepdf.css');
 	/*$css2= file_get_contents('../Styles/bootstrap3.3.5.min.css');
@@ -115,7 +115,7 @@ $mpdf = new \Mpdf\Mpdf();
 	$mpdf->WriteHTML($css3,1);
 	$mpdf->WriteHTML($css4,1);*/
 
-	$mpdf->WriteHTML($html);
+	$mpdf->WriteHTML($html2);
 	$mpdf->Output("inscripcion.pdf",'I');
 ////	$mpdf->Output($documento.".pdf",'D');genera el fichero y forza la descarga
 }else{echo "no existe el archivo";}
