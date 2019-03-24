@@ -63,10 +63,11 @@ $html.="";
 if(defined('RUTA_BASE')){
 include_once RUTA_MODELO."modelo_inscripcion.php"; 
 include_once RUTA_BEANS.'beans_estudiante.php';
-
+echo "si definida";
 }
 else
 {
+	echo "si definida";
 include_once "./modelo/modelo_inscripcion.php";
 include_once './Beans/beans_estudiante.php';
 }
