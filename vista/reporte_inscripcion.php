@@ -9,7 +9,7 @@ $ruta_autoload;
 //echo "ruta  ".RUTA_BASE."-- -".RUTA_Mpdf;
 echo "ruta home " .__FILE__ ."--";
 if(file_exists(RUTA_Mpdf.'vendor/autoload.php')) {echo "existe el file5";
-require_once('../mpdf/vendor/autoload.php');
+require_once(RUTA_Mpdf.'vendor/autoload.php');
 $html="
 <!DOCTYPE html>
 <html>
@@ -115,8 +115,8 @@ $mpdf = new \Mpdf\Mpdf();
 	$mpdf->WriteHTML($css4,1);*/
 
 	$mpdf->WriteHTML($html);
-//	$mpdf->Output("inscripcion.pdf",'I');
-//	$mpdf->Output($documento.".pdf",'D');genera el fichero y forza la descarga
+	$mpdf->Output("inscripcion.pdf",'I');
+////	$mpdf->Output($documento.".pdf",'D');genera el fichero y forza la descarga
 }else{echo "no existe el archivo";}
 ?>
 
