@@ -7,11 +7,11 @@ class PDF extends FPDF
 function Header()
 {
     // Logo
-    $this->Image('./imgSistema/logo2019cefic.jpg',10,8,33);
+    $this->Image('./imgSistema/logo2019cefic.jpg',10,8,13);
     // Arial bold 15
     $this->SetFont('Arial','B',15);
     // Movernos a la derecha
-    $this->Cell(10);
+    $this->Cell(50);
     // Título
     $this->Cell(30,10,'No veo el titulo',1,0,'C');
     // Salto de línea
