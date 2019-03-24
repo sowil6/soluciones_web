@@ -9,24 +9,24 @@ function Header()
     // Logo
     //$this->Image('./imgSistema/logo2019cefic.jpg',10,8,13);
     // Arial bold 15
-    $this->SetFont('Arial','B',15);
+ /*   $this->SetFont('Arial','B',15);
     // Movernos a la derecha
     $this->Cell(50);
     // Título
     $this->Cell(30,10,'No veo el titulo',1,0,'C');
     // Salto de línea
-    $this->Ln(20);
+    $this->Ln(20);*/
 }
 
 // Pie de página
 function Footer()
 {
-    // Posición: a 1,5 cm del final
+  /*  // Posición: a 1,5 cm del final
     $this->SetY(-15);
     // Arial italic 8
     $this->SetFont('Arial','I',8);
     // Número de página
-    $this->Cell(0,10,utf8_decode('Página ').$this->PageNo().'/{nb}',0,0,'C');
+    $this->Cell(0,10,utf8_decode('Página ').$this->PageNo().'/{nb}',0,0,'C');*/
 }
 }
 $html="¡hola mundo";
