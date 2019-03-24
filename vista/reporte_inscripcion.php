@@ -5,8 +5,9 @@ if(isset($_GET["documento"]))
 	$id_estudiante=$_GET["id_estudiante"];
  //  echo $documento."------".$id_estudiante;
 }
-
-if(file_exists('../mpdf/vendor/autoload.php')) {echo "existe el archivo";
+$ruta_autoload;
+echo "ruta".RUTA_Mpdf;
+if(file_exists(RUTA_Mpdf.'vendor/autoload.php')) {echo "existe el archivo";
 require_once('../mpdf/vendor/autoload.php');
 $html="
 <!DOCTYPE html>
