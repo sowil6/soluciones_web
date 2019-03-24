@@ -8,8 +8,8 @@ if(isset($_GET["documento"]))
 $ruta_autoload;
 //echo "ruta  ".RUTA_BASE."-- -".RUTA_Mpdf;
 echo "ruta home " .__FILE__ ."--";
-if(file_exists(RUTA_Mpdf.'vendor/autoload.php')) {
-require(RUTA_Mpdf.'vendor/autoload.php');echo "existe el file2";
+if(file_exists('./fpdf181/fpdf.php')) {
+require('./fpdf181/fpdf.php');echo "existe el file2";
 $html="
 <!DOCTYPE html>
 <html>
@@ -104,20 +104,11 @@ $html.=
     </header>";
 }
 
-$mpdf = new \Mpdf\Mpdf();
-	$css= file_get_contents('./Styles/stylepdf.css');
-	/*$css2= file_get_contents('../Styles/bootstrap3.3.5.min.css');
-	$css3= file_get_contents('https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js');
-	$css4= file_get_contents('../Scripts/jquery.min.js');*/
-
-	$mpdf->WriteHTML($css,1);
-	/*$mpdf->WriteHTML($css2,1);
-	$mpdf->WriteHTML($css3,1);
-	$mpdf->WriteHTML($css4,1);*/
-
-	$mpdf->WriteHTML($html);
-$mpdf->Output("inscripcion.pdf",'I');
-//	//	$mpdf->Output($documento.".pdf",'D');genera el fichero y forza la descarga
+$pdf = new FPDF();
+$pdf->AddPage();
+$pdf->SetFont('Arial','B',16);
+$pdf->Cell(40,10,'¡Hola, Mundo!');
+$pdf->Output();
 }else{echo "no existe el archivo";}
 ?>
 
