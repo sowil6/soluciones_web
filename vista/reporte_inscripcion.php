@@ -6,7 +6,8 @@ if(isset($_GET["documento"]))
  //  echo $documento."------".$id_estudiante;
 }
 $ruta_autoload;
-echo "ruta  ".RUTA_BASE."-- -".RUTA_Mpdf;
+//echo "ruta  ".RUTA_BASE."-- -".RUTA_Mpdf;
+echo "ruta home " .__FILE__ ."--";
 if(file_exists(RUTA_Mpdf.'vendor/autoload.php')) {echo "existe el archivo";
 require_once('../mpdf/vendor/autoload.php');
 $html="
