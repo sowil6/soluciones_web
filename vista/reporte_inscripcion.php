@@ -30,5 +30,3 @@ $mpdf = new \Mpdf\Mpdf();
 
 ?>
 
-</body>
-</html>
