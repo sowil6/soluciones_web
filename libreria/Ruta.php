@@ -35,7 +35,7 @@ if($res !="" && $res==1){//$res !="" && $res==1		 //busca si existe la ruta (/) 
 			}//end $ruta
 		
 		}//end foreach
-		//echo $controlador;
+		echo $controlador;
 		$this->getController("index",$controlador);//llamamos al metodo que nos recupera el controlador
 
 						}//end $res !="" && $res==1
@@ -47,7 +47,7 @@ if($res !="" && $res==1){//$res !="" && $res==1		 //busca si existe la ruta (/) 
 			$estado=false;
 			
 			foreach ($this->_controladores as $ruta =>$control) {//foreach $this->_controladores as $ruta =>$cont
-				//echo "</br>esta es la ruta " .$ruta;
+				echo "</br>esta es la ruta " .$ruta;
 				if(trim($ruta,"/")== $paths[0]){//trim($ruta,"/")== $paths[0]
 $estado=true;
 $controlador=$control;
