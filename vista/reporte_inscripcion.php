@@ -37,7 +37,8 @@ $mpdf = new \Mpdf\Mpdf();
 
 	$mpdf->WriteHTML($html);
 //$mpdf->Output("inscripcion.pdf",'I');
-		$mpdf->Output("hola.pdf",'D');//genera el fichero y forza la descarga
+$mpdf->Output();
+//$mpdf->Output("hola.pdf",'D');//genera el fichero y forza la descarga
 }else{echo "no existe el archivo";}
 ?>
 
