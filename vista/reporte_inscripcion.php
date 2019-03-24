@@ -6,7 +6,7 @@ if(isset($_GET["documento"]))
  //  echo $documento."------".$id_estudiante;
 }
 
-
+if(file_exists('../mpdf/vendor/autoload.php')) {echo "existe el archivo";
 require_once('../mpdf/vendor/autoload.php');
 $html="
 <!DOCTYPE html>
@@ -114,8 +114,8 @@ $mpdf = new \Mpdf\Mpdf();
 
 	$mpdf->WriteHTML($html);
 //	$mpdf->Output("inscripcion.pdf",'I');
-	$mpdf->Output($documento.".pdf",'D');//genera el fichero y forza la descarga
-
+//	$mpdf->Output($documento.".pdf",'D');genera el fichero y forza la descarga
+}else{echo "no existe el archivo";}
 ?>
 
 </body>
