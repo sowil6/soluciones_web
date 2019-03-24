@@ -7,7 +7,7 @@ class PDF extends FPDF
 function Header()
 {
     // Logo
-    $this->Image('./imgSistema/logo2019cefic.jpg',10,8,13);
+    //$this->Image('./imgSistema/logo2019cefic.jpg',10,8,13);
     // Arial bold 15
     $this->SetFont('Arial','B',15);
     // Movernos a la derecha
