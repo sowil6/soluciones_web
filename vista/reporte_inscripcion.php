@@ -26,19 +26,20 @@ function Footer()
     // Arial italic 8
     $this->SetFont('Arial','I',8);
     // Número de página
-    $this->Cell(0,10,'Page '.$this->PageNo().'/{nb}',0,0,'C');
+    $this->Cell(0,10,utf8_decode('Página ').$this->PageNo().'/{nb}',0,0,'C');
 }
 }
-$html="hola mundo";
+$html="¡hola mundo";
 
 
 
 
 
 $pdf = new PDF();
+$pdf->AliasNbPages();
 $pdf->AddPage();
 $pdf->SetFont('Arial','B',16);
-$pdf->Cell(40,10,"$html");
+$pdf->Cell(40,10,utf8_decode("$html"));
 $pdf->Output();
 
 ?>
