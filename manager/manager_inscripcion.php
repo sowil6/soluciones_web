@@ -123,8 +123,9 @@ if(!$documento==""){
 if($bool_loginTrue){
 	
 //$inscripcion= modelo_inscripcion::get_Datos($documento);//se almacenan los datos de la consulta en la variable Noticia
+$result = modelo_inscripcion::get_Datos($id_estudiante,$documento);
+$errores= $result->fetchAll(PDO::FETCH_ASSOC);//puse el fetchAll aqui porque en generar pdr tuve que quitarselo del metodo get_Datos
 
-$errores= modelo_inscripcion::get_Datos($id_estudiante,$documento);
 //$errores= modelo_inscripcion::get_Programas_Inscritos($documento);
 //$errores['$errprograma']=$programasDelDocumento;
 $errores['$errMensaje']='Login Correcto';
@@ -323,7 +324,8 @@ if($id_estudiante=="0"){
 $errores=modelo_inscripcion::get_Datos_SinID($documento);
 //$errores['$errMensaje']= 'entro en vacio';
 }else{
-	$errores= modelo_inscripcion::get_Datos($id_estudiante,$documento);
+	$result= modelo_inscripcion::get_Datos($id_estudiante,$documento);
+	$errores= $result->fetchAll(PDO::FETCH_ASSOC);//puse el fetchAll aqui porque en generar pdr tuve que quitarselo del metodo get_Datos
 	//$errores['$errMensaje']= 'entro en con contenido'.$id;
 	}
 

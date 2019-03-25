@@ -110,9 +110,9 @@ $result=array();
 	  // $sql="SELECT * FROM tabla_personamain where documentoIdentidad='$doc'";
           
 	 $data = $db->query($sql);
-      $result = $data->fetchAll(PDO::FETCH_ASSOC);
+      //$result = $data->fetch(PDO::FETCH_ASSOC);
 	   }//quede aqui
-return $result;
+return $data;
 	}
 	
 function get_Datos_SinID($doc){

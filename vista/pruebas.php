@@ -5,8 +5,8 @@
 function generapdf(){ //lo activas con un OnClick
 
 	//alert(html);
-	documento_="75482555";
-	id_estudiante_="245";
+	documento_="73";
+	id_estudiante_="29";
 location.href="reporte_inscripcion?documento="+ documento_+"&id_estudiante="+id_estudiante_ ;
 }
 </script>

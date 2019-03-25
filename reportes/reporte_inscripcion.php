@@ -71,7 +71,8 @@ include_once '../Beans/beans_estudiante.php';
 }
 /*$documento=73;
 $id=29;*/
-$result= modelo_inscripcion::get_Datos($id_estudiante,$documento);
+$resulta= modelo_inscripcion::get_Datos($id_estudiante,$documento);
+$errores= $resulta->fetchAll(PDO::FETCH_ASSOC);//puse el fetchAll aqui porque en generar pdr tuve que quitarselo del metodo get_Datos
 //	echo $result;
 
 foreach ($result as $estudiante) { 
