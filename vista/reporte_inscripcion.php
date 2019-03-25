@@ -27,11 +27,12 @@ function Header(){
     // Movernos a la derecha
     $this->Cell(50);
     // Título
-    $this->Cell(30,10, utf8_decode('Corporación Educativa de Formación Integral del Caribe'),0,0,'C');
-	    $this->Cell(52);
-	    $this->Cell(32,12,'CEFICC',0,0,'C');
+ $this->SetTextColor(0,0,232);
+    $this->Cell(100,8, utf8_decode('Corporación Educativa de Formación Integral del Caribe'),0,1,'C');
+	  //$this->Ln(4);
+	    $this->Cell(0,11,'CEFICC',0,0,'C');
     // Salto de línea
-    $this->Ln(20);/**/
+    $this->Ln(10);/**/
 	
 }
 
