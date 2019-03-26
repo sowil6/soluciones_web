@@ -12,7 +12,7 @@ define ("RUTA_IMG", RUTA_BASE."Img/");
 define ("RUTA_MODELO", RUTA_BASE."modelo/");
 define ("RUTA_MANAGER", RUTA_BASE."manager/");
 define ("RUTA_BEANS", RUTA_BASE."Beans/");
-define ("RUTA_Mpdf", RUTA_BASE."mpdf/");
+define ("RUTA_fpdf", RUTA_BASE."fpdf181/");
 
 //echo "</br>ruta en core.php ".VISTA_RUTA;
 

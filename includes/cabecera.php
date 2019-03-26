@@ -299,7 +299,7 @@ Personería Jurídica N° 1119 del 2008 Nit 806014830-1 de 2003 </br>    Cartage
 						<li><a href="https://es.duolingo.com" target="_blank">duolingo<span class="icon icon-dot"></span></a></li>
                        <li><a href="estudiante?action=inscripcion">Inscripción<span class="icon icon-dot"></span></a></li>
                       <!----> <li><a href="estudiante?action=certificado">Certificaciones<span class="icon icon-dot"></span></a></li>
-                     <li><a href="reporte_inscripcion?documento=2145&id_estudiante=2">Pruebas<span class="icon icon-dot"></span></a></li>
+                     <li><a href="pruebas">Pruebas<span class="icon icon-dot"></span></a></li>
 
 					</ul>
 				</li>

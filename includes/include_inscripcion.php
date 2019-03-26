@@ -516,7 +516,9 @@ function generapdf(){ //lo activas con un OnClick
 	if(id_estudiante_!=""){
 	//alert(html);
 	;
-location.href="reporte_inscripcion?documento="+ documento_+"&id_estudiante="+id_estudiante_ ;
+	 window.open("reporte_inscripcion?documento="+ documento_+"&id_estudiante="+id_estudiante_ , '_blank' , 'width=800,height=500 , menubar=no ,resizable=no'   );
+
+//location.href="reporte_inscripcion?documento="+ documento_+"&id_estudiante="+id_estudiante_ ;
 }
 }//fin function generapdf
 

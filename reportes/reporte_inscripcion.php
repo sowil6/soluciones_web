@@ -2,122 +2,91 @@
 if(isset($_GET["documento"]))
 {
 	$documento=$_GET["documento"];
+	echo "documento= ". $documento;
 	$id_estudiante=$_GET["id_estudiante"];
   echo $documento."------".$id_estudiante;
  
 }
 echo $documento."------".$id_estudiante;
- die();
-require_once('./mpdf/vendor/autoload.php');
-$html="
-<!DOCTYPE html>
-<html>
-<head>
-  
-  	<title></title>
-</head>
+// die();
 
 
-<body class='body_reporte'>
-<header>
-<div id='logo' class='logo clearfix'><!--inicio div logo-->
 
-        <img src='../imgSistema/logo2019cefic.jpg'>
-		</div><!--fin div logo-->
-		<div class='titulo_reporte'>
-		
- <div>Corporación de Educativa de Formación Integral del caribe</div>
-		<div>CEFICC</div>
-		
-		</div><!--fin div class titulo_reporte-->
-      	
- 
-		
-		<div class='row'> <!--inicio row1-->
-	<div class='col-sm-6 izq'><!--fin col a-->
 
-		
-	</div><!--fin col a-->
-
-  	<div class='compania der'><!--inicio col b-->
-      
-		
-		<div><span>Email</span> <a href='mailto:secretaria.general@ceficc.edu.co'>secretaria.general@ceficc.edu.co</a></div>
-		<div><span>Telefonos:</span> 6812539 - (+57) 3012807094</div>
-		<div><a href='www.ceficc.edu.co'><span>Sitio web</span>: www.ceficc.edu.co</a></div>
-		<div><span>Fecha de Impresión:</span>".date('d-m-Y H:i:s')."</div>
-		 
-	 </div><!--fin col b-->
-	  
-</div><!--fin row1-->
-	   
-	   
-	   
-<div class='row'> <!--inicio row2-->
-   
-    </div><h1>CONSTANCIA DE INSCRIPCION";
-function temporal(){
-
-$html.="";
 if(defined('RUTA_BASE')){
 include_once RUTA_MODELO."modelo_inscripcion.php"; 
 include_once RUTA_BEANS.'beans_estudiante.php';
-
+echo "entro".RUTA_fpdf;
 }
 else
 {
 include_once "../modelo/modelo_inscripcion.php";
 include_once '../Beans/beans_estudiante.php';
 }
-/*$documento=73;
-$id=29;*/
-$resulta= modelo_inscripcion::get_Datos($id_estudiante,$documento);
-$errores= $resulta->fetchAll(PDO::FETCH_ASSOC);//puse el fetchAll aqui porque en generar pdr tuve que quitarselo del metodo get_Datos
-//	echo $result;
+require('../fpdf181/fpdf.php');
+include ('../includes/include_report_header_footer.php');
+/*class PDF extends FPDF {
+// Cabecera de página
+function Header(){
+    // Logo
+    $this->Image('../ImgSistema/logo2019cefic.jpg',10,8,13);
+    // Arial bold 15
+    $this->SetFont('Arial','B',15);
+    // Movernos a la derecha
+    $this->Cell(50);
+    // Título
+ $this->SetTextColor(0,0,232);
+    $this->Cell(100,8, utf8_decode('Corporación Educativa de Formación Integral del Caribe'),0,1,'C');
+	  //$this->Ln(4);
+	    $this->Cell(0,11,'CEFICC',0,0,'C');
+    // Salto de línea
+    $this->Ln(10);/**/
+	 $this->Line(12,15,12,60);/**/
+	 $this->Ln(10);/**/
+}//fin heater
 
-foreach ($result as $estudiante) { 
-$html.=
-  "<div class='col-sm-6  datos_inscripcion'><!--fin col c-->
-  
-  		<div><span>Fecha de inscripción:</span>".$estudiante['fecha_inscripcion']."</div>
-       	<div><span>NOMBRE del estudiante:</span>".$estudiante['nombre']."</div>
-        <div><span>PROGRAMA INSCRITO:</span>".$estudiante['programa']."</div>
-        <div><span>JORNADA:</span>".$estudiante['jornada']."</div>
-        <div><span>SEXO:</span>".$estudiante['sexo']."</div>
-		<div><span>CIUDAD:</span>".$estudiante['ciudad']."</div>
-		<div><span>LUGAR DE NACIMIENTO:</span>".$estudiante['lugar_nacido']."</div>
-		<div><span>DIRECCION:</span>".$estudiante['direccion']."</div>
-		<div><span>EMAIL:</span>".$estudiante['email']."</div>
-		<div><span>TELEFONO:</span>".$estudiante['telefono_fijo']." -  ".$estudiante['telefono_Cel']."</div>
-		<div><span>NOMBRE DE LA EMPRESA DONDE LABORA:</span>".$estudiante['empresa']."</div>
-		<div><span>CARGO:</span>".$estudiante['cargo']."</div>
-		<div><span>DIRECCION DE LA EMPRESA:</span>".$estudiante['direccion_empresa']."</div>
-		<div><span>TELEFONO DE LA EMPRESA:</span>".$estudiante['telefono_empresa']."</div>
-        		
-		
-		  </div><!--fin col c->
-		</h1>
-      </div><!--fin row2-->
-	 	 
-		   
-    </header>";
-}
-}
-$mpdf = new \Mpdf\Mpdf();
-	$css= file_get_contents(VISTA_RUTA.'Styles/stylepdf.css');
-	/*$css2= file_get_contents('../Styles/bootstrap3.3.5.min.css');
-	$css3= file_get_contents('https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js');
-	$css4= file_get_contents('../Scripts/jquery.min.js');*/
+// Pie de página
+function Footer()
+{
+    // Posición: a 1,5 cm del final
+    $this->SetY(-15);
+    // Arial italic 8
+    $this->SetFont('Arial','I',8);
+    // Número de página
+    $this->Cell(0,10,'Page '.$this->PageNo().'/{nb}',0,0,'C');
+}//fin footer
+}//fin clase pdf*/
 
-	$mpdf->WriteHTML($css,1);
-	/*$mpdf->WriteHTML($css2,1);
-	$mpdf->WriteHTML($css3,1);
-	$mpdf->WriteHTML($css4,1);*/
+///inicio bloque tabla
+$documento=$_GET["documento"];
+	$id_estudiante=$_GET["id_estudiante"];
+ // echo $documento."------".$id_estudiante;
+$result= modelo_inscripcion::get_Datos($id_estudiante,$documento);
+/////fin bloque tabla
 
-	/*$mpdf->WriteHTML($html);
-	$mpdf->Output("",'I');*/
 
+
+// Creación del objeto de la clase heredada
+$pdf = new PDF();
+$pdf->AliasNbPages();
+$pdf->AddPage();
+$pdf->SetFillColor(232,232,232);
+$pdf->SetFont('Arial','',10);
+$pdf->Cell(70,6,'nombre',1,0,'C',1);
+$pdf->Cell(20,6,'nombre',1,0,'C',1);
+$pdf->Cell(20,6,'nombre',1,0,'C',1);
+$pdf->Cell(20,6,'nombre',1,1,'C',1);
+$pdf->SetFont('Times','',12);
+
+ while ($estudiante= $result->fetch(PDO::FETCH_ASSOC)) { 
+$pdf->Cell(70,6,$estudiante['nombre'],1,0,'C',1);
+$pdf->Cell(20,6,$estudiante['nombre'],1,0,'C',1);
+$pdf->Cell(20,6,$estudiante['nombre'],1,0,'C',1);
+$pdf->Cell(20,6,$estudiante['nombre'],1,1,'C',1);
+ }
+
+
+/*for($i=1;$i<=40;$i++)
+    $pdf->Cell(0,10,'Imprimiendo línea número '.$i,0,1);*/
+$pdf->Output();
 ?>
-
-</body>
-</html>
