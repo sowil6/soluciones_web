@@ -17,6 +17,8 @@ class beans_persona{
         private $telefono_fijo;
         private $telefono_Cel;
         private $fotoPersona;
+		
+		private $mensaje;
 
         
  public function getIdpersona() {
@@ -143,6 +145,13 @@ public function getFotoPersona() {
     }
  public function setFotoPersona($fotoPersona) {
         $this->fotoPersona = $fotoPersona;
+    }
+	
+	public function getMensaje() {
+        return $this->mensaje;
+    }
+ public function setMensaje($mensaje) {
+        $this->mensaje = $mensaje;
     }
 
 

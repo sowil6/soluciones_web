@@ -27,7 +27,7 @@ function iniciodeInscripcion(){
 var f = new Date();
 document.getElementById('fecha').value=f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear();
 document.getElementById('contenedor-balloon').style.visibility="hidden";//oculta los alert en globo
-//document.getElementById('group-row').style.visibility="hidden";oculta el formulario inferior
+document.getElementById('group-row').style.visibility="hidden";//oculta el formulario inferior
 document.getElementById('divRepPassword').style.visibility="hidden";//oculta el div de repetir pasword
 //document.getElementById('inscripciones').style.visibility="hidden";
 document.getElementById('box_inscripciones').style.visibility="hidden";//oculta la caja de cursos incritos
@@ -49,7 +49,7 @@ var cantidad=document.getElementById("inscripciones").length;
 if(nombre_curso=="Inscribir un Nuevo Curso"){
 			if(cantidad<4){
 			document.getElementById("btngrabar").innerHTML ="Enviar";//cambiar el nombre del boton grabar a Actualizar
-			document.getElementById('la_mensaje').innerHTML="Estado de nueva inscripcion  <i class='fa fa-user-plus'></i>";
+			document.getElementById('la_mensaje').innerHTML="Estado de nueva inscripcion";
 			}//else if(cantidad<4)
 			else{
 			alert("Solo se Permiten 3 cursos inscritos");	
@@ -190,9 +190,9 @@ if(responsee['$errMensaje']=="Nueva Inscripción"){
 		document.getElementById('la_mensaje').innerHTML=responsee['$errMensaje']+"  <i class='fa iconnewInscripcion fa-user-plus'></i>";
 		document.getElementById('group-row').style.visibility="visible";
 		document.getElementById("btngrabar").innerHTML ="Enviar";//cambiar el nombre del boton grabar a Actualizar
-	document.getElementById('btn-continuar').style.visibility="visible";
+	document.getElementById('btn-continuar').style.visibility="hidden";
 		document.getElementById('la_password').innerHTML="Digite una Contraeña";
-campos_enBlaco(responsee);
+campos_enBlaco(responsee);//habilitar esta opcion
 	}
 if(responsee['$errMensaje']=="Digite la contraseña"){
 	
@@ -208,15 +208,21 @@ campos_enBlaco(responsee);
 if(responsee['$errMensaje']=="No ha digitado informacion"){
 	document.getElementById('la_password').innerHTML="Digite una Contraeña";
 	document.getElementById('btn-continuar').style.visibility="visible";
-	document.getElementById('box_inscripciones').style.visibility="hidden";
+	document.getElementById('box_inscripciones').style.visibility="visible";
 	/*document.getElementById('divRepPassword').style.visibility="hidden";
 	document.getElementById('contenedor-balloon').style.visibility="hidden";
 	
 			document.getElementById('group-row').style.visibility="hidden";
 				document.getElementById('btn-continuar').style.visibility="visible";*/
 		document.getElementById('la_mensaje').innerHTML=responsee['$errMensaje']+" <i class='fa checkBad fa-eye'></i>";
-campos_enBlaco(responsee);
+//campos_enBlaco(responsee); habilitar esta opcion
 	}
+if(responsee['$errMensaje']=="supero_limite_inscripcion"){
+			document.getElementById('la_mensaje').innerHTML="Supero el limite de inscripciones <i class='fa checkBad fa-eye'></i>";
+
+	}
+
+	
 if(responsee['$errAlert']=='hay_error'){
 //alert("hay errores");
 	document.getElementById('group-row').style.visibility="hidden";
@@ -242,6 +248,7 @@ Object.keys(responsee).forEach(function(key) {;
 				
 			});//fin ajax
 	}//fin function existe documento	
+
 function llenarComboProgramas(documento_){
 	//document.getElementById('inscripciones').style.visibility="visible";
 		document.getElementById('box_inscripciones').style.visibility="visible";
@@ -356,6 +363,8 @@ var id_estudiante_= document.getElementById('la_id').innerHTML;
 var documento_ = document.getElementById('documento').value;
 var password_ = document.getElementById('password').value;
 var rep_password_ = document.getElementById('rep_password').value;
+var la_mensaje_ =document.getElementById('la_mensaje').innerHTML;
+
 
 var programa_ = document.getElementById('programa').value;
 //alert(programa_);
@@ -391,12 +400,12 @@ $("#inscripciones option:selected").each(function() {
 		//alert(id_estudio+"--"+nombre_curso)
 		 });//fin .each
 }//fin if(accion="actualizarw")*/
-
+//alert(la_mensaje_);
 //nota la accin la trae el boton enviar con los valores enviar y actualizar
         var parametros={
 "id_estudiante":id_estudiante_,			
-/*"id_estudio":	id_estudio_,
-"carrera":nombre_curso_,*/
+"la_mensaje":	la_mensaje_,
+/*"carrera":nombre_curso_,*/
 "ejecutar":accion,
 "fecha_inscripcion":fecha_,
 "documento":documento_,
@@ -434,15 +443,17 @@ $("#inscripciones option:selected").each(function() {
 			response= JSON.parse(result);
 			console.log(result);
 				if(response['$errMensaje']=="actualizar"){
+					Exist_Estudio();
 	document.getElementById('la_mensaje').innerHTML="Operación de Actualización exitosa<i class='fa checkGood fa-check'></i>";
 				document.getElementById('contenedor-balloon').style.visibility="hidden";
-				//Exist_Estudio();
+				
 			}
 			
-				else if(response['$errMensaje']=="grabar"){
+				else if(response['$errMensaje']=="grabar_nuevoRegistro"||response['$errMensaje']=="grabar_registrado"){
+	Exist_Estudio();
 	document.getElementById('la_mensaje').innerHTML="Operación de Nueva inscripción exitosa<i class='fa checkGood fa-check'></i>";
 			document.getElementById('contenedor-balloon').style.visibility="hidden";	
-			//Exist_Estudio();
+			
 			}else{
 							document.getElementById('contenedor-balloon').style.visibility="visible";	
 document.getElementById('la_mensaje').innerHTML="";
@@ -581,7 +592,7 @@ CARTAGENA – COLOMBIA
   <div>
 
 <i class="fa icon-asterisco fa-asterisk"></i><label class="la_password" id="la_password">Digite una Contraseña:</label> 
-<input  class="password" type="password" id="password" name="password" value="1" ><!---->
+<input  class="password" type="password" id="password" name="password"  ><!---->
  </div>
 <div class="divPepPassword" id="divRepPassword">
  <i class="fa icon-asterisco fa-asterisk"></i><label class="la_rep_password" id="la_rep_password">Repita la Contraseña:</label> 
@@ -657,7 +668,7 @@ CARTAGENA – COLOMBIA
 </div>
      <div class="col-sm-6 der">
        <i class="fa icon-asterisco fa-asterisk"></i><label class="la_nombre">Nombre:</label> 
-<input  class="nombre" type="text" id="nombre" name="nombre"  value="sobeyda"  >
+<input  class="nombre" type="text" id="nombre" name="nombre" value="2">
         
          </div>
 </div>
@@ -668,7 +679,7 @@ CARTAGENA – COLOMBIA
      
        <div class="col-sm-6 izq">
        <label class="la_edad">Edad:</label> 
-        <input  class="edad" type="text" id="edad" name="edad" value="33">
+        <input  class="edad" type="text" id="edad" name="edad" value="2" >
         
                
       <i class="fa icon-asterisco fa-asterisk"></i> <label class="la_sexo">SEXO:</label>
@@ -678,7 +689,7 @@ CARTAGENA – COLOMBIA
         </div>
         <div class="col-sm-6 der">
      <i class="fa icon-asterisco fa-asterisk"></i>  <label class="la_ciudad">Ciudad:</label> 
-        <input  class="ciudad" type="text" id="ciudad" name="ciudad" value="555555557313233">
+        <input  class="ciudad" type="text" id="ciudad" name="ciudad" value="2" >
         
          </div>
         </div>
@@ -689,12 +700,12 @@ CARTAGENA – COLOMBIA
 <div class="row"> 
       <div class="col-sm-6 izq">
      <i class="fa icon-asterisco fa-asterisk"></i>  <label class="la_lugarNacido">Lugar de Nacimiento:</label> 
-        <input  class="lugarNacido" type="text" id="lugarNacido" name="lugarNacido" value="55555557313233" >
+        <input  class="lugarNacido" type="text" id="lugarNacido" name="lugarNacido"  value="2" >
         
          </div>
         <div class="col-sm-6 der">        
    <i class="fa icon-asterisco fa-asterisk"></i>    <label class="la_fechaNacido">Fecha de Nacimiento:</label> 
-        <input  class="fechaNacido" type="text" id="fechaNacido"  name="fechaNacido" value="55555557313233">
+        <input  class="fechaNacido" type="text" id="fechaNacido"  name="fechaNacido" >
         
         </div>
         </div>
@@ -705,7 +716,7 @@ CARTAGENA – COLOMBIA
        <label class="la_direccion">Dirección:</label>   
     </div>
   <div class="col-sm-6">     
-        <input class="direccion" type="text" id="direccion" name="direccion" value="3455555557313233">
+        <input class="direccion" type="text" id="direccion" name="direccion" value="2" >
       
        
     </div>      
@@ -716,15 +727,15 @@ CARTAGENA – COLOMBIA
  <div class="row izq">
   <div class="col-sm-6 izq">
        <label class="la_email">Correo Electrónico:</label>   
-   <input class="email" type="text" id="email" name="email" value="sobeyda@hotmail.com"> 
+   <input class="email" type="text" id="email" name="email" value="sowil6@hotmail.com" > 
    </div>
  
   <div class="col-sm-6 der" >     
        <label class="la_telFijo">Telefono: Fijo:</label>   
-   <input class="telFijo" type="text" id="telFijo" name="telFijo" value="5557313233">  
+   <input class="telFijo" type="text" id="telFijo" name="telFijo" value="2" >  
    
        <label class="la_telCelular">Celular:</label>   
-   <input class="telCelular" type="text" id="telCelular" name="telCelular" value="555557313233"> 
+   <input class="telCelular" type="text" id="telCelular" name="telCelular" value="2" > 
    
    </div>
      </div>      

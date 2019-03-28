@@ -174,6 +174,7 @@ $result = $data->fetchAll(PDO::FETCH_ASSOC);
 	 
        return $result;
 	}
+
 function get_RegistradosSinCursos($estudiante){
 	$documento=$estudiante->getDocumento();
 	$result=array();
@@ -186,6 +187,7 @@ $result = $data->fetchAll(PDO::FETCH_ASSOC);
 	 
        return $result;
 	}
+
 function get_Consultar_proInscritos(){
 	
 //	include_once("../modelo/Conectar.php");
@@ -197,6 +199,7 @@ $sql= "SELECT distinct programa FROM tabla_estudiante";
 $result = $data->fetchAll(PDO::FETCH_ASSOC);
          return $result;
 	}
+
 function get_Programas(){
 	//include_once("./modelo/Conectar.php");
 $result=array();
@@ -225,7 +228,7 @@ $email = mysqli_real_escape_string($bd, $objNoticia->getEmail());
 $pass = mysqli_real_escape_string($bd,$objNoticia->getPassword());
 $nivel_acceso = mysqli_real_escape_string($bd, 1);
 
-if($estado=="nuevoRegistro"){
+if($estado=="nuevoRegistro"){//inscripcion por primera vez
 //obtener el numero ultimo registro en la tabla		
 $sqlMax="SELECT max(id) AS max_page FROM table_usuario";
 $resMas=mysqli_query($bd, $sqlMax);
@@ -251,6 +254,8 @@ $Consulta->execute(array(":documento"=>$objNoticia->getDocumento(),":nombre"=>$o
 ":fecha_nacido"=>$objNoticia->getFecha_nacido(), ":edad"=>$objNoticia->getEdad(),":sexo"=>$objNoticia->getSexo(),":ciudad"=>$objNoticia->getCiudad(), ":direccion"=>$objNoticia->getDireccion(), ":email"=>$objNoticia->getEmail(),
 "telefono_fijo"=>$objNoticia->getTelefono_Fijo(), "telefono_Cel"=>$objNoticia->getTelefono_Cel()));
 }else{
+	
+	//nueva inscripcion al mismo estudiante
 //	obtenemos el id_estudiante
 $id_estudiante=$objNoticia->getId_estudiante();
 	}

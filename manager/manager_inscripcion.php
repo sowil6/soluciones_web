@@ -234,6 +234,7 @@ $edad=$estudiante->getEdad();
 $sexo=$estudiante->getSexo();
 $telefono_fijo=$estudiante->getTelefono_fijo();
 $telefono_Cel=$estudiante->getTelefono_Cel();
+$mensaje= $estudiante->getMensaje();
 
 //estudiante
 $fecha_inscripcion=$estudiante->getFecha_inscripcion();
@@ -252,9 +253,9 @@ $telefono_empresa=$estudiante->getTelefono_empresa();
 
 if (!is_numeric($documento)) {$errores['$errdocumento']= 'El campo documento debe contener numero';}
 
-if($accion=="grabar"){
+if($accion=="grabar" &&$mensaje!=="Estado de nueva inscripcion"){
 if (!validarSQLInjection($expresion,$password)) {$errores['$errpassword']='La contraseña no es valida';}
-if ($password!=$rep_password) {$errores['$errRep_password']='Las contraseñas no son iguales';}
+if ($password!=$rep_password) {$errores['$errRep_password']='Las contraseñas no son iguales '.$mensaje ;}
 }
 
 if ($programa=="") {$errores['$errprograma']='El campo programa es requerido';}
@@ -365,13 +366,14 @@ $documento=$estudiante->getDocumento();//obtenemos el numero del documento
 	$bool_documento= $emodelo->bool_documento($documento);
 
 	 if($bool_documento){
-		 //si ya existe el estudiante inscrito
+		 //si ya existe el estudiante inscrito se esta agregando nueva inscripcion de programa al mismo estudiante
 		try{
+			
 $getId_estudiante= $emodelo->getId_Persona($documento);
 $estudiante->setDocumento_estudiante($getDocumento_estudiante['documentoIdentidad']);
 /*echo '<script language="javascript">alert("Hola en manager Grabar'.$noti.getTituloNoticia() .')";</script>';*/
 $emodelo::grabar($estudiante,"registrado");
-$errores['$errMensaje']= 'grabar';
+$errores['$errMensaje']= 'grabar_registrado';
 ob_end_clean();	//evita el problema de json que no se ejecuta en ajax va despues de ob_start() y antes de json_encode
 echo json_encode($errores);
 return $errores;	 
@@ -388,7 +390,7 @@ try{
 
 /*echo '<script language="javascript">alert("Hola en manager Grabar'.$noti.getTituloNoticia() .')";</script>';*/
 $emodelo::grabar($estudiante,"nuevoRegistro");
-$errores['$errMensaje']= 'grabar';
+$errores['$errMensaje']= 'grabar_nuevoRegistro';
 ob_end_clean();	//evita el problema de json que no se ejecuta en ajax va despues de ob_start() y antes de json_encode
 echo json_encode($errores);
 return $errores;	 
@@ -554,6 +556,7 @@ if(isset($_POST["carrera"])){$estudiante->setCarrera($_POST["carrera"]);	}
 
 if(isset($_POST["password"])){$estudiante->setPassword($_POST["password"]);	}
 if(isset($_POST["rep_password"])){$estudiante->setRep_password($_POST["rep_password"]);	}
+if(isset($_POST["la_mensaje"])){$estudiante->setMensaje($_POST["la_mensaje"]);	}
 
 
 
