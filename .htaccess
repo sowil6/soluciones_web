@@ -9,7 +9,9 @@ Options -Indexes
 # decimos a Apache que queremos sobre escribir las URLs para crear URLs amigables
 
 RewriteEngine On
-#RewriteBase /
+RewriteBase /
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.https://github.com/sowil6/soluciones_web/$1 [R,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
